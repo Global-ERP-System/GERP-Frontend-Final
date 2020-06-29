@@ -1,0 +1,18 @@
+.previous{
+    margin-top: 100px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 200px;
+}
+
+.heading{
+    margin-top: 100px;
+    text-align:center;
+    
+}
+.button{
+    align-self: center;
+}
+#upload{
+    color:red;
+}

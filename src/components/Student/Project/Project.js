@@ -1,0 +1,80 @@
+// Install Bootstrap Using --> npm install bootstrap
+// import "../node_modules/bootstrap/dist/css/bootstrap.css";
+// then add this path in app.js to use bootstrap
+
+import React, { Component } from 'react'
+import Addproject from './Addproject'
+import './Project.css'
+
+export default class Project extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            title: "",
+            description: "",
+            link: "",
+            chooseFile: "",
+            addProject: false
+        }
+    }
+    handletitle = (event) => {
+        this.setState({ title: event.target.value });
+    }
+    handledescription = (event) => {
+        this.setState({ description: event.target.value });
+    }
+    handlelink = (event) => {
+        this.setState({ link: event.target.value });
+    }
+    handlechooseFile = (event) => {
+        this.setState({ chooseFile: event.target.value });
+    }
+    handlesubmit = (event) => {
+        event.preventDefault();
+        this.setState({ title: "" })
+        this.setState({ description: "" })
+        this.setState({ link: "" })
+        this.setState({ chooseFile: "" })
+    }
+
+    render() {
+
+        let addProject = () => this.setState({ addProject: false })
+
+        return (
+            <div style={{marginLeft:'33%',marginRight:'20%', marginBottom:'4%', width:'180%'}}>
+                <h1 className="Heading" style={{width:'22%',textAlign:'center'}}> PROJECTS </h1>
+                <div className="Container">
+                    <div className="Project_container">
+                        <form onSubmit={this.handlesubmit}>
+                            <label className="mx-3 ">Title*</label><br></br>
+                            <input type="text" value={this.state.title} onChange={this.handletitle} required /><br></br>
+                            <label className="mx-3 ">Description</label><br></br>
+                            <input type="text" value={this.state.description} onChange={this.handledescription} /><br></br>
+                            <label className="mx-3 ">Project Link*</label><br></br>
+                            <input type="url" value={this.state.link}
+                                onChange={this.handlelink} required /><br></br>
+                            <input id="chooseFile" type="file" value={this.state.chooseFile}
+                                onChange={this.handlechooseFile} required /><br></br>
+                            <div className="Display_Button">
+                                <input id="Save" type="submit" value="Save" />
+                                <button id="addProject" onClick={() =>
+                                    this.setState({ addProject: true })}> + Add Project</button><br></br>
+                            </div>
+                        </form>
+                    </div>
+                    <Addproject
+                        show={this.state.addProject}
+                        onHide={addProject} />
+                </div>
+            </div>
+        )
+    }
+}
+
+// submit ke place pr save aayega
+// Save Button Chota krna hai
+// Close button hatana hai
+// +Add Project button chota krna hai
+// label ke niche ka margin hatana hai 
+//className="btn btn-primary my-3 mx-2 w-25 p-3"

@@ -1,0 +1,49 @@
+/* .Fee_Structure_Box
+{
+    border: 3px solid steelblue;
+} */
+.large_input_box input
+{
+    background-color: #f7f7f7;
+    border: 2px solid black;
+}
+.Button_Container
+{
+    border: 2px sloid darkblue;
+}
+.Dropdown_button
+{
+    border: 2px solid black;
+    width: 10%;
+}
+.Small_input_box 
+{
+    /* border: 3px solid black; */
+    width: 41%;
+    margin: 10px auto;
+}
+.Small_input_box label
+{
+    width: 30%;
+    font-weight: 500;
+    margin: 10px 12px 0px -8px;
+}
+.Small_input_box input
+{
+    border: 2px solid black;
+    width: 67%;
+}
+.Display_Button
+{
+    width: 44%;
+    border: black;
+    display: flex;
+    margin: 30px auto;
+}
+#Pay
+{
+    width: 25%;
+    border: 2px solid black;
+    background-color: #FF0000;
+    margin: 2px 0px 0px 238px;
+}
