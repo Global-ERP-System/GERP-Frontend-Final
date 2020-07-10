@@ -4,6 +4,7 @@
 
 import React, { Component } from 'react'
 import Addproject from './Addproject'
+import { Button } from 'react-bootstrap';
 import './Project.css'
 
 export default class Project extends Component {
@@ -42,25 +43,27 @@ export default class Project extends Component {
         let addProject = () => this.setState({ addProject: false })
 
         return (
-            <div style={{marginLeft:'33%',marginRight:'20%', marginBottom:'4%', width:'180%'}}>
-                <h1 className="Heading" style={{width:'22%',textAlign:'center'}}> PROJECTS </h1>
+            <div style={{marginLeft:'30%',marginRight:'20%', marginBottom:'13%'}}>
+        {/* <div style={{marginLeft:'33%',marginRight:'20%', marginBottom:'4%', width:'180%'}}> 
+                <h1 className="Heading" style={{width:'22%',textAlign:'center'}}> PROJECTS </h1> */}
+                <h1 className="Heading" style={{textAlign:'center'}}> PROJECTS </h1>
                 <div className="Container">
                     <div className="Project_container">
                         <form onSubmit={this.handlesubmit}>
-                            <label className="mx-3 ">Title*</label><br></br>
-                            <input type="text" value={this.state.title} onChange={this.handletitle} required /><br></br>
-                            <label className="mx-3 ">Description</label><br></br>
-                            <input type="text" value={this.state.description} onChange={this.handledescription} /><br></br>
-                            <label className="mx-3 ">Project Link*</label><br></br>
-                            <input type="url" value={this.state.link}
-                                onChange={this.handlelink} required /><br></br>
-                            <input id="chooseFile" type="file" value={this.state.chooseFile}
-                                onChange={this.handlechooseFile} required /><br></br>
-                            <div className="Display_Button">
-                                <input id="Save" type="submit" value="Save" />
-                                <button id="addProject" onClick={() =>
-                                    this.setState({ addProject: true })}> + Add Project</button><br></br>
-                            </div>
+                            <label style={{margin:'0px',width:'100%'}}>Title*</label><br></br>
+                            <input style={{width:'100%'}} type="text" value={this.state.title} onChange={this.handletitle} required /><br></br>
+                            
+                            <label style={{margin:'0px', width:'100%'}}>Description</label><br></br>
+                            <input style={{width:'100%'}} type="text" value={this.state.description} onChange={this.handledescription} /><br></br>
+                            
+                            <label style={{margin:'0px', width:'100%'}}>Project Link*</label><br></br>
+                                <div className="form-group" style={{display:'inline'}}> 
+                                    <input style={{width:'100%'}} type="url" value={this.state.link} onChange={this.handlelink} required />
+                                    <div style={{textAlign:"center"}}>or</div>
+                                    <input style={{width:'100%'}} id="chooseFile" type="file" value={this.state.chooseFile}
+                                        onChange={this.handlechooseFile} required />
+                                </div>
+                            <Button style={{ margin:'auto',marginTop:'20px', display:'block'}} onClick={() =>this.setState({ addProject: true })}>+ Add Project</Button>
                         </form>
                     </div>
                     <Addproject
@@ -71,10 +74,10 @@ export default class Project extends Component {
         )
     }
 }
-
+        
 // submit ke place pr save aayega
-// Save Button Chota krna hai
-// Close button hatana hai
-// +Add Project button chota krna hai
+// Save Button Chota krna hai -- DONE
+// Close button hatana hai--DONE
+// +Add Project button chota krna hai--DONE
 // label ke niche ka margin hatana hai 
-//className="btn btn-primary my-3 mx-2 w-25 p-3"
+//className="btn btn-primary my-3 mx-2 w-25 p-3"--NOT NEEDED

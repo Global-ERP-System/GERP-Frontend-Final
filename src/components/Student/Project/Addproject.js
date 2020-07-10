@@ -33,25 +33,24 @@ export default class Addproject extends Component {
                     {...this.props}
                     size="md"
                     aria-labelledby="contained-modal-title-vcenter"
-                    centered
-                >
+                    centered >
                     <Modal.Header closeButton>
                         <Modal.Title id="contained-modal-title-vcenter" className="Add_ProjectHeading">
-                            ADD PROJECT
-        </Modal.Title>
+                            ADD PROJECT </Modal.Title>
                     </Modal.Header>
-                    <Modal.Body>
-                        <div className="container">
+                    <Modal.Body style={{background:'whitesmoke'}}>
+                        <div className="container" style={{padding:'0px', margin:'0px'}}>
                             <div className="Add_Project_container">
                                 <form onSubmit={this.handlesubmit}>
-                                    <label >Title*</label><br></br>
+                                    <label >Title*</label>
                                     <input type="text" style={{width:'100%'}} value={this.state.title} onChange={this.handletitle} required /><br></br>
-                                    <label >Description</label><br></br>
+                                    <label >Description</label>
                                     <input type="text" style={{width:'100%'}} value={this.state.description} onChange={this.handledescription} /><br></br>
-                                    <label >Project Link*</label><br></br>
+                                    <label >Project Link*</label>
                                     <input type="url" value={this.state.link}
                                         onChange={this.handlelink} required /><br></br>
-                                    <input id="Save_AddProject" type="submit" value="Save" />
+                                   {/* <input id="Save_AddProject" type="submit" value="Save" /> */}
+                                   <Button style={{marginTop:'10px'}}>Save</Button>
                                 </form>
                             </div>
                         </div>
