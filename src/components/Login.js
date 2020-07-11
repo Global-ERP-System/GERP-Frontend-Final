@@ -27,6 +27,7 @@ class Login extends Component {
                 return (
                     <Router>
                         <switch>
+                        <Route path="/main" component={MainComponent} />
                         <Route path="/Community" component={Community} />
                         <Route path="/SignUP" component={Signup} />
                         <Route path="/" exact render={() => {
@@ -54,7 +55,7 @@ class Login extends Component {
                                                     </div>
                                                 </div>
                                                 <div style={{textAlign:"center"}}>
-                                                <button type="button" class="btn btn-primary btn-sm"><a style={{color:'white'}} className="nav-link" href="/Community">Login In</a></button>
+                                                <button type="button" class="btn btn-primary btn-sm"><a style={{color:'white'}} className="nav-link" href="/main">Login In</a></button>
                                                 </div>
                                                 <hr ></hr>
                                                 <div style={{textAlign:"center"}}>

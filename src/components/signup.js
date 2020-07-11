@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import {Card,CardTitle,CardText,CardBody,Button,CardHeader,CardFooter} from 'reactstrap';
 import Community from './Student/Community/Community';
 import {BrowserRouter as Router,Route,Link,Switch,Redirect} from 'react-router-dom'
+import MainComponent from "./MainComponent";
+
 
 class Signup extends Component {
     constructor(props) {
@@ -33,6 +35,7 @@ class Signup extends Component {
                 return (
                     <Router>
                         <switch>
+                        <Route path="/main" component={MainComponent} />
                         <Route path="/Community" component={Community} />
                         <Route path="/signup" exact render={() => {
                             return(
@@ -82,7 +85,7 @@ class Signup extends Component {
                                                 </div>
                                                 
                                                 <div style={{textAlign:"center"}}>
-                                                <button type="button" class="btn btn-primary btn-sm"><a style={{color:'white'}} className="nav-link" href="/Community">Sign up</a></button>
+                                                <button type="button" class="btn btn-primary btn-sm"><a style={{color:'white'}} className="nav-link" href="/main">Sign up</a></button>
                                                 </div>
                                             </CardText> 
                                         </CardBody>   
