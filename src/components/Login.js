@@ -32,10 +32,11 @@ class Login extends Component {
                         <Route path="/SignUP" component={Signup} />
                         <Route path="/" exact render={() => {
                             return(
-                                <div classsName="container"style={{marginLeft:'20%',marginRight:'20%', marginBottom:'5%',marginTop:'5%'}}>
+                                <body style={{background:'#ff5200'}}>
+                                <div classsName="container"style={{marginLeft:'40%',marginBottom:'5%',marginTop:'5%'}}>
                                 <form >
                                     <Card>
-                                        <CardTitle><h2 className="text-center">WELCOME</h2></CardTitle>
+                                        <CardTitle><h2 className="text-center">LOGIN</h2></CardTitle>
                                         <CardBody>
                                             <CardText>
                                                 <div className="form-group">
@@ -55,9 +56,9 @@ class Login extends Component {
                                                     </div>
                                                 </div>
                                                 <div style={{textAlign:"center"}}>
-                                                <button type="button" class="btn btn-primary btn-sm"><a style={{color:'white'}} className="nav-link" href="/main">Login In</a></button>
+                                                <button type="button" class="btn btn-primary btn-sm"><a style={{color:'white'}} className="nav-link" href="/main">Login</a></button>
                                                 </div>
-                                                <hr ></hr>
+                                                <hr class="line"style={{border: '1px dashed grey'}}></hr>
                                                 <div style={{textAlign:"center"}}>
                                                 <a className="nav-link" href="/">Sign in with Google</a>
                                                 </div>
@@ -73,6 +74,7 @@ class Login extends Component {
                                 </form>
                                 
                             </div>
+                            </body>
                             ); 
                         }}/>
                         </switch>

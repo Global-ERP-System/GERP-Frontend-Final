@@ -41,8 +41,8 @@ class Signup extends Component {
                         <Route path="/Community" component={Community} />
                         <Route path="/signup" exact render={() => {
                             return(
-                                <body style={{background:'darkorange'}}>
-                                <div classsName="container"style={{padding:'6%'}}>
+                                <body style={{background:'#ff5200'}}>
+                                <div classsName="container">
                                 <form onSubmit={this.handleSubmit}>
                                     <Card>
                                         <CardTitle><h2 className="text-center">SIGN UP AND CREATE YOUR ACCOUNT</h2></CardTitle>
