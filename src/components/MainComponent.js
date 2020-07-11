@@ -38,7 +38,7 @@ import StudymaterialF from './Faculty/StudyMaterial/studyMaterialFaculty';
 import ResearchF from './Faculty/ResearchF/ResearchF'
 import RaiseReqF from './Faculty/RaiseReq/RaiseReq';
 
-
+import Login from './Login';
 
 
 import {BrowserRouter as Router,Route,Link,Switch} from 'react-router-dom'
@@ -115,9 +115,7 @@ class MainComponent extends Component{
                 </div>
             )
         }
-    
-    
-        
+       
     }
 }
 
