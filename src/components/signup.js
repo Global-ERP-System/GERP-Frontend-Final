@@ -41,7 +41,7 @@ class Signup extends Component {
                         <Route path="/Community" component={Community} />
                         <Route path="/signup" exact render={() => {
                             return(
-                                <body style={{background:'#ff5200'}}>
+                                <body style={{background:'#ff5200',marginTop:'9%',marginBottom:'5%'}}>
                                 <div classsName="container"style={{marginLeft:'6%',padding:'10%'}}>
                                 <form onSubmit={this.handleSubmit}>
                                     <Card>
