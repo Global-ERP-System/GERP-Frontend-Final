@@ -1,18 +1,26 @@
-.previous{
-    margin-top: 100px;
+
+
+.previous {
     margin-left: 20%;
     margin-right: 20%;
-    margin-bottom: 200px;
+    background-color:white;
 }
 
-.heading{
-    margin-top: 100px;
-    text-align:center;
-    
+.heading {
+    text-align: center;
 }
-.button{
+
+.button {
     align-self: center;
 }
-#upload{
-    color:red;
+
+#upload {
+    color: red;
+}
+
+#cgpa {
+    padding: 10px;
+}
+.container {
+    padding-top:5%;
 }
