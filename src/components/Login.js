@@ -27,16 +27,16 @@ class Login extends Component {
                 return (
                     <Router>
                         <switch>
-                        <Route path="/main" component={MainComponent} />
+                        {/* <Route path="/main" component={MainComponent} /> */}
                         <Route path="/Community" component={Community} />
                         <Route path="/SignUP" component={Signup} />
-                        <Route path="/" exact render={() => {
+                        <Route path="/finalfrontend" exact render={() => {
                             return(
-                                <body style={{background:'#ff5200'}}>
-                                <div classsName="container"style={{marginLeft:'40%',marginBottom:'5%',marginTop:'5%'}}>
+                                <body style={{background:'#ff5200',marginTop:'9%'}}>
+                                <div classsName="container"style={{marginLeft:'40%',marginBottom:'5%',marginTop:'5%',padding:'6%'}}>
                                 <form >
                                     <Card>
-                                        <CardTitle><h2 className="text-center">LOGIN</h2></CardTitle>
+                                        <CardTitle><h2 className="text-center"style={{fontFamily:'Montserrat Regular 700'}}>LOGIN</h2></CardTitle>
                                         <CardBody>
                                             <CardText>
                                                 <div className="form-group">
@@ -56,19 +56,24 @@ class Login extends Component {
                                                     </div>
                                                 </div>
                                                 <div style={{textAlign:"center"}}>
-                                                <button type="button" class="btn btn-primary btn-sm"><a style={{color:'white'}} className="nav-link" href="/main">Login</a></button>
+                                                <button type="button" class="btn btn-primary btn-sm"><a style={{color:'white'}} className="nav-link" href="/community">Login</a></button>
                                                 </div>
                                                 <hr class="line"style={{border: '1px dashed grey'}}></hr>
                                                 <div style={{textAlign:"center"}}>
                                                 <a className="nav-link" href="/">Sign in with Google</a>
                                                 </div>
+                                                <div className="circle"style={{height:'30px',width:'30px',borderRadius:'60%',backgroundColor:'#bbb',marginLeft:'47%'}}>
+                                                    <span style={{fontSize:'12px',paddingLeft:'6px'}}>OR</span>
+                                                </div>
                                                 <div style={{textAlign:"center"}}>
-                                                <a className="nav-link" href="/">Forgot Password ?</a>
+                                                <a className="nav-link" href="/">Not yet created an account?</a>
                                                 </div>
                                                 <div style={{textAlign:"center"}}>
                                                 <button type="button" class="btn btn-primary btn-sm"><a style={{color:'white'}} className="nav-link" href="/SignUP">Sign Up</a></button>
                                                 </div>
-                                            </CardText> 
+                                            </CardText>
+                                            <br></br>
+                                            <span style={{float:'right',fontSize:'12px'}}><a href="#">Forgot password?</a></span> 
                                         </CardBody>   
                                     </Card>
                                 </form>

@@ -19,7 +19,7 @@ import Project from './Student/Project/Project'
 import Studymaterial from './Student/Study/Studymaterial'
 import RaiseReq from './Student/RaiseReq/RaiseReq'
 import Relation from './Student/myrelations/Relation'
-import Recommendation from './Student/Recommendation/Recommendation'
+import Recommendation from './Student/Recommendation/Recommendation' 
 
 import Salary from './Faculty/Salary/Salary'
 import FeedbackF from './Faculty/FeedbackF/FeedbackF'
@@ -38,26 +38,34 @@ import StudymaterialF from './Faculty/StudyMaterial/studyMaterialFaculty';
 import ResearchF from './Faculty/ResearchF/ResearchF'
 import RaiseReqF from './Faculty/RaiseReq/RaiseReq';
 
+import Signup from './signup';
 import Login from './Login';
 
-
-import {BrowserRouter as Router,Route,Link,Switch} from 'react-router-dom'
+import {BrowserRouter as Router,Route,Link,Switch, Redirect} from 'react-router-dom'
 class MainComponent extends Component{
     constructor(props){
         super(props);
         this.state={
-            studentLoggedIn:true,
-            facultyLoggedIn:false
+            isLoggedIn:true
         }
+        this.onButtonClick = this.onButtonClick.bind(this);
+    }
+    onButtonClick() {
+        this.setState({
+            isLoggedIn: true
+            
+        });
     }
    
     render(){
-        if(this.state.studentLoggedIn){
+        if(this.state.isLoggedIn){         
             return(
                 <div>
                 <Header />
                 <Router>
-                <Switch>                   
+                <Switch>   
+                    <Route path='/SignUP'component={Signup} />
+                    <Route path='/finalfrontend'component={Login} />    
                     <Route path='/community' component={Community} />
                     <Route path='/intern' component={Intern} />
                     <Route path='/assignment' component ={Assignment} />
@@ -74,7 +82,7 @@ class MainComponent extends Component{
                     <Route path='/profile' component={Profile} />
                     <Route path='/fee' component={FeeStructure} />  
                 </Switch>
-                </Router>
+             </Router> 
                 <Footer />
                 </div>
             )
@@ -89,7 +97,7 @@ class MainComponent extends Component{
                                 <Route path='/appreciationf' component={AppreciationF} /> 
                                 <Route path='/assignmentf' component ={AssignmentF} />
                                 <Route path='/attendencef' component={AttendenceF}/>
-                                <Route path='/communityf' component={CommunityF} />
+                                <Route path='/frontendfinal/communityf' component={CommunityF} />
                                 <Route path='/examf' component={ExamMarksF}/>
                                 <Route path='/feedbackf' component={FeedbackF} />
                                 <Route path='/internshipf' component={InternshipF} />
@@ -109,13 +117,8 @@ class MainComponent extends Component{
             )
         }
         else{
-            return(
-                <div>
-                    <Navbars/>
-                </div>
-            )
+            return(<div></div>)
         }
-       
     }
 }
 

@@ -42,7 +42,7 @@ class Signup extends Component {
                         <Route path="/signup" exact render={() => {
                             return(
                                 <body style={{background:'#ff5200'}}>
-                                <div classsName="container">
+                                <div classsName="container"style={{marginLeft:'6%',padding:'10%'}}>
                                 <form onSubmit={this.handleSubmit}>
                                     <Card>
                                         <CardTitle><h2 className="text-center">SIGN UP AND CREATE YOUR ACCOUNT</h2></CardTitle>
@@ -74,20 +74,25 @@ class Signup extends Component {
                                                 </div>
                                                 <div className="form-group">
                                                     <div class="form-row">
-                                                        <div class="col" md={6}>
-                                                            <label>DOB :</label>
-                                                           <input type='password'class="form-control" placeholder="Enter your DOB" />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="form-group">
-                                                    <div class="form-row">
                                                         <div class="col">
-                                                            <label>Gender :</label>
-                                                           <input type='password'class="form-control" placeholder="Enter your Gender" />
+                                                            <label>DOB :</label>
+                                                           <input type='date' class="form-control" placeholder="Enter your DOB" style={{width:'25%'}}/>
                                                         </div>
                                                     </div>
-                                                </div>
+                                                
+                                                
+                                                    <div class="form-row">
+                                                        <div class="col"style={{marginLeft:'60%',marginTop:'-60px'}}>
+                                                            <label>Gender :</label>
+                                                            <select style={{width:'40%',marginLeft:'1%'}}>
+                                                                <option value="Male">Male</option>
+                                                                <option value="Female">Female</option>
+                                                                <option value="Transgender">Transgender</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                
                                                 <div className="form-group">
                                                     <div class="form-row">
                                                         <div class="col">
@@ -111,7 +116,7 @@ class Signup extends Component {
                                                 <CardTitle><p classs="agree"style={{marginLeft:'40px'}}>By Sign Up I agree with terms of use</p></CardTitle>
                                                 
                                                 <div style={{textAlign:"center"}}>
-                                                <button type="button" class="btn btn-primary btn-sm"><a style={{color:'white'}} className="nav-link" href="/main">Sign up</a></button>
+                                                <button type="button" class="btn btn-primary btn-sm"><a style={{color:'white'}} className="nav-link" href="/community">Sign up</a></button>
                                                 </div>
                                             </CardText> 
 
