@@ -8,8 +8,8 @@ class Previous extends Component {
             <body style={{ background: '#ff5200', marginTop: '2%', marginBottom: '2%', paddingBottom: '15px', paddingTop: '15px' }}>
 
 
-               
-                <div classsName="container" style={{marginLeft: '22%', marginRight: '22%', background: '#ffff'}}>
+
+                <div classsName="container" id="previousbox">
                     <div className="heading">
                         <br></br>
                         <br></br>
