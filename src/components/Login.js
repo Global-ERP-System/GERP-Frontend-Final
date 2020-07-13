@@ -33,7 +33,7 @@ class Login extends Component {
                         <Route path="/finalfrontend" exact render={() => {
                             return(
                                 <body style={{background:'#ff5200',marginTop:'9%'}}>
-                                <div classsName="container"style={{marginLeft:'10%',marginBottom:'5%',marginTop:'5%',padding:'10%',width:'80%'}}>
+                                <div classsName="container"style={{marginLeft:'11%',marginBottom:'5%',marginTop:'5%',padding:'10%',width:'80%'}}>
                                 <form >
                                     <Card>
                                         <CardTitle><h2 className="text-center"style={{fontFamily:'Montserrat Regular 700'}}>LOGIN</h2></CardTitle>
