@@ -31,13 +31,18 @@ class Community extends Component {
         return (
             <div id="main">
                 <div id="SideNavBar">
-
+                        <div className='container notif' style={{marginTop:'0px'}}>
+                            <h5>Notifications</h5>
+                        </div>
+                        <div className='conatiner ads'>
+                            <h5>ADs</h5>
+                        </div>
                 </div>
                 <div id="Contentbox">
                     <h1 className="Community">Community</h1>
                     <form onSubmit={this.handleSubmit}>
                         <div>
-                            <label className="commentheading">Comment</label>
+                            <label className="commentheading">Write a Post</label>
                             <textarea value={this.state.Comment}
                                 onChange={this.handlePostChange} cols="80" rows="5" placeholder="Write Something..."
                                 className="something"></textarea></div>
@@ -62,7 +67,22 @@ class Community extends Component {
 
                     </div>
                 </div>
-                <Container id="RightSidebox">
+                <div id="SideNavBar">
+                        <div className='container profile' style={{marginTop:'0px'}}>
+                         <h5>Profile</h5>
+                             {/*  <h6>&lt;NAME&gt;</h6><br/>
+                            
+                        <a href="/profile" >Edit profile</a><br></br><br></br>
+                        <label className="profilecontent">School/College : </label><br></br><br></br>
+                        <label className="profilecontent">Year/Standard : </label><br></br><br></br>
+                        <label className="profilecontent">Attendance : </label><br></br><br></br> */}
+                        </div>
+                        <div className='conatiner schedule'>
+                            <h5>My Schedule</h5>
+                        </div>
+                </div>
+
+             {  /* <Container id="RightSidebox">
                 <div >
                 
                     <div id="Notificationbox">
@@ -80,7 +100,7 @@ class Community extends Component {
                         <label className="profilecontent">Attendance : </label><br></br><br></br>
                     </div>
                 </div>
-                </Container>
+                </Container>  */ }
             </div>
 
         )

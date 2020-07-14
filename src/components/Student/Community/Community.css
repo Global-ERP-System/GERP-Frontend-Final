@@ -6,12 +6,36 @@
     margin-bottom:4em;
 }
 
+/*-------------------left side box---------------*/
+
+#SideNavBar{
+    margin:2%;
+    margin-top: 0px;
+    margin-bottom:0px ;
+}
+
+
 /* ------------------Center Box -------------------- */
 #Contentbox
 {
     width: 60%;
     margin: -45px 0px 50px 200px;
+    background: whitesmoke;
 }
+
+.notif{
+    
+    height:20em;
+    font-family: sans-serif;
+}
+
+.ads{
+    padding:6%;
+    margin-top:10%;
+    height:20em;
+    font-family: sans-serif;
+}
+
 .Community
 {
     background: rgb(236, 117, 5);
@@ -31,6 +55,7 @@
 
 .commentheading{
     font-family: sans-serif;
+    margin: 10px;
 }
 
 
@@ -59,6 +84,7 @@
     float: left;
     font-size: 15px;
     margin: 5px 5px 5px 10px;
+    padding: 0px;
 }
 #Visibility2
 {
@@ -88,11 +114,27 @@
 }
 
 #Recent{
-    margin-top: 3em;
+    margin-top: 5em;
     height:20em;
+    text-align: center;
 }
 
+
 /* -----------------------Right Side Box ------------- */
+.profile{
+    
+    height:20em;
+    font-family: sans-serif;
+}
+
+.schedule{
+    padding:6%;
+    margin-top:10%;
+    height:20em;
+    font-family: sans-serif;
+}
+
+/* -----------------------Right Side Box ------------- 
 #RightSidebox
 {
     display: block;
@@ -100,6 +142,9 @@
     width: 30%;
     height:25em;
     font-family: sans-serif;
+    margin:2%;
+    margin-top: 0px;
+    margin-bottom:0px ;
 }
 
 #Notificationbox
@@ -136,4 +181,4 @@
     font-size:20px;
     margin-top: -10px ;
     
-}
+}*/
