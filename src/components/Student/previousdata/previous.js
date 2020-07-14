@@ -1,24 +1,25 @@
 import React, { Component } from "react";
 import {Card,CardTitle,CardText,CardBody,CardHeader,CardFooter,Form,FormGroup,CustomInput,Label,Row,Col,Input,Button} from 'reactstrap';
 import './previous.css'
+import { faBorderAll } from "@fortawesome/free-solid-svg-icons";
 
 class Previous extends Component {
     render() {
         return (
-            <body style={{ background: '#ff5200', marginTop: '2%', marginBottom: '2%', paddingBottom: '15px', paddingTop: '15px' }}>
+            <body style={{ paddingBottom: '15px' }}>
 
 
 
-                <div classsName="container" id="previousbox">
-                    <div className="heading">
-                        <br></br>
-                        <br></br>
+                <div>
+                   
+                    <Form className="previous" >
+                        <center>
+                            <h1>Previous Data</h1>
+                            </center>
 
-                        <h1>Previous Data</h1>
-                        
-                        <hr style={{ width:'80%' }}></hr>
-                </div>
-                <Form className="previous" >
+                           
+                       
+                        <hr style={{ width: '80%' }}></hr>
                     <Row>
                         <h5>Graduation :</h5>
                         <div style={{ width: "100%" }}>
@@ -100,10 +101,8 @@ class Previous extends Component {
                     <div style={{ textAlign: "center" }}>
                         <button style={{ color: "white", backgroundColor: 'blue' }} type="submit" className="btn">Submit</button>
                             <br></br>
-                            <br></br>
-                            <br></br>
                         </div>
-                        <br></br>
+                        
                         
                 </Form>
                 </div>
