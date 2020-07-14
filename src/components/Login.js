@@ -29,11 +29,11 @@ class Login extends Component {
                         <switch>
                         {/* <Route path="/main" component={MainComponent} /> */}
                         <Route path="/Community" component={Community} />
-                        <Route path="/SignUP" component={Signup} />
-                        <Route path="/finalfrontend" exact render={() => {
+                        <Route path="/signup" component={Signup} />
+                        <Route path="/login" exact render={() => {
                             return(
-                                <body style={{background:'#ff5200',marginTop:'9%'}}>
-                                <div classsName="container"style={{marginLeft:'11%',marginBottom:'5%',marginTop:'5%',padding:'10%',width:'80%'}}>
+                                <body >
+                                <div classsName="container" style={{margin:'2% 15%'}}>
                                 <form >
                                     <Card>
                                         <CardTitle><h2 className="text-center"style={{fontFamily:'Montserrat Regular 700'}}>LOGIN</h2></CardTitle>
@@ -43,7 +43,7 @@ class Login extends Component {
                                                     <div class="form-row">
                                                       <div class="col">
                                                         <label>E-Mail:</label>
-                                                        <input type='email' class="form-control" placeholder="Enter Your E-Mail"/>
+                                                        <input type='email' class="form-control" placeholder="Enter Your E-Mail" />
                                                       </div>
                                                     </div>
                                                 </div>
@@ -56,7 +56,7 @@ class Login extends Component {
                                                     </div>
                                                 </div>
                                                 <div style={{textAlign:"center"}}>
-                                                <button type="button" class="btn btn-primary btn-sm" style={{backgroundColor:'#138808'}}><a style={{color:'white'}} className="nav-link" href="/community">Login</a></button>
+                                                <button type="button" class="btn btn-primary btn-sm"><a style={{color:'white'}} className="nav-link" href="/community">Login</a></button>
                                                 </div>
                                                 <hr class="line"style={{border: '1px dashed grey'}}></hr>
                                                 <div style={{textAlign:"center"}}>
@@ -69,7 +69,7 @@ class Login extends Component {
                                                 <a className="nav-link" href="/">Not yet created an account?</a>
                                                 </div>
                                                 <div style={{textAlign:"center"}}>
-                                                <button type="button" class="btn btn-primary btn-sm" style={{backgroundColor:'#138808'}}><a style={{color:'white'}} className="nav-link" href="/SignUP">Sign Up</a></button>
+                                                <button type="button" class="btn btn-primary btn-sm"><a style={{color:'white'}} className="nav-link" href="/signup">Sign Up</a></button>
                                                 </div>
                                             </CardText>
                                             <br></br>

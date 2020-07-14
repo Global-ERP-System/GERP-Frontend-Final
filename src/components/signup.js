@@ -41,8 +41,8 @@ class Signup extends Component {
                         <Route path="/Community" component={Community} />
                         <Route path="/signup" exact render={() => {
                             return(
-                                <body style={{background:'#ff5200',marginTop:'9%',marginBottom:'5%'}}>
-                                <div classsName="container"style={{marginLeft:'10%',padding:'10%',width:'80%'}}>
+                                <body >
+                                <div classsName="container" style={{margin:'2% 15%'}}>
                                 <form onSubmit={this.handleSubmit}>
                                     <Card>
                                         <CardTitle><h2 className="text-center">SIGN UP AND CREATE YOUR ACCOUNT</h2></CardTitle>
@@ -116,7 +116,7 @@ class Signup extends Component {
                                                 <CardTitle><p classs="agree"style={{marginLeft:'40px'}}>By Sign Up I agree with terms of use</p></CardTitle>
                                                 
                                                 <div style={{textAlign:"center"}}>
-                                                <button type="button" class="btn btn-primary btn-sm" style={{backgroundColor:'#138808'}}><a style={{color:'white'}} className="nav-link" href="/community">Sign up</a></button>
+                                                <button type="button" class="btn btn-primary btn-sm"><a style={{color:'white'}} className="nav-link" href="/community">Sign up</a></button>
                                                 </div>
                                             </CardText> 
 

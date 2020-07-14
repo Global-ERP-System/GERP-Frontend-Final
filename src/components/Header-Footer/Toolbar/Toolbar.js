@@ -2,7 +2,7 @@ import React from 'react';
 import DrawerToggleButton from  '../SideDrawer/DrawerToggleButton';
 import './Toolbar.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBell } from "@fortawesome/free-solid-svg-icons";
+import { faBell, faHome, faUser, faBook, faBuilding } from "@fortawesome/free-solid-svg-icons";
 const toolbar = props => (
     <header className="toolbar">
         <nav className="toolbar_navigation">
@@ -11,10 +11,10 @@ const toolbar = props => (
             </div>
             <div className="toolbar_logo"></div>
             <div className="dropdown">
-                <span><a href="/community">Home</a></span>
+                <span><a href="/community"><FontAwesomeIcon icon={faHome} style={{marginRight:'0.25em'}} />Home</a></span>
               </div>
             <div className="dropdown" >
-                <span>Academics</span>
+                <span><FontAwesomeIcon icon={faBook} style={{marginRight:'0.25em'}}/> Academics</span>
                 <div className="dropdown-content">
                     <p><a className="links" href='/previous'>Previous Data</a></p>
                     <p><a className="links" href='/attendance'>Attendance</a></p>
@@ -25,7 +25,7 @@ const toolbar = props => (
                 </div>
             </div>
             <div className="dropdown">
-                <span>Campus</span>
+                <span><FontAwesomeIcon icon={faBuilding} style={{marginRight:'0.25em'}}/>Campus</span>
                 <div className="dropdown-content">
                     <p><a className="links" href='/assignment'>Assignment</a></p>
                     <p><a className="links" href='/project'>Projects</a></p>
@@ -35,7 +35,7 @@ const toolbar = props => (
                 </div>
             </div>
             <div className='dropdown'>
-                <a href='/profile'>Profile</a>
+                <a href='/profile'><FontAwesomeIcon icon={faUser} style={{marginRight:'0.25em'}}/> Profile</a>
             </div>
             <div className="spacer"/>
             <div className = "toolbar_nav-items">
