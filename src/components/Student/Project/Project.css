@@ -6,34 +6,52 @@
 
 /*.Project_container
 {
-     border: 3px solid black; 
-     background-color: blanchedalmond;  
+     border: 3px solid black;
+     background-color: blanchedalmond;
 }*/
+
+
+.project{
+    margin-top: 102px;
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:ital,wght@1,600&family=PT+Sans+Narrow:wght@700&family=Source+Sans+Pro&display=swap');
+    font-family: 'Montserrat Regular 400', sans-serif;
+}
+
+.project h1{
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:ital,wght@1,600&family=PT+Sans+Narrow:wght@700&family=Source+Sans+Pro&display=swap');
+    font-family: 'Montserrat Bold 700', sans-serif;
+}
 
 .Project_container{
     width:100%;
+    padding-left: 140px;
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:ital,wght@1,600&family=PT+Sans+Narrow:wght@700&family=Source+Sans+Pro&display=swap');
+    font-family: 'Montserrat Regular 400', sans-serif;
 }
+
 .Project_container input
-{
-   /* border: 1px solid black; */
-    /* border-radius: 10px; */
+{border: 1px solid black;
+    border-radius: 3px;
     width: 45%;
+    border: 0px;
+    padding-top: 1px;
 }
 
 .Project_container label
-{ 
+{
     /* border: 3px solid yellow; */
     width: 45%;
     font-size: 18px;
     text-align: initial;
     font-weight: 400;
+    padding-top: 5px;
 }
 
 .submitbtn
 {
     width: 10px;
   /*  border: 3px solid black;*/
-} 
+}
 /* -- For Choose File button ---------- */
 #chooseFile
 {
@@ -41,14 +59,14 @@
     background-color: #d63232;
     color: blanchedalmond;
     /*margin: 35px 0px; */
-} 
+}
 /* ------------ Div for button ex : save add project------------- */
 .Display_Button{
     display: flex;
     width: 30%;
     flex-direction: row;
     margin: 20px 100px;
-    /* border: 2px solid red; */ 
+    /* border: 2px solid red; */
 }
 #Save
 {
@@ -63,7 +81,7 @@ margin: 0px 60px 0px 75px;
     background-color:  #0074d9;
     color: white;
     border: 1px solid black;
-} 
+}
 /* --------- In Pop Pup window -------------- */
 .Add_Project_container
 {

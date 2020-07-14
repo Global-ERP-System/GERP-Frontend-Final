@@ -43,11 +43,11 @@ export default class Addproject extends Component {
                             <div className="Add_Project_container">
                                 <form onSubmit={this.handlesubmit}>
                                     <label >Title*</label>
-                                    <input type="text" style={{width:'100%'}} value={this.state.title} onChange={this.handletitle} required /><br></br>
+                                    <input type="text" style={{width:'100%',border:'2px solid black'}} value={this.state.title} onChange={this.handletitle} required /><br></br>
                                     <label >Description</label>
-                                    <input type="text" style={{width:'100%'}} value={this.state.description} onChange={this.handledescription} /><br></br>
+                                    <input type="text" style={{width:'100%',border:'2px solid black'}} value={this.state.description} onChange={this.handledescription} /><br></br>
                                     <label >Project Link*</label>
-                                    <input type="url" value={this.state.link}
+                                    <input type="url" style={{border:'2px solid black', borderRadius:'3px'}}  value={this.state.link}
                                         onChange={this.handlelink} required /><br></br>
                                    {/* <input id="Save_AddProject" type="submit" value="Save" /> */}
                                    <Button style={{marginTop:'10px'}}>Save</Button>
