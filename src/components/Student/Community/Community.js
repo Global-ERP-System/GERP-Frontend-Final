@@ -81,9 +81,14 @@ class Community extends Component {
 
                     </div>
                 </div>
-                <div id="SideNavBar">
+                <div id="SideNavBar" style={{width:'22%',marginLeft:'10%'}}>
                         <div className='container profile' style={{marginTop:'0px'}}>
-                         <h5>Profile</h5>
+                         <h5 id="notify" style={{marginLeft:'80px'}}>Profile</h5>
+                         <span>Name: Alok Gupta</span>
+                         <div className="container profile_pic"style={{width:'35%', marginLeft: '15%',marginTop:'-6%'}}></div>
+
+                         
+
                              {/*  <h6>&lt;NAME&gt;</h6><br/>
                             
                         <a href="/profile" >Edit profile</a><br></br><br></br>

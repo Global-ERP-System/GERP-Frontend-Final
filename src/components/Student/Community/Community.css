@@ -139,6 +139,12 @@
     font-family: sans-serif;
 }
 
+.profile_pic
+{
+    border: 1px solid green;
+    height: 30%;
+}
+
 .schedule{
     padding:6%;
     margin-top:10%;
