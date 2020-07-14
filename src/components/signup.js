@@ -41,17 +41,17 @@ class Signup extends Component {
                         <Route path="/Community" component={Community} />
                         <Route path="/signup" exact render={() => {
                             return(
-                                <body style={{background:'#ff5200',marginTop:'9%',marginBottom:'5%'}}>
-                                <div classsName="container"style={{marginLeft:'10%',padding:'10%',width:'80%'}}>
+                                <body style={{margin:'-6% 15%'}}>
+                                <div classsName="container"style={{marginLeft:'-5%',padding:'10%',width:'120%',height:'60%'}}>
                                 <form onSubmit={this.handleSubmit}>
                                     <Card>
-                                        <CardTitle><h2 className="text-center">SIGN UP AND CREATE YOUR ACCOUNT</h2></CardTitle>
+                                        <CardTitle><h2 className="text-center"style={{fontFamily:'Montserrat Regular 700'}}>SIGN UP AND CREATE YOUR ACCOUNT</h2></CardTitle>
                                         <CardBody>
                                             <CardText>
                                             <div className="form-group">
                                                     <div class="form-row">
                                                       <div class="col">
-                                                        <label>Name:</label>
+                                                        <label style={{fontFamily:'PT Sans Narrow Bold 700'}}>Name:</label>
                                                         <input class="form-control" placeholder="Enter Your Name" />
                                                       </div>
                                                     </div>
@@ -59,7 +59,7 @@ class Signup extends Component {
                                                 <div className="form-group">
                                                     <div class="form-row">
                                                       <div class="col">
-                                                        <label>E-Mail:</label>
+                                                        <label style={{fontFamily:'PT Sans Narrow Bold 700'}}>E-Mail:</label>
                                                         <input type='email' class="form-control" placeholder="Enter Your E-Mail" />
                                                       </div>
                                                     </div>
@@ -67,7 +67,7 @@ class Signup extends Component {
                                                 <div className="form-group">
                                                     <div class="form-row">
                                                         <div class="col">
-                                                            <label>Passsword :</label>
+                                                            <label style={{fontFamily:'PT Sans Narrow Bold 700'}}>Passsword :</label>
                                                            <input type='password'class="form-control" placeholder="Enter your Password" />
                                                         </div>
                                                     </div>
@@ -75,7 +75,7 @@ class Signup extends Component {
                                                 <div className="form-group">
                                                     <div class="form-row">
                                                         <div class="col">
-                                                            <label>DOB :</label>
+                                                            <label style={{fontFamily:'PT Sans Narrow Bold 700'}}>DOB :</label>
                                                            <input type='date' class="form-control" placeholder="Enter your DOB" style={{width:'25%'}}/>
                                                         </div>
                                                     </div>
@@ -83,7 +83,7 @@ class Signup extends Component {
                                                 
                                                     <div class="form-row">
                                                         <div class="col"style={{marginLeft:'60%',marginTop:'-60px'}}>
-                                                            <label>Gender :</label>
+                                                            <label style={{fontFamily:'PT Sans Narrow Bold 700'}}>Gender :</label>
                                                             <select style={{width:'40%',marginLeft:'1%'}}>
                                                                 <option value="Male">Male</option>
                                                                 <option value="Female">Female</option>
@@ -96,7 +96,7 @@ class Signup extends Component {
                                                 <div className="form-group">
                                                     <div class="form-row">
                                                         <div class="col">
-                                                            <label>I am:</label>
+                                                            <label style={{fontFamily:'PT Sans Narrow Bold 700'}}>I am:</label>
                                                            <input type='radio'name="role"value="Student"style={{marginLeft:'20px'}}/> Student
                                                            <input type='radio'name="role"value="Staff"style={{marginLeft:'20px'}}/> Staff
                                                            <input type='radio'name="role"value="Parent"style={{marginLeft:'20px'}}/> Parent
@@ -107,20 +107,20 @@ class Signup extends Component {
                                                 <div className="form-group">
                                                     <div class="form-row">
                                                         <div class="col">
-                                                            <label>I have a campus code:</label>
+                                                            <label style={{fontFamily:'PT Sans Narrow Bold 700'}}>I have a campus code:</label>
                                                            <input type='password'name="code" placeholder="Enter your campus code"style={{marginLeft:'20px'}}/>
                                                         </div>
                                                     </div>
                                                 </div>
 
-                                                <CardTitle><p classs="agree"style={{marginLeft:'40px'}}>By Sign Up I agree with terms of use</p></CardTitle>
+                                                <CardTitle><p classs="agree"style={{marginLeft:'40px',fontFamily:'PT Sans Narrow Bold 700'}}>By Sign Up I agree with terms of use</p></CardTitle>
                                                 
                                                 <div style={{textAlign:"center"}}>
                                                 <button type="button" class="btn btn-primary btn-sm" style={{backgroundColor:'#138808'}}><a style={{color:'white'}} className="nav-link" href="/community">Sign up</a></button>
                                                 </div>
                                             </CardText> 
 
-                                            <a href="#" class="request">Request for a Master Account</a>
+                                            <a href="#" class="request" style={{fontFamily:'PT Sans Narrow Bold 700'}}>Request for a Master Account</a>
                                             
                                         </CardBody>   
                                     </Card>

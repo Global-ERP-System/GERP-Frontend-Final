@@ -30,7 +30,7 @@ class Login extends Component {
                         {/* <Route path="/main" component={MainComponent} /> */}
                         <Route path="/Community" component={Community} />
                         <Route path="/signup" component={Signup} />
-                        <Route path="/finalfrontend" exact render={() => {
+                        <Route path="/login" exact render={() => {
                             return(
                                 <body style={{margin:'-6% 15%'}}>
                                 <div classsName="container"style={{marginLeft:'11%',padding:'10%',width:'80%',height:'60%'}}>

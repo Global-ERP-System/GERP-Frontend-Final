@@ -64,8 +64,8 @@ class MainComponent extends Component{
                 <Header />
                 <Router>
                 <Switch>   
-                    <Route path='/SignUP'component={Signup} />
-                    <Route path='/finalfrontend'component={Login} />    
+                    <Route path='/signup'component={Signup} />
+                    <Route path='/login'component={Login} />    
                     <Route path='/community' component={Community} />
                     <Route path='/intern' component={Intern} />
                     <Route path='/assignment' component ={Assignment} />
@@ -81,6 +81,7 @@ class MainComponent extends Component{
                     <Route path='/recommendation' component={Recommendation} /> 
                     <Route path='/profile' component={Profile} />
                     <Route path='/fee' component={FeeStructure} />  
+                    <Redirect to="/login" />
                 </Switch>
              </Router> 
                 <Footer />
