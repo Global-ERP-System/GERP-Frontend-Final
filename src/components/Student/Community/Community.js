@@ -30,11 +30,25 @@ class Community extends Component {
     render() {
         return (
             <div id="main">
-                <div id="SideNavBar">
-                        <div className='container notif' style={{marginTop:'0px'}}>
-                            <h5>Notifications</h5>
+                <div id="SideNavBar" style={{width:'18%'}}>
+                        <div className='container notif' style={{marginTop:'-2px'}}>
+                            <h5 id='notify'>Notifications</h5>
+
+                            
+                            <ul id="notify-points" style={{marginLeft:'-84%',marginTop:'25px'}}>
+                                <marquee direction='up' scrollamount='4'>
+                                <li>Attendance updated for Sem 1</li><br></br>
+                                <li>Attendance updated for Sem 1</li><br></br>
+                                <li>Attendance updated for Sem 1</li><br></br>
+                                <li>Attendance updated for Sem 1</li><br></br>
+                                <li>Attendance updated for Sem 1</li><br></br>
+                                </marquee>
+                            </ul>
+                            
+
                         </div>
-                        <div className='conatiner ads'>
+                        <br></br>
+                        <div className='conatiner ads' style={{}}>
                             <h5>ADs</h5>
                         </div>
                 </div>
