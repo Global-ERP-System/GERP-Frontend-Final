@@ -30,8 +30,7 @@
 /* ------------------Center Box -------------------- */
 #Contentbox
 {
-    width: 60%;
-    margin: -45px 0px 50px 200px;
+    margin: -70px 0px 50px 200px;
     background: whitesmoke;
 }
 
@@ -141,8 +140,7 @@
 
 .profile_pic
 {
-    border: 1px solid green;
-    height: 30%;
+    height: 10%;
 }
 
 .schedule{

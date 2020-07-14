@@ -48,8 +48,9 @@ class Community extends Component {
 
                         </div>
                         <br></br>
-                        <div className='conatiner ads' style={{}}>
-                            <h5>ADs</h5>
+                        <div className='container ads' style={{height:'310%',marginTop:'-3%'}}>
+                            {/* <h5>ADs</h5> */}
+                            <img src="https://camblycontent.files.wordpress.com/2017/02/advertising-word-block.jpg?w=640" style={{height:'110%',marginTop:'-5%',marginLeft:'-2%',width:'103%'}}></img>
                         </div>
                 </div>
                 <div id="Contentbox">
@@ -83,11 +84,15 @@ class Community extends Component {
                 </div>
                 <div id="SideNavBar" style={{width:'22%',marginLeft:'10%'}}>
                         <div className='container profile' style={{marginTop:'0px'}}>
-                         <h5 id="notify" style={{marginLeft:'80px'}}>Profile</h5>
-                         <span>Name: Alok Gupta</span>
-                         <div className="container profile_pic"style={{width:'35%', marginLeft: '15%',marginTop:'-6%'}}></div>
-
+                         <h5 id="notify" style={{marginLeft:'90px'}}>Profile</h5>
                          
+                         <div className="container profile_pic">
+                             <img src="https://www.freeiconspng.com/uploads/user-login-icon-14.png" style={{marginLeft: '30%',marginTop:'-93%'}}></img>
+                         </div>
+
+                         {/* <div id="profile_details"style={{width:'30%'}}>
+                           
+                         </div> */}
 
                              {/*  <h6>&lt;NAME&gt;</h6><br/>
                             
