@@ -84,7 +84,7 @@ class MainComponent extends Component{
                     <Redirect to="/login" />
                 </Switch>
              </Router> 
-                <Footer />
+            {  /*  <Footer />  */}
                 </div>
             )
 
