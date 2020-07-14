@@ -1,9 +1,12 @@
 
 
 .previous {
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 22%;
+    margin-right: 22%;
     background-color:white;
+    padding:30px;
+    border:solid 1px #b1b2b2;
+    
 }
 
 .heading {
@@ -20,13 +23,4 @@
 
 #cgpa {
     padding: 10px;
-}
-.container {
-    padding-top:5%;
-}
-#previousbox{
-    margin-left:22%;
-    margin-right:22%;
-    background-color:#ffff;
-
 }

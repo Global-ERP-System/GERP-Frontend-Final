@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './Community.css'
-import "@reach/menu-button/styles.css";
+//import "@reach/menu-button/styles.css";
 import {Container} from 'reactstrap';
 
 
