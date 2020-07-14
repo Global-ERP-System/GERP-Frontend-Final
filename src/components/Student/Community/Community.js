@@ -53,8 +53,8 @@ class Community extends Component {
                             <img src="https://camblycontent.files.wordpress.com/2017/02/advertising-word-block.jpg?w=640" style={{height:'110%',marginTop:'-5%',marginLeft:'-2%',width:'103%'}}></img>
                         </div>
                 </div>
-                <div id="Contentbox">
-                    <h1 className="Community">Community</h1>
+                <div id="Contentbox"style={{height:'300px',marginRight:'-135px',marginTop:'-60px'}}>
+                    <h3 className="Community"style={{fontSize:'28px',padding:'2px'}}>Community Forum</h3>
                     <form onSubmit={this.handleSubmit}>
                         <div>
                             <label className="commentheading">Write a Post</label>
@@ -66,8 +66,8 @@ class Community extends Component {
                         </div>
                         <br></br>
                         <div>
-                            <label id="Visibility1">Visibility:</label>
-                            <select value={this.state.visibility} onChange={this.handleVisibilityChange} id="Visibility2">
+                            <label id="Visibility1"style={{marginTop:'4%'}}>Visibility:</label>
+                            <select value={this.state.visibility} onChange={this.handleVisibilityChange} id="Visibility2" style={{marginTop:'3%'}}>
                                 <option value="Public">Public </option>
                                 <option value="ClassMate">Classmates</option>
                                 <option value="SubOrdinates">Subordinates</option>
@@ -87,7 +87,7 @@ class Community extends Component {
                          <h5 id="notify" style={{marginLeft:'90px'}}>Profile</h5>
                          
                          <div className="container profile_pic">
-                             <img src="https://www.freeiconspng.com/uploads/user-login-icon-14.png" style={{marginLeft: '30%',marginTop:'-93%'}}></img>
+                             <img src="https://www.freeiconspng.com/uploads/user-login-icon-14.png" style={{marginLeft: '40%',marginTop:'-85%'}}></img>
                          </div>
 
                          {/* <div id="profile_details"style={{width:'30%'}}>
@@ -101,8 +101,9 @@ class Community extends Component {
                         <label className="profilecontent">Year/Standard : </label><br></br><br></br>
                         <label className="profilecontent">Attendance : </label><br></br><br></br> */}
                         </div>
-                        <div className='conatiner schedule'>
-                            <h5>My Schedule</h5>
+                        <div className='container schedule' style={{height:'302%',marginTop:'5%'}}>
+                            <img src="https://toppng.com/uploads/preview/free-icons-png-calendar-11562886581wuta4pegbh.png" style={{marginTop:'-25px',marginLeft:'-8px'}}></img>
+                            <h5 id="notify"style={{marginRight:'20px'}}>My Schedule</h5>
                         </div>
                 </div>
 
