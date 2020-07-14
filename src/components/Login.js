@@ -32,8 +32,8 @@ class Login extends Component {
                         <Route path="/signup" component={Signup} />
                         <Route path="/finalfrontend" exact render={() => {
                             return(
-                                <body style={{margin:'-3% 15%'}}>
-                                <div classsName="container"style={{marginLeft:'11%',marginBottom:'5%',padding:'10%',width:'80%',height:'80%'}}>
+                                <body style={{margin:'-6% 15%'}}>
+                                <div classsName="container"style={{marginLeft:'11%',padding:'10%',width:'80%',height:'60%'}}>
                                 <form >
                                     <Card>
                                         <CardTitle><h2 className="text-center"style={{fontFamily:'Montserrat Regular 700'}}>LOGIN</h2></CardTitle>
