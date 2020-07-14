@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './FeeStructure.css'
-import { DropdownButton, ButtonGroup, Dropdown } from 'react-bootstrap';
+import { DropdownButton, ButtonGroup, Dropdown, Form, FormGroup, CustomInput, Label, Row, Col, Input, Button } from 'react-bootstrap';
 import {MDBFormInline} from 'mdbreact';
 
 export default class FeeStructure extends Component {
@@ -50,17 +50,34 @@ export default class FeeStructure extends Component {
 
     render() {
         return (
-            <div style={{marginLeft:"25%",marginRight:"25%",height:"100%"}}>
-                <br></br>
+            <div style={{ marginLeft: "20%", marginRight: "20%", height: "100%", paddingLeft: '10px', paddingRight: '10px'}}>
                 <h1 className="Heading" style={{textAlign:"center"}}>Fee Structure</h1>
-                <br></br>
+                <hr style={{ width: '80%' }}></hr>
                 <div className="Fee_Structure_Box">
                     <form onSubmit={this.handlesubmit}>
-                        <div className="large_input_box">
-                            <input className="form-control" value={this.state.name} onChange={this.handlename} required placeholder="Name" /><br></br>
-                            <input className="form-control" value={this.state.enroll} onChange={this.handleenroll} required placeholder="Enrollment No." /><br></br>
+                        <Row>
+                            <Col sm={5}>
+                                <label style={{ fontWeight: '700' }}>Name:</label>
+                            </Col>
+                            <Col sm={7}>
+                                <input className="form-control" value={this.state.name} onChange={this.handlename} required placeholder="Name" />
+                            </Col>
 
-                            <div style={{marginRight:"25%",marginLeft:"25%"}}>
+                        </Row>
+                        <br></br>
+                        <Row>
+                            <Col sm={5}>
+                                <label style={{ fontWeight: '700' }}>Enrollment No.:</label>
+                            </Col>
+                            <Col sm={7}>
+                                <input className="form-control" value={this.state.enroll} onChange={this.handleenroll} required placeholder="Enrollment No." />
+                            </Col>
+
+                        </Row>
+                       
+                        <br></br>
+                        <div className="large_input_box">
+                           <div style={{marginLeft:"50%"}}>
                             
                                 <MDBFormInline>
                                 <select title="Semester" className="form-control" name="Semester" placeholder="Select semester" >
@@ -75,29 +92,71 @@ export default class FeeStructure extends Component {
                                 </MDBFormInline>
                             
                             </div>
-                            <br/>
-                            <input className="form-control"  value={this.state.course}
-                                onChange={this.handlecourse} required placeholder="Course" /><br></br>
+                            
+                           <br></br>
 
                         </div>
+                        <Row>
+                            <Col sm={5}>
+                                <label style={{ fontWeight: '700' }}>Course:</label>
+                            </Col>
+                            <Col sm={7}>
+                                <input className="form-control" value={this.state.course}
+                                    onChange={this.handlecourse} required placeholder="Course" />
+                            </Col>
+
+                        </Row>
+                        <br></br>
 
                         <div >                   
-                            <label> Previous Fee Status:&nbsp;&nbsp;&nbsp;</label>
-                            <input className="form-control" value={this.state.Previousfeestatus}
-                                onChange={this.handlePreviousfeestatus} required /><br></br>
+                            <Row>
+                                <Col sm={5}>
+                                    <p style={{ fontWeight: '700' }}> Previous Fee Status:&nbsp;&nbsp;&nbsp;</p>
+                                </Col>
+                                <Col sm={7}>
+                                    <input className="form-control" value={this.state.Previousfeestatus}
+                                        onChange={this.handlePreviousfeestatus} required />
+                                </Col>
 
+                            </Row>
+                            <br></br>
+                            <Row>
+                                <Col sm={5}>
+                                    <label style={{ fontWeight: '700' }}> Due Fee Status:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                </Col>
+                                <Col sm={7}>
+                                    <input className="form-control" value={this.state.duefeestatus}
+                                        onChange={this.handleduefeestatus} required />
+                                </Col>
 
-                            <label >Due Fee Status:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                            <input className="form-control" value={this.state.duefeestatus}
-                                onChange={this.handleduefeestatus} required /><br></br>
+                            </Row>
+                            <br></br>
+                            <Row>
+                                <Col sm={5}>
+                                    <label style={{ fontWeight: '700' }}> Due Fee Amount:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                </Col>
+                                <Col sm={7}>
+                                    <input className="form-control" value={this.state.duefeeamount}
+                                        onChange={this.handleduefeeamount} required />
+                                </Col>
 
-                            <label >Due Fee Amount:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                            <input className="form-control" value={this.state.duefeeamount}
-                                onChange={this.handleduefeeamount} required /><br></br>
+                            </Row>
 
-                            <label >Last Date for Payment:</label>
-                            <input className="form-control" value={this.state.lastdateforpayment}
-                                onChange={this.handlelastdateforpayment} required /><br></br>
+                            
+                            <br></br>
+                            <Row>
+                                <Col sm={5}>
+                                    <label style={{ fontWeight: '700' }}>Last Date for Payment:</label>
+                                </Col>
+                                <Col sm={7}>
+                                    <input className="form-control" value={this.state.lastdateforpayment}
+                                        onChange={this.handlelastdateforpayment} required />
+                                </Col>
+
+                            </Row>
+
+                           
+                            <br></br>
                         </div>   
                     
                         <div className="Display_Button">

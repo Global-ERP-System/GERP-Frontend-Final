@@ -5,36 +5,30 @@ import { faBorderAll } from "@fortawesome/free-solid-svg-icons";
 
 class Previous extends Component {
     render() {
-        return (
-            <body style={{ paddingBottom: '15px' }}>
-
-
-
-                <div>
-                   
-                    <Form className="previous" >
-                        <center>
-                            <h1>Previous Data</h1>
-                            </center>
-
-                           
-                       
-                        <hr style={{ width: '80%' }}></hr>
+        return (            
+                 <Form className="previous" >
+                <center>  <h1>Previous Data</h1>    </center>
+                <hr style={{ width:'80%' }}></hr>
                     <Row>
-                        <h5>Graduation :</h5>
-                        <div style={{ width: "100%" }}>
+                    <Col sm={5}>
+                        <p style={{ fontWeight:'700'}}>Graduation:</p>
+                        </Col>
+                        <Col sm={7}>
                             <input className="form-control" id="graduation" placeholder="Graduation..." />
-                        </div>
+                        </Col>
+                       
                     </Row>
                     <br></br>
                     <Row>
-                        <h5>Senior Secondary school :</h5>
-                        <div style={{ width: "100%" }}>
+                        <Col sm={5}>
+                        <p style={{ fontWeight: '700' }}> Senior Secondary school :</p>
+                        </Col>
+                        <Col sm={7}>
                             <input className="form-control" id="ssc" placeholder="Senior secondary school..." />
-                        </div>
+                        </Col>
                     </Row>
                     <br></br>
-                    <Row>
+                    <Row style={{marginTop:'5px'}}>
                         <Col sm={4}>
                             <select className="form-control" id="stream" name="stream" placeholder="select stream">
                                 <option value="science">Select Stream</option>
@@ -55,22 +49,26 @@ class Previous extends Component {
                         </Col>
 
                         <Col sm={1} id="cgpa">
-                            CGPA
-                    </Col>
+                        <p style={{ fontWeight: '700' }}> CGPA</p>
+                        </Col>
                         <Col sm={3}>
                             <input className="form-control" name="address" id="ssc" placeholder="Enter GPA" />
-                        </Col>
+                        </Col>                            
                     </Row>
                     <br></br>
-                    <Row>
 
-                        <h5>Secondary school :</h5>
-                        <div style={{ width: '100%' }}>
+                    <Row>
+                        <Col sm={5}>
+                        <p style={{ fontWeight: '700' }}>Secondary school :</p>
+                        </Col>
+                        <Col sm={7}>
                             <input className="form-control" id="sc" placeholder="Secondary school..." />
-                        </div>
+                        </Col>
+
                     </Row>
                     <br></br>
-                    <Row>
+
+                    <Row style={{ marginTop: '5px' }}>
 
                         <Col sm={4}>
                             <select className="form-control" id="board" name="board">
@@ -83,30 +81,33 @@ class Previous extends Component {
                         </Col>
 
 
-                        <Col sm={1} id="cgpa">
-                            CGPA
-                    </Col>
+                        <Col sm={1} id="cgpa" style={{ marginLeft:'200px' }}>
+                        <p style={{ fontWeight: '700' }}>CGPA</p>
+                        </Col>
                         <Col sm={3}>
                             <input className="form-control" name="address" id="ssc" placeholder="Enter GPA" />
                         </Col>
+                            
                     </Row>
                     <br></br>
+
                     <Row>
-                        <h5>Diploma Course :</h5>
-                        <div style={{ width: '100%' }}>
+                        <Col sm={5}>
+                        <p style={{ fontWeight: '700' }}>Diploma Course :</p>
+                        </Col>
+                        <Col sm={7}>
                             <input className="form-control" id="sc" placeholder="Diploma" />
-                        </div>
+                        </Col>
+
                     </Row>
+                    <br></br>
                     <br></br>
                     <div style={{ textAlign: "center" }}>
-                        <button style={{ color: "white", backgroundColor: 'blue' }} type="submit" className="btn">Submit</button>
+                        <button  style={{ color: "white", backgroundColor: 'blue' }} type="submit" className="btn">Submit</button>
                             <br></br>
-                        </div>
-                        
-                        
-                </Form>
-                </div>
-                </body>
+                    </div>
+                 </Form>
+            
         );
     }
 }

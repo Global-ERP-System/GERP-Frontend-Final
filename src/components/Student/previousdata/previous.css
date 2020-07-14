@@ -3,10 +3,10 @@
 .previous {
     margin-left: 22%;
     margin-right: 22%;
-    background-color:white;
-    padding:30px;
-    border:solid 1px #b1b2b2;
-    
+    background-color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top:10px;
 }
 
 .heading {
@@ -23,4 +23,9 @@
 
 #cgpa {
     padding: 10px;
+    
+}
+row{
+    margin:60px;
+    padding:60px;
 }

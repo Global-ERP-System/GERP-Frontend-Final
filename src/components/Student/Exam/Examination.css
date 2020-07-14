@@ -29,7 +29,7 @@ background-color: lightblue;
     margin: 0px 5px 0px 25px;
 }
 .valueFeild_Backlog h3, .valueFeild_Grading h3, .valueFeild_Upcomingexam h3{
-    margin: 0px 0px 0px 225px
+    margin: 0px 0px 0px 210px;
 }
 .Values_Backlog ,.Values_Grading , .Values_Upcomingexam {
     display: flex;
@@ -38,5 +38,5 @@ background-color: lightblue;
    background-color: beige; 
 }
 .Values_Backlog h3, .Values_Grading h3 , .Values_Upcomingexam h3 {
-    margin: 0px 161px 0px 87px
+    margin: 0px 161px 0px 100px;
 }
