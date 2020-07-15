@@ -55,7 +55,7 @@ class Community extends Component {
                             <img src="https://camblycontent.files.wordpress.com/2017/02/advertising-word-block.jpg?w=640" style={{height:'110%',marginTop:'-5%',marginLeft:'-2%',width:'103%'}}></img>
                         </div>
                 </div>
-                <div id="Contentbox"style={{height:'313px',marginRight:'-135px',marginTop:'-60px'}}>
+                <div id="Contentbox"style={{height:'316px',marginRight:'-135px',marginTop:'-60px'}}>
                     <h3 className="Community"style={{fontSize:'28px',padding:'2px'}}>Community Forum</h3>
                     <form onSubmit={this.handleSubmit}>
                         <div  style={{marginTop:'-10%'}}>
@@ -94,9 +94,9 @@ class Community extends Component {
 
                          <span style={{position:'absolute',marginTop:'2%'}}><FontAwesomeIcon icon={faUser} style={{marginRight:'0.25em'}} />Renu Singh</span>
                          <span style={{position:'absolute',marginTop:'4%'}}><FontAwesomeIcon icon={faUser} style={{marginRight:'0.25em'}} />renu@gmail.com</span>
-                         <span style={{position:'absolute',marginTop:'6%'}}><FontAwesomeIcon icon={faUser} style={{marginRight:'0.25em'}} />BVP</span>
+                         <span style={{position:'absolute',marginTop:'6%'}}><FontAwesomeIcon icon={faBuilding} style={{marginRight:'0.25em'}} />BVP</span>
                          <span style={{position:'absolute',marginTop:'8%'}}><FontAwesomeIcon icon={faUser} style={{marginRight:'0.25em'}} />9243511678</span>
-                         <span style={{position:'absolute',marginTop:'10%'}}><FontAwesomeIcon icon={faUser} style={{marginRight:'0.25em'}} />B.Tech CS</span>
+                         <span style={{position:'absolute',marginTop:'10%'}}><FontAwesomeIcon icon={faBook} style={{marginRight:'0.25em'}} />B.Tech CS</span>
                          <span style={{position:'absolute',marginTop:'12%'}}><FontAwesomeIcon icon={faUser} style={{marginRight:'0.25em'}} />Semester II</span>
 
                          {/* <div id="profile_details"style={{width:'30%'}}>
