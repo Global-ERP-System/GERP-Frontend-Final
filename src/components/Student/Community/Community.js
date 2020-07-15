@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import './Community.css'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBell, faHome, faUser, faBook, faBuilding, faSearch, faComment  } from "@fortawesome/free-solid-svg-icons";
 //import "@reach/menu-button/styles.css";
 import {Container} from 'reactstrap';
 
@@ -66,8 +68,8 @@ class Community extends Component {
                         </div>
                         <br></br>
                         <div>
-                            <label id="Visibility1"style={{marginTop:'4%'}}>Visibility:</label>
-                            <select value={this.state.visibility} onChange={this.handleVisibilityChange} id="Visibility2" style={{marginTop:'3%'}}>
+                            <label id="Visibility1"style={{marginTop:'-3%',marginLeft:'20%'}}>Visibility:</label>
+                            <select value={this.state.visibility} onChange={this.handleVisibilityChange} id="Visibility2" style={{marginTop:'-4%'}}>
                                 <option value="Public">Public </option>
                                 <option value="ClassMate">Classmates</option>
                                 <option value="SubOrdinates">Subordinates</option>
@@ -87,8 +89,15 @@ class Community extends Component {
                          <h5 id="notify" style={{marginLeft:'90px'}}>Profile</h5>
                          
                          <div className="container profile_pic">
-                             <img src="https://www.freeiconspng.com/uploads/user-login-icon-14.png" style={{marginLeft: '40%',marginTop:'-85%'}}></img>
+                             <img src="https://www.freeiconspng.com/uploads/user-login-icon-14.png" style={{marginLeft: '40%',marginTop:'-80%'}}></img>
                          </div>
+
+                         <span style={{position:'absolute',marginTop:'2%'}}><FontAwesomeIcon icon={faUser} style={{marginRight:'0.25em'}} />Renu Singh</span>
+                         <span style={{position:'absolute',marginTop:'4%'}}><FontAwesomeIcon icon={faUser} style={{marginRight:'0.25em'}} />renu@gmail.com</span>
+                         <span style={{position:'absolute',marginTop:'6%'}}><FontAwesomeIcon icon={faUser} style={{marginRight:'0.25em'}} />BVP</span>
+                         <span style={{position:'absolute',marginTop:'8%'}}><FontAwesomeIcon icon={faUser} style={{marginRight:'0.25em'}} />9243511678</span>
+                         <span style={{position:'absolute',marginTop:'10%'}}><FontAwesomeIcon icon={faUser} style={{marginRight:'0.25em'}} />B.Tech CS</span>
+                         <span style={{position:'absolute',marginTop:'12%'}}><FontAwesomeIcon icon={faUser} style={{marginRight:'0.25em'}} />Semester II</span>
 
                          {/* <div id="profile_details"style={{width:'30%'}}>
                            
