@@ -86,7 +86,7 @@ class Community extends Component {
                 </div>
                 <div id="SideNavBar" style={{width:'22%',marginLeft:'10%'}}>
                         <div className='container profile' style={{marginTop:'0px'}}>
-                         <h5 id="notify" style={{marginLeft:'90px'}}>Profile</h5>
+                         {/* <h5 id="notify" style={{marginLeft:'90px'}}>Profile</h5> */}
 
                          <hr style={{width:'115%',marginLeft:'-55%'}}></hr>
                          
