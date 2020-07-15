@@ -113,7 +113,7 @@ class Community extends Component {
                         </div>
                         <div className='container schedule' style={{height:'302%',marginTop:'5%'}}>
                             <img src="https://toppng.com/uploads/preview/free-icons-png-calendar-11562886581wuta4pegbh.png" style={{marginTop:'-25px',marginLeft:'-8px'}}></img>
-                            <h5>My Schedule</h5>
+                            <h5 style={{marginRight:'20%'}}>My Schedule</h5>
 
                             <span style={{position:'absolute',marginTop:'5%'}}>Monday: 3 classes planned</span>
                             <span style={{position:'absolute',marginTop:'7%'}}>Monday: 3 classes planned</span>
