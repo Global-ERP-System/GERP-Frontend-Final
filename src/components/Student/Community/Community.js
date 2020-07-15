@@ -53,10 +53,10 @@ class Community extends Component {
                             <img src="https://camblycontent.files.wordpress.com/2017/02/advertising-word-block.jpg?w=640" style={{height:'110%',marginTop:'-5%',marginLeft:'-2%',width:'103%'}}></img>
                         </div>
                 </div>
-                <div id="Contentbox"style={{height:'318px',marginRight:'-135px',marginTop:'-60px'}}>
+                <div id="Contentbox"style={{height:'313px',marginRight:'-135px',marginTop:'-60px'}}>
                     <h3 className="Community"style={{fontSize:'28px',padding:'2px'}}>Community Forum</h3>
                     <form onSubmit={this.handleSubmit}>
-                        <div>
+                        <div  style={{marginTop:'-10%'}}>
                             <label className="commentheading">Write a Post</label>
                             <textarea value={this.state.Comment}
                                 onChange={this.handlePostChange} cols="80" rows="5" placeholder="Write Something..."
@@ -66,8 +66,8 @@ class Community extends Component {
                         </div>
                         <br></br>
                         <div>
-                            <label id="Visibility1"style={{marginTop:'-3%',marginLeft:'20%'}}>Visibility:</label>
-                            <select value={this.state.visibility} onChange={this.handleVisibilityChange} id="Visibility2" style={{marginTop:'-4%'}}>
+                            <label id="Visibility1"style={{marginTop:'4%'}}>Visibility:</label>
+                            <select value={this.state.visibility} onChange={this.handleVisibilityChange} id="Visibility2" style={{marginTop:'3%'}}>
                                 <option value="Public">Public </option>
                                 <option value="ClassMate">Classmates</option>
                                 <option value="SubOrdinates">Subordinates</option>
@@ -105,12 +105,13 @@ class Community extends Component {
                             <img src="https://toppng.com/uploads/preview/free-icons-png-calendar-11562886581wuta4pegbh.png" style={{marginTop:'-25px',marginLeft:'-8px'}}></img>
                             <h5 id="notify"style={{marginRight:'20px'}}>My Schedule</h5>
 
-                            <span style={{position:'absolute',marginTop:'5%'}}>Monday: 3 classes</span>
-                            <span style={{position:'absolute',marginTop:'7%'}}>Monday: 3 classes</span>
-                            <span style={{position:'absolute',marginTop:'9%'}}>Monday: 3 classes</span>
-                            <span style={{position:'absolute',marginTop:'11%'}}>Monday: 3 classes</span>
-                            <span style={{position:'absolute',marginTop:'13%'}}>Monday: 3 classes</span>
-                            <span style={{position:'absolute',marginTop:'15%'}}>Monday: 3 classes</span>
+                            <span style={{position:'absolute',marginTop:'5%'}}>Monday: 3 classes planned</span>
+                            <span style={{position:'absolute',marginTop:'7%'}}>Monday: 3 classes planned</span>
+                            <span style={{position:'absolute',marginTop:'9%'}}>Monday: 3 classes planned</span>
+                            <span style={{position:'absolute',marginTop:'11%'}}>Monday: 3 classes planned</span>
+                            <span style={{position:'absolute',marginTop:'13%'}}>Monday: 3 classes planned</span>
+                            <span style={{position:'absolute',marginTop:'15%'}}>Monday: 3 classes planned</span>
+
                         </div>
                 </div>
 
