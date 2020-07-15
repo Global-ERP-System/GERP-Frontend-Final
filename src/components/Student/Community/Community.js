@@ -87,10 +87,12 @@ class Community extends Component {
                 <div id="SideNavBar" style={{width:'22%',marginLeft:'10%'}}>
                         <div className='container profile' style={{marginTop:'0px'}}>
                          <h5 id="notify" style={{marginLeft:'90px'}}>Profile</h5>
+
+                         <hr style={{width:'115%',marginLeft:'-55%'}}></hr>
                          
-                         <div className="container profile_pic">
+                         {/* <div className="container profile_pic">
                              <img src="https://www.freeiconspng.com/uploads/user-login-icon-14.png" style={{marginLeft: '40%',marginTop:'-80%'}}></img>
-                         </div>
+                         </div> */}
 
                          <span style={{position:'absolute',marginTop:'2%'}}><FontAwesomeIcon icon={faUser} style={{marginRight:'0.25em'}} />Renu Singh</span>
                          <span style={{position:'absolute',marginTop:'4%'}}><FontAwesomeIcon icon={faUser} style={{marginRight:'0.25em'}} />renu@gmail.com</span>
