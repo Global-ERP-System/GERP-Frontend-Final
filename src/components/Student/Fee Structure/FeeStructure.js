@@ -50,59 +50,57 @@ export default class FeeStructure extends Component {
 
     render() {
         return (
-            <div style={{ marginLeft: "20%", marginRight: "20%", height: "100%", paddingLeft: '10px', paddingRight: '10px'}}>
-                <h1 className="Heading" style={{textAlign:"center"}}>Fee Structure</h1>
+            <div style={{ marginLeft: "20%", marginRight: "20%", height: "100%", paddingLeft: '20px', paddingRight: '20px'}}>
+                <h1 className="Heading" style={{ textAlign: "center", fontFamily: 'Montserrat Bold', fontWeight: '700'}}>Fee Structure</h1>
                 <hr style={{ width: '80%' }}></hr>
-                <div className="Fee_Structure_Box">
-                    <form onSubmit={this.handlesubmit}>
+                <form onSubmit={this.handlesubmit} style={{ marginTop: '0px' }}>
                         <Row>
                             <Col sm={5}>
-                                <label style={{ fontWeight: '700' }}>Name:</label>
+                                <label style={{ fontFamily: 'Pt sans narrow bold', fontWeight: '700' }}>Name:</label>
                             </Col>
                             <Col sm={7}>
-                                <input className="form-control" value={this.state.name} onChange={this.handlename} required placeholder="Name" />
+                                <input className="form-control" value={this.state.name} onChange={this.handlename} required placeholder="Name" style={{ fontFamily: 'Montserrat Regular', fontWeight: '400' }}/>
                             </Col>
 
                         </Row>
                         <br></br>
                         <Row>
                             <Col sm={5}>
-                                <label style={{ fontWeight: '700' }}>Enrollment No.:</label>
+                                <label style={{ fontFamily: 'Pt sans narrow bold', fontWeight: '700' }}>Enrollment No.:</label>
                             </Col>
                             <Col sm={7}>
-                                <input className="form-control" value={this.state.enroll} onChange={this.handleenroll} required placeholder="Enrollment No." />
+                                <input className="form-control" value={this.state.enroll} onChange={this.handleenroll} required placeholder="Enrollment No." style={{ fontFamily: 'Montserrat Regular', fontWeight: '400' }}/>
                             </Col>
-
-                        </Row>
-                       
+                            </Row>
                         <br></br>
-                        <div className="large_input_box">
-                           <div style={{marginLeft:"50%"}}>
-                            
-                                <MDBFormInline>
-                                <select title="Semester" className="form-control" name="Semester" placeholder="Select semester" >
+                        <Row>
+                        
+
+                            <MDBFormInline style={{ marginTop: '0px', marginLeft:'50%' }}>
+                                    <select title="Semester" className="form-control" name="Semester" placeholder="Select semester" style={{ fontFamily: 'Montserrat Regular', fontWeight: '400' }}>
                                     <option >Select semester</option>
                                     <option eventKey="1">I</option>
                                     <option eventKey="2">II</option>
                                 </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <select title="Subject Details" className="form-control" name="Subject Details" placeholder="Select subject" >
+                                <select title="Subject Details" className="form-control" name="Subject Details" placeholder="Select subject" style={{ fontFamily: 'Montserrat Regular', fontWeight: '400' }}>
                                     <option eventKey="1">Subject details</option>
                                     <option eventKey="2">Subject details</option>
                                 </select>
                                 </MDBFormInline>
                             
-                            </div>
+                            
+                        </Row>
                             
                            <br></br>
 
-                        </div>
+                        
                         <Row>
                             <Col sm={5}>
-                                <label style={{ fontWeight: '700' }}>Course:</label>
+                                <label style={{ fontFamily: 'Pt sans narrow bold', fontWeight: '700' }}>Course:</label>
                             </Col>
                             <Col sm={7}>
                                 <input className="form-control" value={this.state.course}
-                                    onChange={this.handlecourse} required placeholder="Course" />
+                                    onChange={this.handlecourse} required placeholder="Course" style={{ fontFamily: 'Montserrat Regular', fontWeight: '400' }}/>
                             </Col>
 
                         </Row>
@@ -111,33 +109,33 @@ export default class FeeStructure extends Component {
                         <div >                   
                             <Row>
                                 <Col sm={5}>
-                                    <p style={{ fontWeight: '700' }}> Previous Fee Status:&nbsp;&nbsp;&nbsp;</p>
+                                    <p style={{ fontFamily: 'Pt sans narrow bold', fontWeight: '700' }}> Previous Fee Status:&nbsp;&nbsp;&nbsp;</p>
                                 </Col>
                                 <Col sm={7}>
                                     <input className="form-control" value={this.state.Previousfeestatus}
-                                        onChange={this.handlePreviousfeestatus} required />
+                                        onChange={this.handlePreviousfeestatus} required style={{ fontFamily: 'Montserrat Regular', fontWeight: '400' }}/>
                                 </Col>
 
                             </Row>
                             <br></br>
                             <Row>
                                 <Col sm={5}>
-                                    <label style={{ fontWeight: '700' }}> Due Fee Status:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                    <label style={{ fontFamily: 'Pt sans narrow bold', fontWeight: '700' }}> Due Fee Status:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
                                 </Col>
                                 <Col sm={7}>
                                     <input className="form-control" value={this.state.duefeestatus}
-                                        onChange={this.handleduefeestatus} required />
+                                        onChange={this.handleduefeestatus} required style={{ fontFamily: 'Montserrat Regular', fontWeight: '400' }}/>
                                 </Col>
 
                             </Row>
                             <br></br>
                             <Row>
                                 <Col sm={5}>
-                                    <label style={{ fontWeight: '700' }}> Due Fee Amount:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                    <label style={{ fontFamily: 'Pt sans narrow bold', fontWeight: '700' }}> Due Fee Amount:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
                                 </Col>
                                 <Col sm={7}>
                                     <input className="form-control" value={this.state.duefeeamount}
-                                        onChange={this.handleduefeeamount} required />
+                                        onChange={this.handleduefeeamount} required style={{ fontFamily: 'Montserrat Regular', fontWeight: '400' }}/>
                                 </Col>
 
                             </Row>
@@ -146,11 +144,11 @@ export default class FeeStructure extends Component {
                             <br></br>
                             <Row>
                                 <Col sm={5}>
-                                    <label style={{ fontWeight: '700' }}>Last Date for Payment:</label>
+                                    <label style={{ fontFamily: 'Pt sans narrow bold', fontWeight: '700' }}>Last Date for Payment:</label>
                                 </Col>
                                 <Col sm={7}>
                                     <input className="form-control" value={this.state.lastdateforpayment}
-                                        onChange={this.handlelastdateforpayment} required />
+                                        onChange={this.handlelastdateforpayment} required style={{ fontFamily: 'Montserrat Regular', fontWeight: '400' }}/>
                                 </Col>
 
                             </Row>
@@ -165,11 +163,11 @@ export default class FeeStructure extends Component {
                                 <Dropdown.Item eventKey="2">Subject Details</Dropdown.Item>
                             </DropdownButton>
                             
-                            <input  id="Pay" type="submit" value="Pay" />
+                        <button id="Pay" style={{ color: "white", backgroundColor: '#138808' }} type="submit" className="btn">Pay</button>
                            
                         </div>
                     </form>
-                </div >
+                
             </div>
         )
     }

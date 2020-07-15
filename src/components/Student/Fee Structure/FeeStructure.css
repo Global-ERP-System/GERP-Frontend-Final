@@ -1,7 +1,4 @@
-/* .Fee_Structure_Box
-{
-    border: 3px solid steelblue;
-} */
+
 .large_input_box input
 {
     background-color: #f7f7f7;
@@ -35,16 +32,12 @@
 }
 .Display_Button
 {
-    width: 44%;
-    border: black;
     display: flex;
     margin: 30px auto;
     text-align:center;
 }
-#Pay
-{
-    width: 25%;
-    border: 2px solid black;
-    background-color: #FF0000;
-    margin: 0px 0px 0px 150px;
+#Pay {
+   
+    background-color: #138808;
+    margin: 0px 0px 0px 250px;
 }
