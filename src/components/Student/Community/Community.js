@@ -32,11 +32,11 @@ class Community extends Component {
     render() {
         return (
             <div id="main">
-                <div id="SideNavBar" style={{width:'18%'}}>
-                        <div className='container notif' style={{marginTop:'-2px'}}>
+                <div id="SideNavBar">
+                        <div className='container notif'>
                             <h5 id='notify'>Notifications</h5>
 
-                            
+{/*                             
                             <ul id="notify-points" style={{marginLeft:'-84%',marginTop:'25px'}}>
                                 <marquee direction='up' scrollamount='4'>
                                 <li>Attendance updated for Sem 1</li><br></br>
@@ -45,12 +45,12 @@ class Community extends Component {
                                 <li>Attendance updated for Sem 1</li><br></br>
                                 <li>Attendance updated for Sem 1</li><br></br>
                                 </marquee>
-                            </ul>
+                            </ul> */}
                             
 
                         </div>
                         <br></br>
-                        <div className='container ads' style={{height:'310%',marginTop:'-3%'}}>
+                        <div className='container ads' style={{height:'280%',marginTop:'-3%'}}>
                             {/* <h5>ADs</h5> */}
                             <img src="https://camblycontent.files.wordpress.com/2017/02/advertising-word-block.jpg?w=640" style={{height:'110%',marginTop:'-5%',marginLeft:'-2%',width:'103%'}}></img>
                         </div>
