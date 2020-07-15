@@ -26,3 +26,8 @@ input{
 form label{
     padding-top: 7px;
 }
+
+#choosefile{
+    background-color: #d63232;
+    color: blanchedalmond;
+}

@@ -42,7 +42,7 @@ class Assignment extends Component {
                                             <label>Select file :</label>
                                             </Row>
                                             <Row>
-                                                    <input style={{border: '2px solid black', background:'red'}} type="file" className="form-control" placeholder="Upload Assignment" />
+                                                    <input style={{border: '2px solid black'}} id="choosefile" type="file" className="form-control" placeholder="Upload Assignment" />
                                                     </Row>
                                                     <div style={{textAlign:"center"}}>or</div>
                                                     <Row>
