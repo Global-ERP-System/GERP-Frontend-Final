@@ -88,7 +88,19 @@ class Community extends Component {
                         <div className='container profile' style={{marginTop:'0px'}}>
                          {/* <h5 id="notify" style={{marginLeft:'90px'}}>Profile</h5> */}
 
-                         <hr style={{width:'95%',marginTop:'12%'}}></hr>
+                         <hr style={{width:'90%',marginTop:'12%',marginLeft:'6%'}}></hr>
+
+                         <ul style={{marginLeft:'-175%',marginTop:'4%'}}>
+                             <li style={{fontSize:'90%',marginLeft:'-4%',paddingRight:'4%'}}>340 relations</li>
+                         </ul>
+
+                         <div id="profile_circle" style={{height:'30%',width:'30%',borderRadius:'60%',border:'1px solid red'}}></div>
+
+                         <div id="content_profile" style={{position:'absolute',marginTop:'3%'}}>
+                             <span>Welcome,</span>
+                                <br></br>
+                             <span style={{marginLeft:'60%'}}>Abhimanyu</span>
+                         </div>
                          
                          {/* <div className="container profile_pic">
                              <img src="https://www.freeiconspng.com/uploads/user-login-icon-14.png" style={{marginLeft: '40%',marginTop:'-80%'}}></img>
