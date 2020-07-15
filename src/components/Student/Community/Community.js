@@ -88,19 +88,18 @@ class Community extends Component {
                         <div className='container profile' style={{marginTop:'0px'}}>
                          {/* <h5 id="notify" style={{marginLeft:'90px'}}>Profile</h5> */}
 
-                         <hr style={{width:'115%',marginLeft:'-55%'}}></hr>
+                         <hr style={{width:'95%',marginTop:'12%'}}></hr>
                          
                          {/* <div className="container profile_pic">
                              <img src="https://www.freeiconspng.com/uploads/user-login-icon-14.png" style={{marginLeft: '40%',marginTop:'-80%'}}></img>
                          </div> */}
 
-                         <span style={{position:'absolute',marginTop:'2%'}}><FontAwesomeIcon icon={faUser} style={{marginRight:'0.25em'}} />Renu Singh</span>
+                         {/* <span style={{position:'absolute',marginTop:'2%'}}><FontAwesomeIcon icon={faUser} style={{marginRight:'0.25em'}} />Renu Singh</span>
                          <span style={{position:'absolute',marginTop:'4%'}}><FontAwesomeIcon icon={faUser} style={{marginRight:'0.25em'}} />renu@gmail.com</span>
                          <span style={{position:'absolute',marginTop:'6%'}}><FontAwesomeIcon icon={faBuilding} style={{marginRight:'0.25em'}} />BVP</span>
                          <span style={{position:'absolute',marginTop:'8%'}}><FontAwesomeIcon icon={faUser} style={{marginRight:'0.25em'}} />9243511678</span>
                          <span style={{position:'absolute',marginTop:'10%'}}><FontAwesomeIcon icon={faBook} style={{marginRight:'0.25em'}} />B.Tech CS</span>
-                         <span style={{position:'absolute',marginTop:'12%'}}><FontAwesomeIcon icon={faUser} style={{marginRight:'0.25em'}} />Semester II</span>
-
+                         <span style={{position:'absolute',marginTop:'12%'}}><FontAwesomeIcon icon={faUser} style={{marginRight:'0.25em'}} />Semester II</span> */}
                          {/* <div id="profile_details"style={{width:'30%'}}>
                            
                          </div> */}
@@ -114,7 +113,7 @@ class Community extends Component {
                         </div>
                         <div className='container schedule' style={{height:'302%',marginTop:'5%'}}>
                             <img src="https://toppng.com/uploads/preview/free-icons-png-calendar-11562886581wuta4pegbh.png" style={{marginTop:'-25px',marginLeft:'-8px'}}></img>
-                            <h5 id="notify"style={{marginRight:'20px'}}>My Schedule</h5>
+                            <h5>My Schedule</h5>
 
                             <span style={{position:'absolute',marginTop:'5%'}}>Monday: 3 classes planned</span>
                             <span style={{position:'absolute',marginTop:'7%'}}>Monday: 3 classes planned</span>
