@@ -120,7 +120,7 @@ class Community extends Component {
                                  <span style={{position:'absolute',fontSize:'14px',width:'130%',marginLeft:'-30%',marginTop:'6%'}}>84 Recommendation Badges</span>
                              </div>
                              
-                             <span style={{float:'right',fontSize:'10px',marginTop:'50%',marginRight:'-120%',width:'50%'}}><a href="#" style={{float:'right'}}>View Details</a></span>
+                             <span style={{float:'right',fontSize:'10px',marginTop:'50%',marginRight:'-120%',width:'50%'}}><a href="#" style={{float:'right',textDecoration:'none'}}>View Details</a></span>
                          </div>
                          
                          
