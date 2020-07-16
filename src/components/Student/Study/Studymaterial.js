@@ -1,26 +1,62 @@
-import React, { Component } from 'react'
-import './Studymaterial.css'
-import { DropdownButton,ButtonGroup, Dropdown} from 'react-bootstrap';
+import React,{useState} from 'react';
 
-export default class Studymaterial extends Component {
-    render() {
-        return (
-            <div style={{marginBottom:'30%', marginLeft:'15%', marginTop:'10%'}}>
-                <h1 className="Heading">Study Material</h1>
-                <div className="Header_Details">
-                    <h4>Subject</h4>
-                    <h4>Teacher</h4>
-                    <h4>File</h4>
-                </div>
-                <div className="Containt_Details">
-                    <h5>&lt;Subject_Name&gt;</h5>
-                    <h5>&lt;Teacher_Name&gt;</h5>
-                    <DropdownButton as={ButtonGroup} title="See Details" id="bg-vertical-dropdown-1" style={{width:'15%'}} variant="danger" className="my-1">
-                        <Dropdown.Item eventKey="1">Subject Details</Dropdown.Item>
-                        <Dropdown.Item eventKey="2">Subject Details</Dropdown.Item>
-                    </DropdownButton>
-                </div>
-            </div>
-        )
+import StudyPdf from './studypdf/studyPdf';
+
+import './Studymaterial.css';
+
+const Info=[
+    {
+        subject:'DBMS',
+        teacher:'Ms. Erica',
+        files:[
+            'Unit 1 - Arrays',
+            'Unit 2 - Structures',
+            'Unit 3 - File Handling'
+        ],
+        updated:'20-07-2020  22:30'
+    },
+    {
+        subject:'Java',
+        teacher:'Ms. Natasha',
+        files:[
+            'Unit 1 - Error Handling',
+            'Unit 2 - Classes',
+            'Unit 3 - Templates'
+        ],
+        updated:'06-08-2020  13:00'
+    },
+    {
+        subject:'Python',
+        teacher:'Prof. Nolan',
+        files:[
+            'Unit 1 - String Slicing',
+            'Unit 2 - Tuples',
+            'Unit 3 - List Comprehension'
+        ],
+        updated:'13-06-2020  00:25'
     }
-}
+]
+
+const StudyMaterial=props=>{
+    let studyArray=null;
+    studyArray=Info.map(info=>{
+        return <StudyPdf 
+            subject={info.subject}
+            teacher={info.teacher}
+            files={info.files} 
+            updated={info.updated}/>
+    })
+    return (
+        <div className='Material'>
+            <h2>Study Material</h2>
+            <div className='List'>
+                <header>
+                    <li>Subject</li> <li>Teacher</li> <li>File</li> <li>Last Updated</li>
+                </header>
+                {studyArray}
+            </div>
+        </div>
+    );
+};
+
+export default StudyMaterial;
