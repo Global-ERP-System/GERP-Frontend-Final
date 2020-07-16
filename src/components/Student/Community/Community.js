@@ -81,7 +81,16 @@ class Community extends Component {
                     </form>
                     <div id="newRecent" >
                         <h5 className="recentheading">Recent posts</h5>
-                        <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem  </p>
+                        
+                        <div style={{height:'50px',width:'50px',borderRadius:'100px',margin:'2% 3%'}}>
+                            <img src="https://pbs.twimg.com/profile_images/669103856106668033/UF3cgUk4.jpg" style={{height:'50px',width:'50px',borderRadius:'100px'}}></img>
+
+                        <div id="designation">Nikita Khanna</div>  
+
+                        </div>
+
+                        <div id="post-content"></div>
+                        
                         <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem</p>
                         <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem </p>
                         <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem </p>
@@ -110,7 +119,9 @@ class Community extends Component {
 
                          <img src="https://image.flaticon.com/icons/png/512/61/61456.png" style={{height:'12%',width:'4%',position:'absolute',marginTop:'3%'}}></img>
 
-                         <div id="profile_circle" style={{height:'30%',width:'30%',borderRadius:'60%',border:'1px solid red',marginTop:'-6%'}}></div>
+                         <div id="profile_circle" style={{height:'30%',width:'30%',borderRadius:'60%',marginTop:'-6%'}}>
+                            <img src="https://pbs.twimg.com/profile_images/669103856106668033/UF3cgUk4.jpg" style={{borderRadius:'60%',width:'99%',height:'100%'}} ></img>
+                         </div>
 
                          <div id="content_profile" style={{position:'absolute',marginTop:'3%'}}>
                              {/* <span>Welcome,</span> */}

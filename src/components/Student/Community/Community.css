@@ -140,6 +140,21 @@
    margin-bottom: 5%;
 }
 
+#designation
+{
+    height:50px;
+    width:230px;
+    font-weight: bold;
+    margin-top: -50%;
+}
+
+#post-content
+{
+    height:250px;
+    width:874px;
+    background-color: white;
+    margin-left: 2%;
+}
 
 /* -----------------------Right Side Box ------------- */
 .profile{
