@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './Community.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBell, faHome, faUser, faBook, faBuilding, faSearch, faComment  } from "@fortawesome/free-solid-svg-icons";
+import { faBell, faHome, faUser, faBook, faBuilding, faSearch, faComment, faCalendar, faCalendarCheck  } from "@fortawesome/free-solid-svg-icons";
 //import "@reach/menu-button/styles.css";
 import {Container} from 'reactstrap';
 
@@ -55,7 +55,7 @@ class Community extends Component {
                             <img src="https://camblycontent.files.wordpress.com/2017/02/advertising-word-block.jpg?w=640" style={{height:'110%',marginTop:'-5%',marginLeft:'-2%',width:'103%'}}></img>
                         </div>
                 </div>
-                <div id="Contentbox"style={{height:'316px',marginRight:'-135px',marginTop:'-60px'}}>
+                <div id="Contentbox"style={{height:'316px',marginRight:'-135px',marginTop:'-60px', marginLeft:'20%'}}>
                     <h3 className="Community"style={{fontSize:'28px',padding:'2px'}}>Community Forum</h3>
                     <form onSubmit={this.handleSubmit}>
                         <div  style={{marginTop:'-10%'}}>
@@ -79,7 +79,7 @@ class Community extends Component {
                             <button id="Post">Post</button>
                         </div>
                     </form>
-                    <div id="Recent" >
+                    <div id="newRecent" >
                         <h5 className="recentheading">Recent posts</h5>
                         <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem  </p>
                         <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem</p>
@@ -87,14 +87,20 @@ class Community extends Component {
                         <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem </p>
                         <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem </p>
                         <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem </p>
-
+                        <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem  </p>
+                        <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem</p>
+                        <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem </p>
+                        <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem  </p>
+                        <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem</p>
+                        <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem </p>
+                        
                     </div>
                 </div>
-                <div id="SideNavBar" style={{width:'22%',marginLeft:'10%'}}>
+                <div id="SideNavBar" style={{width:'18%',marginLeft:'81%'}}>
                         <div className='container profile' style={{marginTop:'0px'}}>
-                         <h5 id="notify" style={{marginLeft:'90px'}}>Profile</h5>
-                         
-                         <div className="container profile_pic">
+                        <img src="https://www.freeiconspng.com/uploads/user-login-icon-14.png" style={{borderRadius:'30%', border:"2px solid black"}}/>
+                        
+                        {/* <div className="container profile_pic">
                              <img src="https://www.freeiconspng.com/uploads/user-login-icon-14.png" style={{marginLeft: '40%',marginTop:'-80%'}}></img>
                          </div>
 
@@ -104,7 +110,7 @@ class Community extends Component {
                          <span style={{position:'absolute',marginTop:'8%'}}><FontAwesomeIcon icon={faUser} style={{marginRight:'0.25em'}} />9243511678</span>
                          <span style={{position:'absolute',marginTop:'10%'}}><FontAwesomeIcon icon={faBook} style={{marginRight:'0.25em'}} />B.Tech CS</span>
                          <span style={{position:'absolute',marginTop:'12%'}}><FontAwesomeIcon icon={faUser} style={{marginRight:'0.25em'}} />Semester II</span>
-
+                            */}
                          {/* <div id="profile_details"style={{width:'30%'}}>
                            
                          </div> */}
@@ -117,7 +123,10 @@ class Community extends Component {
                         <label className="profilecontent">Attendance : </label><br></br><br></br> */}
                         </div>
                         <div className='container schedule' style={{height:'302%',marginTop:'5%'}}>
-                            <img src="https://toppng.com/uploads/preview/free-icons-png-calendar-11562886581wuta4pegbh.png" style={{marginTop:'-25px',marginLeft:'-8px'}}></img>
+                        
+                        <FontAwesomeIcon icon={faCalendarCheck} size="3x"></FontAwesomeIcon>
+                        <h5 style={{marginLeft:'15%', marginTop:'5%'}}>My Schedule</h5>
+                           {/* <img src="https://toppng.com/uploads/preview/free-icons-png-calendar-11562886581wuta4pegbh.png" style={{marginTop:'-25px',marginLeft:'-8px'}}></img>
                             <h5 id="notify"style={{marginRight:'20px'}}>My Schedule</h5>
 
                             <span style={{position:'absolute',marginTop:'5%'}}>Monday: 3 classes planned</span>
@@ -125,7 +134,7 @@ class Community extends Component {
                             <span style={{position:'absolute',marginTop:'9%'}}>Monday: 3 classes planned</span>
                             <span style={{position:'absolute',marginTop:'11%'}}>Monday: 3 classes planned</span>
                             <span style={{position:'absolute',marginTop:'13%'}}>Monday: 3 classes planned</span>
-                            <span style={{position:'absolute',marginTop:'15%'}}>Monday: 3 classes planned</span>
+                            <span style={{position:'absolute',marginTop:'15%'}}>Monday: 3 classes planned</span> */}
 
                         </div>
                 </div>
