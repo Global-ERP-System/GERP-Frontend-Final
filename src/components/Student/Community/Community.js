@@ -119,9 +119,9 @@ class Community extends Component {
                              <span style={{float:'right',fontSize:'10px',marginTop:'30%',marginRight:'-90%',width:'50%'}}><a href="#" style={{float:'right'}}>View Details</a></span>
                          </div>
                          
-                         {/* <div className="container profile_pic">
+                         <div className="container profile_pic">
                              <img src="https://www.freeiconspng.com/uploads/user-login-icon-14.png" style={{marginLeft: '40%',marginTop:'-80%'}}></img>
-                         </div> */}
+                         </div>
 
                          {/* <span style={{position:'absolute',marginTop:'2%'}}><FontAwesomeIcon icon={faUser} style={{marginRight:'0.25em'}} />Renu Singh</span>
                          <span style={{position:'absolute',marginTop:'4%'}}><FontAwesomeIcon icon={faUser} style={{marginRight:'0.25em'}} />renu@gmail.com</span>

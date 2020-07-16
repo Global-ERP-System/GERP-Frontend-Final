@@ -1,15 +1,24 @@
+
+
 #title{
     text-align: center;
     margin-top: 70px;
     margin-bottom: 30px;
-    font-family: sans-serif;
-    
+    padding-top: 5px;
 }
 
-#contents{
-   width: 1000px;
+#contents th{
    margin: auto;
    text-align: center;   
+   border: 2px solid black;
+   font-family: 'Pt sans narrow bold';
+   font-family: 700;
+}
+
+#contents td{
+    border: 2px solid black;
+    font-family: 'Pt sans narrow bold';
+    font-family: 700;
 }
 
 .first{
@@ -20,12 +29,22 @@
 
 .attendance{
     font-family: sans-serif;
+    margin-left: 22%;
+    margin-right: 22%;
 }
 
-#bottom {
-   font-family: sans-serif;
+#bottom{
     padding-top: 40px;
-
     width: 1000px;
     margin: auto;
+}
+
+#bottom h5{
+    font-family: 'Montserrat Regular';
+    font-weight: 400;
+}
+
+
+.table th, td{
+    border: 2px solid black;
 }
