@@ -102,13 +102,13 @@ class Community extends Component {
 
                          <hr style={{width:'90%',marginTop:'12%',marginLeft:'6%'}}></hr>
 
-                         <img src="https://image.flaticon.com/icons/png/512/61/61456.png" style={{width:'1%',height:'2%',position:'absolute',marginTop:'1%'}}></img>
+                         
                          
                          <ul style={{marginLeft:'-175%',marginTop:'4%'}}>
                              <li style={{fontSize:'90%',marginLeft:'-4%',paddingRight:'4%'}}>340 relations</li>
                          </ul>
 
-                         
+                         <img src="https://image.flaticon.com/icons/png/512/61/61456.png" style={{height:'12%',width:'4%',position:'absolute',marginTop:'3%'}}></img>
 
                          <div id="profile_circle" style={{height:'30%',width:'30%',borderRadius:'60%',border:'1px solid red',marginTop:'-6%'}}></div>
 
@@ -116,17 +116,19 @@ class Community extends Component {
                              {/* <span>Welcome,</span> */}
                                 {/* <br></br> */}
                                 <br></br>
+                                <br></br>
+                                
                              <div style={{marginLeft:'-16%',width:'120%',fontSize:'14px'}}>Abhimanyu Singh</div>
                              <div style={{marginLeft:'-13%',width:'120%',fontSize:'14px'}}>Dabur India Pvt Ltd.</div>
-                             <div style={{marginLeft:'110%',width:'120%',fontSize:'14px'}}>IIM, Lucknow</div>
-                             <div style={{marginLeft:'110%',width:'120%',fontSize:'14px'}}>MBA - II Semester</div>
-                             <div style={{marginLeft:'110%',width:'120%',fontSize:'14px'}}>abhi@gmail.com</div><br></br>
-                             <div style={{marginLeft:'30%',width:'120%'}}>
+                             <div style={{marginLeft:'80%',width:'120%',fontSize:'14px'}}>IIM, Lucknow</div>
+                             <div style={{marginLeft:'80%',width:'120%',fontSize:'14px'}}>MBA - II Semester</div>
+                             <div style={{marginLeft:'80%',width:'120%',fontSize:'14px'}}>abhi@gmail.com</div><br></br>
+                             <div style={{marginLeft:'20%',width:'120%'}}>
                                  <img src="https://toppng.com/uploads/preview/gold-badge-png-11552734724wixvd59trm.png" style={{width:'30%',height:'20%',position:'absolute'}}></img>
                                  <span style={{position:'absolute',fontSize:'14px',width:'130%',marginLeft:'-30%',marginTop:'6%'}}>84 Recommendation Badges</span>
                              </div>
                              
-                             <span style={{float:'right',fontSize:'10px',marginTop:'50%',marginRight:'-120%',width:'50%'}}><a href="#" style={{float:'right',textDecoration:'none'}}>View Details</a></span>
+                             <span style={{float:'right',fontSize:'10px',marginTop:'50%',marginRight:'-80%',width:'50%'}}><a href="#" style={{float:'right',textDecoration:'none'}}>View Details</a></span>
                          </div>
                          
                          
