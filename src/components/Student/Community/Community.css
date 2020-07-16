@@ -9,17 +9,28 @@
 /*-------------------left side box---------------*/
 
 #SideNavBar{
-    margin:2%;
-    margin-top: 0px;
+    margin-right:1%;
+    margin-left: 1%;
+    margin-top: -4%;
     margin-bottom:0px ;
+    height: 100px;
 }
 
+#notify
+{
+    margin-top: -20%;
+    margin-left: 20%;
+}
+
+#notify-points
+{
+    list-style-type: none;
+}
 
 /* ------------------Center Box -------------------- */
 #Contentbox
 {
-    width: 60%;
-    margin: -45px 0px 50px 200px;
+    /* margin: -70px 30px 50px 200px; */
     background: whitesmoke;
 }
 
@@ -107,6 +118,7 @@
     font-size: 13px;
     border-radius: 12px;
     float:right;
+    margin-top: -7%;
 }
 
 .recentheading{
@@ -125,6 +137,11 @@
     
     height:20em;
     font-family: sans-serif;
+}
+
+.profile_pic
+{
+    height: 10%;
 }
 
 .schedule{

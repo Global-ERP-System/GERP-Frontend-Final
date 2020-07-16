@@ -33,8 +33,8 @@ export default class Examination extends Component {
                         </div>
                         <div className="Values_Grading">
                             <h3>1</h3>
-                            <h3>2</h3>
-                            <h3>3</h3>
+                            <h3>DBMS</h3>
+                            <h3>no</h3>
 
                         </div>
 

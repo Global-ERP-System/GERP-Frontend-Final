@@ -41,7 +41,7 @@ import RaiseReqF from './Faculty/RaiseReq/RaiseReq';
 import Signup from './signup';
 import Login from './Login';
 
-import {BrowserRouter as Router,Route,Link,Switch, Redirect} from 'react-router-dom'
+import {BrowserRouter as Router,Route,Link,Switch, Redirect,withRouter} from 'react-router-dom'
 class MainComponent extends Component{
     constructor(props){
         super(props);
@@ -61,8 +61,7 @@ class MainComponent extends Component{
         if(this.state.isLoggedIn){         
             return(
                 <div>
-                <Header />
-                <Router>
+                {this.props.location.pathname!=='/login'&&this.props.location.pathname!=='/signup'?<Header />:null}
                 <Switch>   
                     <Route path='/signup'component={Signup} />
                     <Route path='/login'component={Login} />    
@@ -82,8 +81,7 @@ class MainComponent extends Component{
                     <Route path='/profile' component={Profile} />
                     <Route path='/fee' component={FeeStructure} />  
                     <Redirect to="/login" />
-                </Switch>
-             </Router> 
+                </Switch> 
             {  /*  <Footer />  */}
                 </div>
             )
@@ -123,4 +121,4 @@ class MainComponent extends Component{
     }
 }
 
-export default MainComponent;
+export default withRouter(MainComponent);

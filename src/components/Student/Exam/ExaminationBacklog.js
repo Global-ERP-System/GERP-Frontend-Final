@@ -21,7 +21,7 @@ export default class Examination extends Component {
         return (
             <div>
                 <div className="Main_Backlog">
-                    <br></br><h1 style={{textAlign:"center"}}>Examination</h1>
+                    <h1 style={{ fontFamily: 'Montserrat Bold', fontWeight: '700', textAlign: "center" }}>Examination</h1>
                     <br></br>
                     <div className="Mainbox_Backlog">
                         <div className="Header_Backlog">

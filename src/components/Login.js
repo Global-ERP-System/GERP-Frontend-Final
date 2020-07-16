@@ -32,10 +32,11 @@ class Login extends Component {
                         <Route path="/signup" component={Signup} />
                         <Route path="/login" exact render={() => {
                             return(
-                                <body >
-                                <div classsName="container" style={{margin:'2% 25%'}}>
+                                <body>
+                                <img src="https://gawvs.in//assets/img/login.png" style={{height:'20%',width:'30%',float:'left',marginLeft:'8%',marginTop:'8%'}}></img>
+                                <div classsName="container" style={{margin:'2% 18%',marginTop:'7%',marginLeft:'40%'}}>
                                 <form >
-                                    <Card>
+                                    <Card style={{backgroundColor:'#F2F4F4'}}>
                                         <CardTitle><h2 className="text-center"style={{fontFamily:'Montserrat Regular 700'}}>LOGIN</h2></CardTitle>
                                         <CardBody>
                                             <CardText>
@@ -56,7 +57,7 @@ class Login extends Component {
                                                     </div>
                                                 </div>
                                                 <div style={{textAlign:"center"}}>
-                                                <Button color="danger" size="sm"><a style={{color:'white'}} href="/community">Login</a></Button>
+                                                <Button color="danger" size="sm"><a style={{color:'white',textDecoration:'none'}} href="/community">Login</a></Button>
                                                 </div>
                                                 <hr class="line"style={{border: '1px dashed grey'}}></hr>
                                                 <div style={{textAlign:"center"}}>
@@ -69,11 +70,11 @@ class Login extends Component {
                                                 <a className="nav-link" href="/">Not yet created an account?</a>
                                                 </div>
                                                 <div style={{textAlign:"center"}}>
-                                                <Button color="danger" size="sm"><a style={{color:'white'}} href="/signup">Sign Up</a></Button>
+                                                <Button color="danger" size="sm"><a style={{color:'white',textDecoration:'none'}} href="/signup">Sign Up</a></Button>
                                                 </div>
                                             </CardText>
                                             <br></br>
-                                            <span style={{float:'right',fontSize:'12px'}}><a href="#">Forgot password?</a></span> 
+                                            <span style={{float:'right',fontSize:'12px'}}><a href="#" style={{textDecoration:'none'}}>Forgot password?</a></span> 
                                         </CardBody>   
                                     </Card>
                                 </form>

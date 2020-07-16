@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './FeeStructure.css'
-import { DropdownButton, ButtonGroup, Dropdown } from 'react-bootstrap';
+import { DropdownButton, ButtonGroup, Dropdown, Form, FormGroup, CustomInput, Label, Row, Col, Input, Button } from 'react-bootstrap';
 import {MDBFormInline} from 'mdbreact';
 
 export default class FeeStructure extends Component {
@@ -50,54 +50,111 @@ export default class FeeStructure extends Component {
 
     render() {
         return (
-            <div style={{marginLeft:"25%",marginRight:"25%",height:"100%"}}>
-                <br></br>
-                <h1 className="Heading" style={{textAlign:"center"}}>Fee Structure</h1>
-                <br></br>
-                <div className="Fee_Structure_Box">
-                    <form onSubmit={this.handlesubmit}>
-                        <div className="large_input_box">
-                            <input className="form-control" value={this.state.name} onChange={this.handlename} required placeholder="Name" /><br></br>
-                            <input className="form-control" value={this.state.enroll} onChange={this.handleenroll} required placeholder="Enrollment No." /><br></br>
+            <div style={{ marginLeft: "20%", marginRight: "20%", height: "100%", paddingLeft: '20px', paddingRight: '20px'}}>
+                <h1 className="Heading" style={{ textAlign: "center", fontFamily: 'Montserrat Bold', fontWeight: '700'}}>Fee Structure</h1>
+                <hr style={{ width: '80%' }}></hr>
+                <form onSubmit={this.handlesubmit} style={{ marginTop: '0px' }}>
+                        <Row>
+                            <Col sm={5}>
+                                <label style={{ fontFamily: 'Pt sans narrow bold', fontWeight: '700' }}>Name:</label>
+                            </Col>
+                            <Col sm={7}>
+                                <input className="form-control" value={this.state.name} onChange={this.handlename} required placeholder="Name" style={{ fontFamily: 'Montserrat Regular', fontWeight: '400' }}/>
+                            </Col>
 
-                            <div style={{marginRight:"25%",marginLeft:"25%"}}>
-                            
-                                <MDBFormInline>
-                                <select title="Semester" className="form-control" name="Semester" placeholder="Select semester" >
+                        </Row>
+                        <br></br>
+                        <Row>
+                            <Col sm={5}>
+                                <label style={{ fontFamily: 'Pt sans narrow bold', fontWeight: '700' }}>Enrollment No.:</label>
+                            </Col>
+                            <Col sm={7}>
+                                <input className="form-control" value={this.state.enroll} onChange={this.handleenroll} required placeholder="Enrollment No." style={{ fontFamily: 'Montserrat Regular', fontWeight: '400' }}/>
+                            </Col>
+                            </Row>
+                        <br></br>
+                        <Row>
+                        
+
+                            <MDBFormInline style={{ marginTop: '0px', marginLeft:'50%' }}>
+                                    <select title="Semester" className="form-control" name="Semester" placeholder="Select semester" style={{ fontFamily: 'Montserrat Regular', fontWeight: '400' }}>
                                     <option >Select semester</option>
                                     <option eventKey="1">I</option>
                                     <option eventKey="2">II</option>
                                 </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <select title="Subject Details" className="form-control" name="Subject Details" placeholder="Select subject" >
+                                <select title="Subject Details" className="form-control" name="Subject Details" placeholder="Select subject" style={{ fontFamily: 'Montserrat Regular', fontWeight: '400' }}>
                                     <option eventKey="1">Subject details</option>
                                     <option eventKey="2">Subject details</option>
                                 </select>
                                 </MDBFormInline>
                             
-                            </div>
-                            <br/>
-                            <input className="form-control"  value={this.state.course}
-                                onChange={this.handlecourse} required placeholder="Course" /><br></br>
+                            
+                        </Row>
+                            
+                           <br></br>
 
-                        </div>
+                        
+                        <Row>
+                            <Col sm={5}>
+                                <label style={{ fontFamily: 'Pt sans narrow bold', fontWeight: '700' }}>Course:</label>
+                            </Col>
+                            <Col sm={7}>
+                                <input className="form-control" value={this.state.course}
+                                    onChange={this.handlecourse} required placeholder="Course" style={{ fontFamily: 'Montserrat Regular', fontWeight: '400' }}/>
+                            </Col>
+
+                        </Row>
+                        <br></br>
 
                         <div >                   
-                            <label> Previous Fee Status:&nbsp;&nbsp;&nbsp;</label>
-                            <input className="form-control" value={this.state.Previousfeestatus}
-                                onChange={this.handlePreviousfeestatus} required /><br></br>
+                            <Row>
+                                <Col sm={5}>
+                                    <p style={{ fontFamily: 'Pt sans narrow bold', fontWeight: '700' }}> Previous Fee Status:&nbsp;&nbsp;&nbsp;</p>
+                                </Col>
+                                <Col sm={7}>
+                                    <input className="form-control" value={this.state.Previousfeestatus}
+                                        onChange={this.handlePreviousfeestatus} required style={{ fontFamily: 'Montserrat Regular', fontWeight: '400' }}/>
+                                </Col>
 
+                            </Row>
+                            <br></br>
+                            <Row>
+                                <Col sm={5}>
+                                    <label style={{ fontFamily: 'Pt sans narrow bold', fontWeight: '700' }}> Due Fee Status:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                </Col>
+                                <Col sm={7}>
+                                    <input className="form-control" value={this.state.duefeestatus}
+                                        onChange={this.handleduefeestatus} required style={{ fontFamily: 'Montserrat Regular', fontWeight: '400' }}/>
+                                </Col>
 
-                            <label >Due Fee Status:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                            <input className="form-control" value={this.state.duefeestatus}
-                                onChange={this.handleduefeestatus} required /><br></br>
+                            </Row>
+                            <br></br>
+                            <Row>
+                                <Col sm={5}>
+                                    <label style={{ fontFamily: 'Pt sans narrow bold', fontWeight: '700' }}> Due Fee Amount:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                </Col>
+                                <Col sm={7}>
+                                    <input className="form-control" value={this.state.duefeeamount}
+                                        onChange={this.handleduefeeamount} required style={{ fontFamily: 'Montserrat Regular', fontWeight: '400' }}/>
+                                </Col>
 
-                            <label >Due Fee Amount:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                            <input className="form-control" value={this.state.duefeeamount}
-                                onChange={this.handleduefeeamount} required /><br></br>
+                            </Row>
 
-                            <label >Last Date for Payment:</label>
-                            <input className="form-control" value={this.state.lastdateforpayment}
-                                onChange={this.handlelastdateforpayment} required /><br></br>
+                            
+                            <br></br>
+                            <Row>
+                                <Col sm={5}>
+                                    <label style={{ fontFamily: 'Pt sans narrow bold', fontWeight: '700' }}>Last Date for Payment:</label>
+                                </Col>
+                                <Col sm={7}>
+                                    <input className="form-control" value={this.state.lastdateforpayment}
+                                        onChange={this.handlelastdateforpayment} required style={{ fontFamily: 'Montserrat Regular', fontWeight: '400' }}/>
+                                </Col>
+
+                            </Row>
+
+                           
+                            <br></br>
                         </div>   
                     
                         <div className="Display_Button">
@@ -106,11 +163,11 @@ export default class FeeStructure extends Component {
                                 <Dropdown.Item eventKey="2">Subject Details</Dropdown.Item>
                             </DropdownButton>
                             
-                            <input  id="Pay" type="submit" value="Pay" />
+                        <button id="Pay" style={{ color: "white", backgroundColor: '#138808' }} type="submit" className="btn">Pay</button>
                            
                         </div>
                     </form>
-                </div >
+                
             </div>
         )
     }
