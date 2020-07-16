@@ -104,23 +104,23 @@ class Community extends Component {
 
                          
 
-                         <div id="profile_circle" style={{height:'30%',width:'30%',borderRadius:'60%',border:'1px solid red',marginTop:'-8%'}}></div>
+                         <div id="profile_circle" style={{height:'30%',width:'30%',borderRadius:'60%',border:'1px solid red',marginTop:'-6%'}}></div>
 
                          <div id="content_profile" style={{position:'absolute',marginTop:'3%'}}>
-                             <span>Welcome,</span>
+                             {/* <span>Welcome,</span> */}
+                                {/* <br></br> */}
                                 <br></br>
-                                <br></br>
-                             <div style={{marginLeft:'40%',width:'120%'}}>Abhimanyu Singh</div>
-                             <div style={{marginLeft:'40%',width:'120%'}}>Dabur India Pvt Ltd.</div>
-                             <div style={{marginLeft:'40%',width:'120%'}}>IIM, Lucknow</div>
-                             <div style={{marginLeft:'40%',width:'120%'}}>MBA - II Semester</div>
-                             <div style={{marginLeft:'40%',width:'120%'}}>abhi@gmail.com</div>
-                             <div style={{marginLeft:'20%',width:'120%'}}>
+                             <div style={{marginLeft:'-16%',width:'120%',fontSize:'14px'}}>Abhimanyu Singh</div>
+                             <div style={{marginLeft:'-13%',width:'120%',fontSize:'14px'}}>Dabur India Pvt Ltd.</div>
+                             <div style={{marginLeft:'110%',width:'120%',fontSize:'14px'}}>IIM, Lucknow</div>
+                             <div style={{marginLeft:'110%',width:'120%',fontSize:'14px'}}>MBA - II Semester</div>
+                             <div style={{marginLeft:'110%',width:'120%',fontSize:'14px'}}>abhi@gmail.com</div><br></br>
+                             <div style={{marginLeft:'30%',width:'120%'}}>
                                  <img src="https://toppng.com/uploads/preview/gold-badge-png-11552734724wixvd59trm.png" style={{width:'30%',height:'20%',position:'absolute'}}></img>
                                  <span style={{position:'absolute',fontSize:'14px',width:'130%',marginLeft:'-30%',marginTop:'6%'}}>84 Recommendation Badges</span>
                              </div>
                              
-                             <span style={{float:'right',fontSize:'10px',marginTop:'30%',marginRight:'-90%',width:'50%'}}><a href="#" style={{float:'right'}}>View Details</a></span>
+                             <span style={{float:'right',fontSize:'10px',marginTop:'50%',marginRight:'-120%',width:'50%'}}><a href="#" style={{float:'right'}}>View Details</a></span>
                          </div>
                          
                          
