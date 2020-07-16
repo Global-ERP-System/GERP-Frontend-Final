@@ -18,8 +18,8 @@
 
 #notify
 {
-    margin-top: -20%;
-    margin-left: 20%;
+    margin-top: -20px;
+    margin-left: 60px;
 }
 
 #notify-points
@@ -128,7 +128,10 @@
 #Recent{
     margin-top: 5em;
     height:20em;
-    text-align: center;
+    text-align: center;  
+   overflow-y:scroll;
+   background: whitesmoke;
+   margin-bottom: 5%;
 }
 
 
