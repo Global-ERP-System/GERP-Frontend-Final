@@ -98,29 +98,38 @@ class Community extends Component {
                 </div>
                 <div id="SideNavBar" style={{width:'18%',marginLeft:'81%'}}>
                         <div className='container profile' style={{marginTop:'0px'}}>
-                        <img src="https://www.freeiconspng.com/uploads/user-login-icon-14.png" style={{borderRadius:'30%', border:"2px solid black"}}/>
-                        
-                        {/* <div className="container profile_pic">
-                             <img src="https://www.freeiconspng.com/uploads/user-login-icon-14.png" style={{marginLeft: '40%',marginTop:'-80%'}}></img>
+                         {/* <h5 id="notify" style={{marginLeft:'90px'}}>Profile</h5> */}
+
+                         <hr style={{width:'90%',marginTop:'12%',marginLeft:'6%'}}></hr>
+
+                         <img src="https://image.flaticon.com/icons/png/512/61/61456.png" style={{width:'1%',height:'2%',position:'absolute',marginTop:'1%'}}></img>
+                         
+                         <ul style={{marginLeft:'-175%',marginTop:'4%'}}>
+                             <li style={{fontSize:'90%',marginLeft:'-4%',paddingRight:'4%'}}>340 relations</li>
+                         </ul>
+
+                         
+
+                         <div id="profile_circle" style={{height:'30%',width:'30%',borderRadius:'60%',border:'1px solid red',marginTop:'-6%'}}></div>
+
+                         <div id="content_profile" style={{position:'absolute',marginTop:'3%'}}>
+                             {/* <span>Welcome,</span> */}
+                                {/* <br></br> */}
+                                <br></br>
+                             <div style={{marginLeft:'-16%',width:'120%',fontSize:'14px'}}>Abhimanyu Singh</div>
+                             <div style={{marginLeft:'-13%',width:'120%',fontSize:'14px'}}>Dabur India Pvt Ltd.</div>
+                             <div style={{marginLeft:'110%',width:'120%',fontSize:'14px'}}>IIM, Lucknow</div>
+                             <div style={{marginLeft:'110%',width:'120%',fontSize:'14px'}}>MBA - II Semester</div>
+                             <div style={{marginLeft:'110%',width:'120%',fontSize:'14px'}}>abhi@gmail.com</div><br></br>
+                             <div style={{marginLeft:'30%',width:'120%'}}>
+                                 <img src="https://toppng.com/uploads/preview/gold-badge-png-11552734724wixvd59trm.png" style={{width:'30%',height:'20%',position:'absolute'}}></img>
+                                 <span style={{position:'absolute',fontSize:'14px',width:'130%',marginLeft:'-30%',marginTop:'6%'}}>84 Recommendation Badges</span>
+                             </div>
+                             
+                             <span style={{float:'right',fontSize:'10px',marginTop:'50%',marginRight:'-120%',width:'50%'}}><a href="#" style={{float:'right',textDecoration:'none'}}>View Details</a></span>
                          </div>
-
-                         <span style={{position:'absolute',marginTop:'2%'}}><FontAwesomeIcon icon={faUser} style={{marginRight:'0.25em'}} />Renu Singh</span>
-                         <span style={{position:'absolute',marginTop:'4%'}}><FontAwesomeIcon icon={faUser} style={{marginRight:'0.25em'}} />renu@gmail.com</span>
-                         <span style={{position:'absolute',marginTop:'6%'}}><FontAwesomeIcon icon={faBuilding} style={{marginRight:'0.25em'}} />BVP</span>
-                         <span style={{position:'absolute',marginTop:'8%'}}><FontAwesomeIcon icon={faUser} style={{marginRight:'0.25em'}} />9243511678</span>
-                         <span style={{position:'absolute',marginTop:'10%'}}><FontAwesomeIcon icon={faBook} style={{marginRight:'0.25em'}} />B.Tech CS</span>
-                         <span style={{position:'absolute',marginTop:'12%'}}><FontAwesomeIcon icon={faUser} style={{marginRight:'0.25em'}} />Semester II</span>
-                            */}
-                         {/* <div id="profile_details"style={{width:'30%'}}>
-                           
-                         </div> */}
-
-                             {/*  <h6>&lt;NAME&gt;</h6><br/>
-                            
-                        <a href="/profile" >Edit profile</a><br></br><br></br>
-                        <label className="profilecontent">School/College : </label><br></br><br></br>
-                        <label className="profilecontent">Year/Standard : </label><br></br><br></br>
-                        <label className="profilecontent">Attendance : </label><br></br><br></br> */}
+                         
+                         
                         </div>
                         <div className='container schedule' style={{height:'302%',marginTop:'5%'}}>
                         
