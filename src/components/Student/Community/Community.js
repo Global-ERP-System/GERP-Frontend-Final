@@ -147,6 +147,8 @@ class Community extends Component {
                             <span style={{position:'absolute',marginTop:'13%'}}>Monday: 3 classes planned</span>
                             <span style={{position:'absolute',marginTop:'15%'}}>Monday: 3 classes planned</span> */}
 
+                            <span style={{position:'absolute',fontSize:'13px',marginTop:'25%',marginLeft:'15%'}}>Monday: 3 classes planned</span>
+
                         </div>
                 </div>
 
