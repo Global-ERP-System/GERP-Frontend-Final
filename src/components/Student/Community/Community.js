@@ -32,11 +32,11 @@ class Community extends Component {
     render() {
         return (
             <div id="main">
-                <div id="SideNavBar">
-                        <div className='container notif'>
+                <div id="SideNavBar" style={{width:'18%'}}>
+                        <div className='container notif' style={{marginTop:'-2px'}}>
                             <h5 id='notify'>Notifications</h5>
 
-{/*                             
+                            
                             <ul id="notify-points" style={{marginLeft:'-84%',marginTop:'25px'}}>
                                 <marquee direction='up' scrollamount='4'>
                                 <li>Attendance updated for Sem 1</li><br></br>
@@ -45,12 +45,12 @@ class Community extends Component {
                                 <li>Attendance updated for Sem 1</li><br></br>
                                 <li>Attendance updated for Sem 1</li><br></br>
                                 </marquee>
-                            </ul> */}
+                            </ul>
                             
 
                         </div>
                         <br></br>
-                        <div className='container ads' style={{height:'280%',marginTop:'-3%'}}>
+                        <div className='container ads' style={{height:'310%',marginTop:'-3%'}}>
                             {/* <h5>ADs</h5> */}
                             <img src="https://camblycontent.files.wordpress.com/2017/02/advertising-word-block.jpg?w=640" style={{height:'110%',marginTop:'-5%',marginLeft:'-2%',width:'103%'}}></img>
                         </div>
@@ -68,8 +68,8 @@ class Community extends Component {
                         </div>
                         <br></br>
                         <div>
-                            <label id="Visibility1"style={{marginTop:'-3%',marginLeft:'20%'}}>Visibility:</label>
-                            <select value={this.state.visibility} onChange={this.handleVisibilityChange} id="Visibility2" style={{marginTop:'-4%'}}>
+                            <label id="Visibility1"style={{marginTop:'-1%',marginLeft:'2%'}}>Visibility:</label>
+                            <select value={this.state.visibility} onChange={this.handleVisibilityChange} id="Visibility2" style={{marginTop:'-1%', padding:'0px'}}>
                                 <option value="Public">Public </option>
                                 <option value="ClassMate">Classmates</option>
                                 <option value="SubOrdinates">Subordinates</option>
@@ -79,13 +79,20 @@ class Community extends Component {
                             <button id="Post">Post</button>
                         </div>
                     </form>
-                    <div id="Recent">
-                        <label className="recentheading">Recent posts</label>
+                    <div id="Recent" >
+                        <h5 className="recentheading">Recent posts</h5>
+                        <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem  </p>
+                        <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem</p>
+                        <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem </p>
+                        <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem </p>
+                        <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem </p>
+                        <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem </p>
 
                     </div>
                 </div>
                 <div id="SideNavBar" style={{width:'22%',marginLeft:'10%'}}>
                         <div className='container profile' style={{marginTop:'0px'}}>
+<<<<<<< HEAD
                          {/* <h5 id="notify" style={{marginLeft:'90px'}}>Profile</h5> */}
 
                          <hr style={{width:'90%',marginTop:'12%',marginLeft:'6%'}}></hr>
@@ -101,10 +108,13 @@ class Community extends Component {
                                 <br></br>
                              <span style={{marginLeft:'60%'}}>Abhimanyu</span>
                          </div>
+=======
+                         <h5 id="notify" style={{marginLeft:'90px'}}>Profile</h5>
+>>>>>>> b6e00c013978e0bbfa349fabdbcf937836485d95
                          
-                         {/* <div className="container profile_pic">
+                         <div className="container profile_pic">
                              <img src="https://www.freeiconspng.com/uploads/user-login-icon-14.png" style={{marginLeft: '40%',marginTop:'-80%'}}></img>
-                         </div> */}
+                         </div>
 
                          {/* <span style={{position:'absolute',marginTop:'2%'}}><FontAwesomeIcon icon={faUser} style={{marginRight:'0.25em'}} />Renu Singh</span>
                          <span style={{position:'absolute',marginTop:'4%'}}><FontAwesomeIcon icon={faUser} style={{marginRight:'0.25em'}} />renu@gmail.com</span>
