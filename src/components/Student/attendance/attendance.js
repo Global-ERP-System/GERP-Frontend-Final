@@ -6,16 +6,16 @@ class Attendance extends Component{
     render() {
         return (
          
-            <div >
+            <div className="attendance">
 
             
 
             <div style={{textAlign:"center"}}>  
-                <h1 id='title'><b>ATTENDANCE</b></h1>
+                <h1 id='title' style={{fontFamily:'Montserrat Bold',fontWeight:'700'}}><b>ATTENDANCE</b></h1>
             </div>
 
-            <div>
-                <select className="form-control" style={{marginLeft:'2%',width:"30%"}} type="text" placeholder="Select Semester">
+            <div style={{fontFamily:'PT sans narrow bold', fontWeight:'700'}}>
+                <select className="form-control" style={{width:"30%", border:'1px solid black'}} type="text" placeholder="Select Semester">
                     <option>Select Semester</option>
                     <option>Semester 1</option>
                     <option>Semester 2</option>
@@ -30,7 +30,8 @@ class Attendance extends Component{
 
             <br/>
 
-                <Table id="contents" striped bordered hover>
+                <div>
+                <Table id="contents" striped bordered hover style={{width:'100%'}}>
                     <thead>
                         <tr className="first">
                             <th>S. No.</th>
@@ -85,6 +86,7 @@ class Attendance extends Component{
                         </tr>
                     </tbody>
                 </Table>
+                </div>
 
                 <div id="bottom">
                     <h5>Extra attendance:</h5>

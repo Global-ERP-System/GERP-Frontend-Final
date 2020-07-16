@@ -10,24 +10,25 @@
      background-color: blanchedalmond;
 }*/
 
+.Project{
+    margin-left: 22%;
+    margin-right: 22%;
+}
 
 .project{
-    margin-top: 102px;
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:ital,wght@1,600&family=PT+Sans+Narrow:wght@700&family=Source+Sans+Pro&display=swap');
-    font-family: 'Montserrat Regular 400', sans-serif;
+    margin-top: 80px;
 }
 
 .project h1{
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:ital,wght@1,600&family=PT+Sans+Narrow:wght@700&family=Source+Sans+Pro&display=swap');
-    font-family: 'Montserrat Bold 700', sans-serif;
+    padding-top: 30px;
 }
 
 .Project_container{
     width:100%;
     padding-left: 140px;
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:ital,wght@1,600&family=PT+Sans+Narrow:wght@700&family=Source+Sans+Pro&display=swap');
-    font-family: 'Montserrat Regular 400', sans-serif;
 }
+
+
 
 .Project_container input
 {border: 1px solid black;
@@ -44,7 +45,7 @@
     font-size: 18px;
     text-align: initial;
     font-weight: 400;
-    padding-top: 5px;
+    padding-top: 10px;
 }
 
 .submitbtn
