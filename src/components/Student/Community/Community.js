@@ -96,9 +96,13 @@ class Community extends Component {
 
                          <hr style={{width:'90%',marginTop:'12%',marginLeft:'6%'}}></hr>
 
+                         <img src="https://image.flaticon.com/icons/png/512/61/61456.png" style={{width:'1%',height:'2%',position:'absolute',marginTop:'1%'}}></img>
+                         
                          <ul style={{marginLeft:'-175%',marginTop:'4%'}}>
                              <li style={{fontSize:'90%',marginLeft:'-4%',paddingRight:'4%'}}>340 relations</li>
                          </ul>
+
+                         
 
                          <div id="profile_circle" style={{height:'30%',width:'30%',borderRadius:'60%',border:'1px solid red',marginTop:'-8%'}}></div>
 
