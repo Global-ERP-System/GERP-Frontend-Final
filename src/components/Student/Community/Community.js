@@ -119,26 +119,7 @@ class Community extends Component {
                              <span style={{float:'right',fontSize:'10px',marginTop:'30%',marginRight:'-90%',width:'50%'}}><a href="#" style={{float:'right'}}>View Details</a></span>
                          </div>
                          
-                         <div className="container profile_pic">
-                             <img src="https://www.freeiconspng.com/uploads/user-login-icon-14.png" style={{marginLeft: '40%',marginTop:'-80%'}}></img>
-                         </div>
-
-                         {/* <span style={{position:'absolute',marginTop:'2%'}}><FontAwesomeIcon icon={faUser} style={{marginRight:'0.25em'}} />Renu Singh</span>
-                         <span style={{position:'absolute',marginTop:'4%'}}><FontAwesomeIcon icon={faUser} style={{marginRight:'0.25em'}} />renu@gmail.com</span>
-                         <span style={{position:'absolute',marginTop:'6%'}}><FontAwesomeIcon icon={faBuilding} style={{marginRight:'0.25em'}} />BVP</span>
-                         <span style={{position:'absolute',marginTop:'8%'}}><FontAwesomeIcon icon={faUser} style={{marginRight:'0.25em'}} />9243511678</span>
-                         <span style={{position:'absolute',marginTop:'10%'}}><FontAwesomeIcon icon={faBook} style={{marginRight:'0.25em'}} />B.Tech CS</span>
-                         <span style={{position:'absolute',marginTop:'12%'}}><FontAwesomeIcon icon={faUser} style={{marginRight:'0.25em'}} />Semester II</span> */}
-                         {/* <div id="profile_details"style={{width:'30%'}}>
-                           
-                         </div> */}
-
-                             {/*  <h6>&lt;NAME&gt;</h6><br/>
-                            
-                        <a href="/profile" >Edit profile</a><br></br><br></br>
-                        <label className="profilecontent">School/College : </label><br></br><br></br>
-                        <label className="profilecontent">Year/Standard : </label><br></br><br></br>
-                        <label className="profilecontent">Attendance : </label><br></br><br></br> */}
+                         
                         </div>
                         <div className='container schedule' style={{height:'302%',marginTop:'5%'}}>
                             <img src="https://toppng.com/uploads/preview/free-icons-png-calendar-11562886581wuta4pegbh.png" style={{marginTop:'-25px',marginLeft:'-8px'}}></img>
