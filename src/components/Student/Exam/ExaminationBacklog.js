@@ -21,11 +21,11 @@ export default class Examination extends Component {
         return (
             <div>
                 <div className="Main_Backlog">
-                    <h1 style={{ fontFamily: 'Montserrat Bold', fontWeight: '700', textAlign: "center" }}>Examination</h1>
+                    <h1 style={{ fontFamily: 'Montserrat', fontWeight: '700', textAlign: "center" }}>Examination</h1>
                     <br></br>
                     <div className="Mainbox_Backlog">
                         <div className="Header_Backlog">
-                            <h2 style={{textAlign:"center"}}>BackLogs</h2>
+                            <h2 style={{ textAlign: "center" }}>BackLogs</h2>
                         </div>
                         <div className="valueFeild_Backlog">
                             <select value={this.state.visibility} onChange={this.handleVisibilityChange} id="Visibility2">

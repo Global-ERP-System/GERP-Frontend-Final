@@ -6,22 +6,24 @@
     margin: 0px 0px;
 }
 .Mainbox_Backlog, .Mainbox_Grading, .Main_Upcomingexam {
-    font-family: Montserrat Bold;
+    font-family: 'Montserrat';
     font-weight:700;
     border: 2px solid black;
     background-color: beige;
     width: 60%;
     margin: 20px auto;
 }
-.Header_Backlog, .Header_Grading ,.Header_Upcomingexam{
-border: 1px solid black;
-background-color: #007fff;
-color: white;
+.Header_Backlog h2, .Header_Grading h2, .Header_Upcomingexam h2 {
+    border: 1px solid black;
+    background-color: #007fff;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 700;
 }
 .valueFeild_Backlog, .valueFeild_Grading, .valueFeild_Upcomingexam {
     display: flex;
-    font-family: Pt sans narrow bold;
-    font-weight: 700;
+    font-family: 'Pt sans narrow';
+    font-weight: bold;
     flex-direction: row;
     /* border: 2px solid lightblue; */
     background-color: lightblue;
@@ -35,7 +37,7 @@ color: white;
 }
 .Values_Backlog, .Values_Grading, .Values_Upcomingexam {
     display: flex;
-    font-family: Montserrat Regular;
+    font-family: 'Montserrat';
     font-weight: 400;
     flex-direction: row;
     border: 2px solid lightblue;

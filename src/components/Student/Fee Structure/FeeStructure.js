@@ -51,12 +51,12 @@ export default class FeeStructure extends Component {
     render() {
         return (
             <div style={{ marginLeft: "20%", marginRight: "20%", height: "100%", paddingLeft: '20px', paddingRight: '20px'}}>
-                <h1 className="Heading" style={{ textAlign: "center", fontFamily: 'Montserrat Bold', fontWeight: '700'}}>Fee Structure</h1>
+                <h1 className="Heading" style={{ textAlign: "center", fontFamily: 'Montserrat', fontWeight: '700'}}>Fee Structure</h1>
                 <hr style={{ width: '80%' }}></hr>
                 <form onSubmit={this.handlesubmit} style={{ marginTop: '0px' }}>
                         <Row>
                             <Col sm={5}>
-                                <label style={{ fontFamily: 'Pt sans narrow bold', fontWeight: '700' }}>Name:</label>
+                                <label style={{ fontFamily: 'Pt sans narrow ', fontWeight: '700' }}>Name:</label>
                             </Col>
                             <Col sm={7}>
                                 <input className="form-control" value={this.state.name} onChange={this.handlename} required placeholder="Name" style={{ fontFamily: 'Montserrat Regular', fontWeight: '400' }}/>
@@ -66,7 +66,7 @@ export default class FeeStructure extends Component {
                         <br></br>
                         <Row>
                             <Col sm={5}>
-                                <label style={{ fontFamily: 'Pt sans narrow bold', fontWeight: '700' }}>Enrollment No.:</label>
+                                <label style={{ fontFamily: 'Pt sans narrow ', fontWeight: '700' }}>Enrollment No.:</label>
                             </Col>
                             <Col sm={7}>
                                 <input className="form-control" value={this.state.enroll} onChange={this.handleenroll} required placeholder="Enrollment No." style={{ fontFamily: 'Montserrat Regular', fontWeight: '400' }}/>
@@ -96,7 +96,7 @@ export default class FeeStructure extends Component {
                         
                         <Row>
                             <Col sm={5}>
-                                <label style={{ fontFamily: 'Pt sans narrow bold', fontWeight: '700' }}>Course:</label>
+                                <label style={{ fontFamily: 'Pt sans narrow ', fontWeight: '700' }}>Course:</label>
                             </Col>
                             <Col sm={7}>
                                 <input className="form-control" value={this.state.course}
@@ -109,7 +109,7 @@ export default class FeeStructure extends Component {
                         <div >                   
                             <Row>
                                 <Col sm={5}>
-                                    <p style={{ fontFamily: 'Pt sans narrow bold', fontWeight: '700' }}> Previous Fee Status:&nbsp;&nbsp;&nbsp;</p>
+                                    <p style={{ fontFamily: 'Pt sans narrow ', fontWeight: '700' }}> Previous Fee Status:&nbsp;&nbsp;&nbsp;</p>
                                 </Col>
                                 <Col sm={7}>
                                     <input className="form-control" value={this.state.Previousfeestatus}
@@ -120,7 +120,7 @@ export default class FeeStructure extends Component {
                             <br></br>
                             <Row>
                                 <Col sm={5}>
-                                    <label style={{ fontFamily: 'Pt sans narrow bold', fontWeight: '700' }}> Due Fee Status:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                    <label style={{ fontFamily: 'Pt sans narrow ', fontWeight: '700' }}> Due Fee Status:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
                                 </Col>
                                 <Col sm={7}>
                                     <input className="form-control" value={this.state.duefeestatus}
@@ -131,7 +131,7 @@ export default class FeeStructure extends Component {
                             <br></br>
                             <Row>
                                 <Col sm={5}>
-                                    <label style={{ fontFamily: 'Pt sans narrow bold', fontWeight: '700' }}> Due Fee Amount:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                    <label style={{ fontFamily: 'Pt sans narrow ', fontWeight: '700' }}> Due Fee Amount:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
                                 </Col>
                                 <Col sm={7}>
                                     <input className="form-control" value={this.state.duefeeamount}
@@ -144,7 +144,7 @@ export default class FeeStructure extends Component {
                             <br></br>
                             <Row>
                                 <Col sm={5}>
-                                    <label style={{ fontFamily: 'Pt sans narrow bold', fontWeight: '700' }}>Last Date for Payment:</label>
+                                    <label style={{ fontFamily: 'Pt sans narrow ', fontWeight: '700' }}>Last Date for Payment:</label>
                                 </Col>
                                 <Col sm={7}>
                                     <input className="form-control" value={this.state.lastdateforpayment}

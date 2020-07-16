@@ -7,14 +7,11 @@ class Attendance extends Component{
         return (
          
             <div className="attendance">
-
-            
-
             <div style={{textAlign:"center"}}>  
-                <h1 id='title' style={{fontFamily:'Montserrat Bold',fontWeight:'700'}}><b>ATTENDANCE</b></h1>
+                <h1 id='title' style={{fontFamily:'Montserrat',fontWeight:'700'}}><b>ATTENDANCE</b></h1>
             </div>
 
-            <div style={{fontFamily:'PT sans narrow bold', fontWeight:'700'}}>
+            <div style={{fontFamily:'PT sans narrow ', fontWeight:'700'}}>
                 <select className="form-control" style={{width:"30%", border:'1px solid black'}} type="text" placeholder="Select Semester">
                     <option>Select Semester</option>
                     <option>Semester 1</option>

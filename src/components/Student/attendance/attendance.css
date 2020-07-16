@@ -2,7 +2,7 @@
 
 #title{
     text-align: center;
-    margin-top: 70px;
+    margin-top: 50px;
     margin-bottom: 30px;
     padding-top: 5px;
 }
@@ -11,38 +11,44 @@
    margin: auto;
    text-align: center;   
    border: 2px solid black;
-   font-family: 'Pt sans narrow bold';
+   font-family: 'Pt sans narrow ';
    font-family: 700;
 }
 
 #contents td{
     border: 2px solid black;
-    font-family: 'Pt sans narrow bold';
+    font-family: 'Pt sans narrow ';
     font-family: 700;
 }
 
-.first{
+.first:hover{
     background: blue;
     color: white;
     font-size: 18px;
 }
-
+.first {
+    background: blue;
+    color: white;
+    font-size: 18px;
+}
 .attendance{
-    font-family: sans-serif;
+    font-family: 'sans-serif';
     margin-left: 22%;
     margin-right: 22%;
 }
 
-#bottom{
-    padding-top: 40px;
+#bottom {
+    padding-top: 15px;
     width: 1000px;
     margin: auto;
+    font-family: 'Montserrat';
 }
 
-#bottom h5{
-    font-family: 'Montserrat Regular';
-    font-weight: 400;
-}
+    #bottom h5 {
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 18px;
+    }
 
 
 .table th, td{

@@ -7,46 +7,46 @@ class Assignment extends Component {
         return (
             <div style={{marginLeft:'22%',marginRight:'22%'}}>
                 <form style={{marginLeft:'10%',marginRight:'10%', marginBottom:'5%'}}>
-                        <center><h2  style={{fontFamily:'Montserrat Bold', fontWeight:'700'}} className="text-center">ASSIGNMENTS</h2></center>
+                        <center><h2  style={{fontFamily:'Montserrat ', fontWeight:'700'}} className="text-center">ASSIGNMENTS</h2></center>
                                   <Row>
-                                        <label style={{fontFamily:'Pt sans narrow bold', fontWeight:'700'}}>Name :</label>
+                                        <label style={{fontFamily:'Pt sans narrow ', fontWeight:'700'}}>Name :</label>
                                   </Row>
                                   <Row>
-                                        <input style={{border: '2px solid black',fontFamily:'Pt sans narrow bold', fontWeight:'700'}} class="form-control" placeholder="Enter Your Name" />
+                                        <input style={{border: '2px solid black',fontFamily:'Pt sans narrow ', fontWeight:'700'}} class="form-control" placeholder="Enter Your Name" />
                                   </Row>
                                    <Row>
-                                            <label style={{fontFamily:'Pt sans narrow bold', fontWeight:'700'}}>Enrollment Number :</label>
+                                            <label style={{fontFamily:'Pt sans narrow ', fontWeight:'700'}}>Enrollment Number :</label>
                                     </Row>
                                     <Row>
-                                           <input class="form-control" style={{border: '2px solid black',fontFamily:'Pt sans narrow bold', fontWeight:'700'}} placeholder="Enter your Enrollment Number" />
+                                           <input class="form-control" style={{border: '2px solid black',fontFamily:'Pt sans narrow ', fontWeight:'700'}} placeholder="Enter your Enrollment Number" />
                                     </Row>
                                     <Row>
-                                            <label style={{fontFamily:'Pt sans narrow bold', fontWeight:'700'}}>Subject Code :</label>
+                                            <label style={{fontFamily:'Pt sans narrow ', fontWeight:'700'}}>Subject Code :</label>
                                     </Row>
                                      <Row>
-                                           <input type="number" style={{border: '2px solid black',fontFamily:'Pt sans narrow bold', fontWeight:'700'}} class="form-control" placeholder="Enter the subject code" />
+                                           <input type="number" style={{border: '2px solid black',fontFamily:'Pt sans narrow ', fontWeight:'700'}} class="form-control" placeholder="Enter the subject code" />
                                            </Row>
                                 <Row>
-                                            <label style={{fontFamily:'Pt sans narrow bold', fontWeight:'700'}}>Branch :</label>
+                                            <label style={{fontFamily:'Pt sans narrow ', fontWeight:'700'}}>Branch :</label>
                                             </Row>
                                             <Row>
-                                           <input type="number" style={{border: '2px solid black',fontFamily:'Pt sans narrow bold', fontWeight:'700'}} class="form-control" placeholder="Enter your branch" />
+                                           <input type="number" style={{border: '2px solid black',fontFamily:'Pt sans narrow ', fontWeight:'700'}} class="form-control" placeholder="Enter your branch" />
                                         </Row>
                                 <Row>
-                                            <label style={{fontFamily:'Pt sans narrow bold', fontWeight:'700'}}>Semester :</label>
+                                            <label style={{fontFamily:'Pt sans narrow ', fontWeight:'700'}}>Semester :</label>
                                             </Row>
                                             <Row>
-                                           <input type="number" style={{border: '2px solid black',fontFamily:'Pt sans narrow bold', fontWeight:'700'}} class="form-control" placeholder="Enter semester" />
+                                           <input type="number" style={{border: '2px solid black',fontFamily:'Pt sans narrow ', fontWeight:'700'}} class="form-control" placeholder="Enter semester" />
                                         </Row>
                                 <Row>
-                                            <label style={{fontFamily:'Pt sans narrow bold', fontWeight:'700'}}>Select file :</label>
+                                            <label style={{fontFamily:'Pt sans narrow ', fontWeight:'700'}}>Select file :</label>
                                             </Row>
                                             <Row>
-                                                    <input style={{border: '2px solid black',fontFamily:'Pt sans narrow bold', fontWeight:'700'}} id="choosefile" type="file" className="form-control" placeholder="Upload Assignment" />
+                                                    <input style={{border: '2px solid black',fontFamily:'Pt sans narrow ', fontWeight:'700'}} id="choosefile" type="file" className="form-control" placeholder="Upload Assignment" />
                                                     </Row>
-                                                    <div style={{textAlign:"center",fontFamily:'Pt sans narrow bold', fontWeight:'700'}}>or</div>
+                                                    <div style={{textAlign:"center",fontFamily:'Pt sans narrow ', fontWeight:'700'}}>or</div>
                                                     <Row>
-                                                    <input style={{border: '2px solid black',fontFamily:'Pt sans narrow bold', fontWeight:'700'}} type="link" className="form-control" placeholder="Add Link"/>
+                                                    <input style={{border: '2px solid black',fontFamily:'Pt sans narrow ', fontWeight:'700'}} type="link" className="form-control" placeholder="Add Link"/>
                                                 </Row>
                                                 <br/>
                                 <div style={{textAlign:"center"}}>
