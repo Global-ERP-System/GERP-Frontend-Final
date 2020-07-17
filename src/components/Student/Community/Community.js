@@ -33,28 +33,26 @@ class Community extends Component {
         return (
             <div id="main">
                 <div id="SideNavBar" style={{width:'18%'}}>
-                        <div className='container notif' style={{marginTop:'-2px'}}>
+                        
                             <h5 id='notify'>Notifications</h5>
 
                             
-                            <ul id="notify-points" style={{marginLeft:'-84%',marginTop:'25px'}}>
+                            <ul id="notify-points">
                                 <marquee direction='up' scrollamount='4'>
-                                <li>Attendance updated for Sem 1</li><br></br>
-                                <li>Attendance updated for Sem 1</li><br></br>
-                                <li>Attendance updated for Sem 1</li><br></br>
-                                <li>Attendance updated for Sem 1</li><br></br>
-                                <li>Attendance updated for Sem 1</li><br></br>
+                                <li>Attendance</li><br></br>
+                                <li>Attendance</li><br></br>
+                                <li>Attendance</li><br></br>
+                                <li>Attendance</li><br></br>
+                                <li>Attendance</li><br></br>
                                 </marquee>
                             </ul>
                             
-
-                        </div>
-                        <br></br>
-                        <div className='container ads' style={{height:'310%',marginTop:'-3%'}}>
-                            {/* <h5>ADs</h5> */}
-                            <img src="https://camblycontent.files.wordpress.com/2017/02/advertising-word-block.jpg?w=640" style={{height:'110%',marginTop:'-5%',marginLeft:'-2%',width:'103%'}}></img>
-                        </div>
                 </div>
+
+                <div id="SideNavBar" style={{width:'18%',marginTop:'18%'}}>
+                <img src="https://camblycontent.files.wordpress.com/2017/02/advertising-word-block.jpg?w=640" style={{height:'90%',width:'80%',marginTop:'5%'}}></img>
+                </div>
+
                 <div id="Contentbox"style={{height:'316px',marginRight:'-135px',marginTop:'-60px', marginLeft:'20%'}}>
                     <h3 className="Community"style={{fontSize:'28px',padding:'2px'}}>Community Forum</h3>
                     <form onSubmit={this.handleSubmit}>
@@ -105,23 +103,23 @@ class Community extends Component {
                         
                     </div>
                 </div>
-                <div id="SideNavBar" style={{width:'18%',marginLeft:'81%'}}>
+                <div id="SideNavBar" style={{width:'18%',marginLeft:'81%',border:'1px solid red'}}>
                         <div className='container profile' style={{marginTop:'0px'}}>
                          {/* <h5 id="notify" style={{marginLeft:'90px'}}>Profile</h5> */}
 
-                         <hr style={{width:'90%',marginTop:'12%',marginLeft:'6%'}}></hr>
+                         {/* <hr style={{width:'90%',marginTop:'12%',marginLeft:'6%'}}></hr> */}
 
                          
                          
-                         <ul style={{marginLeft:'-175%',marginTop:'4%'}}>
+                         {/* <ul style={{marginLeft:'-175%',marginTop:'4%'}}>
                              <li style={{fontSize:'90%',marginLeft:'-4%',paddingRight:'4%'}}>340 relations</li>
-                         </ul>
+                         </ul> */}
 
-                         <img src="https://image.flaticon.com/icons/png/512/61/61456.png" style={{height:'12%',width:'4%',position:'absolute',marginTop:'3%'}}></img>
+                         {/* <img src="https://image.flaticon.com/icons/png/512/61/61456.png" style={{height:'12%',width:'4%',position:'absolute',marginTop:'3%'}}></img> */}
 
-                         <div id="profile_circle" style={{height:'30%',width:'30%',borderRadius:'60%',marginTop:'-6%'}}>
+                         {/* <div id="profile_circle" style={{height:'30%',width:'30%',borderRadius:'60%',marginTop:'-6%'}}>
                             <img src="https://pbs.twimg.com/profile_images/669103856106668033/UF3cgUk4.jpg" style={{borderRadius:'60%',width:'99%',height:'100%'}} ></img>
-                         </div>
+                         </div> */}
 
                          <div id="content_profile" style={{position:'absolute',marginTop:'3%'}}>
                              {/* <span>Welcome,</span> */}
@@ -129,7 +127,7 @@ class Community extends Component {
                                 <br></br>
                                 <br></br>
                                 
-                             <div style={{marginLeft:'-16%',width:'120%',fontSize:'14px'}}>Abhimanyu Singh</div>
+                             {/* <div style={{marginLeft:'-16%',width:'120%',fontSize:'14px'}}>Abhimanyu Singh</div>
                              <div style={{marginLeft:'-13%',width:'120%',fontSize:'14px'}}>Dabur India Pvt Ltd.</div>
                              <div style={{marginLeft:'80%',width:'120%',fontSize:'14px'}}>IIM, Lucknow</div>
                              <div style={{marginLeft:'80%',width:'120%',fontSize:'14px'}}>MBA - II Semester</div>
@@ -137,13 +135,14 @@ class Community extends Component {
                              <div style={{marginLeft:'20%',width:'120%'}}>
                                  <img src="https://toppng.com/uploads/preview/gold-badge-png-11552734724wixvd59trm.png" style={{width:'30%',height:'20%',position:'absolute'}}></img>
                                  <span style={{position:'absolute',fontSize:'14px',width:'130%',marginLeft:'-30%',marginTop:'6%'}}>84 Recommendation Badges</span>
-                             </div>
+                             </div> */}
                              
-                             <span style={{float:'right',fontSize:'10px',marginTop:'50%',marginRight:'-80%',width:'50%'}}><a href="#" style={{float:'right',textDecoration:'none'}}>View Details</a></span>
+                             {/* <span style={{float:'right',fontSize:'10px',marginTop:'50%',marginRight:'-80%',width:'50%'}}><a href="#" style={{float:'right',textDecoration:'none'}}>View Details</a></span> */}
                          </div>
                          
                          
                         </div>
+                        
                         <div className='container schedule' style={{height:'302%',marginTop:'5%'}}>
                         
                         <FontAwesomeIcon icon={faCalendarCheck} size="3x"></FontAwesomeIcon>
