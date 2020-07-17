@@ -134,6 +134,7 @@
     background:whitesmoke;
     text-align: center;
     margin: 5% 0%;
+    height: 500%;
 }
 
 #Recent{
@@ -148,15 +149,21 @@
 {
     height:50px;
     width:230px;
-    font-weight: bold;
-    margin-top: -50%;
+    margin-left: 15%;
+    margin-top: -110%;
 }
 
 #post-content
 {
-    height:250px;
+    height:650px;
     width:874px;
     background-color: white;
+    margin-left: 2%;
+}
+
+#main-content-matter
+{
+    float:left;
     margin-left: 2%;
 }
 

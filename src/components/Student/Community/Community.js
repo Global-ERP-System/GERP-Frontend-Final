@@ -83,25 +83,38 @@ class Community extends Component {
                         <div style={{height:'50px',width:'50px',borderRadius:'100px',margin:'2% 3%'}}>
                             <img src="https://pbs.twimg.com/profile_images/669103856106668033/UF3cgUk4.jpg" style={{height:'50px',width:'50px',borderRadius:'100px'}}></img>
 
-                        <div id="designation">Nikita Khanna</div>  
+                        <div id="designation"><b>Abhimanyu Singh</b>
+                        <p style={{width:'120%',marginLeft:'13%'}}>HR Consultant at Dabur Industries<br></br>
+                        <span style={{marginLeft:'-79%',color:'green'}}>10h</span>
+                        </p> 
+                        
+                        </div>
 
                         </div>
 
-                        <div id="post-content"></div>
+                        <div id="post-content">
+                            
+                            <p id="main-content-matter">Did you hear that buzzing sound?<br></br>That's for you to set the alarm for the
+                            Codsule, which is taking place tomorrow from 8:00 PM - 11:00 PM.
+                            <br></br>
+                            Register for the Contest at <a href="https://cb.lk/codjulyli">https://cb.lk/codjulyli</a>
+                            </p>
+
+                            <p id="main-content-matter" style={{color:'#3498DB',fontWeight:'bold'}}>#Codsule #CodingChallenge #Nagarro #Coding #Programming</p>
+
+                            <img src="https://pbs.twimg.com/media/EckJ0_RWkAMuu4D.jpg" style={{width:'86%',height:'48%'}}></img>
+
+                            {/* <span>10</span> */}
+
+                            <hr style={{width:'95%',marginTop:'4%'}}></hr>
                         
-                        <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem</p>
-                        <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem </p>
-                        <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem </p>
-                        <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem </p>
-                        <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem </p>
-                        <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem  </p>
-                        <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem</p>
-                        <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem </p>
-                        <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem  </p>
+                        </div>
+                        
                         <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem</p>
                         <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem </p>
                         
                     </div>
+
                 </div>
                 <div id="SideNavBar" style={{width:'18%',marginLeft:'81%'}}>
                        

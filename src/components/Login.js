@@ -34,7 +34,7 @@ class Login extends Component {
                             return(
                                 <body>
                                 <img src="https://gawvs.in//assets/img/login.png" style={{height:'20%',width:'30%',float:'left',marginLeft:'8%',marginTop:'8%'}}></img>
-                                <div classsName="container" style={{margin:'2% 18%',marginTop:'7%',marginLeft:'40%'}}>
+                                <div classsName="container" style={{margin:'2% 18%',marginTop:'2%',marginLeft:'40%'}}>
                                 <form >
                                     <Card style={{backgroundColor:'#F2F4F4'}}>
                                         <CardTitle><h2 className="text-center"style={{fontFamily:'Montserrat Regular 700'}}>LOGIN</h2></CardTitle>
