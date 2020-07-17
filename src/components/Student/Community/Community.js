@@ -104,7 +104,7 @@ class Community extends Component {
                     </div>
                 </div>
                 <div id="SideNavBar" style={{width:'18%',marginLeft:'81%',border:'1px solid red'}}>
-                        <div className='container profile' style={{marginTop:'0px'}}>
+                        {/* <div className='container profile' style={{marginTop:'0px'}}> */}
                          {/* <h5 id="notify" style={{marginLeft:'90px'}}>Profile</h5> */}
 
                          {/* <hr style={{width:'90%',marginTop:'12%',marginLeft:'6%'}}></hr> */}
@@ -121,11 +121,10 @@ class Community extends Component {
                             <img src="https://pbs.twimg.com/profile_images/669103856106668033/UF3cgUk4.jpg" style={{borderRadius:'60%',width:'99%',height:'100%'}} ></img>
                          </div> */}
 
-                         <div id="content_profile" style={{position:'absolute',marginTop:'3%'}}>
+                         {/* <div id="content_profile" style={{position:'absolute',marginTop:'3%',border:'1px solid purple'}}> */}
                              {/* <span>Welcome,</span> */}
                                 {/* <br></br> */}
-                                <br></br>
-                                <br></br>
+                                
                                 
                              {/* <div style={{marginLeft:'-16%',width:'120%',fontSize:'14px'}}>Abhimanyu Singh</div>
                              <div style={{marginLeft:'-13%',width:'120%',fontSize:'14px'}}>Dabur India Pvt Ltd.</div>
@@ -138,15 +137,15 @@ class Community extends Component {
                              </div> */}
                              
                              {/* <span style={{float:'right',fontSize:'10px',marginTop:'50%',marginRight:'-80%',width:'50%'}}><a href="#" style={{float:'right',textDecoration:'none'}}>View Details</a></span> */}
-                         </div>
+                         {/* </div> */}
                          
                          
-                        </div>
+                        {/* </div> */}
                         
-                        <div className='container schedule' style={{height:'302%',marginTop:'5%'}}>
+                        {/* <div className='container schedule' style={{height:'302%',marginTop:'5%'}}>
                         
                         <FontAwesomeIcon icon={faCalendarCheck} size="3x"></FontAwesomeIcon>
-                        <h5 style={{marginLeft:'15%', marginTop:'5%'}}>My Schedule</h5>
+                        <h5 style={{marginLeft:'15%', marginTop:'5%'}}>My Schedule</h5> */}
                            {/* <img src="https://toppng.com/uploads/preview/free-icons-png-calendar-11562886581wuta4pegbh.png" style={{marginTop:'-25px',marginLeft:'-8px'}}></img>
                             <h5 id="notify"style={{marginRight:'20px'}}>My Schedule</h5>
 
@@ -156,11 +155,13 @@ class Community extends Component {
                             <span style={{position:'absolute',marginTop:'11%'}}>Monday: 3 classes planned</span>
                             <span style={{position:'absolute',marginTop:'13%'}}>Monday: 3 classes planned</span>
                             <span style={{position:'absolute',marginTop:'15%'}}>Monday: 3 classes planned</span> */}
-
+{/* 
                             <span style={{position:'absolute',fontSize:'13px',marginTop:'25%',marginLeft:'15%'}}>Monday: 3 classes planned</span>
 
-                        </div>
+                        </div> */}
                 </div>
+
+                <div id="SideNavBar" style={{width:'18%',marginLeft:'81%',border:'1px solid red',marginTop:'18%'}}></div>
 
              {  /* <Container id="RightSidebox">
                 <div >
