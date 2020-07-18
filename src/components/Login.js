@@ -10,7 +10,7 @@ class Login extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            isLoggedIn:false
+            isLoggedIn:true
         }
         this.onButtonClick = this.onButtonClick.bind(this);
     }
@@ -25,13 +25,6 @@ class Login extends Component {
     render() {
                
                 return (
-                    <Router>
-                        <switch>
-                        {/* <Route path="/main" component={MainComponent} /> */}
-                        <Route path="/Community" component={Community} />
-                        <Route path="/signup" component={Signup} />
-                        <Route path="/login" exact render={() => {
-                            return(
                                 <body>
                                 <img src="https://gawvs.in//assets/img/login.png" style={{height:'20%',width:'30%',float:'left',marginLeft:'8%',marginTop:'8%'}}></img>
                                 <div classsName="container" style={{margin:'2% 18%',marginTop:'2%',marginLeft:'40%'}}>
@@ -48,7 +41,7 @@ class Login extends Component {
                                                       </div>
                                                     </div>
                                                 </div>
-                                            </div>
+                                           
                                             <div className="form-group">
                                                 <div class="form-row">
                                                     <div class="col">
@@ -57,9 +50,6 @@ class Login extends Component {
                                                     </div>
                                                 </div>
                                             </div>
-
-                                           
-
                                             <div style={{textAlign:"center"}}>
                                                 <Button color="danger" size="sm"><a style={{color:'white',textDecoration:'none'}} href="/community">Login</a></Button>
                                             </div>
@@ -82,10 +72,10 @@ class Login extends Component {
                                     </CardBody>   
                                 </Card>
                             </form>
-                
-                        </div>
+                            </div>
                     </body>
-                ); 
+                      ); 
+              
             }
 }
 
