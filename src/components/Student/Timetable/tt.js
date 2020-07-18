@@ -1,131 +1,88 @@
 import React,{Component} from 'react';
 import { Card,CardTitle,CardText,CardBody,CardHeader,CardFooter,ButtonToolbar,Button } from 'reactstrap';
 import { Table } from 'reactstrap';
-import "./tt.css"
+import "./tt.css";
 
-class Timetable extends Component{
-  render(){
+const state={
+  start:8,
+  periods:6,
+  periodDuration:1,
+  breakStart:12,
+  breakDuration:0.5,
+  subjects:{
+    'Monday':['OOPS Lab','OOPS Lab','OOPS','AM','COA','DBMS'],
+    'Tuesday':['COMM SYS Lab','COMM SYS Lab','AM','DBMS','COMM SYS','OOPS'],
+    'Wednesday':['TOC','COA','TOC','COA','AM Lab','AM Lab'],
+    'Thursday':['DBMS','COMM SYS','TOC','OOPS','DBMS Lab','DBMS Lab'],
+    'Friday':['COA Lab','COA Lab','COA','AM','TOC','COMM SYS'],
+    'Saturday':['AM','COMM SYS','DBMS','TOC','NONE','NONE']
+  }
+}
 
-
+const Timetable=props=>{
+  //console.log(start);
+  const breakS=state.breakStart;
+  const breakE=state.breakStart+state.breakDuration;
+  const beforeBreak=[...Array((state.breakStart-state.start)/state.periodDuration)].map((_,id)=>{
+      let timeS=state.start+(id*state.periodDuration);
+      let timeE=timeS+state.periodDuration;
+      let timeS2=timeS;
+      let timeE2=timeE;
+      if(Math.floor(timeS)>12)
+        timeS2=timeS-12;
+      if(Math.floor(timeE)>12)
+        timeE2=timeE-12
+      return <th key={id}>{Math.floor(timeS2)}:{String(((timeS%1).toFixed(2))*60).padStart(2,'0')}&nbsp;{!Math.floor(timeS/12)?'AM':'PM'} - {Math.floor(timeE2)}:{String(((timeE%1).toFixed(2))*60).padStart(2,'0')}&nbsp;{!Math.floor(timeE/12)?'AM':'PM'}</th>
+    })
+  const afterBreak=[...Array(state.periods-(state.breakStart-state.start)/state.periodDuration)].map((_,id)=>{
+      let timeS=(state.breakStart+state.breakDuration)+(id)*state.periodDuration;
+      let timeE=timeS+state.periodDuration;
+      let timeS2=timeS;
+      let timeE2=timeE;
+      if(Math.floor(timeS)>12)
+        timeS2=timeS-12;
+      if(Math.floor(timeE)>12)
+        timeE2=timeE-12
+      return <th key={id}>{Math.floor(timeS2)}:{String(((timeS%1).toFixed(2))*60).padStart(2,'0')}&nbsp;{!Math.floor(timeS/12)?'AM':'PM'} - {Math.floor(timeE2)}:{String(((timeE%1).toFixed(2))*60).padStart(2,'0')}&nbsp;{!Math.floor(timeE/12)?'AM':'PM'}</th>
+    })
+  const tableBody=Object.keys(state.subjects).map(day=>{
+    return <tr key={day}>
+      <th>{day}</th>
+      {state.subjects[day].map((sub,id)=>{
+        let flag=(state.breakStart-state.start)/state.periodDuration
+        if(id===flag-1 && day==='Monday'){
+          return (
+            <React.Fragment key={id}>
+            <td >{sub}</td>
+            <td rowSpan='6'>Lunch</td>
+            </React.Fragment>
+          );
+        }
+        return <td key={id}>{sub}</td>
+      })}
+    </tr>
+  })
   return (
-  <div className="container">
-  <Card className="text-center">  
-       <CardHeader className="card-header">
-          <CardTitle className="card-title"><h3>TIME TABLE</h3></CardTitle>
-       </CardHeader>     
-       <CardBody>
-         <CardText>
-          <Table responsive size="sm" hover bordered>
-            <thead>
-              <tr>
-                <th scope="col"></th>
-                <th scope="col">7:30 - 8:30</th>
-                <th scope="col">8:30 - 9:30</th>
-                <th scope="col">9:30 - 10:30</th>
-                <th scope="col">Break</th>
-                <th scope="col">11:00 - 11:50</th>
-                <th scope="col">11:50 - 12:40</th>
-                <th scope="col">12:40 - 1:30</th>
-                <th scope="col">Lunch</th>
-                <th scope="col">2:30 - 3:30</th>
-                <th scope="col">3:30 - 4:30</th>
-                <th scope="col">4:30 - 5:30</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">Monday</th>
-                <td>CS5B DBMS</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>CS5B DBMS</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>CS5B DBMS</td>
-                <td></td>
-              </tr>
-              <tr>
-                <th scope="row">Tuesday</th>
-                <td></td>
-                <td></td>
-                <td>CS5A SE</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>CS5A SE</td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <th scope="row">Wednesday</th>
-                <td>CS5B DBMS</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>CS5B DBMS</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <th scope="row">Thursday</th>
-                <td ></td>
-                <td></td>
-                <td></td>
-                <td>CS5A SE</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>CS5A SE</td>
-                <td></td>
-                <td>CS5A SE</td>
-              </tr>
-              <tr>
-                <th scope="row">Friday</th>
-                <td >Larry</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
-              </tr>
-              <tr>
-                <th scope="row">Saturday</th>
-                <td>CS5B DBMS </td>
-                <td></td>
-                <td>CS5B DBMS</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>CS5B DBMS</td>
-                <td></td>
-              </tr>
-            </tbody>
-       </Table>
-       </CardText>
-    </CardBody>
-    </Card>
+    <div className='TT'>
+      <h2>Time Table</h2>
+      <div>
+      <table>
+        <thead>
+          <tr>
+          <th></th>
+          {beforeBreak}
+          <th>{breakS}:{String((((breakS)%1).toFixed(2))*60).padStart(2,'0')}&nbsp;{!Math.floor(breakS/12)?'AM':'PM'} - {Math.floor(breakE)}:{String((((breakE)%1).toFixed(2))*60).padStart(2,'0')}&nbsp;{!Math.floor(breakE/12)?'AM':'PM'}</th>
+          {afterBreak}
+          </tr>
+        </thead>
+        <tbody>
+          {tableBody}
+        </tbody>
+      </table>
+      </div>
     </div>
   );
-}
-}
+};
 
 
 export default Timetable;
