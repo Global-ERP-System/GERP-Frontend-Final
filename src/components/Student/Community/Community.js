@@ -50,7 +50,7 @@ class Community extends Component {
                 </div>
 
                 <div id="SideNavBar" style={{width:'18%',marginTop:'18%'}}>
-                <img src="https://camblycontent.files.wordpress.com/2017/02/advertising-word-block.jpg?w=640" style={{height:'90%',width:'80%',marginTop:'5%'}}></img>
+                <img src="https://dcassetcdn.com/design_img/3361176/175408/175408_18909504_3361176_2e474988_image.png" style={{height:'90%',width:'80%',marginTop:'5%'}}></img>
                 </div>
 
                 <div id="Contentbox"style={{height:'316px',marginRight:'-135px',marginTop:'-60px', marginLeft:'20%'}}>
@@ -83,83 +83,79 @@ class Community extends Component {
                         <div style={{height:'50px',width:'50px',borderRadius:'100px',margin:'2% 3%'}}>
                             <img src="https://pbs.twimg.com/profile_images/669103856106668033/UF3cgUk4.jpg" style={{height:'50px',width:'50px',borderRadius:'100px'}}></img>
 
-                        <div id="designation">Nikita Khanna</div>  
+                        <div id="designation"><b>Abhimanyu Singh</b>
+                        <p style={{width:'120%',marginLeft:'13%'}}>HR Consultant at Dabur Industries<br></br>
+                        <span style={{marginLeft:'-79%',color:'green'}}>10h</span>
+                        </p> 
+                        
+                        </div>
 
                         </div>
 
-                        <div id="post-content"></div>
+                        <div id="post-content">
+                            
+                            <p id="main-content-matter">Did you hear that buzzing sound?<br></br>That's for you to set the alarm for the
+                            Codsule, which is taking place tomorrow from 8:00 PM - 11:00 PM.
+                            <br></br>
+                            Register for the Contest at <a href="https://cb.lk/codjulyli">https://cb.lk/codjulyli</a>
+                            </p>
+
+                            <p id="main-content-matter" style={{color:'#3498DB',fontWeight:'bold'}}>#Codsule #CodingChallenge #Nagarro #Coding #Programming</p>
+
+                            <img src="https://pbs.twimg.com/media/EckJ0_RWkAMuu4D.jpg" style={{width:'86%',height:'48%'}}></img>
+
+                            {/* <span>10</span> */}
+
+                            <hr style={{width:'95%',marginTop:'4%'}}></hr>
                         
-                        <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem</p>
-                        <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem </p>
-                        <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem </p>
-                        <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem </p>
-                        <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem </p>
-                        <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem  </p>
-                        <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem</p>
-                        <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem </p>
-                        <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem  </p>
+                        </div>
+                        
                         <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem</p>
                         <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem </p>
                         
                     </div>
+
                 </div>
-                <div id="SideNavBar" style={{width:'18%',marginLeft:'81%',border:'1px solid red'}}>
-                        <div className='container profile' style={{marginTop:'0px'}}>
-                         {/* <h5 id="notify" style={{marginLeft:'90px'}}>Profile</h5> */}
-
-                         {/* <hr style={{width:'90%',marginTop:'12%',marginLeft:'6%'}}></hr> */}
+                <div id="SideNavBar" style={{width:'18%',marginLeft:'81%'}}>
+                       
+                         {/* <h5 id="notify">Profile</h5>  */}
+                         <img src="https://almashines.s3.dualstack.ap-southeast-1.amazonaws.com/assets/images/cover/487.jpg?v=1575095450" style={{height:'27%',width:'100%'}}></img>
+                         {/* <hr style={{marginTop:'25%'}}></hr> */}
 
                          
-                         
-                         {/* <ul style={{marginLeft:'-175%',marginTop:'4%'}}>
-                             <li style={{fontSize:'90%',marginLeft:'-4%',paddingRight:'4%'}}>340 relations</li>
-                         </ul> */}
-
-                         {/* <img src="https://image.flaticon.com/icons/png/512/61/61456.png" style={{height:'12%',width:'4%',position:'absolute',marginTop:'3%'}}></img> */}
-
-                         {/* <div id="profile_circle" style={{height:'30%',width:'30%',borderRadius:'60%',marginTop:'-6%'}}>
+                         <div id="profile_circle" style={{height:'30%',width:'33%',borderRadius:'60%',marginLeft:'6%',marginTop:'-25%'}}>
                             <img src="https://pbs.twimg.com/profile_images/669103856106668033/UF3cgUk4.jpg" style={{borderRadius:'60%',width:'99%',height:'100%'}} ></img>
-                         </div> */}
-
-                         <div id="content_profile" style={{position:'absolute',marginTop:'3%'}}>
-                             {/* <span>Welcome,</span> */}
-                                {/* <br></br> */}
-                                <br></br>
-                                <br></br>
-                                
-                             {/* <div style={{marginLeft:'-16%',width:'120%',fontSize:'14px'}}>Abhimanyu Singh</div>
-                             <div style={{marginLeft:'-13%',width:'120%',fontSize:'14px'}}>Dabur India Pvt Ltd.</div>
-                             <div style={{marginLeft:'80%',width:'120%',fontSize:'14px'}}>IIM, Lucknow</div>
-                             <div style={{marginLeft:'80%',width:'120%',fontSize:'14px'}}>MBA - II Semester</div>
-                             <div style={{marginLeft:'80%',width:'120%',fontSize:'14px'}}>abhi@gmail.com</div><br></br>
-                             <div style={{marginLeft:'20%',width:'120%'}}>
-                                 <img src="https://toppng.com/uploads/preview/gold-badge-png-11552734724wixvd59trm.png" style={{width:'30%',height:'20%',position:'absolute'}}></img>
-                                 <span style={{position:'absolute',fontSize:'14px',width:'130%',marginLeft:'-30%',marginTop:'6%'}}>84 Recommendation Badges</span>
-                             </div> */}
-                             
-                             {/* <span style={{float:'right',fontSize:'10px',marginTop:'50%',marginRight:'-80%',width:'50%'}}><a href="#" style={{float:'right',textDecoration:'none'}}>View Details</a></span> */}
                          </div>
+
+                         <img src="https://image.flaticon.com/icons/png/512/61/61456.png" style={{height:'6%',width:'6%',marginLeft:'89%',marginTop:'-8%'}}></img> 
+                         
+                         <p style={{margin:'8% 8%',fontWeight:'bold'}}>Abhimanyu Singh</p>
+                         <p style={{margin:'-9% 8%'}}>Dabur India Pvt. Ltd</p>
+                         <p style={{margin:'8% 8%'}}>IIM Lucknow, Lucknow, India</p>
+                         <p style={{margin:'-8% 8%'}}>abhi@gmail.com</p>
+                         <p style={{margin:'8% 8%',color:'blue'}}>
+                             <ul>
+                                 <li>230 connections</li> 
+                             </ul>
+                             <img src="https://toppng.com/uploads/preview/gold-badge-png-11552734724wixvd59trm.png" style={{height:'12%',width:'14%',marginLeft:'4%',marginTop:'-5%'}}></img>
+                            <p style={{marginTop:'-12%',marginLeft:'19%',fontSize:'90%'}}>84 Recommendation Badges</p>
+                        </p>
+            
+                    <span style={{float:'right',fontSize:'10px',paddingRight:'5%',paddingBottom:'12%'}}><a href="#" style={{float:'right',textDecoration:'none'}}>View Details</a></span>
                          
                          
-                        </div>
-                        
-                        <div className='container schedule' style={{height:'302%',marginTop:'5%'}}>
-                        
-                        <FontAwesomeIcon icon={faCalendarCheck} size="3x"></FontAwesomeIcon>
-                        <h5 style={{marginLeft:'15%', marginTop:'5%'}}>My Schedule</h5>
-                           {/* <img src="https://toppng.com/uploads/preview/free-icons-png-calendar-11562886581wuta4pegbh.png" style={{marginTop:'-25px',marginLeft:'-8px'}}></img>
-                            <h5 id="notify"style={{marginRight:'20px'}}>My Schedule</h5>
+                         
+                       
 
-                            <span style={{position:'absolute',marginTop:'5%'}}>Monday: 3 classes planned</span>
-                            <span style={{position:'absolute',marginTop:'7%'}}>Monday: 3 classes planned</span>
-                            <span style={{position:'absolute',marginTop:'9%'}}>Monday: 3 classes planned</span>
-                            <span style={{position:'absolute',marginTop:'11%'}}>Monday: 3 classes planned</span>
-                            <span style={{position:'absolute',marginTop:'13%'}}>Monday: 3 classes planned</span>
-                            <span style={{position:'absolute',marginTop:'15%'}}>Monday: 3 classes planned</span> */}
+                </div>
 
-                            <span style={{position:'absolute',fontSize:'13px',marginTop:'25%',marginLeft:'15%'}}>Monday: 3 classes planned</span>
+                <div id="SideNavBar" style={{width:'18%',marginLeft:'81%',marginTop:'18%'}}>
+                    <FontAwesomeIcon icon={faCalendarCheck} size="3x" style={{margin:'3% 7%'}}></FontAwesomeIcon>
+                                        
+                    <h5 id='notify' style={{marginTop:'-15%'}}>My Schedule</h5>
 
-                        </div>
+                    <p style={{margin:'13% 20%'}}>Monday class at 3PM</p>
+
                 </div>
 
              {  /* <Container id="RightSidebox">
