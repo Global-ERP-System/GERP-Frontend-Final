@@ -90,7 +90,8 @@ const toolbar = props => (
 
                             <hr style={{width:'100%',marginTop:'25%'}}></hr>
 
-                            {/* <span style={{marginLeft:'36%',marginBottom:'-70px'}}>See All</span> */}
+                            <p style={{marginTop:'-6%',marginLeft:'40%'}}><a href='/Allposts' style={{color:'blue',textDecoration:'none'}}>See All</a></p>
+
                         </div>
                     </div>
                     <li><a href="/">Logout</a></li>

@@ -40,6 +40,7 @@ import RaiseReqF from './Faculty/RaiseReq/RaiseReq';
 
 import Signup from './signup';
 import Login from './Login';
+import Allposts from './Allposts';
 
 
 
@@ -67,6 +68,7 @@ class MainComponent extends Component{
                 <Switch>   
                     <Route path='/login' component={Login}/>
                     <Route path='/signup'component={Signup} />
+                    <Route path='/allposts'component={Allposts} />
                     <Route path='/community' component={Community} />
                     <Route path='/intern' component={Intern} />
                     <Route path='/assignment' component ={Assignment} />
