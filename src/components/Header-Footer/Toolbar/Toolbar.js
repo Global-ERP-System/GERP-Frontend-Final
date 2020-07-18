@@ -1,8 +1,14 @@
-import React from 'react';
+import React ,{Component}from 'react';
 import DrawerToggleButton from  '../SideDrawer/DrawerToggleButton';
 import './Toolbar.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBell, faHome, faUser, faBook, faBuilding, faSearch, faComment } from "@fortawesome/free-solid-svg-icons";
+
+import CustomChatbot from '../../chat';
+import { FaBlackTie } from 'react-icons/fa';
+
+
+            
 const toolbar = props => (
     <header className="toolbar">
         <nav className="toolbar_navigation">
@@ -38,26 +44,22 @@ const toolbar = props => (
                 <a href='/profile'><FontAwesomeIcon icon={faUser} style={{marginRight:'0.25em'}}/> Profile</a>
             </div>
             <div className="spacer"/>
+            
             <div className = "toolbar_nav-items">
-                <ul>
-                    <li><a href='/'><FontAwesomeIcon icon={faSearch} /></a></li>
-                    <li><a href='/'><FontAwesomeIcon icon={faComment} /></a></li>
-                    <div className='dropdown'>
-                        <li><a href=""><FontAwesomeIcon icon={faBell} /></a></li>
-                        <div className="dropdown-content" style={{marginLeft:'-480%',width:'250px',height:'400px'}}>
-                            <p><a className="links" href=''>Ajeet posted an update</a></p>
-                            <p><a className="links" href=''>Renu changed her profile</a></p>
-                            <p><a className="links" href=''>New study material added</a></p>
-                            <p><a className="links" href=''>Sudipto published his Research Paper</a></p>
-                        </div>
-                    </div>
                     
+                <ul>
+                    <li><form id="demo-2" style={{marginTop:'0px'}}>
+                        <input type="search" style={{padding:'0px'}} placeholder='search'/>
+                    </form></li>
+                    <li><a href='#' ><FontAwesomeIcon icon={faComment} /></a></li>
+                    <li><a href="/"><FontAwesomeIcon icon={faBell} /></a></li>
                     <li><a href="/">Logout</a></li>
                 </ul>
-                
             </div>
+            <CustomChatbot/>
         </nav>
     </header>
 );
+
 
 export default toolbar

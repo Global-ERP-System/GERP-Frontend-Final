@@ -76,3 +76,35 @@
 .links{
     color:black !important;
 }
+/*-------------------------------------*/
+
+  #demo-2 input[type=search] {
+    background: #ff5200 url(../../../assets/search-13-16.png) no-repeat center;
+	border: solid 1px #ff5200;
+	padding: 9px 10px 9px 32px;
+	width: 40px;
+	
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+	border-radius: 10em;
+	
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+
+#demo-2 input[type=search]:hover {
+	background-color: #fff;
+}
+#demo-2 input[type=search]:focus {
+	width: 130px;
+	padding-left: 32px;
+	background-color: #fff;
+	cursor: auto;
+}
+#demo-2 input:-moz-placeholder {
+	color: transparent;
+}
+#demo-2 input::-webkit-input-placeholder {
+	color: transparent;
+}
