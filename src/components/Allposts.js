@@ -26,8 +26,8 @@ class Allposts extends Component {
                
                 return (
                                 <body>
-                                <img src="https://gawvs.in//assets/img/login.png" style={{height:'20%',width:'30%',float:'left',marginLeft:'8%',marginTop:'8%'}}></img>
-                                
+                                <img src="https://m.gofisher.net/sites/default/files/social-media-management_0.png" style={{height:'40%',width:'30%',float:'left',marginLeft:'3%',marginTop:'8%'}}></img>
+                                {/* https://www.pngitem.com/pimgs/m/500-5004833_side-img-people-chatting-on-social-media-hd.png */}
                                 </body>
                       ); 
               
