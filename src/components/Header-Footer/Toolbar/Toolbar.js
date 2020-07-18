@@ -1,8 +1,13 @@
-import React from 'react';
+import React ,{Component}from 'react';
 import DrawerToggleButton from  '../SideDrawer/DrawerToggleButton';
 import './Toolbar.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBell, faHome, faUser, faBook, faBuilding, faSearch, faComment } from "@fortawesome/free-solid-svg-icons";
+
+import CustomChatbot from '../../chat';
+
+
+            
 const toolbar = props => (
     <header className="toolbar">
         <nav className="toolbar_navigation">
@@ -41,14 +46,16 @@ const toolbar = props => (
             <div className = "toolbar_nav-items">
                 <ul>
                     <li><a href='/'><FontAwesomeIcon icon={faSearch} /></a></li>
-                    <li><a href='/'><FontAwesomeIcon icon={faComment} /></a></li>
+                    <li><a href='#' ><FontAwesomeIcon icon={faComment} /></a></li>
                     <li><a href="/"><FontAwesomeIcon icon={faBell} /></a></li>
                     <li><a href="/">Logout</a></li>
                 </ul>
                 
             </div>
+            <CustomChatbot/>
         </nav>
     </header>
 );
+
 
 export default toolbar

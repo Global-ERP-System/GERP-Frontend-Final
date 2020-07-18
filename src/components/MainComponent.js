@@ -41,6 +41,8 @@ import RaiseReqF from './Faculty/RaiseReq/RaiseReq';
 import Signup from './signup';
 import Login from './Login';
 
+
+
 import {BrowserRouter as Router,Route,Link,Switch, Redirect,withRouter} from 'react-router-dom'
 class MainComponent extends Component{
     constructor(props){
@@ -63,8 +65,8 @@ class MainComponent extends Component{
                 <div>
                 {this.props.location.pathname!=='/login'&&this.props.location.pathname!=='/signup'?<Header />:null}
                 <Switch>   
+                    <Route path='/login' component={Login}/>
                     <Route path='/signup'component={Signup} />
-                    <Route path='/login'component={Login} />    
                     <Route path='/community' component={Community} />
                     <Route path='/intern' component={Intern} />
                     <Route path='/assignment' component ={Assignment} />
@@ -116,7 +118,16 @@ class MainComponent extends Component{
             )
         }
         else{
-            return(<div></div>)
+            return(
+                <Router>
+                <Switch>  
+                <Route path='/login' />
+                <Route path='/signup'component={Signup} />
+                <Redirect to="/login" />
+                </Switch> 
+                </Router>
+               
+                );
         }
     }
 }
