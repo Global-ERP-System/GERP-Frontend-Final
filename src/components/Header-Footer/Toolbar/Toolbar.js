@@ -59,7 +59,7 @@ const toolbar = props => (
                                 <div id="circle-notify">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg" style={{height:'60px',width:'60px',borderRadius:'120px',margin: '5% -2%'}}></img>  
                                 <p style={{width:'155px',height:'70px',marginLeft:'120%',marginTop:'-100%'}}>
-                                    <a className="links" href=''>Ajeet posted an update</a>
+                                    <a className="links" href='/singlepost'>Ajeet posted an update</a>
                                 </p>
                                 </div>
                             </p>
@@ -67,7 +67,7 @@ const toolbar = props => (
                                 <div id="circle-notify">
                                 <img src="https://img1.nickiswift.com/img/gallery/the-untold-truth-of-mark-zuckerbergs-wife-priscilla-chan/intro-1583268905.jpg" style={{height:'60px',width:'60px',borderRadius:'120px',margin: '5% -2%'}}></img>  
                                 <p style={{width:'155px',height:'70px',marginLeft:'120%',marginTop:'-100%'}}>
-                                    <a className="links" href=''>Renu changed her profile</a>
+                                    <a className="links" href='/singlepost'>Renu changed her profile</a>
                                 </p>
                                 </div>
                             </p>
@@ -75,7 +75,7 @@ const toolbar = props => (
                                 <div id="circle-notify">
                                 <img src="https://www.manifoldkerala.com/wp-content/uploads/2018/06/buk4.jpg" style={{height:'60px',width:'60px',borderRadius:'120px',margin: '5% -2%'}}></img>  
                                 <p style={{width:'155px',height:'70px',marginLeft:'120%',marginTop:'-100%'}}>
-                                    <a className="links" href=''>New Study Material added</a>
+                                    <a className="links" href='/singlepost'>New Study Material added</a>
                                 </p>
                                 </div>    
                             </p>
@@ -83,7 +83,7 @@ const toolbar = props => (
                                 <div id="circle-notify">
                                 <img src="https://pbs.twimg.com/profile_images/864282616597405701/M-FEJMZ0.jpg" style={{height:'60px',width:'60px',borderRadius:'120px',margin: '5% -2%'}}></img>  
                                 <p style={{width:'155px',height:'70px',marginLeft:'120%',marginTop:'-100%'}}>
-                                    <a className="links" href=''>Sudipto published his Research Paper</a>
+                                    <a className="links" href='/singlepost'>Sudipto published his Research Paper</a>
                                 </p>
                                 </div>
                             </p>
@@ -94,7 +94,7 @@ const toolbar = props => (
 
                         </div>
                     </div>
-                    <li><a href="/">Logout</a></li>
+                    <li><a href="/Login">Logout</a></li>
                 </ul>
             </div>
             <CustomChatbot/>
