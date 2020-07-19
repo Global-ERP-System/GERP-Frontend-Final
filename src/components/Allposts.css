@@ -1,0 +1,26 @@
+#main-box
+{
+    /* border: 1px solid red; */
+    height: 550px;
+    width: 35%;
+    margin-left: 44%;
+    margin-top: 7%;
+    background-color: whitesmoke;
+}
+
+#posts_all
+{
+    /* border:1px solid green; */
+    height:80px;
+    width:70%;
+    margin: 2% 2%;
+}
+
+#circle-notify
+  {
+      height:60px;
+      width:60px;
+      border-radius: 120px;
+      margin: 2% 3%;
+      /* border:1px solid blue; */
+  }
