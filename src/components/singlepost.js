@@ -40,6 +40,8 @@ class singlepost extends Component {
 
                             <div id="comment-section">
                                 <hr style={{marginTop:'9%'}}></hr>
+
+                                
                             </div>
 
 
