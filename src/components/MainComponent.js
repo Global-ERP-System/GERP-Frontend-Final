@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import Header from './Header-Footer/header';
 import HeaderFaculty from './Header-Footer/HeaderF';
-import Footer from './Header-Footer/footer';
+//import Footer from './Header-Footer/footer';
 import FooterF from './Header-Footer/FooterF';
 import Navbars from './Header-Footer/navbar';
 
