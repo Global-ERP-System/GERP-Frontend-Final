@@ -32,7 +32,7 @@ class singlepost extends Component {
 
                             <div id="main-box">
                             
-                            
+                            <img src="https://cdn.vertex42.com/ExcelTemplates/Images/college-class-schedule-template.png" style={{margin:'3% 2%',height:'520px',width:'95%'}}></img>
                             
                             
 
