@@ -42,6 +42,8 @@ class singlepost extends Component {
                                 <hr style={{marginTop:'9%'}}></hr>
 
                                 <div id="circles">
+                                    {/* <p>hello ajeet sir</p> */}
+                                    {/* <p>ierbvmier</p> */}
                                     <p id="name">Ajeet Malhotra</p>
                                     <p id="timeofpost">2 mins ago</p>
                                 </div>
