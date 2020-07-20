@@ -23,15 +23,21 @@
     height:60px;
     width:60px;
     border-radius: 120%;
-    border:1px solid purple;
     margin-left: 2%;
+}
+
+#user-pic
+{
+    height:60px;
+    width:60px;
+    border-radius: 120%;
 }
 
 #name
 {
     width:240%;
     margin-left: 126%;
-    margin-top: 6px;
+    margin-top: -50px;
     font-weight: bold;
 }
 

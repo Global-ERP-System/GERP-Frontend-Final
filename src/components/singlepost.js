@@ -42,8 +42,7 @@ class singlepost extends Component {
                                 <hr style={{marginTop:'9%'}}></hr>
 
                                 <div id="circles">
-                                    {/* <p>hello ajeet sir</p> */}
-                                    {/* <p>ierbvmier</p> */}
+                                    <img id="user-pic" src="https://upload.wikimedia.org/wikipedia/commons/1/18/Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg"></img>
                                     <p id="name">Ajeet Malhotra</p>
                                     <p id="timeofpost">2 mins ago</p>
                                 </div>
@@ -53,6 +52,8 @@ class singlepost extends Component {
                                 </p>
 
                                 <hr style={{marginTop:'12%'}}></hr>
+                                <img src="https://www.freeiconspng.com/uploads/like-icon-0.png" style={{height:'3%',width:'2%',position:'absolute',marginLeft:'3%',marginTop:'3px'}}></img>
+                                <img src="https://img.pngio.com/comment-comments-description-note-notice-icon-comment-icon-png-512_512.png" style={{height:'3%',width:'2%',position:'absolute',marginLeft:'19%',marginTop:'3px'}}></img>
                                 <span style={{marginLeft:'17%'}}>Like</span>
                                 <span style={{marginLeft:'44%'}}>Comment</span>
                                 <hr style={{marginTop:'4%'}}></hr>

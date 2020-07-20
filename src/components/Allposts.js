@@ -36,7 +36,7 @@ class Allposts extends Component {
                                 <div id="circle-notify">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg" style={{height:'60px',width:'60px',borderRadius:'120px'}}></img>
                                 <p style={{width:'400px',height:'70px',marginLeft:'130%',marginTop:'-93%'}}>
-                                    <a href=''>Ajeet posted an update</a>
+                                    <a href='/singlepost'>Ajeet posted an update</a>
                                     <p>10 minutes ago</p>
                                 </p>
                                 </div>
@@ -46,7 +46,7 @@ class Allposts extends Component {
                                 <div id="circle-notify">
                                 <img src="https://img1.nickiswift.com/img/gallery/the-untold-truth-of-mark-zuckerbergs-wife-priscilla-chan/intro-1583268905.jpg" style={{height:'60px',width:'60px',borderRadius:'120px'}}></img>
                                 <p style={{width:'400px',height:'70px',marginLeft:'130%',marginTop:'-93%'}}>
-                                    <a href=''>Renu changed her profile</a>
+                                    <a href='/singlepost'>Renu changed her profile</a>
                                     <p>An hour ago</p>
                                 </p>
                                 </div>
@@ -56,7 +56,7 @@ class Allposts extends Component {
                                 <div id="circle-notify">
                                 <img src="https://www.manifoldkerala.com/wp-content/uploads/2018/06/buk4.jpg" style={{height:'60px',width:'60px',borderRadius:'120px'}}></img>
                                 <p style={{width:'400px',height:'70px',marginLeft:'130%',marginTop:'-93%'}}>
-                                    <a href=''>New study material added</a>
+                                    <a href='/singlepost'>New study material added</a>
                                     <p>10 minutes ago</p>
                                 </p>
                                 </div>
@@ -66,7 +66,7 @@ class Allposts extends Component {
                                 <div id="circle-notify">
                                 <img src="https://pbs.twimg.com/profile_images/864282616597405701/M-FEJMZ0.jpg" style={{height:'60px',width:'60px',borderRadius:'120px'}}></img>
                                 <p style={{width:'400px',height:'70px',marginLeft:'130%',marginTop:'-93%'}}>
-                                    <a href=''>Sudipto published his research paper</a>
+                                    <a href='/singlepost'>Sudipto published his research paper</a>
                                     <p>10 minutes ago</p>
                                 </p>
                                 </div>
