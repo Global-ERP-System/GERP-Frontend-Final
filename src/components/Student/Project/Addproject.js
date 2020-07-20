@@ -39,7 +39,7 @@ export default class Addproject extends Component {
                             ADD PROJECT </Modal.Title>
                     </Modal.Header>
                     <Modal.Body style={{background:'whitesmoke'}}>
-                        <div className="container" style={{padding:'0px', margin:'0px'}}>
+                        
                             <div className="Add_Project_container">
                                 <form onSubmit={this.handlesubmit}>
                                     <label style={{fontFamily:'Pt sans narrow ', fontWeight:'700'}}>Title*</label>
@@ -53,7 +53,7 @@ export default class Addproject extends Component {
                                    <Button style={{marginTop:'20px', background:'red'}}>Save</Button>
                                 </form>
                             </div>
-                        </div>
+                        
                     </Modal.Body>
                 </Modal>
             </div>

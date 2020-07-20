@@ -37,156 +37,238 @@ handleChange({ target }) {
 
     render()  {
         return (
-            <div style={{textAlign:"center"}}>
+            <div id='main_box'>
+                <h1 id='title' style={{ marginTop:'0px' }}>My Profile</h1>
+                <Row>
+                    <Col sm={5}>
+                        <div style={{ marginTop: "40px" }}>
+                            <img src={avatar} alt="avatar" className="img-thumbnail" />
 
-                <div style={{ marginTop: "70px" }}>
-                    <img src={avatar} alt="avatar" className="img-thumbnail" />
-                    <div style={{marginLeft:"40%",width:"40%",alignContent:"center"}}>
-                        <MDBFormInline>
-                            <NavLink href="/">
-                                <Col style={{color:'blue'}} md="auto">Add Photo</Col>
-                            </NavLink>
-                            <NavLink href="/">
-                                <Col style={{color:'blue'}} md="auto">Remove Photo</Col>
-                            </NavLink>
+                            <Row>
+                                <Col sm={6}>
+                                    <NavLink href="/">
+                                        <Col style={{ color: 'blue' }} md="auto">Add Photo</Col>
+                                    </NavLink>
+                                </Col>
+                                <Col sm={6}>
+                                    <NavLink href="/">
+                                        <Col style={{ color: 'blue' }} md="auto">Remove Photo</Col>
+                                    </NavLink>
+                                </Col>
 
-                        </MDBFormInline>
-                    </div>
-                </div>
-
-                <h1 id='title'>My Profile</h1>
-
-                <div>
-                    <div style={{marginLeft:"40%",width:"40%",alignContent:"center"}}>
-                        <MDBFormInline>
-                            <div className="column">Full Name</div>
-                            <div style={{marginLeft:"20%"}} className="column">{this.state.fullName}</div>
-                        </MDBFormInline>
-                        <MDBFormInline>
-                            <div className="column">Parent Name</div>
-                            <div style={{marginLeft:"16%"}} className="column">{this.state.parentName}</div>
-                        </MDBFormInline>
-                        
-                        <MDBFormInline>
-                        <div className="column">Registration Number</div>
-                        <div style={{marginLeft:"5%"}} className="column">{this.state.registrationNumber}</div>
-                        </MDBFormInline>
-                        <MDBFormInline>
-                        <div className="column">Roll Number</div>
-                        <div style={{marginLeft:"17%"}} className="column">{this.state.rollNumber}</div>
-                        </MDBFormInline>
-                        <MDBFormInline>
-                        <div className="column">Blood Group</div>
-                        <div style={{marginLeft:"17%"}} className="column">{this.state.bloodGroup}</div>
-                        </MDBFormInline>
-                        <MDBFormInline>
-                        <div className="column">Campus Code</div>
-                        <div style={{marginLeft:"14%"}} className="column">{this.state.campusCode}</div>
-                        </MDBFormInline>
-                        <MDBFormInline>
-                        <div className="column">E-mail Id</div>
-                        <div style={{marginLeft:"22%"}} className="column">{this.state.email}</div>
-                        </MDBFormInline>
-                        <br/>
-                    </div>
-                </div>
-
-                <div style={{marginLeft:"3%"}}>
+                            </Row>
 
 
-                <Popup className='popup' trigger={<button style={{fontSize: "15px"}}><b style={{color:'white'}}>Enter Campus Code</b></button>} position="right bottom">
-                        
-                        {close => (
+                        </div>
+                    </Col>
+
+
+
+                    <Col sm={7}>
                         <div>
-                            <a className="close" onClick={close}>
-                        &times;
-                        </a>
-                        </div>
-                        )}
+                            <div>
+                              
+                                    <Row>
+                                        <Col sm={6}>
+                                            <div className="column">Full Name</div>
+                                        </Col>
+                                        <Col sm={6}>
+                                            <div className="column">{this.state.fullName}</div>
+                                        </Col>
 
-                    <form className="form-group">
-                            
-                            <label>Campus Code :</label>		                    
-                            <input className="form-control"  placeholder="Campus Code"
-                             name="campusCode"
-                             value={ this.state.campusCode }
-                             onChange={ this.handleChange } />
-                        
-                            <br/>
-                    </form>
-
-                        <div style={{textAlign:'center'}}>
-                            <button  type='submit' style={{marginLeft: "40%", fontSize: "15px"}} onClick={ this.publish }><b style={{color:'white'}}>Submit</b></button>
-                        </div>
-                    
-                    </Popup>
+                                </Row>
 
 
-                   
-                    <Popup className='popup' trigger={<button style={{marginLeft: "50px", fontSize: "15px"}}><b style={{color:'white'}}>Edit Details</b></button>} position="right bottom">
-                        
-                        {close => (
-                        <div>
-                            <a className="close" onClick={close}>
-                        &times;
-                        </a>
-                        </div>
-                        )}
-                            
+                                <Row>
+                                    <Col sm={6}>
+                                        <div className="column">Parent Name</div>
+                                       
+                                    </Col>
+                                    <Col sm={6}>
+                                        <div  className="column">{this.state.parentName}</div>
+                                    </Col>
 
-                            <h3 id='title'>My Profile</h3>
-                           
-                            <form className="form-group">
-                            
-		                        <label>Full Name :</label><br/>		                    
-                                <input className="form-control" placeholder="Full Name"
-                                 name="fullName" 
-                                 value={ this.state.fullName }
-                                 onChange={ this.handleChange } />
-                            
-                                <br/>
+                                </Row>
+
+
+
+
+                                <Row>
+                                    <Col sm={6}>
+                                        <div className="column">Registration Number</div></Col>
+                                    <Col sm={6}>
+                                            <div className="column">{this.state.registrationNumber}</div>
+                                        </Col>
+                                    
+
+                                </Row>
+
+
+
+                                <Row>
+                                    <Col sm={6}>
+                                        <div className="column">Roll Number</div>
+                                                                          </Col>
+                                    <Col sm={6}>
+                                        <div   className="column">{this.state.rollNumber}</div> 
+                                    </Col>
+
+                                </Row>
+
+
+
+
+                                <Row>
+                                    <Col sm={6}>
+                                        <div className="column">Blood Group</div>
+                                      
+                                    </Col>
+                                    <Col sm={6}>
+                                        <div   className="column">{this.state.bloodGroup}</div>
+                                    </Col>
+
+                                </Row>
+
+
+                                <Row>
+                                    <Col sm={6}>
+                                        <div className="column">Campus Code</div>
+                                    </Col>
+                                    <Col sm={6}>
+                                        <div   className="column">{this.state.campusCode}</div>
+                                    </Col>
+
+                                </Row>
+                                <Row>
+                                    <Col sm={6}>
+                                        <div className="column">E-mail Id</div>
+                                      
+                                    </Col>
+                                    <Col sm={6}>
+                                        <div   className="column">{this.state.email}</div>
+                                    </Col>
+
+                                </Row>
+                                    
+                                    
                                 
-                                <label>Registration Number :</label><br/>		                    
-                                <input className="form-control"  placeholder="Registration Number"
-                                name="registrationNumber" 
-                                value={ this.state.registrationNumber}
-                                onChange={ this.handleChange }/>
-                           <br/>
-                            
-                                <label>Roll Number :</label>  <br/>                         
-		                        <input className="form-control" placeholder="Roll Number"
-                                name="rollNumber" 
-                                value={ this.state.phoneNumber }
-                                onChange={ this.handleChange }/>
-                            <br/>
-                            
-                                <label>Blood Group :</label> <br/>                           
-		                        <input className="form-control"  placeholder="Blood Group"
-                                name="bloodGroup" 
-                                value={ this.state.bloodGroup}
-                                onChange={ this.handleChange }/>
-                            <br/>
-                            
-                                <label>E-mail ID :</label><br/>                           
-		                        <input className="form-control" type="email" placeholder="Email"
-                                name="email" 
-                                value={ this.state.email }
-                                onChange={ this.handleChange }/><br/>
-                            
-                                <label>Parent Name :</label> <br/>                           
-		                        <input className="form-control" type="text" placeholder="Parent Name"
-                                name="parentName" 
-                                value={ this.state.address }
-                                onChange={ this.handleChange }/><br/>
-                            </form>                        
-                            
-                            <div style={{textAlign:'center'}}>
-                            <button  type='submit' style={{marginLeft: "40%", fontSize: "15px"}} onClick={ this.publish }><b style={{color:'white'}}>Submit</b></button>
+                               
                             </div>
+                        </div>
+
+                        <div style={{ marginLeft: "3%" }}>
+
+
+                            <Popup className='popup' trigger={<button style={{ fontSize: "15px" }}><b style={{ color: 'white' }}>Enter Campus Code</b></button>} position="right bottom">
+
+                                {close => (
+                                    <div>
+                                        <a className="close" onClick={close}>
+                                            &times;
+                        </a>
+                                    </div>
+                                )}
+
+                                <form className="form-group">
+
+                                    <label>Campus Code :</label>
+                                    <input className="form-control" placeholder="Campus Code"
+                                        name="campusCode"
+                                        value={this.state.campusCode}
+                                        onChange={this.handleChange} />
+
+                                    <br />
+                                </form>
+
+                                <div style={{ textAlign: 'center' }}>
+                                    <button type='submit' style={{ marginLeft: "40%", fontSize: "15px" }} onClick={this.publish}><b style={{ color: 'white' }}>Submit</b></button>
+                                </div>
+
+                            </Popup>
+
+
+
+                            <Popup className='popup' trigger={<button style={{ marginLeft: "50px", fontSize: "15px" }}><b style={{ color: 'white' }}>Edit Details</b></button>} position="right bottom">
+
+                                {close => (
+                                    <div>
+                                        <a className="close" onClick={close}>
+                                            &times;
+                        </a>
+                                    </div>
+                                )}
+
+
+                                <h3 id='title'>My Profile</h3>
+
+                                <form className="form-group">
+
+                                    <label>Full Name :</label><br />
+                                    <input className="form-control" placeholder="Full Name"
+                                        name="fullName"
+                                        value={this.state.fullName}
+                                        onChange={this.handleChange} />
+
+                                    <br />
+
+                                    <label>Registration Number :</label><br />
+                                    <input className="form-control" placeholder="Registration Number"
+                                        name="registrationNumber"
+                                        value={this.state.registrationNumber}
+                                        onChange={this.handleChange} />
+                                    <br />
+
+                                    <label>Roll Number :</label>  <br />
+                                    <input className="form-control" placeholder="Roll Number"
+                                        name="rollNumber"
+                                        value={this.state.phoneNumber}
+                                        onChange={this.handleChange} />
+                                    <br />
+
+                                    <label>Blood Group :</label> <br />
+                                    <input className="form-control" placeholder="Blood Group"
+                                        name="bloodGroup"
+                                        value={this.state.bloodGroup}
+                                        onChange={this.handleChange} />
+                                    <br />
+
+                                    <label>E-mail ID :</label><br />
+                                    <input className="form-control" type="email" placeholder="Email"
+                                        name="email"
+                                        value={this.state.email}
+                                        onChange={this.handleChange} /><br />
+
+                                    <label>Parent Name :</label> <br />
+                                    <input className="form-control" type="text" placeholder="Parent Name"
+                                        name="parentName"
+                                        value={this.state.address}
+                                        onChange={this.handleChange} /><br />
+                                </form>
+
+                                <div style={{ textAlign: 'center' }}>
+                                    <button type='submit' style={{ marginLeft: "40%", fontSize: "15px" }} onClick={this.publish}><b style={{ color: 'white' }}>Submit</b></button>
+                                </div>
+
+                            </Popup>
+                            <br /><br />
+                        </div>
+                    </Col>
+
+
+
+
+
+
+
                     
-                    </Popup>
-                    <br/><br/>
-                </div>
+
+                </Row>
+
+               
+
+               
+
+               
             </div>
 
 
