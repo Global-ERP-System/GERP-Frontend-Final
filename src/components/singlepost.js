@@ -41,6 +41,21 @@ class singlepost extends Component {
                             <div id="comment-section">
                                 <hr style={{marginTop:'9%'}}></hr>
 
+                                <div id="circles">
+                                    <p id="name">Ajeet Malhotra</p>
+                                    <p id="timeofpost">2 mins ago</p>
+                                </div>
+
+                                <p style={{marginLeft:'3%',marginTop:'3%'}}>Ajeet Malhotra posted an update regarding the faculty time table.
+                                <br></br>The lectures have been extended for another 10 minutes.
+                                </p>
+
+                                <hr style={{marginTop:'12%'}}></hr>
+                                <span style={{marginLeft:'17%'}}>Like</span>
+                                <span style={{marginLeft:'44%'}}>Comment</span>
+                                <hr style={{marginTop:'4%'}}></hr>
+
+
                                 
                             </div>
 

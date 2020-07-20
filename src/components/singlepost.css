@@ -17,3 +17,29 @@
     float: right;
     margin-right: 9%;
 }
+
+#circles
+{
+    height:60px;
+    width:60px;
+    border-radius: 120%;
+    border:1px solid purple;
+    margin-left: 2%;
+}
+
+#name
+{
+    width:240%;
+    margin-left: 126%;
+    margin-top: 6px;
+    font-weight: bold;
+}
+
+#timeofpost
+{
+    width:240%;
+    margin-left: 126%;
+    color:green;
+    font-size: 80%;
+    margin-top: -13px;
+}
