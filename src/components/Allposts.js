@@ -30,7 +30,7 @@ class Allposts extends Component {
                             <img src="https://m.gofisher.net/sites/default/files/social-media-management_0.png" style={{height:'40%',width:'30%',float:'left',marginLeft:'6%',marginTop:'8%'}}></img>
                             {/* https://www.pngitem.com/pimgs/m/500-5004833_side-img-people-chatting-on-social-media-hd.png */}
 
-                            <div id="main-box">
+                            <div id="main-box" style={{marginLeft:'47%',width:'35%',height:'530px'}}>
                             <br></br>
                             <div id="posts_all">
                                 <div id="circle-notify">
