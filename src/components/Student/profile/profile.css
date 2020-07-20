@@ -1,29 +1,24 @@
-#title{
+#title {
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-family: sans-serif;  
-    font-size: 36px;  
-}
-
-img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90px;
-    height: 90px;
+    font-family: 'Montserrat',sans-serif;
+    font-weight:700;
     
 }
 
-.content{    
-    padding: 20px;
+#main_box{
+    border: solid 1px;
+    margin-right:20%;
+    margin-left:20%;
+    padding:30px;
+    margin-top:100px;
+
+}
+.img-thumbnail {
+    display: block;
+    width: 210px;
+    height: 210px;
 }
 
-.column{ 
-   padding: 10px;
-   font-family: sans-serif;
-   font-size: 18px;
-}
 
 #button{
     
@@ -31,6 +26,5 @@ img{
     padding: 10px;
     
 }
-
 
 
