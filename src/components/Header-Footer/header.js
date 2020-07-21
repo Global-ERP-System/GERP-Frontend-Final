@@ -35,7 +35,7 @@ class Header extends Component{
 
         return(
             <div style={{height:'100%'}}>
-                <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
+                <Toolbar drawerClickHandler={this.drawerToggleClickHandler} clickFunc={this.props.clickFunc } />
                 <SideDrawer show={this.state.sideDrawerOpen} />
                 {backdrop}
                 <main style={{marginTop:'64px'}}>

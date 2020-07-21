@@ -48,14 +48,21 @@ class MainComponent extends Component{
     constructor(props){
         super(props);
         this.state={
-            isLoggedIn:true
+            isLoggedIn:false,
+            facultyLoggedIn:false
         }
         this.onButtonClick = this.onButtonClick.bind(this);
+        this.onButtonClickStaff=this.onButtonClickStaff.bind(this);  
     }
     onButtonClick() {
         this.setState({
-            isLoggedIn: true
-            
+            isLoggedIn: !this.state.isLoggedIn
+          //  facultyLoggedIn:true        
+        });
+    }
+      onButtonClickStaff() {
+        this.setState({
+            facultyLoggedIn: !this.state.facultyLoggedIn
         });
     }
    
@@ -63,11 +70,10 @@ class MainComponent extends Component{
         if(this.state.isLoggedIn){         
             return(
                 <div>
-                {this.props.location.pathname!=='/login'&&this.props.location.pathname!=='/signup'?<Header />:null}
+                {/* {this.props.location.pathname!=='/login'&&this.props.location.pathname!=='/signup'?:null} */}
+                <Header clickFunc={this.onButtonClick } />
                 <Switch>   
-                    <Route path='/login' component={Login}/>
-                    <Route path='/signup'component={Signup} />
-                    <Route path='/community' component={Community} />
+                    <Route path='/community' component={Community }  />
                     <Route path='/intern' component={Intern} />
                     <Route path='/assignment' component ={Assignment} />
                     <Route path='/attendance' component={Attendance} />
@@ -82,7 +88,7 @@ class MainComponent extends Component{
                     <Route path='/recommendation' component={Recommendation} /> 
                     <Route path='/profile' component={Profile} />
                     <Route path='/fee' component={FeeStructure} />  
-                    <Redirect to="/login" />
+                    <Redirect to="/community" /> 
                 </Switch> 
             {  /*  <Footer />  */}
                 </div>
@@ -92,13 +98,14 @@ class MainComponent extends Component{
         else if(this.state.facultyLoggedIn){
             return(
                 <div>
-                    <HeaderFaculty/>
-                        <Router>
+                    <Router>
+                    <HeaderFaculty clickFuncStaff={this.onButtonClickStaff}/>
+                     
                             <Switch>
                                 <Route path='/appreciationf' component={AppreciationF} /> 
                                 <Route path='/assignmentf' component ={AssignmentF} />
                                 <Route path='/attendencef' component={AttendenceF}/>
-                                <Route path='/frontendfinal/communityf' component={CommunityF} />
+                                <Route path='/communityf' component={CommunityF} />
                                 <Route path='/examf' component={ExamMarksF}/>
                                 <Route path='/feedbackf' component={FeedbackF} />
                                 <Route path='/internshipf' component={InternshipF} />
@@ -111,21 +118,24 @@ class MainComponent extends Component{
                                 <Route path='/timetablef' component={TimeTableF}/>                                 
                                 <Route path='/studyf' component={StudymaterialF}/>
                                 <Route path='/researchf' component={ResearchF}/>
+                                <Redirect to="/communityf" />
                             </Switch>
-                        </Router><br/><br/>
+                        
                     <FooterF/>
+                    </Router>
                 </div>
             )
         }
         else{
             return(
-                <Router>
+               <Router>
                 <Switch>  
-                <Route path='/login' />
-                <Route path='/signup'component={Signup} />
+                 <Route path='/login'  component={   ()    =>    <Login clickFunc={this.onButtonClick } clickFuncStaff={this.onButtonClickStaff}  />   }        />
+                <Route path='/signup'component={ ()=><Signup  clickFunc={this.onButtonClick } clickFuncStaff={this.onButtonClickStaff} />} />
                 <Redirect to="/login" />
                 </Switch> 
-                </Router>
+              </Router> 
+            //   <Login clickFunc={this.onButtonClick }   />
                
                 );
         }

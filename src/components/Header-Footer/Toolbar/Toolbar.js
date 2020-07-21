@@ -3,9 +3,8 @@ import DrawerToggleButton from  '../SideDrawer/DrawerToggleButton';
 import './Toolbar.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBell, faHome, faUser, faBook, faBuilding, faSearch, faComment } from "@fortawesome/free-solid-svg-icons";
-
+import {BrowserRouter as Router,Route,Link,Switch,Redirect} from 'react-router-dom'
 import CustomChatbot from '../../chat';
-import { FaBlackTie } from 'react-icons/fa';
 
 
             
@@ -17,31 +16,31 @@ const toolbar = props => (
             </div>
             <div className="toolbar_logo"></div>
             <div className="dropdown">
-                <span><a href="/community"><FontAwesomeIcon icon={faHome} style={{marginRight:'0.25em'}} />Home</a></span>
+                <span><Link to="/community"><FontAwesomeIcon icon={faHome} style={{marginRight:'0.25em'}} />Home</Link></span>
               </div>
             <div className="dropdown" >
                 <span><FontAwesomeIcon icon={faBook} style={{marginRight:'0.25em'}}/> Academics</span>
                 <div className="dropdown-content">
-                    <p><a className="links" href='/previous'>Previous Data</a></p>
-                    <p><a className="links" href='/attendance'>Attendance</a></p>
-                    <p><a className="links" href='/timetable'>Time Table</a></p>
-                    <p><a className="links" href='/exam'>About Exam</a></p>
-                    <p><a className="links" href='/fee'>Fee Details</a></p>
+                    <p><Link className="links" to='/previous'>Previous Data</Link></p>
+                    <p><Link className="links" to='/attendance'>Attendance</Link></p>
+                    <p><Link className="links" to='/timetable'>Time Table</Link></p>
+                    <p><Link className="links" to='/exam'>About Exam</Link></p>
+                    <p><Link className="links" to='/fee'>Fee Details</Link></p>
                     
                 </div>
             </div>
             <div className="dropdown">
                 <span><FontAwesomeIcon icon={faBuilding} style={{marginRight:'0.25em'}}/>Campus</span>
                 <div className="dropdown-content">
-                    <p><a className="links" href='/assignment'>Assignment</a></p>
-                    <p><a className="links" href='/project'>Projects</a></p>
-                    <p><a className="links" href='/study'>Study Material</a></p>
-                    <p><a className="links" href='/research'>Research Paper</a></p>
+                    <p><Link  className="links" to='/assignment'>Assignment</Link></p>
+                    <p><Link  className="links" to='/project'>Projects</Link></p>
+                    <p><Link  className="links" to='/study'>Study Material</Link></p>
+                    <p><Link  className="links" to='/research'>Research Paper</Link></p>
                   
                 </div>
             </div>
             <div className='dropdown'>
-                <a href='/profile'><FontAwesomeIcon icon={faUser} style={{marginRight:'0.25em'}}/> Profile</a>
+                <Link to='/profile'><FontAwesomeIcon icon={faUser} style={{marginRight:'0.25em'}}/> Profile</Link>
             </div>
             <div className="spacer"/>
             
@@ -51,9 +50,9 @@ const toolbar = props => (
                     <li><form id="demo-2" style={{marginTop:'0px'}}>
                         <input type="search" style={{padding:'0px'}} placeholder='search'/>
                     </form></li>
-                    <li><a href='#' ><FontAwesomeIcon icon={faComment} /></a></li>
-                    <li><a href="/"><FontAwesomeIcon icon={faBell} /></a></li>
-                    <li><a href="/">Logout</a></li>
+                    <li><Link to='#' ><FontAwesomeIcon icon={faComment} /></Link></li>
+                    <li><Link to="/"><FontAwesomeIcon icon={faBell} /></Link></li>
+                    <li><Link to="/" onClick={()=>props.clickFunc()}>Logout</Link></li>
                 </ul>
             </div>
             <CustomChatbot/>

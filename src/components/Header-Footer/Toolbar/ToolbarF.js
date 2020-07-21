@@ -3,6 +3,8 @@ import DrawerToggleButton from  '../SideDrawer/DrawerToggleButton';
 import './ToolbarF.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBell } from "@fortawesome/free-solid-svg-icons";
+import {BrowserRouter as Router,Route,Link,Switch,Redirect} from 'react-router-dom'
+
 const toolbar = props => (
     <header className="toolbar">
         <nav className="toolbar_navigation">
@@ -11,33 +13,33 @@ const toolbar = props => (
             </div>
             <div className="toolbar_logo"></div>
             <div className="dropdown">
-                <span><a href="/communityf">Home</a></span>
+                <span><Link to="/communityf">Home</Link></span>
               </div>
             <div className="dropdown" >
                 <span>Academics</span>
                 <div className="dropdown-content">
-                    <p><a className="links" href='/attendencef'>Attendance</a></p>
-                    <p><a className="links" href='/timetablef'>Timetable</a></p>
-                    <p><a className="links" href='/examf'>Examination</a></p>
+                    <p><Link className="links" to='/attendencef'>Attendance</Link></p>
+                    <p><Link className="links" to='/timetablef'>Timetable</Link></p>
+                    <p><Link className="links" to='/examf'>Examination</Link></p>
                 </div>
             </div>
             <div className="dropdown">
                 <span>Campus</span>
                 <div className="dropdown-content">
-                    <p><a className="links" href='/assignmentf'>Assignments</a></p>
-                    <p><a className="links" href='/projectf'>Projects</a></p>
-                    <p><a className="links" href='/studyf'>Study Material</a></p>
-                    <p><a className="links" href='/researchf'>Research Paper</a></p>
+                    <p><Link className="links" to='/assignmentf'>Assignments</Link></p>
+                    <p><Link className="links" to='/projectf'>Projects</Link></p>
+                    <p><Link className="links" to='/studyf'>Study Material</Link></p>
+                    <p><Link className="links" to='/researchf'>Research Paper</Link></p>
                 </div>
             </div>
             <div className='dropdown'>
-                <span><a href="/profilef">Profile</a></span>
+                <span><Link to="/profilef">Profile</Link></span>
             </div>
             <div className="spacer"/>
             <div className = "toolbar_nav-items">
                 <ul>
-                    <li><a href="/"><FontAwesomeIcon icon={faBell} /></a></li>
-                    <li><a href="/">Logout</a></li>
+                    <li><Link to="/"><FontAwesomeIcon icon={faBell} /></Link></li>
+                    <li><Link to="/" onClick={()=>props.clickFuncStaff()} >Logout</Link></li>
                 </ul>
             </div>
         </nav>

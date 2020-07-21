@@ -7,19 +7,31 @@ import Community from './Student/Community/Community';
 import Signup from './signup';
 
 class Login extends Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            isLoggedIn:true
+    constructor(props)
+    {
+        super(props);
+        this.state={
+            email:'',
+            password:'',
+            role:'Student'
         }
-        this.onButtonClick = this.onButtonClick.bind(this);
     }
+
     
-    onButtonClick() {
-        this.setState({
-            isLoggedIn: true
-        });
-        
+
+    handleChange = (event) => {
+        const target=event.target;
+        //const value= target.type == 'checkbox' ? target.checked : target.value;
+        const value=target.value;
+        const name=target.name;
+        this.setState({[name]:value});
+           
+      };
+
+    handleClick(){
+       // alert("Current state is "+ JSON.stringify(this.state));
+        this.state.role==='Student'? this.props.clickFunc():this.props.clickFuncStaff();
+      //  this.props.clickFunc();
     }
   
     render() {
@@ -37,7 +49,7 @@ class Login extends Component {
                                                     <div class="form-row">
                                                       <div class="col">
                                                         <label>E-Mail:</label>
-                                                        <input type='email' class="form-control" placeholder="Enter Your E-Mail" />
+                                                        <input type='email' className="form-control" name='email' value={this.state.email} onChange={this.handleChange}   placeholder="Enter Your E-Mail" />
                                                       </div>
                                                     </div>
                                                 </div>
@@ -46,29 +58,38 @@ class Login extends Component {
                                                 <div class="form-row">
                                                     <div class="col">
                                                         <label>Passsword :</label>
-                                                        <input type='password'class="form-control" placeholder="Enter your Password" />
+                                                        <input type='password'className="form-control" name='password' value={this.state.password} onChange={this.handleChange} placeholder="Enter your Password" />
                                                     </div>
                                                 </div>
                                             </div>
+
+                                            <div class="form-row" style={{marginTop:'4%'}}>
+                                                        <div class="col">
+                                                            <label>I am:</label>
+                                                           <input type='radio' name="role" value="Student" style={{marginLeft:'20px'}}  onChange={this.handleChange} /> Student
+                                                           <input type='radio' name="role" value="Faculty" style={{marginLeft:'20px'}}  onChange={this.handleChange}/> Faculty
+                                                        </div>
+                                             </div>
+
                                             <div style={{textAlign:"center"}}>
-                                                <Button color="danger" size="sm"><a style={{color:'white',textDecoration:'none'}} href="/community">Login</a></Button>
+                                                <Button color="danger" size="sm" onClick={()=>this.handleClick()}  /*onClick={()=>this.props.clickFunc()}*/ > Login </Button>
                                             </div>
                                             <hr class="line"style={{border: '1px dashed grey'}}></hr>
                                             <div style={{textAlign:"center"}}>
-                                                <a className="nav-link" href="/">Sign in with Google</a>
+                                                <Link className="nav-link" to="#">Sign in with Google</Link>
                                             </div>
                                             <div className="circle"style={{height:'30px',width:'30px',borderRadius:'60%',backgroundColor:'#bbb',marginLeft:'47%'}}>
                                                 <span style={{fontSize:'12px',paddingLeft:'6px'}}>OR</span>
                                             </div>
                                             <div style={{textAlign:"center"}}>
-                                                <a className="nav-link" href="/">Not yet created an account?</a>
+                                                Not yet created an account?
                                             </div>
                                             <div style={{textAlign:"center"}}>
-                                                <Button color="danger" size="sm"><a style={{color:'white',textDecoration:'none'}} href="/signup">Sign Up</a></Button>
+                                                <Button color="danger" size="sm" ><Link to='signup' style={{color:'white',textDecoration:'none'}}>Sign Up</Link></Button>
                                             </div>
                                         </CardText>
                                         <br></br>
-                                        <span style={{float:'right',fontSize:'12px'}}><a href="#" style={{textDecoration:'none'}}>Forgot password?</a></span> 
+                                        <span style={{float:'right',fontSize:'12px'}}><Link to="#" style={{textDecoration:'none'}}>Forgot password?</Link></span> 
                                     </CardBody>   
                                 </Card>
                             </form>

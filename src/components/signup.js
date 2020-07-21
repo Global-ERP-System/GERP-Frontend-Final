@@ -16,36 +16,38 @@ class Signup extends Component {
                 email:'',
                 password:'',
                 code:'',
-                check:false,
+                role:'Student'
         }
-        this.onButtonClick = this.onButtonClick.bind(this);
+        // this.handleSubmit=this.handleSubmit.bind(this);
+    }
+
+    handleClick(){
+        //alert("Current state is "+ JSON.stringify(this.state));
+        this.state.role==='Student'? this.props.clickFunc():this.props.clickFuncStaff();
     }
     
-    onButtonClick() {
-        this.setState({
-            isLoggedIn: true
-        });
-        
-    }
-   
-    handleSubmit(event){ 
+    handleChange = (event) => {
+        const target=event.target;
+        const value=target.value;
+        const name=target.name;
+        this.setState({[name]:value});
+           
+      };
+
+   /* handleSubmit(event){ 
         console.log("Current state is "+ JSON.stringify(this.state));
         alert("Current state is "+ JSON.stringify(this.state));
         event.preventDefault();
-    }
+        this.props.clickFunc();
+    }*/
 
     render() {
                 return (
-                    <Router>
-                        <switch>
-                        <Route path="/main" component={MainComponent} />
-                        <Route path="/login" component={Login} />
-                        <Route path="/community" component={Community} />
-                        <Route path="/signup" exact render={() => {
-                            return(
+                  
                                 <body>
                                 <div classsName="container" style={{margin:'2% 25%'}}>
-                                <form onSubmit={this.handleSubmit}>
+                                <form >
+                                {/* <form onSubmit={this.handleSubmit}> */}
                                     <Card style={{backgroundColor:'#F2F4F4'}}>
                                         <CardTitle><h5 className="text-center">SIGN UP AND CREATE YOUR ACCOUNT</h5></CardTitle>
                                         <CardBody>
@@ -88,9 +90,9 @@ class Signup extends Component {
                                                     <div class="form-row" style={{marginTop:'4%'}}>
                                                         <div class="col">
                                                             <label>I am:</label>
-                                                           <input type='radio'name="role"value="Student"style={{marginLeft:'20px'}}/> Student
-                                                           <input type='radio'name="role"value="Staff"style={{marginLeft:'20px'}}/> Staff
-                                                           <input type='radio'name="role"value="Parent"style={{marginLeft:'20px'}}/> Parent
+                                                           <input type='radio'name="role"value="Student"style={{marginLeft:'20px'}} onChange={this.handleChange}/> Student
+                                                           <input type='radio'name="role"value="Faculty"style={{marginLeft:'20px'}} onChange={this.handleChange}/> Faculty
+                                                           {/* <input type='radio'name="role"value="Parent"style={{marginLeft:'20px'}}/> Parent */}
                                                         </div>
                                                     </div>
                                                
@@ -104,12 +106,14 @@ class Signup extends Component {
                                                 <div ><p style={{textAlign:'center', marginTop:'4%'}}><em>By Sign Up I agree with terms of use</em></p></div>
                                                 
                                                 <div style={{textAlign:"center"}}>
-                                                <Button color="danger" size="sm"><a style={{color:'white'}} href="/community">Sign up</a></Button>
-                                               {/* <button type="button" class="btn btn-danger btn-sm"><a style={{color:'white'}} className="nav-link" href="/community">Sign up</a></button>*/}
+                                                <Button color="danger" size="sm" onClick={()=>this.handleClick()}>Sign up</Button>
+                                                    {/* <input type="submit" value="Submit"/> */}
+                                                 {/* <Button color="danger" size="sm"><a style={{color:'white'}}  onClick={()=>this.props.clickFunc()} >Sign up </a></Button> */}
+                                                {/* <button type="button" class="btn btn-danger btn-sm"><a style={{color:'white'}} className="nav-link" href="/community">Sign up</a></button> */}
                                                 </div>
                                             </CardText> 
-                                            <a href="/login" class="back">Go to Login </a>
-                                            <a href="#" class="request">Request for a Master Account</a>
+                                            <Link to="/login" class="back" >Go to Login </Link>
+                                            <Link to="#" class="request">Request for a Master Account</Link>
                                             
                                         </CardBody>   
                                     </Card>
@@ -118,10 +122,6 @@ class Signup extends Component {
                             </div>
                             </body>
                             ); 
-                        }}/>
-                        </switch>
-            </Router>
-            );
     }
 }
 

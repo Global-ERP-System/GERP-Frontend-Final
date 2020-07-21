@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import {Navbar} from 'reactstrap'
 import "./footer.css"
-import {BrowserRouter as Router,Route } from 'react-router-dom'
+import {BrowserRouter as Router,Route,Link,Switch,Redirect} from 'react-router-dom'
 import RaiseReq from "../Student/Research/Research"
 import AddResearch from "../Student/Research/AddResearch"
 
@@ -18,10 +18,10 @@ class Footer extends Component{
     return(
       <Router>
 <Navbar className="navbar1" >
-  <a className="link" href="/communityf">Home</a>
-  <a className="link" href="#">Communications</a>
-  <a className="link" href="#">Search</a>
-  <a className="link" href="/attendencef">Attendance</a>
+  <Link className="link" to="/communityf">Home</Link>
+  <Link className="link" to="#">Communications</Link>
+  <Link className="link" to="#">Search</Link>
+  <Link className="link" to="/attendencef">Attendance</Link>
 </Navbar>
 <Route path="/RaiseReqModel" component={RaiseReq} />
 </Router>
