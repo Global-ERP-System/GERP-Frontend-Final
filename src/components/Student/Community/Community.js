@@ -102,16 +102,30 @@ class Community extends Component {
 
                             <p id="main-content-matter" style={{color:'#3498DB',fontWeight:'bold'}}>#Codsule #CodingChallenge #Nagarro #Coding #Programming</p>
 
-                            <img src="https://pbs.twimg.com/media/EckJ0_RWkAMuu4D.jpg" style={{width:'86%',height:'48%'}}></img>
+                            <img src="https://pbs.twimg.com/media/EckJ0_RWkAMuu4D.jpg" style={{width:'86%',height:'53%'}}></img>
+                            {/* <span style={{marginLeft:'-78%',fontSize:'20px'}}>10</span>
+                            <img src="https://www.freeiconspng.com/uploads/like-flat-icon-png-25.png" style={{height:'5%',width:'3%',marginLeft:'6%',marginTop:'-3%'}}></img> */}
+                            
+                            <br></br>
+                            <hr style={{width:'95%',marginTop:'1%'}}></hr>
 
-                            {/* <span>10</span> */}
+                            <img src="https://www.freeiconspng.com/uploads/like-icon-0.png" style={{height:'4%',width:'3%',float:'left',margin:'-1% 10%'}}></img>
+                            
 
-                            <hr style={{width:'95%',marginTop:'4%'}}></hr>
+                            <img src="https://img.pngio.com/comment-comments-description-note-notice-icon-comment-icon-png-512_512.png" style={{height:'4%',width:'3%',float:'left',margin:'-1% 11%'}}></img>
+
+                            <img src="https://cdn0.iconfinder.com/data/icons/cute-mono-style-line/44/iconShare-512.png" style={{height:'4%',width:'3%',float:'left',margin:'-1% 11%'}}></img>
+
+                            <img src="https://www.clipartmax.com/png/middle/268-2687667_inclined-paper-plane-free-icon-paper-plane-telegram-logo.png" style={{height:'4%',width:'4%',float:'left',margin:'-1% 10%'}}></img>                            
+
+                            <span style={{fontSize:'10px',float:'left',margin:'1% 10%'}}>Like</span>
+                            <span style={{fontSize:'10px',float:'left',margin:'1% 11%'}}>Comment</span>
+                            <span style={{fontSize:'10px',float:'left',margin:'1% 10%'}}>Share</span>
+                            <span style={{fontSize:'10px',float:'left',margin:'1% 12%'}}>Send</span>
+
+                            <hr style={{width:'95%',marginTop:'6%'}}></hr>
                         
                         </div>
-                        
-                        <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem</p>
-                        <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem </p>
                         
                     </div>
 

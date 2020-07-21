@@ -3,7 +3,7 @@ import {Navbar} from 'reactstrap'
 import "./footer.css"
 import {BrowserRouter as Router,Route,Link,Switch,Redirect} from 'react-router-dom'
 import RaiseReq from "../Student/Research/Research"
-import AddResearch from "../Student/Research/AddResearch"
+// import AddResearch from "../Student/Research/AddResearch"
 
 
 class Footer extends Component{

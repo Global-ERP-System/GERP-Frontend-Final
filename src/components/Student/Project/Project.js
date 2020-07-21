@@ -59,10 +59,10 @@ export default class Project extends Component {
                                 <div className="form-group" style={{display:'inline'}}>
                                     <input style={{width:'100%'}} type="url" value={this.state.link} onChange={this.handlelink} required />
                                     <div style={{textAlign:"center", paddingTop:'3px',paddingBottom:'5px',fontFamily:'Pt sans narrow ', fontWeight:'700'}}>or</div>
-                                    <input style={{width:'100%',fontFamily:'Pt sans narrow ', fontWeight:'700'}} id="chooseFile" type="file" value={this.state.chooseFile}
+                            <input style={{ width: '100%', fontFamily:'Montserrat ', fontWeight:'400'}} id="chooseFile" type="file" value={this.state.chooseFile}
                                         onChange={this.handlechooseFile} required />
                                 </div>
-                            <Button style={{ margin:'auto',marginTop:'40px', display:'block', paddingTop:'10px', background:'#138808'}} onClick={() =>this.setState({ addProject: true })}>+ Add Project</Button>
+                            <Button style={{ margin:'auto',marginTop:'40px', display:'block', paddingTop:'10px', background:'#138808'}} onClick={() =>this.setState({ addProject: true })}>Add Project</Button>
                         </form>
                     </div>
                     <Addproject

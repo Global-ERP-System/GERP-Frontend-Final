@@ -45,7 +45,6 @@
     font-size: 18px;
     text-align: initial;
     font-weight: 400;
-    padding-top: 10px;
 }
 
 .submitbtn
@@ -90,7 +89,7 @@ margin: 0px 60px 0px 75px;
     display: block;
     align-content: center;
     width: 100%;
-    height: fit-content;
+   
 }
 .Add_Project_container input
 {

@@ -1,14 +1,31 @@
-.container{
-    
-    
-    padding-top: 100px;
-    padding-left: 400px;
-    padding-right: 400px;
-    padding-bottom:100px;
-
-    text-align: center;
+.TT{
+	margin:0 auto;
+	width:700px;
+	margin-top:150px;
 }
-.card-header{
-    background-color:red !important;
-    color:black;
+.TT div{
+	overflow: auto;
+}
+.TT table{
+	min-width:700px;
+	overflow: auto
+}
+.TT h2{
+	text-align:center;
+	background-color:red;
+	font-family:'Montserrat',sans-serif;
+    font-weight:700;
+    margin-bottom:10px;
+    padding:0.3rem;
+}
+.TT th{
+	border:1px black solid;
+	width:150px;
+	text-align: center;
+	color:red;
+	font-family:'PT Sans Narrow',sans-serif;
+}
+.TT td{
+	text-align: center;
+	font-family:'Montserrat',sans-serif
 }

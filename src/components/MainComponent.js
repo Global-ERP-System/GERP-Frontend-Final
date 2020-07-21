@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import Header from './Header-Footer/header';
 import HeaderFaculty from './Header-Footer/HeaderF';
-import Footer from './Header-Footer/footer';
+//import Footer from './Header-Footer/footer';
 import FooterF from './Header-Footer/FooterF';
 import Navbars from './Header-Footer/navbar';
 
@@ -40,6 +40,8 @@ import RaiseReqF from './Faculty/RaiseReq/RaiseReq';
 
 import Signup from './signup';
 import Login from './Login';
+import Allposts from './Allposts';
+import singlepost from './singlepost';
 
 
 
@@ -73,7 +75,9 @@ class MainComponent extends Component{
                 {/* {this.props.location.pathname!=='/login'&&this.props.location.pathname!=='/signup'?:null} */}
                 <Header clickFunc={this.onButtonClick } />
                 <Switch>   
-                    <Route path='/community' component={Community }  />
+                    <Route path='/allposts'component={Allposts} />
+                    <Route path='/singlepost'component={singlepost} />
+                    <Route path='/community' component={Community} />
                     <Route path='/intern' component={Intern} />
                     <Route path='/assignment' component ={Assignment} />
                     <Route path='/attendance' component={Attendance} />
