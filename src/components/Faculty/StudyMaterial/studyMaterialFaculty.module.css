@@ -1,0 +1,77 @@
+.StudyM{
+	margin:0 auto;
+	width:600px;
+	padding:0 20px;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+}
+.StudyM h2{
+	font-weight: 700;
+	font-family: 'Montserrat',sans-serif;
+	text-align: center;
+	margin-bottom:50px;
+}
+.StudyM ul{
+	list-style:none;
+	display: flex;
+	flex-wrap:wrap;
+	padding:0;
+	justify-content: space-between;
+}
+.StudyM li{
+	flex-basis:45%;
+	display:flex;
+	flex-direction: column;
+	margin-bottom:20px;
+}
+.StudyM li label{
+	font-family:'PT Sans Narrow',sans-serif;
+	letter-spacing: 0.1rem;
+	margin-bottom:5px;
+	padding:0 ;
+}
+.StudyM li input{
+	border-radius: 0;
+	width:100% ;
+	border-radius:0;
+	margin: 0 ;
+	padding:0.3rem ;
+	border:2px black solid;
+}
+.StudyM div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.StudyM p{
+	font-family:'PT Sans Narrow',sans-serif;
+	letter-spacing: 0.1rem;
+	margin:0;
+	background-color:#4169E1;
+	color:white;
+	font-weight: 700;
+	padding:0.2rem 0.5rem;
+	border:2px black solid;
+}
+.StudyM div input{
+	border-radius: 0;
+	width:80%;
+	border:2px black solid;
+	padding:0.2rem 0 0.2rem 0.2rem;
+}
+.StudyM button{
+	font-size:1.2rem;
+	font-family:'PT Sans Narrow',sans-serif;
+	letter-spacing: 0.1rem;
+	background-color:red;
+	color:white;
+	border:2px black solid;
+	font-weight:700;
+	padding:0.2rem 0.5rem;
+	width:100px;
+	margin-top:20px;
+	align-self: flex-end;
+}
+
+  

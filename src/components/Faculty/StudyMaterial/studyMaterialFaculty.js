@@ -1,56 +1,50 @@
-import React from 'react';
-import './studyMaterialFaculty.css';
-import { Card } from 'reactstrap';
-import SimpleReactFileUpload from './chooseFile';
+import React,{useState} from 'react';
+import classes from './studyMaterialFaculty.module.css';
+//import { Card } from 'reactstrap';
+//import SimpleReactFileUpload from './chooseFile';
 
-class StudyMaterialFaculty extends React.Component{
-    render(){
-        return (
-      <div>
-
-            <Card>
-                <head>
-	                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
-                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	                <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
-	            </head>
-                <body>
-                	<div className="container">
-                	<h1 className='head'>Study Materials</h1><br/><br/>
-                    
-	                <form className="form-group">  
-                    <div className="form-group col-sm-6">
-		                <label>Subject :</label>
-		                <input className="form-control" type="text" name="roll" placeholder="Name of subject" />
-                    </div>
-                    <div className="form-group col-sm-6">
-		                <label>Concept :</label>
-		                <input className="form-control" type="text" name="roll" placeholder="Concept" />
-                    </div><br/>
-                    <div className="form-group col-sm-6">
-                        <label>Class :</label>
-		                <input className="form-control" type="text" name="roll" placeholder="Class" />
-                    </div>
-                    <div className="form-group col-sm-6">
-                        <label>Section :</label>
-		                <input className="form-control" type="text" name="roll" placeholder="Section" />
-                    </div><br/>
-                    <div className="form-group col-sm-12">
-                        <label>Choose a file :</label>
-                        <SimpleReactFileUpload/>
-                    </div>
-
-		            <div className='SubmitButton'>
-			            <button className="btn btn-primary">Submit</button>
-		            </div>
-                    </form>
-                    </div>
-                </body>
-            </Card>
-           
+const StudyMaterialFaculty=props=>{
+    const [controls,setControls]=useState({
+        'Subject':{value:''},
+        'Concept':{value:''},
+        'Class':{value:''},
+        'Section':{value:''}
+    })
+    const inputChangedHandler=(event,identifier)=>{
+        const updatedControl={
+            ...controls[identifier],
+            value:event.target.value
+        }
+        setControls({
+            ...controls,
+            [identifier]:updatedControl
+        })
+    }
+    const formArray=[];
+    for(let key in controls){
+        formArray.push({
+            id:key,
+            config:controls[key]
+        })
+    }
+    const displayControls=formArray.map(ele=>{
+        return <li key={ele.id}>
+                <label className={classes.Label}>{ele.id} :</label>
+                <input className={classes.Input} type='text' />
+            </li>
+    })
+    return (
+        <div className={classes.StudyM}>
+            <h2>Study Materials</h2>
+            <ul>
+                {displayControls}
+            </ul>
+            <div>
+                <p>Choose File</p>
+                <input type='file' />
+            </div>
+            <button>Upload</button>
         </div> 
-        )
-    };
+    )
 };
 export default  StudyMaterialFaculty; 

@@ -4,7 +4,7 @@ import './Project.css'
 class Project extends Component {
     render() {
         return (
-            <div>
+            <div className='ProjectF'>
                 <h1 id="relationheading">STUDENT PROJECTS</h1>
                 <div id="Your_relation">
                     <div className="projectdetail"><b>&lt; Enrollment Number &gt; </b></div>
