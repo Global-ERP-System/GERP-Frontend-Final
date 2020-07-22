@@ -38,12 +38,12 @@ class Community extends Component {
 
                             
                             <ul id="notify-points">
-                                <marquee direction='up' scrollamount='4'>
-                                <li>Attendance</li><br></br>
-                                <li>Attendance</li><br></br>
-                                <li>Attendance</li><br></br>
-                                <li>Attendance</li><br></br>
-                                <li>Attendance</li><br></br>
+                                <marquee direction='up' scrollamount='3'>
+                                <li><a href="" style={{textDecoration:'none'}}>Attendance</a></li><br></br>
+                                <li><a href="" style={{textDecoration:'none'}}>Attendance</a></li><br></br>
+                                <li><a href="" style={{textDecoration:'none'}}>Attendance</a></li><br></br>
+                                <li><a href="" style={{textDecoration:'none'}}>Attendance</a></li><br></br>
+                                <li><a href="" style={{textDecoration:'none'}}>Attendance</a></li><br></br>
                                 </marquee>
                             </ul>
                             
