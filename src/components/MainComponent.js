@@ -12,7 +12,7 @@ import Assignment from './Student/assignment/assignment'
 import Attendance from './Student/attendance/attendance'
 import Previous from './Student/previousdata/previous'
 import Timetable from './Student/Timetable/tt'
-import Research from './Student/Research/Research' 
+//import Research from './Student/Research/Research' 
 import FeeStructure from './Student/Fee Structure/FeeStructure'
 import Examination from './Student/Exam/ExaminationBacklog'
 import Project from './Student/Project/Project'
@@ -83,7 +83,7 @@ class MainComponent extends Component{
                     <Route path='/attendance' component={Attendance} />
                     <Route path='/previous' component={Previous} />
                     <Route path='/timetable' component={Timetable} />
-                    <Route path='/research' component={Research} />
+                    {/* <Route path='/research' component={Research} /> */}
                     <Route path='/exam' component={Examination} />
                     <Route path='/project' component={Project} />
                     <Route path='/study' component={Studymaterial} />
