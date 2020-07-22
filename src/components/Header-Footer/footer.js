@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import {Navbar} from 'reactstrap'
 import "./footer.css"
 import {BrowserRouter as Router,Route } from 'react-router-dom'
-import RaiseReq from "../Student/Research/Research"
+// import RaiseReq from "../Student/Research/Research"
 // import AddResearch from "../Student/Research/AddResearch"
 
 

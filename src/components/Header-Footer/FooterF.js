@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import {Navbar} from 'reactstrap'
 import "./footer.css"
 import {BrowserRouter as Router,Route,Link,Switch,Redirect} from 'react-router-dom'
-import RaiseReq from "../Student/Research/Research"
+// import RaiseReq from "../Student/Research/Research"
 // import AddResearch from "../Student/Research/AddResearch"
 
 
@@ -23,7 +23,7 @@ class Footer extends Component{
   <Link className="link" to="#">Search</Link>
   <Link className="link" to="/attendencef">Attendance</Link>
 </Navbar>
-<Route path="/RaiseReqModel" component={RaiseReq} />
+{/* <Route path="/RaiseReqModel" component={RaiseReq} /> */}
 </Router>
     )
   }

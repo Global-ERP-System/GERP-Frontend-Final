@@ -63,6 +63,10 @@ class Community extends Component {
                                 className="something"></textarea></div>
                         <div>
                             <button id="Tags">Tag</button>
+                            <img src="https://cdn2.iconfinder.com/data/icons/rounded-white-basic-ui-set-3/139/Photo_Add-RoundedWhite-512.png" style={{marginLeft:'10%',marginTop:'-4%',height:'4%',width:'4%'}}></img>
+                            <div style={{width:'23%',marginLeft:'9%',marginTop:'-33px',position:'absolute'}}>
+                            <input style={{border:'0px'}} type="file"/>
+                            </div>
                         </div>
                         <br></br>
                         <div>
@@ -118,10 +122,10 @@ class Community extends Component {
 
                             <img src="https://www.clipartmax.com/png/middle/268-2687667_inclined-paper-plane-free-icon-paper-plane-telegram-logo.png" style={{height:'4%',width:'4%',float:'left',margin:'-1% 10%'}}></img>                            
 
-                            <span style={{fontSize:'10px',float:'left',margin:'1% 10%'}}>Like</span>
-                            <span style={{fontSize:'10px',float:'left',margin:'1% 11%'}}>Comment</span>
-                            <span style={{fontSize:'10px',float:'left',margin:'1% 10%'}}>Share</span>
-                            <span style={{fontSize:'10px',float:'left',margin:'1% 12%'}}>Send</span>
+                            <span style={{fontSize:'10px',float:'left',margin:'1% 8%'}}><a href="#" style={{textDecoration:'none'}}>Acknowledge</a></span>
+                            <span style={{fontSize:'10px',float:'left',margin:'1% 11%'}}><a href="#" style={{textDecoration:'none'}}>Express</a></span>
+                            <span style={{fontSize:'10px',float:'left',margin:'1% 10%'}}><a href="#" style={{textDecoration:'none'}}>Share</a></span>
+                            <span style={{fontSize:'10px',float:'left',margin:'1% 12%'}}><a href="#" style={{textDecoration:'none'}}>Send</a></span>
 
                             <hr style={{width:'95%',marginTop:'6%'}}></hr>
                         

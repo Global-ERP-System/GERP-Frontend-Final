@@ -21,7 +21,8 @@ const toolbar = props => (
             <div className="dropdown" >
                 <span><FontAwesomeIcon icon={faBook} style={{marginRight:'0.25em'}}/> Academics</span>
                 <div className="dropdown-content">
-                    <p><Link className="links" to='/previous'>Previous Data</Link></p>
+                    <div id="triangle-up"></div>
+                    <p style={{marginTop:'13px'}}><Link className="links" to='/previous'>Previous Data</Link></p>
                     <p><Link className="links" to='/attendance'>Attendance</Link></p>
                     <p><Link className="links" to='/timetable'>Time Table</Link></p>
                     <p><Link className="links" to='/exam'>About Exam</Link></p>
@@ -32,7 +33,8 @@ const toolbar = props => (
             <div className="dropdown">
                 <span><FontAwesomeIcon icon={faBuilding} style={{marginRight:'0.25em'}}/>Campus</span>
                 <div className="dropdown-content">
-                    <p><Link  className="links" to='/assignment'>Assignment</Link></p>
+                    <div id="triangle-up" style={{marginTop:'-27px'}}></div>
+                    <p style={{marginTop:'13px'}}><Link  className="links" to='/assignment'>Assignment</Link></p>
                     <p><Link  className="links" to='/project'>Projects</Link></p>
                     <p><Link  className="links" to='/study'>Study Material</Link></p>
                     <p><Link  className="links" to='/research'>Research Paper</Link></p>
