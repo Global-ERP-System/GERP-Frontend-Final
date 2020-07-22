@@ -23,7 +23,7 @@ class Footer extends Component{
   <Link className="link" to="#">Search</Link>
   <Link className="link" to="/attendencef">Attendance</Link>
 </Navbar>
-{/* <Route path="/RaiseReqModel" component={RaiseReq} /> */}
+<Route path="/RaiseReqModel" /* component={RaiseReq} *//>
 </Router>
     )
   }
