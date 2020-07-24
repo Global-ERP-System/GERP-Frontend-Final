@@ -47,8 +47,91 @@ handleChange({ target }) {
 
     render()  {
         return (
-            <div id='main_box'>
-                <Row>
+                <div id="sidebar">
+                {
+                
+                        <div id="main_box">
+                            
+                            <div id="upper-part">
+                                <p id="myprofile">My Profile</p>
+                            </div>
+                        
+                            <div className="form-group" style={{marginLeft:'3%'}}>
+                                <div class="form-row" style={{width:'25%',marginTop:'3%'}}>
+                                    <div class="col">
+                                        <label style={{fontWeight:'bold'}}>First Name:</label>
+                                        <input class="form-control" value="Angelina" readonly/>
+                                    </div>
+                                </div>
+                                <br></br>
+
+                                <div class="form-row" style={{width:'25%',marginTop:'1%'}}>
+                                    <div class="col">
+                                        <label style={{fontWeight:'bold'}}>Last Name:</label>
+                                        <input class="form-control" value="Reddy" readonly/>
+                                    </div>
+                                </div>
+                                <br></br>
+
+                                <div class="form-row" style={{width:'25%',marginTop:'1%'}}>
+                                    <div class="col">
+                                        <label style={{fontWeight:'bold'}}>Email:</label>
+                                        <input class="form-control" value="angelina.123@gmail.com" readonly/>
+                                    </div>
+                                </div>
+                                <br></br>
+
+                                <div class="form-row" style={{width:'25%',marginTop:'1%'}}>
+                                    <div class="col">
+                                        <label style={{fontWeight:'bold'}}>About Me:</label>
+                                        <input class="form-control" value="about me" readonly/>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div className="form-group" style={{marginLeft:'33%',marginTop:'-30.5%'}}>
+                                <div class="form-row" style={{width:'35%',marginTop:'2%'}}>
+                                    <div class="col">
+                                        <label style={{fontWeight:'bold'}}>Registration No:</label>
+                                        <input class="form-control" value="A213665O" readonly/>
+                                    </div>
+                                </div>
+                                <br></br>
+
+                                <div class="form-row" style={{width:'35%',marginTop:'1%'}}>
+                                    <div class="col">
+                                        <label style={{fontWeight:'bold'}}>Parent Name:</label>
+                                        <input class="form-control" value="Mr. Sushil Kumar" readonly/>
+                                    </div>
+                                </div>
+                                <br></br>
+
+                                <div class="form-row" style={{width:'35%',marginTop:'1%'}}>
+                                    <div class="col">
+                                        <label style={{fontWeight:'bold'}}>Password:</label>
+                                        <input class="form-control" value="123angel@45" type="password" readonly/>
+                                    </div>
+                                </div>
+                                <br></br>
+
+                                <div class="form-row" style={{width:'35%',marginTop:'1%'}}>
+                                    <div class="col">
+                                        <label style={{fontWeight:'bold'}}>Blood Group:</label>
+                                        <input class="form-control" value="A+" readonly/>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div id="image">
+                                <img src="https://scriptshadow.net/wp-content/uploads/2019/08/Screen-Shot-2019-08-13-at-8.09.58-PM.png" style={{width:'100%',height:'230px'}}></img>
+                            </div>
+
+                        </div>
+                
+                /* <Row>
                     <Col sm={4 }>
 
                         <img src={avatar} alt="avatar" style={{ borderRadius: '200px', width: '200', height: '200', marginTop:'20px' }} className="img-thumbnail" />
@@ -65,7 +148,7 @@ handleChange({ target }) {
 
                         </div>
                     </Col>
-                    <Col sm={3}>
+                    <Col sm={3}> */}
 
                         {/*
 
@@ -96,7 +179,7 @@ handleChange({ target }) {
 
                         </Popup>
                         */}
-                    </Col>
+                    {/* </Col>
                 </Row>
                 <br/>
                 <hr></hr>
@@ -450,14 +533,14 @@ handleChange({ target }) {
                     </Col>
 
 
-                </Row>
+                </Row> */}
 
 
 
                     
 
 
-                </div>
+                {/* </div> */}
 
 
 
