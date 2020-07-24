@@ -1,5 +1,17 @@
 .internf{
     margin-top:100px;
-    margin-left:100px;
+    //margin-left:100px;
     margin-bottom:150px;
+}
+.Internship{
+	margin:0 22%;
+	//border:1px red solid;
+	text-align: center;
+}
+.internf h1{
+	font-family: 'Montserrat',sans-serif;
+	font-weight: 700;
+}
+.Internship button{
+	font-family:'Montserrat',sans-serif !important;
 }

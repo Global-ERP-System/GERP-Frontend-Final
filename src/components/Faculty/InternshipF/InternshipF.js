@@ -7,7 +7,7 @@ import './InternshipF.css'
 class InternshipF extends Component{
     render(){
         return(
-            <div>
+            <div className='Internship'>
                <Router>
                 <Form className="internf">
                 <h1>Internship Details</h1><br/>
