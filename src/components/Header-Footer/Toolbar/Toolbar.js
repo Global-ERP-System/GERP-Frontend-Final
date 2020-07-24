@@ -107,7 +107,7 @@ const toolbar = props => (
                     <li><MessageBox/> </li> */}
 
                     <div className='dropdown'>
-                        <li><Link to=""><FontAwesomeIcon icon={faBell} /></Link></li>
+                        <li><FontAwesomeIcon icon={faBell} /></li>
                         <div className="dropdown-content" style={{marginLeft:'-480%',width:'250px',height:'400px'}}>
                             <p>
                                 <div id="circle-notify">

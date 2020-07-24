@@ -9,12 +9,12 @@ const sideDrawer = props => {
     }
     return (
   
-    <nav className={drawerClasses}>
+    <nav className={drawerClasses} style={{height:'240px',width:'10%'}}>
         <ul>
-            <li><Link to="/raisereq" >Raise a Request</Link></li>
-            <li><Link to="/recommendation">Recommendation Badges</Link></li>
-            <li><Link to="/relation">My Relations</Link></li>
-            <li><Link to="/intern">Internships</Link></li>
+            <li style={{marginTop:'-20px'}}><Link to="/raisereq" style={{marginLeft:'-32px'}}>Raise a Request</Link></li>
+            <li><Link to="/recommendation" style={{marginLeft:'-32px',float:'left'}}>Recommendation Badges</Link></li>
+            <li><Link to="/relation" style={{marginLeft:'-32px'}}>My Relations</Link></li>
+            <li><Link to="/intern" style={{marginLeft:'-32px'}}>Internships</Link></li>
         </ul>
     </nav>
    

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import './CommunityF.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBell, faHome, faUser, faBook, faBuilding, faSearch, faComment, faCalendar, faCalendarCheck  } from "@fortawesome/free-solid-svg-icons";
-
+import {Container} from 'reactstrap';
 
 class CommunityF extends Component {
     constructor(props) {
