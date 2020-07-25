@@ -49,9 +49,27 @@ handleChange({ target }) {
         return (
                 <div id="sidebar">
                 {
-                
+                        
                         <div id="main_box">
-                            
+                            <div id="circle">
+                                <img src="https://scriptshadow.net/wp-content/uploads/2019/08/Screen-Shot-2019-08-13-at-8.09.58-PM.png" style={{width:'100px',height:'100px',borderRadius:'200%'}}></img>
+                            </div>
+
+                            <span id="name_side">Angelina Reddy</span>
+
+                            <div id="profile-sec">
+                                <a href="#" style={{paddingLeft:'35%',textDecoration:'none',color:'black'}}>My Profile</a>
+                            </div>
+
+                            <div id="education">
+                                <a href="#" style={{paddingLeft:'20%',textDecoration:'none',color:'black'}}>Educational Qualifications</a>
+                            </div>
+
+                            <div id="experience">
+                                <a href="#" style={{paddingLeft:'35%',textDecoration:'none',color:'black'}}>Experience</a>
+                            </div>
+
+
                             <div id="upper-part">
                                 <p id="myprofile">My Profile</p>
                             </div>
@@ -110,8 +128,8 @@ handleChange({ target }) {
 
                                 <div class="form-row" style={{width:'35%',marginTop:'1%'}}>
                                     <div class="col">
-                                        <label style={{fontWeight:'bold'}}>Password:</label>
-                                        <input class="form-control" value="123angel@45" type="password" readonly/>
+                                        <label style={{fontWeight:'bold'}}>Phone No:</label>
+                                        <input class="form-control" value="9822436115" readonly/>
                                     </div>
                                 </div>
                                 <br></br>

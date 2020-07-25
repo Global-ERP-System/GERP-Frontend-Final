@@ -17,6 +17,70 @@
     position: absolute;
 }
 
+#circle
+{
+    height:100px;
+    width: 100px;
+    /* border:1px groove black; */
+    border-radius: 200%;
+    position: absolute;
+    margin-left: -70%;
+    margin-top: 8%;
+}
+
+#name_side
+{
+    position: absolute;
+    margin-left: -70%;
+    margin-top: 50%;
+    font-weight: bold;
+}
+
+#profile-sec
+{
+    height:50px;
+    width:100%;
+    /* border: 1px solid brown; */
+    margin-left: -100%;
+    position: absolute;
+    margin-top: 70%;
+}
+
+#profile-sec:hover
+{
+    background-color: whitesmoke;
+}
+
+#education
+{
+    height:50px;
+    width:100%;
+    /* border: 1px solid brown; */
+    margin-left: -100%;
+    position: absolute;
+    margin-top: 88%;
+}
+
+#education:hover
+{
+    background-color: whitesmoke;
+}
+
+#experience
+{
+    height:50px;
+    width:100%;
+    /* border: 1px solid brown; */
+    margin-left: -100%;
+    position: absolute;
+    margin-top: 106%;
+}
+
+#experience:hover
+{
+    background-color: whitesmoke;
+}
+
 #main_box {
     /* border: 1px solid red; */
     width:455%;
