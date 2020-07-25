@@ -1,134 +1,55 @@
+.Body{
+    margin-top:-10px;
+    width:100%;
+    margin-right:10%;
+    margin-left:10%;
+
+}
+
 #title {
     text-align: initial;
-    font-family: 'Montserrat',sans-serif;
-    font-weight:700;
-    
-}
-
-#sidebar
-{
-    float:left;
-    width:18%;
-    height:663px;
-    margin-top: -0.5%;
-    /* border:1px solid purple; */
-    /* background-color: black; */
-    background-color: #AEB6BF;
-    position: absolute;
-}
-
-#circle
-{
-    height:100px;
-    width: 100px;
-    /* border:1px groove black; */
-    border-radius: 200%;
-    position: absolute;
-    margin-left: -70%;
-    margin-top: 8%;
-}
-
-#name_side
-{
-    position: absolute;
-    margin-left: -70%;
-    margin-top: 50%;
-    font-weight: bold;
-}
-
-#profile-sec
-{
-    height:50px;
-    width:100%;
-    /* border: 1px solid brown; */
-    margin-left: -100%;
-    position: absolute;
-    margin-top: 70%;
-}
-
-#profile-sec:hover
-{
-    background-color: whitesmoke;
-}
-
-#education
-{
-    height:50px;
-    width:100%;
-    /* border: 1px solid brown; */
-    margin-left: -100%;
-    position: absolute;
-    margin-top: 88%;
-}
-
-#education:hover
-{
-    background-color: whitesmoke;
-}
-
-#experience
-{
-    height:50px;
-    width:100%;
-    /* border: 1px solid brown; */
-    margin-left: -100%;
-    position: absolute;
-    margin-top: 106%;
-}
-
-#experience:hover
-{
-    background-color: whitesmoke;
-}
-
-#main_box {
-    /* border: 1px solid red; */
-    width:455%;
-    height:650px;
-    margin-left: 100%;
-}
-
-#upper-part
-{
-    background-color: whitesmoke;
-    height: 80px;
-    width:100%;
-}
-
-#myprofile
-{
-    font-size:26px;
-    padding: 1.5% 3%;
-    font-weight:bold;
-}
-
-#image
-{
-    height:230px;
-    width:20%;
-    margin-left: 66%;
-    margin-top: -350px;
-}
-
-.img-thumbnail {
-    display: block;
-    width: 200px;
-    height: 200px;
-    
-}
-#infohead {
-    text-align: center;
-    font-size:24px;
     font-family: 'Montserrat',sans-serif;
     font-weight: 700;
 }
 
 
-#info {
-    font-size: 20px;
-    font-family: 'Pt sans narrow',sans-serif;
-    font-weight:400; 
+.sidebar {
+    background-color: #AEB6BF;
+    text-align: center;
+    position: fixed;
 }
-#profile_content{
+#sidebar_element {
+    margin-top: 25px;
+    text-decoration: none;
+}
+#sidebar_element a{
+    margin-top: 25px;
+    text-decoration: none;
+}
+
+#sidebar_image{
+    margin-top:20px;
+}
+
+.right_Sec{
+
+}
+.my_profile1 {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.myprofileelement {
+    margin-top:25px;
+    padding-left:20px;
+    padding-right:20px;
+}
+.image{
+    align-self:center;
+    width:230px;
+    height:230px;
     padding:20px;
+}
+.right_Sec h2 {
+    padding-top:20px;
+    background-color: whitesmoke;
 }
