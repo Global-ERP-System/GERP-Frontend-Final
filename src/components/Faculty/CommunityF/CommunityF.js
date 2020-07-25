@@ -44,6 +44,12 @@ class CommunityF extends Component {
                                 <li><a href="" style={{textDecoration:'none'}}>Attendance</a></li><br></br>
                                 </marquee>
                             </ul> */}
+
+                    <FontAwesomeIcon icon={faCalendarCheck} size="3x" style={{margin:'3% 7%'}}></FontAwesomeIcon>
+                                        
+                    <h5 id='notify' style={{marginTop:'-15%'}}>My Schedule</h5>
+
+                    <p style={{margin:'13% 20%'}}>Monday class at 3PM</p> 
                             
                 </div>
 

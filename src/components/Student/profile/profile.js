@@ -72,6 +72,7 @@ handleChange({ target }) {
 
                             <div id="upper-part">
                                 <p id="myprofile">My Profile</p>
+                                <img src="https://image.flaticon.com/icons/png/512/61/61456.png" style={{float:'right',height:'20px',width:'20px',marginTop:'-6%',marginRight:'3%',cursor:'pointer'}} onClick="make_edit()"></img>
                             </div>
                         
                             <div className="form-group" style={{marginLeft:'3%'}}>
@@ -145,6 +146,7 @@ handleChange({ target }) {
 
                             <div id="image">
                                 <img src="https://scriptshadow.net/wp-content/uploads/2019/08/Screen-Shot-2019-08-13-at-8.09.58-PM.png" style={{width:'100%',height:'230px'}}></img>
+                                <input style={{border:'0px',marginTop:'2%'}} type="file" />
                             </div>
 
                         </div>

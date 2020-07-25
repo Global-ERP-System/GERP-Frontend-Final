@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-import Toolbar from './Toolbar/ToolbarF'
-import SideDrawer from './SideDrawer/SideDrawerF'
-import Backdrop from './Backdrop/Backdrop'
+import Toolbar from '../Header-Footer/Toolbar/ToolbarF'
+import SideDrawer from '../Header-Footer/SideDrawer/SideDrawer'
+import Backdrop from '../Header-Footer/Backdrop/Backdrop'
+import Community from "../Student/Community/Community"
 
 
 class Header extends Component{
@@ -35,7 +36,7 @@ class Header extends Component{
 
         return(
             <div style={{height:'100%'}}>
-                <Toolbar drawerClickHandler={this.drawerToggleClickHandler} clickFuncStaff={this.props.clickFuncStaff} />
+                <Toolbar drawerClickHandler={this.drawerToggleClickHandler} clickFunc={this.props.clickFunc } />
                 <SideDrawer show={this.state.sideDrawerOpen} />
                 {backdrop}
                 <main style={{marginTop:'64px'}}>
