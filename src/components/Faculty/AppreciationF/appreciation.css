@@ -4,13 +4,28 @@
 
 .btn{
     text-emphasis-color: white;
+    font-family: 'Montserrat',sans-serif;
 }
-
+.form-group label{
+	font-family: 'PT Sans Narrow',sans-serif !important;
+}
 .footer {
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 2.5rem;            /* Footer height */
   }
+ .Appreciate h2{
+ 	font-family: 'Montserrat',sans-serif;
+ 	font-weight: 700;
+ }
+ .Appreciate{
+ 	margin:auto 22%;
+ }
+ .Appreciate input,
+ .Appreciate textarea{
+ 	font-family:'Montserrat',sans-serif !important;
+ }
+
 
   
