@@ -4,31 +4,39 @@ h1{
 }
 #container
 {
-  display: block;
   background-color: whitesmoke;
   margin-left: 20%;
   margin-top: 5%;
   padding-left: 1em;
-  width:80%;
   font-family: sans-serif;
 }
+.bodyrelation {
+    margin-left: 10%;
+    margin-right:10%;
+}
 
-#Relationbox{
-  width:100%;
+#Relationbox {
+    text-align:center;
+    background-color: whitesmoke;
+    display: block;
+    
+}
+.bodyrelation label {
+    font-family: 'Pt sans narrow',sans-serif;
+    font-weight: 700;
 }
 
 input[type=text], select {
-  width: 30%;
-  padding: 12px 20px;
-  margin: 8px 20px;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+    padding: 12px 20px;
+    margin: 8px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
 input[type=submit] {
-  width: 30%;
+ 
   background-color: #ff5200;
   color: white;
   padding: 14px 20px;
@@ -42,37 +50,31 @@ input[type=submit]:hover {
   background-color: #c44104;
 }
 
-#relationheading{
-  width: 80%;
-  margin-left: 50%;
-  margin-top: 3%;
+#Your_relation1 {
+    background-color: whitesmoke;
+    height: 4em;
+    margin-top:5px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    font-family: sans-serif;
 }
 
 
-#Your_relation
-{
-  background-color: whitesmoke;
-  width: 80%;
-  height: 4em;
-  margin-left: 20%;
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  font-family:sans-serif;
-}
-.SearchPeople
-{
-  width: 30%;
-  height: 40px;
-  margin: 10px 10px;
+.SearchPeople {
+    width: 30%;
+    height: 40px;
+    margin: 10px 10px;
+    font-family: 'Pt sans narrow',sans-serif;
+    font-weight:400;
 }
 
-#connectdecline{
-  width: 80%;
-  height: 100%;
-  background-color: #ff5200;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
+#connectdecline {
+    width: 80%;
+    height: 100%;
+    background-color: #138808;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
 }

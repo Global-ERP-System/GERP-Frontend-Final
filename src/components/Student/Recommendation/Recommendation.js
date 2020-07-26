@@ -28,18 +28,18 @@ export default class Project extends Component {
     render() {
 
         return (
-            <div style={{marginRight:'25%',marginLeft:'25%',height:"100%"}}>
+            <div className="bodyr">
                 <br></br>
                 <h1 style={{textAlign:"center"}} className="Heading">Recommendation Badges </h1><br></br>
-                        <form onSubmit={this.handlesubmit}>
-                            <label>Username:</label>
+                <form onSubmit={this.handlesubmit} style={{ marginTop:'0px' }}>
+                    <label style={{ fontFamily: 'Pt sans narrow', fontWeight: '700' }}>Username:</label>
                             <input className="form-control" value={this.state.username} onChange={this.handleusername} required /><br></br>
-                            <label>Message:</label>
+                    <label style={{ fontFamily: 'Pt sans narrow', fontWeight: '700' }}>Message:</label>
                             <input className="form-control" value={this.state.message} onChange={this.handlemessage} /><br></br>
                         </form>
 
                    
-                            <h4 >How strongly do you recommend</h4>
+                <h4 style={{ fontFamily: 'Pt sans narrow', fontWeight: '700' }}>How strongly do you recommend</h4>
                             <div class="rate">
                                 <input type="radio" id="star5" name="rate" value="5" />
                                 <label for="star5" title="text">5 stars</label>
@@ -54,7 +54,7 @@ export default class Project extends Component {
                             </div>
                             <br/><br/><br/>
                         <div style={{textAlign:"center"}}>
-                            <button className="btn" style={{color:"white",backgroundColor:"blue"}}>Submit</button>
+                    <button className="btn" style={{ color: "white", backgroundColor: '#138808' }}>Submit</button>
                         </div><br/><br/><br/>
                
             </div>
