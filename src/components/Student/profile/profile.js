@@ -83,7 +83,7 @@ handleChange({ target }) {
                         <center>
                             <h2>My Profile</h2>
 
-                            <div class="col">
+                            <div class="col" style={{marginTop:'-5%',marginLeft:'30%'}}>
                             <Create />
           
                             </div>

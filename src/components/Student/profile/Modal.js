@@ -14,32 +14,32 @@ const Create = (props) => {
 
   return (
   <div>
-    <Button color="primary" onClick={toggle} className="button1" style={{width:'130px',height:'40px'}}>Edit Details</Button>
+    <Button color="primary" onClick={toggle} className="button1" style={{width:'130px',height:'36px'}}>Edit Details</Button>
     <Modal isOpen={modal} toggle={toggle} contentClassName="assignment-modal"   style={{width:'600px'}}>
       <ModalHeader style={{backgroundColor:'#f5f5f5'}} toggle={toggle} close={closeBtn}>Profile</ModalHeader>
       <ModalBody>
       
             <div style={{height:'360px',width:'228px',float:'left'}}>
 
-                <label>Registration No.</label>
+                <label style={{fontWeight:'bold',fontSize:'14px'}}>Registration No.</label>
                 <br></br>
                 <input className="form-control" style={{width:'100%',fontSize:'15px'}} placeholder="Enter registration number"/>
                 
                 <br></br>
 
-                <label>First Name</label>
+                <label style={{fontWeight:'bold',fontSize:'14px'}}>First Name</label>
                 <br></br>
                 <input className="form-control" style={{width:'100%',fontSize:'15px'}} placeholder="Enter first name"/>
 
                 <br></br>
 
-                <label>Parent Name</label>
+                <label style={{fontWeight:'bold',fontSize:'14px'}}>Parent Name</label>
                 <br></br>
                 <input className="form-control" style={{width:'100%',fontSize:'15px'}} placeholder="Enter parent name"/>
 
                 <br></br>
 
-                <label>Phone No.</label>
+                <label style={{fontWeight:'bold',fontSize:'14px'}}>Phone No.</label>
                 <br></br>
                 <input className="form-control" style={{width:'100%',fontSize:'15px'}} placeholder="Enter phone number"/>
 
@@ -47,27 +47,27 @@ const Create = (props) => {
 
             <div style={{height:'360px',width:'228px',float:'left',marginLeft:'10px'}}>
 
-            <label>Roll No.</label>
+            <label style={{fontWeight:'bold',fontSize:'14px'}}>Roll No.</label>
                 <br></br>
-                <input className="form-control" style={{width:'100%',fontSize:'15px'}} placeholder="Enter registration number"/>
+                <input className="form-control" style={{width:'100%',fontSize:'15px'}} placeholder="Enter roll number"/>
                 
                 <br></br>
 
-                <label>Last Name</label>
+                <label style={{fontWeight:'bold',fontSize:'14px'}}>Last Name</label>
                 <br></br>
-                <input className="form-control" style={{width:'100%',fontSize:'15px'}} placeholder="Enter first name"/>
+                <input className="form-control" style={{width:'100%',fontSize:'15px'}} placeholder="Enter last name"/>
 
                 <br></br>
 
-                <label>Email</label>
+                <label style={{fontWeight:'bold',fontSize:'14px'}}>Email</label>
                 <br></br>
-                <input className="form-control" style={{width:'100%',fontSize:'15px'}} placeholder="Enter parent name"/>
+                <input className="form-control" style={{width:'100%',fontSize:'15px'}} placeholder="Enter email"/>
 
                 <br></br>
 
-                <label>Blood Group</label>
+                <label style={{fontWeight:'bold',fontSize:'14px'}}>Blood Group</label>
                 <br></br>
-                <input className="form-control" style={{width:'100%',fontSize:'15px'}} placeholder="Enter phone number"/>
+                <input className="form-control" style={{width:'100%',fontSize:'15px'}} placeholder="Enter blood group"/>
 
             </div>
             {/* <label style={{fontSize:'14px',fontWeight:'bold'}}>Registration No.</label>
