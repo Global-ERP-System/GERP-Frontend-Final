@@ -85,19 +85,19 @@ handleChange({ target }) {
                 <Col sm={9} className="right_Sec" >
                     <div className="my_Profile" ref={(e)=>{this.instance1=e}}>
                         <center>
-                            <h2>My Profile</h2>
-
-                            <div class="col" style={{marginTop:'-5%',marginLeft:'30%'}}>
-                            <Create />
-          
-                            </div>
-
+                            <h2>
+                                <Row>
+                                    <Col sm={10}>
+                                        My Profile
+                                        </Col>
+                                    <Col sm={2}>
+                                        <Create />
+                                    </Col>
+                                </Row>
+                           </h2>
                     </center>
-                    
-                        
                     <Row>
-                        
-                        <Col sm={9}>
+                      <Col sm={9}>
                             <div className="my_profile1">
                                 <Row className='myprofileelement'>
                               <Col sm={5}>
