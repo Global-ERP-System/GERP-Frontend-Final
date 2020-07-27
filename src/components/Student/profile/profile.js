@@ -9,6 +9,10 @@ import Create from "./Modal"
 
 
 class Profile extends Component{
+
+    scrollFunc=(height)=>{
+        window.scrollTo({top:height,behavior:'smooth'});
+    }
     constructor(props){
         super(props);
         this.state = {
@@ -63,14 +67,14 @@ handleChange({ target }) {
                             <span  >Angelina Reddy</span>
                         </div>
                         <div id="sidebar_element">
-                            <a href=".my_profile1" >My Profile</a>
+                            <a href="#" onClick={()=>this.scrollFunc(this.instance1.offsetTop)}>My Profile</a>
                         </div>
 
                             <div id="sidebar_element">
-                            <a href=".Qualification">Educational Qualifications</a>
+                            <a href="#" onClick={()=>this.scrollFunc(this.instance2.offsetTop)}>Educational Qualifications</a>
                         </div>
                             <div id="sidebar_element">
-                            <a href=".Experience">Experience</a>
+                            <a href="#" onClick={()=>this.scrollFunc(this.instance3.offsetTop)}>Experience</a>
                         </div>
                     </div>
 
@@ -79,7 +83,7 @@ handleChange({ target }) {
 
 
                 <Col sm={9} className="right_Sec" >
-                    <div className="my_Profile">
+                    <div className="my_Profile" ref={(e)=>{this.instance1=e}}>
                         <center>
                             <h2>My Profile</h2>
 
@@ -166,7 +170,7 @@ handleChange({ target }) {
                     </div>
 
 
-                            <div className="Qualification">
+                            <div className="Qualification" ref={(e)=>{this.instance2=e}}>
                         <center>
                             <h2 style={{ marginTop: '40px', paddingTop: '0px' }}>  Qualification</h2>
                                 </center>
@@ -218,7 +222,7 @@ handleChange({ target }) {
 
 
 
-                    <div className="Experience">
+                    <div className="Experience" ref={(e)=>{this.instance3=e}}>
                         <center>
                             <h2 style={{ marginTop: '40px', paddingTop:'0px' }}> Experience</h2>
                                         </center>
