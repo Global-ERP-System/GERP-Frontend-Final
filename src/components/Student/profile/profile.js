@@ -4,6 +4,7 @@ import avatar from './avatar.png';
 import Popup from 'reactjs-popup';
 import './profile.css'
 import { MDBFormInline } from "mdbreact";
+import editprofile from './editprofile'
 
 
 
@@ -27,8 +28,8 @@ class Profile extends Component{
         award: 'none',
         courses: 'none',
         internship: 'none',
-        tranning: 'none'
-       
+        tranning: 'none',
+        editprofile: false
     }
 
     this.publish = this.publish.bind(this);
@@ -47,6 +48,9 @@ handleChange({ target }) {
   }
 
     render()  {
+
+        let editprofile = () => this.setState({ editprofile: false })
+
         return (
             <Row className='Body'>
                 <Col sm={3} className="sidebar">
@@ -59,14 +63,14 @@ handleChange({ target }) {
                             <span  >Angelina Reddy</span>
                         </div>
                         <div id="sidebar_element">
-                            <a href="#" >My Profile</a>
+                            <a href=".my_profile1" >My Profile</a>
                         </div>
 
                             <div id="sidebar_element">
-                            <a href="#">Educational Qualifications</a>
+                            <a href=".Qualification">Educational Qualifications</a>
                         </div>
                             <div id="sidebar_element">
-                            <a href="#">Experience</a>
+                            <a href=".Experience">Experience</a>
                         </div>
                     </div>
 
@@ -78,8 +82,15 @@ handleChange({ target }) {
                     <div className="my_Profile">
                         <center>
                             <h2>My Profile</h2>
-                    </center>
 
+                        <Button style={{width:'10%',marginTop:'-7%',float:'right'}} onClick={() =>this.setState({ editprofile: true })}>Edit Details</Button>
+
+                    </center>
+                    
+                    <editprofile
+                        show={this.state.editprofile}
+                        onHide={editprofile} />
+                        
                     <Row>
                         
                         <Col sm={9}>
@@ -131,7 +142,7 @@ handleChange({ target }) {
                                     <Col sm={1}>
                                     </Col>
                             <Col sm={5}>
-                                <label style={{ fontWeight: 'bold' }}>Phone no:</label>
+                                <label style={{ fontWeight: 'bold' }}>Blood Group:</label>
                                 <input class="form-control" value={this.state.bloodGroup} readonly />                               
                             </Col>
                         </Row>
@@ -279,9 +290,9 @@ handleChange({ target }) {
                         </Row>
                     </div>
                         </Col>
-                
+               
             </Row>
-
+ 
 
         );
     }
