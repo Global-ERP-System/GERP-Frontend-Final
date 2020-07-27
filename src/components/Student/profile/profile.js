@@ -6,6 +6,8 @@ import './profile.css'
 import { MDBFormInline } from "mdbreact";
 // import editprofile from './editprofile'
 import Create from "./Modal"
+import Create1 from "./Modal1"
+import Create2 from "./Modal2"
 
 
 class Profile extends Component{
@@ -168,11 +170,22 @@ handleChange({ target }) {
                     </Row>
 
                     </div>
-
+                        <br></br>
 
                             <div className="Qualification" ref={(e)=>{this.instance2=e}}>
                         <center>
-                            <h2 style={{ marginTop: '40px', paddingTop: '0px' }}>  Qualification</h2>
+                            <h2>
+                            
+                            <Row>
+                                    <Col sm={10}>
+                                        Qualification
+                                        </Col>
+                                    <Col sm={2}>
+                                        <Create1 />
+                                    </Col>
+                                </Row>
+                            
+                            </h2>
                                 </center>
 
                                 <Row>
@@ -224,7 +237,18 @@ handleChange({ target }) {
 
                     <div className="Experience" ref={(e)=>{this.instance3=e}}>
                         <center>
-                            <h2 style={{ marginTop: '40px', paddingTop:'0px' }}> Experience</h2>
+                        <h2>
+                            
+                            <Row>
+                                    <Col sm={10}>
+                                        Experience
+                                        </Col>
+                                    <Col sm={2}>
+                                        <Create2 />
+                                    </Col>
+                                </Row>
+                            
+                            </h2>
                                         </center>
 
                                         <Row>

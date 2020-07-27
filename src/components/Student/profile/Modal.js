@@ -15,7 +15,7 @@ const Create = (props) => {
   return (
   <div>
     <Button color="primary" onClick={toggle} className="button1" style={{width:'130px',height:'36px'}}>Edit Details</Button>
-    <Modal isOpen={modal} toggle={toggle} contentClassName="assignment-modal"   style={{width:'600px'}}>
+    <Modal isOpen={modal} toggle={toggle} contentClassName="profile-modal"   style={{width:'600px'}}>
       <ModalHeader style={{backgroundColor:'#f5f5f5'}} toggle={toggle} close={closeBtn}>Profile</ModalHeader>
       <ModalBody>
       
@@ -70,13 +70,6 @@ const Create = (props) => {
                 <input className="form-control" style={{width:'100%',fontSize:'15px'}} placeholder="Enter blood group"/>
 
             </div>
-            {/* <label style={{fontSize:'14px',fontWeight:'bold'}}>Registration No.</label>
-            <br></br>
-            <input className="form-control" style={{width:'50%',fontSize:'14px'}} placeholder="Enter registration number"/>
-
-            <label style={{fontSize:'14px',fontWeight:'bold'}}>Roll No.</label>
-            <br></br>
-            <input className="form-control" style={{width:'50%',fontSize:'14px'}} placeholder="Enter roll number"/>         */}
 
 
       </ModalBody>
