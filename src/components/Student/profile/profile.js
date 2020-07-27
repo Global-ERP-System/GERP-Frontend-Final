@@ -4,8 +4,8 @@ import avatar from './avatar.png';
 import Popup from 'reactjs-popup';
 import './profile.css'
 import { MDBFormInline } from "mdbreact";
-import editprofile from './editprofile'
-
+// import editprofile from './editprofile'
+import Create from "./Modal"
 
 
 class Profile extends Component{
@@ -28,8 +28,8 @@ class Profile extends Component{
         award: 'none',
         courses: 'none',
         internship: 'none',
-        tranning: 'none',
-        editprofile: false
+        tranning: 'none'
+        
     }
 
     this.publish = this.publish.bind(this);
@@ -49,7 +49,7 @@ handleChange({ target }) {
 
     render()  {
 
-        let editprofile = () => this.setState({ editprofile: false })
+        
 
         return (
             <Row className='Body'>
@@ -83,13 +83,13 @@ handleChange({ target }) {
                         <center>
                             <h2>My Profile</h2>
 
-                        <Button style={{width:'10%',marginTop:'-7%',float:'right'}} onClick={() =>this.setState({ editprofile: true })}>Edit Details</Button>
+                            <div class="col">
+                            <Create />
+          
+                            </div>
 
                     </center>
                     
-                    <editprofile
-                        show={this.state.editprofile}
-                        onHide={editprofile} />
                         
                     <Row>
                         
