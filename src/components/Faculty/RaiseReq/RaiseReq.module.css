@@ -1,0 +1,18 @@
+.RaiseReq{
+	width:500px;
+	margin:0 auto;
+	text-align: center;
+}
+.RaiseReq h2{
+	font-family: 'Montserrat',sans-serif;
+	font-weight: 700;
+}
+.RaiseReq section button{
+	font-family: 'Montserrat',sans-serif;
+	padding:0.5rem;
+	color:white;
+	font-weight: 700;
+	border:2px black solid;
+	margin:15px 0;
+	width:70%;
+}
