@@ -5,14 +5,14 @@ import './intern.css'
 class Intern extends Component {
     render() {
         return (
-        <div style={{marginLeft:'20%',marginRight:'20%'}}>
-            <div className="heading">
-                <h1>INTERNSHIPS</h1>
-            </div>
-            <Form>
-                <Row form>
-                    <Col sm={6}>
-                    <legend className="col-form-label">Currently Available :</legend>
+            <div className="bodyintern">
+                <center>
+                    <h1 style={{ fontFamily: 'Montserrat', fontWeight: '700' }}>INTERNSHIPS</h1>
+                  </center>
+                <Form>
+                    <Row className="internrow">
+                    <Col sm={4}>
+                            <legend className="col-form-label" style={{ fontFamily: 'Pt sans narrow', fontWeight: 'bold' }}>Currently Available :</legend>
                     </Col>
                     <Col sm={3}>
                         <FormGroup check inline>
@@ -30,50 +30,85 @@ class Intern extends Component {
                             </Label>
                         </FormGroup>
                     </Col>
-                </Row>
-                <FormGroup>
-                    <Label for="preferences">Preferences :</Label><br/>
-                    <input className="form-control" id="preferences" placeholder="Preferences"/>
-                </FormGroup>
-                <FormGroup>
-                    <Label for="skills">Skills :</Label><br/>
-                    <input className="form-control"  id="skills" placeholder="List of skills"/>
-                </FormGroup>
-                <FormGroup>
-                    <Label for="upload">CV Upload :</Label>
-                    <CustomInput type="file" id="upload" name="upload" />
-                </FormGroup>
-                <h5><b>Fill the details about current internship:</b></h5>
-                <FormGroup>
-                    <Label for="name">Name of the Company :</Label><br/>
-                    <input className="form-control" id="name" placeholder="Enter company name..."/>
-                </FormGroup>
-                <FormGroup>
-                    <Label for="position">Position :</Label><br/>
-                    <input className="form-control" id="position" placeholder="Enter the position you worked for..."/>
-                </FormGroup>
-                <Row form>
-                    <Col md={6}>
+                    </Row>
+                    <Row className="internrow">
+                        <Col sm={4}>
+                              <Label for="preferences">Preferences :</Label><br />
+                        </Col>
+                        <Col sm={6}>
+                            <input className="form-control" placeholder="Preferences" />
+                        </Col>
+      
+                    </Row>
+
+
+                    <Row className="internrow">
+                        <Col sm={4}>
+
+                            <Label for="skills">Skills :</Label><br />
+
+
+                        </Col>
+                        <Col sm={6}>
+                            <input className="form-control" placeholder="List of skills" />
+                        </Col>
+
+                    </Row>
+
+
+                    <Row className="internrow">
+                        <Col sm={4}>
+
+                            <Label for="upload">CV Upload :</Label>
+                        </Col>
+                        <Col sm={6}>
+                            <CustomInput type="file" name="upload" />
+                        </Col>
+                    </Row>
+                    <h5 style={{marginTop:"30px"}}><b>Fill the details about current internship:</b></h5>
+                    <Row className="internrow">
+                        <Col sm={4}>
+                            <Label for="name">Name of the Company :</Label><br />
+                        </Col>
+                        <Col sm={6}>
+                            <input className="form-control" placeholder="Enter company name..." />
+                        </Col>
+                    </Row>
+                    <Row className="internrow">
+                        <Col sm={4}>
+                            <Label for="position">Position :</Label><br />
+                        </Col>
+                        <Col sm={6}>
+                            <input className="form-control" placeholder="Enter the position you worked for..." />
+                        </Col>
+                    </Row>
+
+
+                    <Row className="internrow">
+                    <Col md={5}>
                         <FormGroup>
                             <Label for="date">Start Date</Label>
-                            <Input type="date" name="date" id="startdate" placeholder="date placeholder"/>
+                            <Input type="date" name="date"  placeholder="date placeholder"/>
                         </FormGroup>
                     </Col>
-                    <Col md={6}>
+                    <Col md={5}>
                         <FormGroup>
                             <Label for="date">End Date</Label>
-                            <Input type="date" name="date" id="enddate" placeholder="date placeholder"/>
+                            <Input type="date" name="date"  placeholder="date placeholder"/>
                         </FormGroup>
                     </Col>
                 </Row>
-                <div style={{textAlign:'center'}}>
+                    <div style={{ textAlign: 'center' }}>
+
                 <FormGroup style={{display:'inline-block',alignSelf:'center'}}>
-                    <Button  style={{backgroundColor:'blue'}} >Upload Docs</Button>
-                    &nbsp;&nbsp;&nbsp;               
-                    <Button  style={{backgroundColor:'blue'}} >Submit</Button>
+                           
+                     <button style={{ color: "white", backgroundColor: 'blue', paddingLeft:"0px",paddingRight:"0px" }} className="btn">Upload Docs</button> &nbsp;&nbsp;&nbsp; 
+        
+
+                    <button style={{ color: "white", backgroundColor: '#138808' }} type="submit" className="btn">Submit</button>
+                    
                 </FormGroup>
                 </div>
-
             </Form>
         </div>
         );
