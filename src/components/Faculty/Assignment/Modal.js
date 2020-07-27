@@ -16,9 +16,9 @@ const Create = (props) => {
   <div>
     <Button color="primary" onClick={toggle} className="button1">Create New</Button>
     <Modal isOpen={modal} toggle={toggle} contentClassName="assignment-modal">
-      <ModalHeader toggle={toggle} close={closeBtn}>Assignment</ModalHeader>
+      <ModalHeader style={{backgroundColor:'#f5f5f5'}} toggle={toggle} close={closeBtn}>Assignment</ModalHeader>
       <ModalBody>
-      <div className="container">
+      <div className="container" style={{paddingTop:'0',paddingBottom:'0',marginTop:'20px'}}>
           
           <Form className="form1"> 
               <Row form>
@@ -100,8 +100,12 @@ const Create = (props) => {
       </div>
       </ModalBody>
       <ModalFooter>
+        <Col>
         <Button type= "submit" color="primary" onClick={toggle}>Assign</Button>{' '}
-        <Button color="secondary" onClick={toggle}>Cancel</Button>
+        </Col>
+        <Col>
+        <Button style={{marginLeft:'80px'}} color="secondary" onClick={toggle}>Cancel</Button>
+        </Col>
       </ModalFooter>
     </Modal>
   </div>

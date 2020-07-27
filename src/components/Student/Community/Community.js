@@ -56,7 +56,7 @@ class Community extends Component {
                 <div id="Contentbox"style={{height:'316px',marginRight:'-135px',marginTop:'-60px', marginLeft:'20%'}}>
                     <h3 className="Community"style={{fontSize:'28px',padding:'2px'}}>Community Forum</h3>
                     <form onSubmit={this.handleSubmit}>
-                        <div  style={{marginTop:'-10%'}}>
+                        <div  >
                             <label className="commentheading">Write a Post</label>
                             <textarea value={this.state.Comment}
                                 onChange={this.handlePostChange} cols="80" rows="5" placeholder="Write Something..."

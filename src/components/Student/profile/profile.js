@@ -4,7 +4,8 @@ import avatar from './avatar.png';
 import Popup from 'reactjs-popup';
 import './profile.css'
 import { MDBFormInline } from "mdbreact";
-
+// import editprofile from './editprofile'
+import Create from "./Modal"
 
 
 class Profile extends Component{
@@ -12,10 +13,11 @@ class Profile extends Component{
         super(props);
         this.state = {
         institute: '     SRIT',
-        fullName : 'Vaibhav Singh ',
+        firstName: 'Angelina ',
+        lastName:'reddy',
         parentName : 'xyz',
         registrationNumber : '0000',
-        rollNumber : 'rollno.',
+        rollNumber : '0123cs12455',
         bloodGroup : 'B+',
         campusCode : '0205',
         email: 'abc@gmail.com',
@@ -27,7 +29,7 @@ class Profile extends Component{
         courses: 'none',
         internship: 'none',
         tranning: 'none'
-       
+        
     }
 
     this.publish = this.publish.bind(this);
@@ -46,6 +48,7 @@ handleChange({ target }) {
   }
 
     render()  {
+<<<<<<< HEAD
         return (
                 <div id="sidebar">
                 {
@@ -148,427 +151,253 @@ handleChange({ target }) {
                                 <img src="https://scriptshadow.net/wp-content/uploads/2019/08/Screen-Shot-2019-08-13-at-8.09.58-PM.png" style={{width:'100%',height:'230px'}}></img>
                                 <input style={{border:'0px',marginTop:'2%'}} type="file" />
                             </div>
-
-                        </div>
-                
-                /* <Row>
-                    <Col sm={4 }>
-
-                        <img src={avatar} alt="avatar" style={{ borderRadius: '200px', width: '200', height: '200', marginTop:'20px' }} className="img-thumbnail" />
-    
-                    </Col>
-                    <Col sm={5}>
-                        <div style={{ marginTop: "40px" }}>
-                            <div className="column" id='infohead'>{this.state.fullName}</div>
-                            <div className="column" id='info'>{this.state.rollNumber}</div>
-                            <div className="column" id='info'>{this.state.campusCode}    {this.state.institute}</div>
-
-                          
-
-
-                        </div>
-                    </Col>
-                    <Col sm={3}> */}
-
-                        {/*
-
-                        <Popup className='popup' trigger={<button style={{ fontSize: "15px", marginTop: '50px'}}><b style={{ color: 'white' }}>Enter Campus Code</b></button>}>
-
-                            {close => (
-                                <div>
-                                    <a className="close" onClick={close}>
-                                        &times;
-                        </a>
-                                </div>
-                            )}
-
-                            <form className="form-group">
-
-                                <label>Campus Code :</label>
-                                <input className="form-control" placeholder="Campus Code"
-                                    name="campusCode"
-                                    value={this.state.campusCode}
-                                    onChange={this.handleChange} />
-
-                                <br />
-                            </form>
-
-                            <div style={{ textAlign: 'center' }}>
-                                <button type='submit' style={{ fontSize: "15px" }} onClick={this.publish}><b style={{ color: 'white' }}>Submit</b></button>
-                            </div>
-
-                        </Popup>
-                        */}
-                    {/* </Col>
-                </Row>
-                <br/>
-                <hr></hr>
-                <br/>
-
-
-                <div id="profile_content" >
-                     
-
-
-                <Row id="infohead">
-                        <Col sm={8}> <h3 style={{ fontFamily: 'Montserrat', fontWeight: '700' }}> About</h3></Col>
-
-
-
-                    <Col sm={4}>
-
-                        <Popup className='popup' trigger={<button style={{ marginLeft: "50px", fontSize: "15px" }}><b style={{ color: 'white' }}>Edit Details</b></button>} >
-
-                            {close => (
-                                <div>
-                                    <a className="close" onClick={close}>
-                                        &times;
-                        </a>
-                                </div>
-                            )}
-
-
-                            <h3 id='title'>About</h3>
-
-                            <form className="form-group">
-
-                                <label>Full Name :</label>
-                                <input className="form-control" placeholder="Full Name"
-                                    name="fullName"
-                                    value={this.state.fullName}
-                                    onChange={this.handleChange} />
-                                   
-
-                                    <label>Parent Name :</label>
-                                    <input className="form-control" placeholder="Parent Name"
-                                    name="parentName"
-                                    value={this.state.address}
-                                    onChange={this.handleChange} />
-                                   
-
-                                <label>Phone Number :</label>
-                                <input className="form-control" placeholder="Phone Number"
-                                    name="Phone number"
-                                    value={this.state.phoneno}
-                                    onChange={this.handleChange} />
-                                
-                                <label>Senior Secondary school :</label> 
-                                <input className="form-control"  placeholder="Senior Secondary school "
-                                    name="Senior Secondary school"
-                                    value={this.state.Senior_Secondary_school}
-                                        onChange={this.handleChange} />
-
-
-                                <label>Secondary school :</label>
-                                <input className="form-control" placeholder="Secondary school "
-                                    name="Secondary school :"
-                                    value={this.state.Secondary_school}
-                                    onChange={this.handleChange} />
-
-                                <label>Any other / Ug</label>
-                                <input className="form-control"  placeholder="Any other / Ug"
-                                    name="Any other / Ug"
-                                    value={this.state.Ug}
-                                    onChange={this.handleChange} />
-                                
-
-                                <label>Blood Group :</label> 
-                                <input className="form-control" placeholder="Blood Group"
-                                    name="bloodGroup"
-                                    value={this.state.bloodGroup}
-                                    onChange={this.handleChange} />
-                                
-
-                                <label>E-mail ID :</label>
-                                <input className="form-control" type="email" placeholder="Email"
-                                    name="email"
-                                    value={this.state.email}
-                                    onChange={this.handleChange} /><br />
-
-                                
-                            </form>
-
-                            <div style={{ textAlign: 'center' }}>
-                                <button type='submit' style={{ marginLeft: "40%", fontSize: "15px" }} onClick={this.publish}><b style={{ color: 'white' }}>Submit</b></button>
-                            </div>
-
-                        </Popup>
-
-                    </Col>
-                </Row>
-                
-
-
-                <Row>
-
-
-
-
-                    <Col sm={10}>
-                        <div>
-                            <div>
-
-                                <Row>
-                                    <Col sm={6}>
-                                        <div className="column" id='info'>Registration Number</div></Col>
-                                    <Col sm={6}>
-                                        <div className="column">{this.state.registrationNumber}</div>
-                                    </Col>
-
-
-                                </Row>
-
-                                <Row>
-                                    <Col sm={6}>
-                                            <div className="column" id='info'>Full Name</div>
-                                    </Col>
-                                    <Col sm={6}>
-                                        <div className="column">{this.state.fullName}</div>
-                                    </Col>
-
-                                </Row>
-
-
-                                <Row>
-                                    <Col sm={6}>
-                                            <div className="column" id='info'>Parent Name</div>
-
-                                    </Col>
-                                    <Col sm={6}>
-                                        <div className="column">{this.state.parentName}</div>
-                                    </Col>
-
-                                </Row>
-
-
-
-                                <Row>
-                                    <Col sm={6}>
-                                            <div className="column" id='info'>Phone number</div>
-                                    </Col>
-                                    <Col sm={6}>
-                                        <div className="column">{this.state.phoneno}</div>
-                                    </Col>
-
-                                </Row>
-                               
-                              
-
-
-                                <Row>
-                                    <Col sm={6}>
-                                            <div className="column" id='info'>Senior Secondary school :</div>
-                                    </Col>
-                                    <Col sm={6}>
-                                        <div className="column">{this.state.Senior_Secondary_school}</div>
-                                    </Col>
-
-                                </Row>
-
-
-
-                                <Row>
-                                    <Col sm={6}>
-                                            <div className="column" id='info'>Secondary school :</div>
-                                    </Col>
-                                    <Col sm={6}>
-                                        <div className="column">{this.state.Secondary_school}</div>
-                                    </Col>
-
-                                </Row>
-
-
-                                <Row>
-                                    <Col sm={6}>
-                                            <div className="column" id='info'>Any other / Ug</div>
-                                    </Col>
-                                    <Col sm={6}>
-                                        <div className="column">{this.state.Ug}</div>
-                                    </Col>
-
-                                </Row>
-
-
-                                <Row>
-                                    <Col sm={6}>
-                                            <div className="column" id='info'>Blood Group</div>
-
-                                    </Col>
-                                    <Col sm={6}>
-                                            <div className="column" >{this.state.bloodGroup}</div>
-                                    </Col>
-
-                                </Row>
-
-
-                               
-                                <Row>
-                                    <Col sm={6}>
-                                            <div className="column" id='info'>E-mail Id</div>
-
-                                    </Col>
-                                    <Col sm={6}>
-                                        <div className="column">{this.state.email}</div>
-                                    </Col>
-
-                                </Row>
-
-
-
-
-                            </div>
-                        </div>
-
-                        
-                    </Col>
-
-
-                </Row>
-
-
-                <br></br>
-                <hr></hr>
-                <br></br>
-
-
-
-                    <Row id="infohead">
-                        <Col sm={8}> <h3 style={{ fontFamily: 'Montserrat', fontWeight: '700' }}>Experience</h3></Col>
-
-                     
+=======
+
+        
+>>>>>>> 6de3245381f249ef2018cdc4183cfb978a062aa2
+
+        return (
+            <Row className='Body'>
+                <Col sm={3} className="sidebar">
+                    <div>
                    
-                    <Col sm={4}>
-
-                        <Popup className='popup' trigger={<button style={{ marginLeft: "50px", fontSize: "15px" }}><b style={{ color: 'white' }}>Edit Details</b></button>} >
-
-                            {close => (
-                                <div>
-                                    <a className="close" onClick={close}>
-                                        &times;
-                        </a>
-                                </div>
-                            )}
-
-
-                            <h3 id='title'>Experience</h3>
-
-                            <form className="form-group">
-
-                                <label>Tranning</label>
-                                <input className="form-control" placeholder="Tranning"
-                                    name="Tranning"
-                                    value={this.state.tranning}
-                                    onChange={this.handleChange} />
-
-                                
-
-                                <label>Internship :</label>
-                                <input className="form-control" placeholder="Internship"
-                                    name="Internship"
-                                    value={this.state.internship}
-                                    onChange={this.handleChange} />
-                               
-
-                                <label>Other certification/courses :</label>  
-                                <input className="form-control" placeholder="Other certification/courses"
-                                    name="Other certification/courses"
-                                    value={this.state.courses}
-                                    onChange={this.handleChange} />
-                         
-                                <label>Honor/ Award :</label>
-                                <input className="form-control" placeholder="Honor/ Award"
-                                    name="Honor/ Award"
-                                    value={this.state.award}
-                                    onChange={this.handleChange} />
-                                
-                            </form>
-
-                            <div style={{ textAlign: 'center' }}>
-                                <button type='submit' style={{ marginLeft: "40%", fontSize: "15px" }} onClick={this.publish}><b style={{ color: 'white' }}>Submit</b></button>
-                            </div>
-
-                        </Popup>
-
-                    </Col>
-                </Row>
-
-
-                <Row>
-
-
-
-
-                    <Col sm={10}>
-                        <div>
-                            <div>
-
-                                <Row>
-                                    <Col sm={6}>
-                                            <div className="column" id='info'> Tranning</div></Col>
-                                    <Col sm={6}>
-                                        <div className="column">{this.state.tranning}</div>
-                                    </Col>
-
-
-                                </Row>
-
-                                <Row>
-                                    <Col sm={6}>
-                                            <div className="column" id='info'>Internship</div>
-                                    </Col>
-                                    <Col sm={6}>
-                                        <div className="column">{this.state.internship}</div>
-                                    </Col>
-
-                                </Row>
-
-
-                                <Row>
-                                    <Col sm={6}>
-                                            <div className="column" id='info'> Other certification/courses</div>
-
-                                    </Col>
-                                    <Col sm={6}>
-                                        <div className="column">{this.state.courses}</div>
-                                    </Col>
-
-                                </Row>
-                                <Row>
-                                    <Col sm={6}>
-                                            <div className="column" id='info'>Honor/ Award</div>
-
-                                    </Col>
-                                    <Col sm={6}>
-                                        <div className="column">{this.state.award}</div>
-                                    </Col>
-
-                                </Row>
-
-
-
-                            </div>
+                        <div id="sidebar_image">
+                            <img src="https://scriptshadow.net/wp-content/uploads/2019/08/Screen-Shot-2019-08-13-at-8.09.58-PM.png" style={{ width: '200px', height: '200px', borderRadius: '200%' }}></img>
+                        </div>
+                        <div id="sidebar_element" style={{ marginTop: '40px' }}>
+                            <span  >Angelina Reddy</span>
+                        </div>
+                        <div id="sidebar_element">
+                            <a href=".my_profile1" >My Profile</a>
                         </div>
 
-
-                    </Col>
-
-
-                </Row> */}
-
-
+                            <div id="sidebar_element">
+                            <a href=".Qualification">Educational Qualifications</a>
+                        </div>
+                            <div id="sidebar_element">
+                            <a href=".Experience">Experience</a>
+                        </div>
+                    </div>
 
                     
+                </Col>
 
 
-                {/* </div> */}
+                <Col sm={9} className="right_Sec" >
+                    <div className="my_Profile">
+                        <center>
+                            <h2>My Profile</h2>
+
+                            <div class="col">
+                            <Create />
+          
+                            </div>
+
+                    </center>
+                    
+                        
+                    <Row>
+                        
+                        <Col sm={9}>
+                            <div className="my_profile1">
+                                <Row className='myprofileelement'>
+                              <Col sm={5}>
+                                   <label style={{ fontWeight: 'bold' }}>Registration Number</label>
+                                   <input class="form-control" value={this.state.registrationNumber} readonly />
+                                    </Col>
+                                    <Col sm={1}>
+                                    </Col>
+                            <Col sm={5}>
+                                  <label style={{ fontWeight: 'bold' }}>Roll no:</label>
+                                 <input class="form-control" value={this.state.rollNumber} readonly />
+                                
+                            </Col>
+                         </Row>
+
+                                <Row className='myprofileelement'>
+                            <Col sm={5}>
+                                <label style={{ fontWeight: 'bold' }}>First Name:</label>
+                                <input class="form-control" value={this.state.firstName} readonly />
+                                    </Col>
+                                    <Col sm={1}>
+                                    </Col>
+                            <Col sm={5}>
+                                <label style={{ fontWeight: 'bold' }}>Last Name:</label>
+                                <input class="form-control" value={this.state.lastName} readonly />
+                            </Col>
+                        </Row>
+                                <Row className='myprofileelement'>
+                            <Col sm={5}>
+                                <label style={{ fontWeight: 'bold' }}>Parent Name:</label>
+                                <input class="form-control" value={this.state.parentName} readonly />
+                                    </Col>
+                                    <Col sm={1}>
+                                    </Col>
+                            <Col sm={5}>
+                                <label style={{ fontWeight: 'bold' }}>Email:</label>
+                                <input class="form-control" value={this.state.email} readonly />
+                            </Col>
+                        </Row>
+
+                                <Row className='myprofileelement'>
+                            <Col sm={5}>
+                                <label style={{ fontWeight: 'bold' }}>Phone no:</label>
+                                <input class="form-control" value={this.state.phoneno} readonly />
+                                    </Col>
+                                    <Col sm={1}>
+                                    </Col>
+                            <Col sm={5}>
+                                <label style={{ fontWeight: 'bold' }}>Blood Group:</label>
+                                <input class="form-control" value={this.state.bloodGroup} readonly />                               
+                            </Col>
+                        </Row>
+
+        
+
+
+
+                    </div>
+                        </Col>
+                        <Col sm={3} className="image">
+                            <div >
+                                <center>
+                                    <img src="https://scriptshadow.net/wp-content/uploads/2019/08/Screen-Shot-2019-08-13-at-8.09.58-PM.png" style={{ width: '230px', height: '230px', alignSelf:"center" }}></img>
+                                </center>
+                                </div>
+
+                        </Col>
+                    </Row>
+
+                    </div>
+
+
+                            <div className="Qualification">
+                        <center>
+                            <h2 style={{ marginTop: '40px', paddingTop: '0px' }}>  Qualification</h2>
+                                </center>
+
+                                <Row>
+
+                                    <Col sm={9}>
+                                        <div className="my_profile1">
+                                            <Row className='myprofileelement'>
+                                                <Col sm={5}>
+                                                    <label style={{ fontWeight: 'bold' }}>Senior Secondary school :</label>
+                                                    <input class="form-control" value={this.state.Senior_Secondary_school} readonly />
+                                                </Col>
+                                                <Col sm={1}>
+                                                </Col>
+                                                <Col sm={5}>
+                                           
+
+                                                </Col>
+                                            </Row>
+
+                                            <Row className='myprofileelement'>
+                                                <Col sm={5}>
+                                                    <label style={{ fontWeight: 'bold' }}>Secondary school :</label>
+                                                    <input class="form-control" value={this.state.Secondary_school} readonly />
+                                                </Col>
+                                                <Col sm={1}>
+                                                </Col>
+                                                <Col sm={5}>
+                                           
+                                                </Col>
+                                            </Row>
+                                            <Row className='myprofileelement'>
+                                                <Col sm={5}>
+                                                    <label style={{ fontWeight: 'bold' }}>Any other / Ug</label>
+                                                    <input class="form-control" value={this.state.Ug} readonly />
+                                                </Col>
+                                                <Col sm={1}>
+                                                </Col>
+                                                <Col sm={5}>
+                                           
+                                                </Col>
+                                            </Row>
+                                        </div>
+                                    </Col>
+                                </Row>
+                            </div>
 
 
 
 
+                    <div className="Experience">
+                        <center>
+                            <h2 style={{ marginTop: '40px', paddingTop:'0px' }}> Experience</h2>
+                                        </center>
+
+                                        <Row>
+
+                                            <Col sm={9}>
+                                                <div className="my_profile1">
 
 
-            </div>
+                                    <Row className='myprofileelement'>
+                                        <Col sm={5}>
+                                            <label style={{ fontWeight: 'bold' }}>Tranning:</label>
+                                            <input class="form-control" value={this.state.tranning} readonly />
+                                        </Col>
+                                        <Col sm={1}>
+                                        </Col>
+                                        <Col sm={5}>
+                                            
+                                        </Col>
+                                    </Row>
+                                    <Row className='myprofileelement'>
+                                        <Col sm={5}>
+                                            <label style={{ fontWeight: 'bold' }}>Internship:</label>
+                                            <input class="form-control" value={this.state.internship} readonly />
+                                        </Col>
+                                        <Col sm={1}>
+                                        </Col>
+                                        <Col sm={5}>
 
+                                        </Col>
+                                    </Row>
+                                    <Row className='myprofileelement'>
+                                        <Col sm={5}>
+                                            <label style={{ fontWeight: 'bold' }}>Other certification/courses:</label>
+                                            <input class="form-control" value={this.state.courses} readonly />
+                                        </Col>
+                                        <Col sm={1}>
+                                        </Col>
+                                        <Col sm={5}>
+
+                                        </Col>
+                                    </Row>
+
+                                    <Row className='myprofileelement'>
+                                        <Col sm={5}>
+                                            <label style={{ fontWeight: 'bold' }}>Honor/ Award:</label>
+                                            <input class="form-control" value={this.state.award} readonly />
+                                        </Col>
+                                        <Col sm={1}>
+                                        </Col>
+                                        <Col sm={5}>
+
+                                        </Col>
+                                    </Row>
+
+
+
+
+                                </div>
+                            </Col>
+                            <Col sm={3} className="image">
+                                <div >
+                                    <center>
+                                    </center>
+                                </div>
+
+                            </Col>
+                        </Row>
+                    </div>
+                        </Col>
+               
+            </Row>
+ 
 
         );
     }

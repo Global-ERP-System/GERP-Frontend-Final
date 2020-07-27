@@ -1,5 +1,5 @@
 import React,{Component,useState} from 'react';
-import {Table,Button,Card,CardHeader,CardBody,CardTitle,Modal,ModalBody,ModalFooter} from 'reactstrap';
+import {Button,Card,CardHeader,CardBody,CardTitle,Modal,ModalBody,ModalFooter, Media} from 'reactstrap';
 import Create from "./Modal"
 import './Assignment.css'
 
@@ -19,16 +19,16 @@ toggle(){
     return(
         <div className="body">
 
-                <Card>
-                  <CardHeader className="cardheader1">
-            <CardTitle><h2 className="h2"><b>Assignment</b></h2></CardTitle></CardHeader>
+                <Card className="card">
+                  <CardHeader style={{backgroundColor:'#ff5200'}}>
+            <h2 style={{color:'white'}}>Assignment</h2></CardHeader>
            <CardBody>
              
               
              <CardTitle>
                <div class="row">
              <div class="col">
-               <h5>List of Classes</h5> 
+               <h4 style={{paddingBottom:'10px'}}>List of Classes</h4> 
                </div>
                <div class="col">
               <Create />
@@ -36,11 +36,11 @@ toggle(){
                </div>
                </div>
                </CardTitle>
-             
-     <Table className="table1" >
+            
+     <table className="table1">
       <thead className="thead">
-        <tr>
-          <th>Sno</th>
+        <tr className="header">
+          <th>S&nbsp;No.</th>
           <th>Class</th>
           <th>Subject</th>
           <th>Topic</th>
@@ -56,18 +56,18 @@ toggle(){
           <td>Computer Science : 8B</td>
           <td>Data Mining</td>
           <td>Module1</td>
-          <td><Button color="success">View Submissions</Button></td>
-          <td><Button color="warning">Edit</Button></td>
-          <td><Button color="danger">Delete</Button></td>
+          <td><Button color="success" style={{width:'180px'}} >View Submissions</Button></td>
+          <td><Button color="warning" style={{width:'80px',color:'white'}} >Edit</Button></td>
+          <td><Button color="danger" style={{width:'100px'}} onClick={() => this.toggle()}>Delete</Button></td>
         </tr>
         <tr>
           <th scope="row">2</th>
           <td>Computer Science : 8A</td>
           <td>Data Mining</td>
           <td>Module2</td>
-          <td><Button color="success">View Submissions</Button></td>
-          <td><Button color="warning">Edit</Button></td>
-          <td><Button color="danger" onClick={() => this.toggle()}>Delete</Button></td>
+          <td><Button color="success" style={{width:'180px'}}>View Submissions</Button></td>
+          <td><Button color="warning" style={{width:'80px',color:'white'}} >Edit</Button></td>
+          <td><Button color="danger" style={{width:'100px'}} onClick={() => this.toggle()}>Delete</Button></td>
           <Modal isOpen={this.state.delete}>
             <ModalBody>Are you sure you want to delete?</ModalBody>
             <ModalFooter>
@@ -80,15 +80,16 @@ toggle(){
         <tr>
           <th scope="row">3</th>
           <td>Computer Science : 6A</td>
-          <td>Operating System</td>
-          <td>Banker's Algorithm</td>
-          <td><Button color="success">View Submissions</Button></td>
-          <td><Button color="warning">Edit</Button></td>
-          <td><Button color="danger">Delete</Button></td>
+          <td>Data Mining</td>
+          <td>Module3</td>
+          <td><Button color="success" style={{width:'180px'}}>View Submissions</Button></td>
+          <td><Button color="warning" style={{width:'80px',color:'white'}}>Edit</Button></td>
+          <td><Button color="danger" style={{width:'100px'}} onClick={() => this.toggle()}>Delete</Button></td>
           
         </tr>
       </tbody>
-    </Table>
+    </table>
+
     </CardBody>
     </Card>
     </div>
