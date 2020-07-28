@@ -125,7 +125,7 @@ class MainComponent extends Component{
                                 <Redirect to="/communityf" />
                             </Switch>
                         
-                    <FooterF/>
+                    {/* <FooterF/> */}
                     </Router>
                 </div>
             )
