@@ -5,7 +5,7 @@ import MainComponent from "./MainComponent";
 import {BrowserRouter as Router,Route,Link,Switch,Redirect} from 'react-router-dom'
 import Community from './Student/Community/Community';
 import Signup from './signup';
-
+import logo from './login_img.png'
 class Login extends Component {
     constructor(props)
     {
@@ -38,7 +38,7 @@ class Login extends Component {
                
                 return (
                                 <body>
-                                <img src="https://gawvs.in//assets/img/login.png" style={{height:'20%',width:'30%',float:'left',marginLeft:'8%',marginTop:'8%'}}></img>
+                                <img src={logo} style={{height:'20%',width:'30%',float:'left',marginLeft:'8%',marginTop:'8%'}}></img>
                                 <div classsName="container" style={{margin:'2% 18%',marginTop:'-5%',marginLeft:'40%'}}>
                                 <form >
                                     <Card style={{backgroundColor:'#F2F4F4'}}>
