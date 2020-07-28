@@ -36,17 +36,17 @@ const toolbar = props => (
             </div>
             <div className="toolbar_logo"></div>
             <div className="dropdown">
-                <span><Link to="/community"><FontAwesomeIcon icon={faHome} style={{marginRight:'0.25em'}} />Home</Link></span>
+                <span><Link to="/communityF"><FontAwesomeIcon icon={faHome} style={{marginRight:'0.25em'}} />Home</Link></span>
               </div>
             <div className="dropdown" >
                 <span><FontAwesomeIcon icon={faBook} style={{marginRight:'0.25em'}}/> Academics</span>
                 <div className="dropdown-content">
                     <div id="triangle-up"></div>
                     <p style={{marginTop:'13px'}}><Link className="links" to='/previous'>Previous Data</Link></p>
-                    <p><Link className="links" to='/attendance'>Attendance</Link></p>
-                    <p><Link className="links" to='/timetable'>Time Table</Link></p>
-                    <p><Link className="links" to='/exam'>About Exam</Link></p>
-                    <p><Link className="links" to='/fee'>Fee Details</Link></p>
+                    <p><Link className="links" to='/AttendenceF'>Attendance</Link></p>
+                    <p><Link className="links" to='/TimetableF'>Time Table</Link></p>
+                    <p><Link className="links" to='/MarksF'>About Exam</Link></p>
+                    <p><Link className="links" to='/Salary'>Salary Details</Link></p>
                     
                 </div>
             </div>
@@ -55,14 +55,14 @@ const toolbar = props => (
                 <div className="dropdown-content">
                     <div id="triangle-up" style={{marginTop:'-27px'}}></div>
                     <p style={{marginTop:'13px'}}><Link  className="links" to='/assignment'>Assignment</Link></p>
-                    <p><Link  className="links" to='/project'>Projects</Link></p>
-                    <p><Link  className="links" to='/study'>Study Material</Link></p>
-                    <p><Link  className="links" to='/research'>Research Paper</Link></p>
+                    <p><Link  className="links" to='/Project'>Projects</Link></p>
+                    <p><Link  className="links" to='/StudyMaterialFaculty'>Study Material</Link></p>
+                    <p><Link  className="links" to='/ResearchF'>Research Paper</Link></p>
                   
                 </div>
             </div>
             <div className='dropdown'>
-                <Link to='/profile'><FontAwesomeIcon icon={faUser} style={{marginRight:'0.25em'}}/> Profile</Link>
+                <Link to='/Profile'><FontAwesomeIcon icon={faUser} style={{marginRight:'0.25em'}}/> Profile</Link>
             </div>
             <div className="spacer"/>
             
