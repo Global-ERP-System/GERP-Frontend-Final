@@ -1,7 +1,7 @@
-import React,{Component} from 'react';
-import { Card,CardTitle,CardText,CardBody,CardHeader,CardFooter,ButtonToolbar,Button } from 'reactstrap';
-import { Table } from 'reactstrap';
-import "./tt.css";
+import React from 'react';
+//import { Card,CardTitle,CardText,CardBody,CardHeader,CardFooter,ButtonToolbar,Button } from 'reactstrap';
+//import { Table } from 'reactstrap';
+import classes from "./tt.module.css";
 
 const state={
   start:8,
@@ -63,7 +63,7 @@ const Timetable=props=>{
     </tr>
   })
   return (
-    <div className='TT'>
+    <div className={classes.TT}>
       <h2>Time Table</h2>
       <div>
       <table>
