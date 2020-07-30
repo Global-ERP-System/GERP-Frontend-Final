@@ -45,9 +45,9 @@ const Create = (props) => {
                 <br></br>
 
 
-                <label style={{fontWeight:'bold',fontSize:'14px'}}>Duration</label>
+                <label style={{fontWeight:'bold',fontSize:'14px'}}>Connections</label>
                 <br></br>
-                <input className="form-control" style={{width:'100%',fontSize:'15px'}} placeholder="Enter duration"/>
+                <input className="form-control" style={{width:'100%',fontSize:'15px'}} placeholder="Enter connections"/>
 
                 <br></br>
 
@@ -74,9 +74,9 @@ const Create = (props) => {
                 <br></br>
 
 
-                <label style={{fontWeight:'bold',fontSize:'14px'}}>Specialization</label>
+                <label style={{fontWeight:'bold',fontSize:'14px'}}>Recommendation Badges</label>
                 <br></br>
-                <input className="form-control" style={{width:'100%',fontSize:'15px'}} placeholder="Enter specialization"/>
+                <input className="form-control" style={{width:'100%',fontSize:'15px'}} placeholder="Enter Badges"/>
 
                 <br></br>
 
