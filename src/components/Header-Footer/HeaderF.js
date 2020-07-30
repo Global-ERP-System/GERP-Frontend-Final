@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Toolbar from '../Header-Footer/Toolbar/ToolbarF'
-import SideDrawer from '../Header-Footer/SideDrawer/SideDrawer'
+import SideDrawer from '../Header-Footer/SideDrawer/SideDrawerF'
 import Backdrop from '../Header-Footer/Backdrop/Backdrop'
 import Community from "../Student/Community/Community"
 

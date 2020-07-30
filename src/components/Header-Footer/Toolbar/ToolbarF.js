@@ -42,11 +42,10 @@ const toolbar = props => (
                 <span><FontAwesomeIcon icon={faBook} style={{marginRight:'0.25em'}}/> Academics</span>
                 <div className="dropdown-content">
                     <div id="triangle-up"></div>
-                    <p style={{marginTop:'13px'}}><Link className="links" to='/previous'>Previous Data</Link></p>
-                    <p><Link className="links" to='/AttendenceF'>Attendance</Link></p>
-                    <p><Link className="links" to='/TimetableF'>Time Table</Link></p>
-                    <p><Link className="links" to='/MarksF'>About Exam</Link></p>
-                    <p><Link className="links" to='/Salary'>Salary Details</Link></p>
+                    <p style={{marginTop:'13px'}}><Link className="links" to='/attendencef'>Attendance</Link></p>
+                    <p><Link className="links" to='/timetablef'>Time Table</Link></p>
+                    <p><Link className="links" to='/examf'>About Exam</Link></p>
+                    <p><Link className="links" to='/salaryf'>Salary Details</Link></p>
                     
                 </div>
             </div>
@@ -54,10 +53,10 @@ const toolbar = props => (
                 <span><FontAwesomeIcon icon={faBuilding} style={{marginRight:'0.25em'}}/>Campus</span>
                 <div className="dropdown-content">
                     <div id="triangle-up" style={{marginTop:'-27px'}}></div>
-                    <p style={{marginTop:'13px'}}><Link  className="links" to='/assignment'>Assignment</Link></p>
-                    <p><Link  className="links" to='/Project'>Projects</Link></p>
-                    <p><Link  className="links" to='/StudyMaterialFaculty'>Study Material</Link></p>
-                    <p><Link  className="links" to='/ResearchF'>Research Paper</Link></p>
+                    <p style={{marginTop:'13px'}}><Link  className="links" to='/assignmentf'>Assignment</Link></p>
+                    <p><Link  className="links" to='/projectf'>Projects</Link></p>
+                    <p><Link  className="links" to='/studyf'>Study Material</Link></p>
+                    <p><Link  className="links" to='/researchf'>Research Paper</Link></p>
                   
                 </div>
             </div>
