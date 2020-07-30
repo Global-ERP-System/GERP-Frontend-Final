@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBell, faHome, faUser, faBook, faBuilding, faSearch, faComment, faCalendar, faCalendarCheck  } from "@fortawesome/free-solid-svg-icons";
 //import "@reach/menu-button/styles.css";
 import {Container} from 'reactstrap';
+import Create from './Modal'
 
 
 class Community extends Component {
@@ -292,8 +293,10 @@ class Community extends Component {
                             <img src="https://pbs.twimg.com/profile_images/669103856106668033/UF3cgUk4.jpg" style={{borderRadius:'60%',width:'99%',height:'100%'}} ></img>
                          </div>
 
-                         <img src="https://image.flaticon.com/icons/png/512/61/61456.png" style={{height:'6%',width:'6%',marginLeft:'89%',marginTop:'-8%'}}></img> 
-                         
+                         {/* <img src="https://image.flaticon.com/icons/png/512/61/61456.png" style={{height:'6%',width:'6%',marginLeft:'89%',marginTop:'-8%'}}></img>  */}
+                         <a href="#">
+                             <Create />
+                         </a>
                          <p style={{margin:'8% 8%',fontWeight:'bold'}}>Abhimanyu Singh</p>
                          <p style={{margin:'-9% 8%'}}>Dabur India Pvt. Ltd</p>
                          <p style={{margin:'8% 8%'}}>IIM Lucknow, Lucknow, India</p>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter,Form,FormGroup,Row,Col,Label,CustomInput,Input,Card } from 'reactstrap';
 // import "./Modal.css"
-const Create = (props) => {
+const Create1 = (props) => {
   const {
     className
   } = props;
@@ -15,44 +15,46 @@ const Create = (props) => {
   return (
   <div>
     {/* <Button color="primary" onClick={toggle} className="button1" style={{width:'130px',height:'36px'}}>Edit Details</Button> */}
-    <a href="#" className="a_link" onClick={toggle} style={{marginTop:'-5%'}}>View Details</a>
+    <a href="#" className="a_link" onClick={toggle}>
+    <img src="https://image.flaticon.com/icons/png/512/61/61456.png" style={{height:'6%',width:'6%',marginLeft:'89%',marginTop:'-8%'}}></img>
+    </a>
     <Modal isOpen={modal} toggle={toggle} contentClassName="profile-modal"   style={{width:'600px'}}>
-      <ModalHeader style={{backgroundColor:'#f5f5f5'}} toggle={toggle} close={closeBtn}>Details</ModalHeader>
+      <ModalHeader style={{backgroundColor:'#f5f5f5'}} toggle={toggle} close={closeBtn}> Edit Details</ModalHeader>
       <ModalBody>
       
             <div style={{height:'440px',width:'228px',float:'left'}}>
 
                 <label style={{fontWeight:'bold',fontSize:'14px'}}>First Name</label>
                 <br></br>
-                <input className="form-control" style={{width:'100%',fontSize:'15px'}} value="Sumit" readonly/>
+                <input className="form-control" style={{width:'100%',fontSize:'15px'}} placeholder="Enter first name"/>
 
                 <br></br>
 
 
                 <label style={{fontWeight:'bold',fontSize:'14px'}}>Phone No.</label>
                 <br></br>
-                <input className="form-control" style={{width:'100%',fontSize:'15px'}} value="9952137724" readonly/>
+                <input className="form-control" style={{width:'100%',fontSize:'15px'}} placeholder="Enter phone number"/>
 
                 <br></br>
 
 
                 <label style={{fontWeight:'bold',fontSize:'14px'}}>Organisation</label>
                 <br></br>
-                <input className="form-control" style={{width:'100%',fontSize:'15px'}} value="IIT Delhi" readonly/>
+                <input className="form-control" style={{width:'100%',fontSize:'15px'}} placeholder="Enter organisation"/>
 
                 <br></br>
 
 
                 <label style={{fontWeight:'bold',fontSize:'14px'}}>Duration</label>
                 <br></br>
-                <input className="form-control" style={{width:'100%',fontSize:'15px'}} value="Dec 2019 - Present" readonly/>
+                <input className="form-control" style={{width:'100%',fontSize:'15px'}} placeholder="Enter duration"/>
 
                 <br></br>
 
 
                 <label style={{fontWeight:'bold',fontSize:'14px'}}>LinkedIn URL</label>
                 <br></br>
-                <input className="form-control" style={{width:'100%',fontSize:'15px'}} value="linkedin.com/sumit123" readonly/>
+                <input className="form-control" style={{width:'100%',fontSize:'15px'}} placeholder="Enter your linkedin URL"/>
 
             </div>
 
@@ -61,34 +63,34 @@ const Create = (props) => {
 
                 <label style={{fontWeight:'bold',fontSize:'14px'}}>Last Name</label>
                 <br></br>
-                <input className="form-control" style={{width:'100%',fontSize:'15px'}} value="Goel" readonly/>
+                <input className="form-control" style={{width:'100%',fontSize:'15px'}} placeholder="Enter last name"/>
 
                 <br></br>
 
                 <label style={{fontWeight:'bold',fontSize:'14px'}}>Email</label>
                 <br></br>
-                <input className="form-control" style={{width:'100%',fontSize:'15px'}} value="sumit@gmail.com" readonly/>
+                <input className="form-control" style={{width:'100%',fontSize:'15px'}} placeholder="Enter email address"/>
 
                 <br></br>
 
 
                 <label style={{fontWeight:'bold',fontSize:'14px'}}>Specialization</label>
                 <br></br>
-                <input className="form-control" style={{width:'100%',fontSize:'15px'}} value="Operating Systems" readonly/>
+                <input className="form-control" style={{width:'100%',fontSize:'15px'}} placeholder="Enter specialization"/>
 
                 <br></br>
 
 
                 <label style={{fontWeight:'bold',fontSize:'14px'}}>Gender</label>
                 <br></br>
-                <input className="form-control" style={{width:'100%',fontSize:'15px'}} value="Male" readonly/>
+                <input className="form-control" style={{width:'100%',fontSize:'15px'}} placeholder="Enter gender"/>
 
                 <br></br>
 
 
                 <label style={{fontWeight:'bold',fontSize:'14px'}}>DOB</label>
                 <br></br>
-                <input className="form-control" style={{width:'100%',fontSize:'15px'}} value="30/07/1990" readonly/>
+                <input className="form-control" type="date" style={{width:'100%',fontSize:'15px'}} placeholder="Enter DOB"/>
 
             </div>
 
@@ -107,4 +109,4 @@ const Create = (props) => {
 );
 }
 
-export default Create;
+export default Create1;

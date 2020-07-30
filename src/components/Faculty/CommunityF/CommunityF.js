@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBell, faHome, faUser, faBook, faBuilding, faSearch, faComment, faCalendar, faCalendarCheck  } from "@fortawesome/free-solid-svg-icons";
 import {Container} from 'reactstrap';
 import Create from "./Modal"
+import Create1 from "./Modal1"
 
 class CommunityF extends Component {
     constructor(props) {
@@ -300,8 +301,11 @@ class CommunityF extends Component {
                             <img src="https://pbs.twimg.com/profile_images/669103856106668033/UF3cgUk4.jpg" style={{borderRadius:'60%',width:'99%',height:'100%'}} ></img>
                          </div>
 
-                         <img src="https://image.flaticon.com/icons/png/512/61/61456.png" style={{height:'6%',width:'6%',marginLeft:'89%',marginTop:'-8%'}}></img> 
-                         
+                         <a href="#">
+                         {/* <img src="https://image.flaticon.com/icons/png/512/61/61456.png" style={{height:'6%',width:'6%',marginLeft:'89%',marginTop:'-8%'}}></img>  */}
+                         <Create1 />
+                         </a>
+
                          <p style={{margin:'8% 8%',fontWeight:'bold'}}>Mr. Sumit Goel</p>
                          <p style={{margin:'-9% 8%'}}>IIT Delhi, Delhi</p>
                          <p style={{margin:'8% 8%'}}>20+ yrs experience in teaching Operating Systems</p>
