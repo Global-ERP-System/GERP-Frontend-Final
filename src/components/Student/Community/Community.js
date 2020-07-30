@@ -5,6 +5,7 @@ import { faBell, faHome, faUser, faBook, faBuilding, faSearch, faComment, faCale
 //import "@reach/menu-button/styles.css";
 import {Container} from 'reactstrap';
 import Create from './Modal'
+import Create1 from './Modal1'
 
 
 class Community extends Component {
@@ -309,7 +310,9 @@ class Community extends Component {
                             <p style={{marginTop:'-12%',marginLeft:'19%',fontSize:'90%'}}>84 Recommendation Badges</p>
                         </p>
             
-                    <span style={{float:'right',fontSize:'10px',paddingRight:'5%',paddingBottom:'12%'}}><a href="#" style={{float:'right',textDecoration:'none'}}>View Details</a></span>
+                    <span style={{float:'right',fontSize:'10px',paddingRight:'5%',paddingBottom:'12%'}}><a href="#" style={{float:'right',textDecoration:'none'}}></a>
+                    <Create1 />
+                    </span>
                          
                          
                          
