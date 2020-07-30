@@ -3,6 +3,7 @@ import './CommunityF.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBell, faHome, faUser, faBook, faBuilding, faSearch, faComment, faCalendar, faCalendarCheck  } from "@fortawesome/free-solid-svg-icons";
 import {Container} from 'reactstrap';
+import Create from "./Modal"
 
 class CommunityF extends Component {
     constructor(props) {
@@ -60,7 +61,7 @@ class CommunityF extends Component {
                 <div id="Contentbox"style={{height:'316px',marginRight:'-135px',marginTop:'-60px', marginLeft:'20%'}}>
                     <h3 className="Community"style={{fontSize:'28px',padding:'2px'}}>Faculty Community Forum</h3>
                     <form onSubmit={this.handleSubmit}>
-                        <div  style={{marginTop:'-10%'}}>
+                        <div >
                             <label className="commentheading">Write a Post</label>
                             <textarea value={this.state.Comment}
                                 onChange={this.handlePostChange} cols="80" rows="5" placeholder="Write Something..."
@@ -92,8 +93,106 @@ class CommunityF extends Component {
                             <img src="https://pbs.twimg.com/profile_images/669103856106668033/UF3cgUk4.jpg" style={{height:'50px',width:'50px',borderRadius:'100px'}}></img>
 
                         <div id="designation"><b>Mr. Sumit Goel</b>
-                        <p style={{width:'120%',marginLeft:'13%'}}>IIT Delhi, Delhi<br></br>
-                        <span style={{marginLeft:'-79%',color:'green'}}>10h</span>
+                        <p style={{width:'120%',marginLeft:'-13%'}}>IIT Delhi, Delhi<br></br>
+                        <span style={{marginLeft:'-29%',color:'green'}}>10h</span>
+                        </p> 
+                        
+                        </div>
+
+                        </div>
+
+                        <div id="post-content">
+                            
+                            <p id="main-content-matter">Did you hear that buzzing sound?<br></br>That's for you to set the alarm for the
+                            Codsule, which is taking place tomorrow from 8:00 PM - 11:00 PM.
+                            <br></br>
+                            Register for the Contest at <a href="https://cb.lk/codjulyli">https://cb.lk/codjulyli</a>
+                            </p>
+
+                            <p id="main-content-matter" style={{color:'#3498DB',fontWeight:'bold'}}>#Codsule #CodingChallenge #Nagarro #Coding #Programming</p>
+
+                            <img src="https://pbs.twimg.com/media/EckJ0_RWkAMuu4D.jpg" style={{width:'86%',height:'53%'}}></img>
+                            {/* <span style={{marginLeft:'-78%',fontSize:'20px'}}>10</span>
+                            <img src="https://www.freeiconspng.com/uploads/like-flat-icon-png-25.png" style={{height:'5%',width:'3%',marginLeft:'6%',marginTop:'-3%'}}></img> */}
+                            
+                            <br></br>
+                            <hr style={{width:'95%',marginTop:'1%'}}></hr>
+
+                            <img src="https://www.freeiconspng.com/uploads/like-icon-0.png" style={{height:'4%',width:'3%',float:'left',margin:'-1% 10%'}}></img>
+                            
+
+                            <img src="https://img.pngio.com/comment-comments-description-note-notice-icon-comment-icon-png-512_512.png" style={{height:'4%',width:'3%',float:'left',margin:'-1% 11%'}}></img>
+
+                            <img src="https://cdn0.iconfinder.com/data/icons/cute-mono-style-line/44/iconShare-512.png" style={{height:'4%',width:'3%',float:'left',margin:'-1% 11%'}}></img>
+
+                            <img src="https://www.clipartmax.com/png/middle/268-2687667_inclined-paper-plane-free-icon-paper-plane-telegram-logo.png" style={{height:'4%',width:'4%',float:'left',margin:'-1% 10%'}}></img>                            
+
+                            <span style={{fontSize:'10px',float:'left',margin:'1% 8%'}}><a href="#" style={{textDecoration:'none'}}>Acknowledge</a></span>
+                            <span style={{fontSize:'10px',float:'left',margin:'1% 11%'}}><a href="#" style={{textDecoration:'none'}}>Express</a></span>
+                            <span style={{fontSize:'10px',float:'left',margin:'1% 10%'}}><a href="#" style={{textDecoration:'none'}}>Share</a></span>
+                            <span style={{fontSize:'10px',float:'left',margin:'1% 12%'}}><a href="#" style={{textDecoration:'none'}}>Send</a></span>
+
+                            <hr style={{width:'95%',marginTop:'6%'}}></hr>
+                        
+                        </div>
+
+                        <br></br>
+
+                        <div style={{height:'50px',width:'50px',borderRadius:'100px',margin:'2% 3%'}}>
+                            <img src="https://pbs.twimg.com/profile_images/669103856106668033/UF3cgUk4.jpg" style={{height:'50px',width:'50px',borderRadius:'100px'}}></img>
+
+                        <div id="designation"><b>Mr. Sumit Goel</b>
+                        <p style={{width:'120%',marginLeft:'-13%'}}>IIT Delhi , Delhi<br></br>
+                        <span style={{marginLeft:'-29%',color:'green'}}>10h</span>
+                        </p> 
+                        
+                        </div>
+
+                        </div>
+
+                        <div id="post-content">
+                            
+                            <p id="main-content-matter">Did you hear that buzzing sound?<br></br>That's for you to set the alarm for the
+                            Codsule, which is taking place tomorrow from 8:00 PM - 11:00 PM.
+                            <br></br>
+                            Register for the Contest at <a href="https://cb.lk/codjulyli">https://cb.lk/codjulyli</a>
+                            </p>
+
+                            <p id="main-content-matter" style={{color:'#3498DB',fontWeight:'bold'}}>#Codsule #CodingChallenge #Nagarro #Coding #Programming</p>
+
+                            <img src="https://pbs.twimg.com/media/EckJ0_RWkAMuu4D.jpg" style={{width:'86%',height:'53%'}}></img>
+                            {/* <span style={{marginLeft:'-78%',fontSize:'20px'}}>10</span>
+                            <img src="https://www.freeiconspng.com/uploads/like-flat-icon-png-25.png" style={{height:'5%',width:'3%',marginLeft:'6%',marginTop:'-3%'}}></img> */}
+                            
+                            <br></br>
+                            <hr style={{width:'95%',marginTop:'1%'}}></hr>
+
+                            <img src="https://www.freeiconspng.com/uploads/like-icon-0.png" style={{height:'4%',width:'3%',float:'left',margin:'-1% 10%'}}></img>
+                            
+
+                            <img src="https://img.pngio.com/comment-comments-description-note-notice-icon-comment-icon-png-512_512.png" style={{height:'4%',width:'3%',float:'left',margin:'-1% 11%'}}></img>
+
+                            <img src="https://cdn0.iconfinder.com/data/icons/cute-mono-style-line/44/iconShare-512.png" style={{height:'4%',width:'3%',float:'left',margin:'-1% 11%'}}></img>
+
+                            <img src="https://www.clipartmax.com/png/middle/268-2687667_inclined-paper-plane-free-icon-paper-plane-telegram-logo.png" style={{height:'4%',width:'4%',float:'left',margin:'-1% 10%'}}></img>                            
+
+                            <span style={{fontSize:'10px',float:'left',margin:'1% 8%'}}><a href="#" style={{textDecoration:'none'}}>Acknowledge</a></span>
+                            <span style={{fontSize:'10px',float:'left',margin:'1% 11%'}}><a href="#" style={{textDecoration:'none'}}>Express</a></span>
+                            <span style={{fontSize:'10px',float:'left',margin:'1% 10%'}}><a href="#" style={{textDecoration:'none'}}>Share</a></span>
+                            <span style={{fontSize:'10px',float:'left',margin:'1% 12%'}}><a href="#" style={{textDecoration:'none'}}>Send</a></span>
+
+                            <hr style={{width:'95%',marginTop:'6%'}}></hr>
+                        
+                        </div>
+
+                        <br></br>
+
+                        <div style={{height:'50px',width:'50px',borderRadius:'100px',margin:'2% 3%'}}>
+                            <img src="https://pbs.twimg.com/profile_images/669103856106668033/UF3cgUk4.jpg" style={{height:'50px',width:'50px',borderRadius:'100px'}}></img>
+
+                        <div id="designation"><b>Mr. Sumit Goel</b>
+                        <p style={{width:'120%',marginLeft:'-13%'}}>IIT Delhi , Delhi<br></br>
+                        <span style={{marginLeft:'-29%',color:'green'}}>10h</span>
                         </p> 
                         
                         </div>
@@ -212,7 +311,9 @@ class CommunityF extends Component {
                         </p>
                         <br></br>
                         <br></br>
-                    <span style={{float:'right',fontSize:'10px',paddingRight:'5%',paddingBottom:'12%'}}><a href="#" style={{float:'right',textDecoration:'none'}}>View Details</a></span>
+                    <span style={{float:'right',fontSize:'10px',paddingRight:'5%',paddingBottom:'12%'}}><a href="#" style={{float:'right',textDecoration:'none'}}></a>
+                    <Create />
+                    </span>
                          
                           
 
