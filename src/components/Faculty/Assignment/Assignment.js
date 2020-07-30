@@ -26,18 +26,15 @@ toggle(){
              
               
              <CardTitle>
-               <div class="row">
-             <div class="col">
-               <h4 style={{paddingBottom:'10px'}}>List of Classes</h4> 
-               </div>
-               <div class="col">
+             <div className="row">
+             <h4 style={{paddingBottom:'10px'}}>List of Classes</h4> 
               <Create />
-          
-               </div>
-               </div>
+             </div>
+
                </CardTitle>
-            
-     <table className="table1">
+
+               <div style={{overflowX:'auto'}}>
+               <table className="table1">
       <thead className="thead">
         <tr className="header">
           <th>S&nbsp;No.</th>
@@ -89,6 +86,7 @@ toggle(){
         </tr>
       </tbody>
     </table>
+               </div>
 
     </CardBody>
     </Card>

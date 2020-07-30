@@ -7,7 +7,6 @@
 
 .card{
 margin-top: 150px;    
-margin-bottom: 150px;
 font-family: 'Montserrat',sans-serif;
 font-weight: 400;
 }
@@ -29,21 +28,27 @@ h4{
 .button1{
     background-color: blue !important;
     font-size:18px !important;
-    margin-left:70% ;
-    width: 200px;
+    width: 150px;
+    position: absolute;
+    right: 20px;
 }
 
 
 table tr td{
-    width: 100%;
     border: 100px;
     white-space: nowrap;
-    padding-left: 8px;
     text-align: center;
     font-family: 'Montserrat',sans-serif;
     font-weight: 400;
 }
 
-table{
+table th{
+    text-align: center;
+}
+
+
+.table1{
+    width: 130%;
     margin-top: 30px;
+    margin-bottom: 20px;
 }
