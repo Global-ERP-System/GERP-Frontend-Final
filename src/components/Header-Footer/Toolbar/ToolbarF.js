@@ -147,7 +147,7 @@ const toolbar = props => (
 
                         </div>
                     </div>
-                   <li><Link to="/" onClick={()=>props.clickFuncStaff()} >Logout</Link></li>
+                   <li><Link to="/" onClick={()=>props.clickFunc()} >Logout</Link></li>
                     
                 </ul>
             </div>
