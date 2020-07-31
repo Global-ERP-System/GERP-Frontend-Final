@@ -2,23 +2,42 @@ import React, { Component } from "react";
 import { Container, Row, Col, Button,NavLink} from 'reactstrap';
 import avatar from './avatar.png';
 import Popup from 'reactjs-popup';
-
 import './profile.css'
 import { MDBFormInline } from "mdbreact";
+// import editprofile from './editprofile'
+import Create from "./Modal"
+import Create1 from "./Modal1"
+import Create2 from "./Modal2"
 
 
 class Profile extends Component{
+
+    scrollFunc=(height)=>{
+        window.scrollTo({top:height,behavior:'smooth'});
+    }
     constructor(props){
         super(props);
-    this.state = {
-        fullName : 'ABC             ',
-        address : 'xyz',
-        registrationNumber : '0000',
-        phoneNumber : '0000',
+        this.state = {
+        institute: '     SRIT',
+        firstName: 'Angelina ',
+        lastName:'reddy',
+        parentName : 'xyz',
+        // registrationNumber : '0000',
+        // rollNumber : '0123cs12455',
         bloodGroup : 'B+',
-        campusCode : 'xxxx',
-        email : 'abc@gmail.com'
-       
+        campusCode : '0205',
+        email: 'abc@gmail.com',
+        phoneno: '1234567890',
+        // Senior_Secondary_school: '12',
+        // Secondary_school: '10',
+        master:'12',
+        bachelor:'10',
+        other: 'none',
+        award: 'none',
+        courses: 'none',
+        internship: 'none',
+        tranning: 'none'
+        
     }
 
     this.publish = this.publish.bind(this);
@@ -37,156 +56,273 @@ handleChange({ target }) {
   }
 
     render()  {
+
+        
+
         return (
-            <div style={{textAlign:"center"}}>
-
-                <div style={{ marginTop: "70px" }}>
-                    <img src={avatar} alt="avatar" className="img-thumbnail" />
-                    <div style={{marginLeft:"30%",width:"40%",alignContent:"center"}}>
-                        <MDBFormInline className="justify-content-md-center">
-                            <NavLink href="/">
-                                <Col style={{color:'blue'}}>Add Photo</Col>
-                            </NavLink>
-                            <NavLink href="/">
-                                <Col style={{color:'blue'}} md="auto">Remove Photo</Col>
-                            </NavLink>
-
-                        </MDBFormInline>
-                    </div>
-                </div>
-
-
-                <h1 id='title'>My Profile</h1>
-                <div>
-                <div style={{marginLeft:"30%",width:"40%",alignContent:"center"}}>
-                    <MDBFormInline >
-                        <Col className="column">Full Name</Col>
-                        <Col style={{marginLeft:"20%"}} className="column">{this.state.fullName}</Col>
-                    </MDBFormInline>
-                    <MDBFormInline>
-                        <Col className="column">Address</Col>
-                        <Col style={{marginLeft:"20%"}} className="column">{this.state.address}</Col>
-                    </MDBFormInline>
-                    <MDBFormInline>
-                        <Col className="column">Registration Number</Col>
-                        <Col style={{marginLeft:"20%"}} className="column">{this.state.registrationNumber}</Col>
-                    </MDBFormInline>
-                    <MDBFormInline>
-                        <Col className="column">Phone Number</Col>
-                        <Col style={{marginLeft:"20%"}} className="column">{this.state.phoneNumber}</Col>
-                    </MDBFormInline>
-                    <MDBFormInline>
-                        <Col className="column">Blood Group</Col>
-                        <Col style={{marginLeft:"20%"}} className="column">{this.state.bloodGroup}</Col>
-                    </MDBFormInline>
-                    <MDBFormInline>
-                        <Col className="column">Campus Code</Col>
-                        <Col style={{marginLeft:"20%"}} className="column">{this.state.campusCode}</Col>
-                    </MDBFormInline>
-                    <MDBFormInline>
-                        <Col className="column">E-mail Id</Col>
-                        <Col style={{marginLeft:"20%"}} className="column">{this.state.email}</Col>
-                    </MDBFormInline>
-                </div>
-                </div>
-
-                <div id="button">
-
-
-                <Popup className='popup' trigger={<button style={{marginLeft: "40%", fontSize: "15px"}}><b style={{color:'white'}}>Enter Campus Code</b></button>} position="right bottom">
-                        
-                        {close => (
-                        <div>
-                            <a className="close" onClick={close}>
-                        &times;
-                        </a>
-                        </div>
-                        )}
-
-                    <form className="form-group">
-                            
-                            <label>Campus Code :</label>		                    
-                            <input className="form-control"  placeholder="Campus Code"
-                             name="campusCode"
-                             value={ this.state.campusCode }
-                             onChange={ this.handleChange } />
-                        
-                            <br/>
-                    </form>
-
-                        <div style={{textAlign:'center'}}>
-                            <button  type='submit' style={{marginLeft: "40%", fontSize: "15px"}} onClick={ this.publish }><b style={{color:'white'}}>Submit</b></button>
-                        </div>
-                    
-                    </Popup>
-
-
+            <Row className='Body'>
+                <Col sm={3} className="sidebar">
+                    <div>
                    
-                    <Popup className='popup' trigger={<button style={{marginLeft: "50px", fontSize: "15px"}}><b style={{color:'white'}}>Edit Details</b></button>} position="right bottom">
-                        
-                        {close => (
-                        <div>
-                            <a className="close" onClick={close}>
-                        &times;
-                        </a>
+                        <div id="sidebar_image">
+                            <img src="https://scriptshadow.net/wp-content/uploads/2019/08/Screen-Shot-2019-08-13-at-8.09.58-PM.png" style={{ width: '200px', height: '200px', borderRadius: '200%' }}></img>
                         </div>
-                        )}
-                            
+                        <div id="sidebar_element" style={{ marginTop: '40px' }}>
+                            <span  >Angelina Reddy</span>
+                        </div>
+                        <div id="sidebar_element">
+                            <a href="#" onClick={()=>this.scrollFunc(this.instance1.offsetTop)}>My Profile</a>
+                        </div>
 
-                            <h3 id='title'>My Profile</h3>
-                           
-                            <form className="form-group">
-                            
-		                        <label>Full Name :</label><br/>		                    
-                                <input className="form-control" placeholder="Full Name"
-                                 name="fullName" 
-                                 value={ this.state.fullName }
-                                 onChange={ this.handleChange } />
-                            
-                                <br/>
-                                
-                                <label>Registration Number :</label><br/>		                    
-                                <input className="form-control"  placeholder="Registration Number"
-                                name="registrationNumber" 
-                                value={ this.state.registrationNumber}
-                                onChange={ this.handleChange }/>
-                           <br/>
-                            
-                                <label>Phone Number :</label>  <br/>                         
-		                        <input className="form-control" placeholder="Phone Number"
-                                name="phoneNumber" 
-                                value={ this.state.phoneNumber }
-                                onChange={ this.handleChange }/>
-                            <br/>
-                            
-                                <label>Blood Group :</label> <br/>                           
-		                        <input className="form-control"  placeholder="Blood Group"
-                                name="bloodGroup" 
-                                value={ this.state.bloodGroup}
-                                onChange={ this.handleChange }/>
-                            <br/>
-                            
-                                <label>E-mail ID :</label><br/>                           
-		                        <input className="form-control" type="email" placeholder="Email"
-                                name="email" 
-                                value={ this.state.email }
-                                onChange={ this.handleChange }/><br/>
-                            
-                                <label>Address :</label> <br/>                           
-		                        <textarea className="form-control" type="text" placeholder="Address"
-                                name="address" 
-                                value={ this.state.address }
-                                onChange={ this.handleChange }/><br/>
-                            </form>                        
-                            
-                            <div style={{textAlign:'center'}}>
-                            <button  type='submit' style={{marginLeft: "40%", fontSize: "15px"}} onClick={ this.publish }><b style={{color:'white'}}>Submit</b></button>
-                            </div>
+                            <div id="sidebar_element">
+                            <a href="#" onClick={()=>this.scrollFunc(this.instance2.offsetTop)}>Educational Qualifications</a>
+                        </div>
+                            <div id="sidebar_element">
+                            <a href="#" onClick={()=>this.scrollFunc(this.instance3.offsetTop)}>Experience</a>
+                        </div>
+                    </div>
+
                     
-                    </Popup>
-                </div>
-            </div>
+                </Col>
 
+
+                <Col sm={9} className="right_Sec" >
+                    <div className="my_Profile" ref={(e)=>{this.instance1=e}}>
+                        <center>
+                            <h2>
+                                <Row>
+                                    <Col sm={10}>
+                                        My Profile
+                                        </Col>
+                                    <Col sm={2}>
+                                        <Create />
+                                    </Col>
+                                </Row>
+                           </h2>
+                    </center>
+                    <Row>
+                      <Col sm={9}>
+                            <div className="my_profile1">
+                                {/* <Row className='myprofileelement'>
+                              <Col sm={5}>
+                                   <label style={{ fontWeight: 'bold' }}>Registration Number</label>
+                                   <input class="form-control" value={this.state.registrationNumber} readonly />
+                                    </Col>
+                                    <Col sm={1}>
+                                    </Col>
+                            <Col sm={5}>
+                                  <label style={{ fontWeight: 'bold' }}>Roll no:</label>
+                                 <input class="form-control" value={this.state.rollNumber} readonly />
+                                
+                            </Col>
+                         </Row> */}
+
+                                <Row className='myprofileelement'>
+                            <Col sm={5}>
+                                <label style={{ fontWeight: 'bold' }}>First Name:</label>
+                                <input class="form-control" value={this.state.firstName} readonly />
+                                    </Col>
+                                    <Col sm={1}>
+                                    </Col>
+                            <Col sm={5}>
+                                <label style={{ fontWeight: 'bold' }}>Last Name:</label>
+                                <input class="form-control" value={this.state.lastName} readonly />
+                            </Col>
+                        </Row>
+                                <Row className='myprofileelement'>
+                            <Col sm={5}>
+                                <label style={{ fontWeight: 'bold' }}>Parent Name:</label>
+                                <input class="form-control" value={this.state.parentName} readonly />
+                                    </Col>
+                                    <Col sm={1}>
+                                    </Col>
+                            <Col sm={5}>
+                                <label style={{ fontWeight: 'bold' }}>Email:</label>
+                                <input class="form-control" value={this.state.email} readonly />
+                            </Col>
+                        </Row>
+
+                                <Row className='myprofileelement'>
+                            <Col sm={5}>
+                                <label style={{ fontWeight: 'bold' }}>Phone no:</label>
+                                <input class="form-control" value={this.state.phoneno} readonly />
+                                    </Col>
+                                    <Col sm={1}>
+                                    </Col>
+                            <Col sm={5}>
+                                <label style={{ fontWeight: 'bold' }}>Blood Group:</label>
+                                <input class="form-control" value={this.state.bloodGroup} readonly />                               
+                            </Col>
+                        </Row>
+
+        
+
+
+
+                    </div>
+                        </Col>
+                        <Col sm={3} className="image">
+                            <div >
+                                <center>
+                                    <img src="https://scriptshadow.net/wp-content/uploads/2019/08/Screen-Shot-2019-08-13-at-8.09.58-PM.png" style={{ width: '230px', height: '230px', alignSelf:"center" }}></img>
+                                </center>
+                                </div>
+
+                        </Col>
+                    </Row>
+
+                    </div>
+                        <br></br>
+
+                            <div className="Qualification" ref={(e)=>{this.instance2=e}}>
+                        <center>
+                            <h2>
+                            
+                            <Row>
+                                    <Col sm={10}>
+                                        Qualification
+                                        </Col>
+                                    <Col sm={2}>
+                                        <Create1 />
+                                    </Col>
+                                </Row>
+                            
+                            </h2>
+                                </center>
+
+                                <Row>
+
+                                    <Col sm={9}>
+                                        <div className="my_profile1">
+                                            <Row className='myprofileelement'>
+                                                <Col sm={5}>
+                                                    <label style={{ fontWeight: 'bold' }}>Master's :</label>
+                                                    <input class="form-control" value={this.state.master} readonly />
+                                                </Col>
+                                                <Col sm={1}>
+                                                </Col>
+                                                <Col sm={5}>
+                                           
+
+                                                </Col>
+                                            </Row>
+
+                                            <Row className='myprofileelement'>
+                                                <Col sm={5}>
+                                                    <label style={{ fontWeight: 'bold' }}>Bachelor's :</label>
+                                                    <input class="form-control" value={this.state.bachelor} readonly />
+                                                </Col>
+                                                <Col sm={1}>
+                                                </Col>
+                                                <Col sm={5}>
+                                           
+                                                </Col>
+                                            </Row>
+                                            <Row className='myprofileelement'>
+                                                <Col sm={5}>
+                                                    <label style={{ fontWeight: 'bold' }}>Any other :</label>
+                                                    <input class="form-control" value={this.state.other} readonly />
+                                                </Col>
+                                                <Col sm={1}>
+                                                </Col>
+                                                <Col sm={5}>
+                                           
+                                                </Col>
+                                            </Row>
+                                        </div>
+                                    </Col>
+                                </Row>
+                            </div>
+
+
+
+
+                    <div className="Experience" ref={(e)=>{this.instance3=e}}>
+                        <center>
+                        <h2>
+                            
+                            <Row>
+                                    <Col sm={10}>
+                                        Experience
+                                        </Col>
+                                    <Col sm={2}>
+                                        <Create2 />
+                                    </Col>
+                                </Row>
+                            
+                            </h2>
+                                        </center>
+
+                                        <Row>
+
+                                            <Col sm={9}>
+                                                <div className="my_profile1">
+
+
+                                    <Row className='myprofileelement'>
+                                        <Col sm={5}>
+                                            <label style={{ fontWeight: 'bold' }}>Tranning:</label>
+                                            <input class="form-control" value={this.state.tranning} readonly />
+                                        </Col>
+                                        <Col sm={1}>
+                                        </Col>
+                                        <Col sm={5}>
+                                            
+                                        </Col>
+                                    </Row>
+                                    <Row className='myprofileelement'>
+                                        <Col sm={5}>
+                                            <label style={{ fontWeight: 'bold' }}>Internship:</label>
+                                            <input class="form-control" value={this.state.internship} readonly />
+                                        </Col>
+                                        <Col sm={1}>
+                                        </Col>
+                                        <Col sm={5}>
+
+                                        </Col>
+                                    </Row>
+                                    <Row className='myprofileelement'>
+                                        <Col sm={5}>
+                                            <label style={{ fontWeight: 'bold' }}>Other certification/courses:</label>
+                                            <input class="form-control" value={this.state.courses} readonly />
+                                        </Col>
+                                        <Col sm={1}>
+                                        </Col>
+                                        <Col sm={5}>
+
+                                        </Col>
+                                    </Row>
+
+                                    <Row className='myprofileelement'>
+                                        <Col sm={5}>
+                                            <label style={{ fontWeight: 'bold' }}>Honor/ Award:</label>
+                                            <input class="form-control" value={this.state.award} readonly />
+                                        </Col>
+                                        <Col sm={1}>
+                                        </Col>
+                                        <Col sm={5}>
+
+                                        </Col>
+                                    </Row>
+
+
+
+
+                                </div>
+                            </Col>
+                            <Col sm={3} className="image">
+                                <div >
+                                    <center>
+                                    </center>
+                                </div>
+
+                            </Col>
+                        </Row>
+                    </div>
+                        </Col>
+               
+            </Row>
+ 
 
         );
     }

@@ -61,7 +61,7 @@ const toolbar = props => (
                 </div>
             </div>
             <div className='dropdown'>
-                <Link to='/Profile'><FontAwesomeIcon icon={faUser} style={{marginRight:'0.25em'}}/> Profile</Link>
+                <Link to='/profilef'><FontAwesomeIcon icon={faUser} style={{marginRight:'0.25em'}}/> Profile</Link>
             </div>
             <div className="spacer"/>
             
