@@ -46,8 +46,8 @@ class Relation extends Component {
 
     render() {
         return (
-            <div className="bodyrelation">              
-                    <div id="Relationbox">
+            <div className="bodyrelation">
+                <div className="Relationbox">
                         <form onSubmit={this.handlesubmit}>
                         <Row>
 
@@ -103,10 +103,9 @@ class Relation extends Component {
                     <div className="SearchPeople">&lt;College_Name&gt;</div>
                     <div className="SearchPeople">&lt;Batch_Year&gt;</div>
                     <div className="SearchPeople">&lt;Discipline&gt;</div>
-                    <div className="SearchPeople"><button
-                        onClick={this.handleButton}  id="connectdecline">
+                    <div className="SearchPeople"><button  onClick={this.handleButton}  id="connectdecline">
                         {this.state.request ? "Connect" : "Decline"}</button></div>
-                    <div className="SearchPeople"> <button style={{ color: "white", backgroundColor: '#138808' }} type="submit" className="btn">Message</button></div>
+                    <div className="SearchPeople"> <button style={{ color: "white", backgroundColor: '#25a0f7' }} type="submit" className="btn">Message</button></div>
                 </div>
                 <div id="Your_relation1">
                     <div className="SearchPeople">&lt;First_Name+Last_Name &gt; </div>
@@ -116,7 +115,7 @@ class Relation extends Component {
                     <div className="SearchPeople"><button
                         onClick={this.handleButton} id="connectdecline">
                         {this.state.request ? "Connect" : "Decline"}</button></div>
-                    <div className="SearchPeople"> <button style={{ color: "white", backgroundColor: '#138808' }} type="submit" className="btn">Message</button></div>
+                    <div className="SearchPeople"> <button style={{ color: "white", backgroundColor: '#25a0f7' }} type="submit" className="btn">Message</button></div>
                 </div>
                 <div id="Your_relation1">
                     <div className="SearchPeople">&lt;First_Name+Last_Name &gt; </div>
@@ -126,7 +125,7 @@ class Relation extends Component {
                     <div className="SearchPeople"><button
                         onClick={this.handleButton} id="connectdecline">
                         {this.state.request ? "Connect" : "Decline"}</button></div>
-                    <div className="SearchPeople"> <button style={{ color: "white", backgroundColor: '#138808' }} type="submit" className="btn">Message</button></div>
+                    <div className="SearchPeople"> <button style={{ color: "white", backgroundColor: '#25a0f7' }} type="submit" className="btn">Message</button></div>
                 </div>
             </div>
         )

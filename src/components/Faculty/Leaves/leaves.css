@@ -1,9 +1,17 @@
+.leavebody{
+    margin-left:10%;
+    margin-right:10%;
+    margin-top:10%;
+
+}
+
+
+
 #table1 {
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
     border-collapse: collapse;
-    width: 50%;
-    margin: 5em 0em 0em 16em;
-  }
+}
   
   #table1 td, #table1 th {
     border: 1px solid #ddd;
@@ -11,39 +19,41 @@
   }
   
   #table1 th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
+    text-align: center;
     background-color: rgb(230, 115, 7);
     color: white;
 }
 
 /* -----------Year Dropdown----------- */
 
-#yeardropdown{
-    background-color: rgba(16, 134, 245, 0.918);
-    float:right;
-    margin-top: 5em;
+.yeardropdown {
+    margin-top:15px;    
+    float: right;
+    margin-left:70px;
 }
 
+.DropdownMenuitem{
+    width:10px;
+}
 /* -----------Heading----------- */
-
-#heading{
+#heading {
+    margin-top: 50px;
     text-decoration: underline;
-    font-family: sans-serif;
-    color:  rgb(230, 115, 7);
-    margin-left: 5em;
+    font-family: 'Pt sans narrow',sans-serif;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    background-color: rgb(230, 115, 7);
 }
 
 /* -----------Table2----------- */
 
 
 #table2 {
-    font-family: sans-serif;
+    font-family: 'Montserrat' sans-serif;
+    margin-top: 20px;
     border-collapse: collapse;
-    width: 80%;
-    margin-left: 16em;
-  }
+}
   
   #table2 td, #table2 th {
     border: 1px solid #ddd;
@@ -57,7 +67,7 @@
   #table2 th {
     padding-top: 12px;
     padding-bottom: 12px;
-    text-align: left;
+    text-align: center;
     background-color: rgb(230, 115, 7);
     color: white;
   }
@@ -66,4 +76,5 @@
 
 #buttonforleave{
     float:right;
+    width:auto;
 }
