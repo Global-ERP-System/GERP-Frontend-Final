@@ -93,7 +93,9 @@ handleChange({ target }) {
                                         My Profile
                                         </Col>
                                     <Col sm={2}>
+                                    <a href="#">
                                         <Create />
+                                    </a>
                                     </Col>
                                 </Row>
                            </h2>
