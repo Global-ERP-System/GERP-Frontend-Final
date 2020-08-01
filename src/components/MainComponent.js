@@ -114,7 +114,7 @@ class MainComponent extends Component{
                                 <Route path='/feedbackf' component={FeedbackF} />
                                 <Route path='/internshipf' component={InternshipF} />
                                 <Route path='/leavesf' component={LeaveF} />
-                                <Route path='/profilef' component={ProfileF} />
+                                <Route path='/profile' component={ProfileF} />
                                 <Route path='/projectf' component={ProjectF}/>
                                 <Route path='/raisereqf' component={RaiseReqF}/>
                                 <Route path='/relationf' component={RelationF}/>

@@ -61,7 +61,7 @@ const toolbar = props => (
                 </div>
             </div>
             <div className='dropdown'>
-                <Link to='/Profile'><FontAwesomeIcon icon={faUser} style={{marginRight:'0.25em'}}/> Profile</Link>
+                <Link to='/profile'><FontAwesomeIcon icon={faUser} style={{marginRight:'0.25em'}}/> Profile</Link>
             </div>
             <div className="spacer"/>
             
@@ -147,7 +147,8 @@ const toolbar = props => (
 
                         </div>
                     </div>
-                    <li><Link to="/Login" onClick={()=>props.clickFunc()}>Logout</Link></li>
+                   <li><Link to="/" onClick={()=>props.clickFunc()} >Logout</Link></li>
+                    
                 </ul>
             </div>
             {/* <CustomChatbot/> */}

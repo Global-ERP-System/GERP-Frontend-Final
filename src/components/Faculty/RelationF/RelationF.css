@@ -1,36 +1,51 @@
-
-.container
-{
-  display: flex;
-  flex-direction: row;
-  background-color:whitesmoke ;
-  margin-top:10%;
-margin-right:15%;
-  font-size:100%; 
-  font-weight:bold;
-  width:80%;
-  font-family: sans-serif;
+.RelationFbody {
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
-.button {
-    font-size:80%;
-    margin-left: 50%;
-     margin-top: 0%;
+.relationFbox {
+    text-align: center;
+    background-color: whitesmoke;
+    display: block;
+    padding-bottom: 20px;
 }
-.h1{
-font-weight:bold;
-text-align:center;
-padding:2%;
+    .relationFbox label {
+        font-family: 'Pt sans narrow',sans-serif;
+        font-weight: 700;
+    }
+
+input[type=text], select {
+    padding: 12px 20px;
+    margin: 8px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
-.relations{
-padding:0%;
-margin-top:10%;
+#Your_relation1 {
+    background-color: whitesmoke;
+    height: 4em;
+    margin-top: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    font-family: sans-serif;
 }
-.card{
-width:72%;
-margin-left:13%;
-margin-right:20%;
-background-color:whitesmoke;
-font-weight:bold;
-font-size:110%;
+
+.SearchPeople {
+    width: 30%;
+    height: 40px;
+    margin: 10px 10px;
+    font-family: 'Pt sans narrow',sans-serif;
+    font-weight: 400;
+}
+
+#connectdecline {
+    width: 80%;
+    height: 100%;
+    background-color: #138808;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
 }
