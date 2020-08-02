@@ -65,8 +65,8 @@ class Community extends Component {
                                 className="something"></textarea></div>
                         <div>
                             <button id="Tags">Tag</button>
-                            <img src="https://cdn2.iconfinder.com/data/icons/rounded-white-basic-ui-set-3/139/Photo_Add-RoundedWhite-512.png" style={{marginLeft:'10%',marginTop:'-4%',height:'4%',width:'4%'}}></img>
-                            <div style={{width:'23%',marginLeft:'9%',marginTop:'-33px',position:'absolute'}}>
+                            <img src="https://cdn2.iconfinder.com/data/icons/rounded-white-basic-ui-set-3/139/Photo_Add-RoundedWhite-512.png" style={{marginLeft:'10%',marginTop:'-7%',height:'4%',width:'4%'}}></img>
+                            <div style={{width:'23%',marginLeft:'9%',marginTop:'-3.5%',position:'absolute'}}>
                             <input style={{border:'0px'}} type="file"/>
                             </div>
                         </div>
