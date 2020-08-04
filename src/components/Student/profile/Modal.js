@@ -62,11 +62,11 @@ const Create = (props) => {
 
                 <br></br>
 
-                <label style={{fontWeight:'bold',fontSize:'14px'}}>Email</label>
+                {/* <label style={{fontWeight:'bold',fontSize:'14px'}}>Email</label>
                 <br></br>
                 <input className="form-control" style={{width:'100%',fontSize:'15px'}} placeholder="Enter email"/>
 
-                <br></br>
+                <br></br> */}
 
                 <label style={{fontWeight:'bold',fontSize:'14px'}}>Blood Group</label>
                 <br></br>

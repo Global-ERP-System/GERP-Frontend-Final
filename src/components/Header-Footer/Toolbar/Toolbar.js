@@ -42,8 +42,8 @@ const toolbar = props => (
                 <span><FontAwesomeIcon icon={faBook} style={{marginRight:'0.25em'}}/> Academics</span>
                 <div className="dropdown-content">
                     <div id="triangle-up"></div>
-                    <p style={{marginTop:'13px'}}><Link className="links" to='/previous'>Previous Data</Link></p>
-                    <p><Link className="links" to='/attendance'>Attendance</Link></p>
+                    {/* <p style={{marginTop:'13px'}}><Link className="links" to='/previous'>Previous Data</Link></p> */}
+                    <p style={{marginTop:'13px'}}><Link className="links" to='/attendance'>Attendance</Link></p>
                     <p><Link className="links" to='/timetable'>Time Table</Link></p>
                     <p><Link className="links" to='/exam'>About Exam</Link></p>
                     <p><Link className="links" to='/fee'>Fee Details</Link></p>

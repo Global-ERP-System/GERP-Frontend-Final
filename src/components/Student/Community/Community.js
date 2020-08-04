@@ -73,8 +73,8 @@ class Community extends Component {
                         </div>
                         <br></br>
                         <div>
-                            <label id="Visibility1"style={{marginTop:'-1%',marginLeft:'2%'}}>Visibility:</label>
-                            <select value={this.state.visibility} onChange={this.handleVisibilityChange} id="Visibility2" style={{marginTop:'-1%', padding:'0px'}}>
+                            <label id="Visibility1"style={{marginTop:'-4%',marginLeft:'2%'}}>Visibility:</label>
+                            <select value={this.state.visibility} onChange={this.handleVisibilityChange} id="Visibility2" style={{marginTop:'-4%', padding:'0px',marginLeft:'8%'}}>
                                 <option value="Public">Public </option>
                                 <option value="ClassMate">Classmates</option>
                                 <option value="SubOrdinates">Subordinates</option>
@@ -310,7 +310,7 @@ class Community extends Component {
                              <img src="https://toppng.com/uploads/preview/gold-badge-png-11552734724wixvd59trm.png" style={{height:'12%',width:'14%',marginLeft:'4%',marginTop:'-5%'}}></img>
                             <p style={{marginTop:'-12%',marginLeft:'19%',fontSize:'90%'}}>84 Recommendation Badges</p>
                         </p>
-                    <span style={{float:'right',fontSize:'10px',paddingRight:'5%',paddingBottom:'12%'}}><Link to="/profile" style={{float:'right',textDecoration:'none'}}>View Details</Link>
+                    <span style={{float:'right',fontSize:'10px',paddingRight:'5%',height:'20px',marginTop:'-3%'}}><Link to="/profile" style={{float:'right',textDecoration:'none',marginBottom:'30%'}}>View Details</Link>
                     
                     </span>
             
