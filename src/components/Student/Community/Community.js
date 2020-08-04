@@ -6,6 +6,7 @@ import { faBell, faHome, faUser, faBook, faBuilding, faSearch, faComment, faCale
 import {Container} from 'reactstrap';
 import Create from './Modal'
 import Create1 from './Modal1'
+import {BrowserRouter as Router,Route,Link,Switch, Redirect,withRouter} from 'react-router-dom';
 
 
 class Community extends Component {
@@ -295,9 +296,9 @@ class Community extends Component {
                          </div>
 
                          {/* <img src="https://image.flaticon.com/icons/png/512/61/61456.png" style={{height:'6%',width:'6%',marginLeft:'89%',marginTop:'-8%'}}></img>  */}
-                         <a href="#">
+                         {/* <a href="#">
                              <Create />
-                         </a>
+                         </a> */}
                          <p style={{margin:'8% 8%',fontWeight:'bold'}}>Abhimanyu Singh</p>
                          <p style={{margin:'-9% 8%'}}>Dabur India Pvt. Ltd</p>
                          <p style={{margin:'8% 8%'}}>IIM Lucknow, Lucknow, India</p>
@@ -309,10 +310,13 @@ class Community extends Component {
                              <img src="https://toppng.com/uploads/preview/gold-badge-png-11552734724wixvd59trm.png" style={{height:'12%',width:'14%',marginLeft:'4%',marginTop:'-5%'}}></img>
                             <p style={{marginTop:'-12%',marginLeft:'19%',fontSize:'90%'}}>84 Recommendation Badges</p>
                         </p>
-            
-                    <span style={{float:'right',fontSize:'10px',paddingRight:'5%',paddingBottom:'12%'}}><a href="#" style={{float:'right',textDecoration:'none'}}></a>
-                    <Create1 />
+                    <span style={{float:'right',fontSize:'10px',paddingRight:'5%',paddingBottom:'12%'}}><Link to="/profile" style={{float:'right',textDecoration:'none'}}>View Details</Link>
+                    
                     </span>
+            
+                    {/* <span style={{float:'right',fontSize:'10px',paddingRight:'5%',paddingBottom:'12%'}}><a href="#" style={{float:'right',textDecoration:'none'}}></a>
+                    <Create1 />
+                    </span> */}
                          
                          
                          

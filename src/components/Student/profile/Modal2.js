@@ -14,7 +14,10 @@ const Create2 = (props) => {
 
   return (
   <div>
-    <Button color="primary" onClick={toggle} className="button1" style={{width:'130px',height:'36px'}}>Edit Details</Button>
+    <a href="#" className="a_link" onClick={toggle}>
+    <img src="https://image.flaticon.com/icons/png/512/61/61456.png" style={{height:'9%',width:'9%'}}></img>
+    </a>
+    {/* <Button color="primary" onClick={toggle} className="button1" style={{width:'130px',height:'36px'}}>Edit Details</Button> */}
     <Modal isOpen={modal} toggle={toggle} contentClassName="profile-modal"   style={{width:'600px'}}>
       <ModalHeader style={{backgroundColor:'#f5f5f5'}} toggle={toggle} close={closeBtn}>Experience</ModalHeader>
       <ModalBody>
