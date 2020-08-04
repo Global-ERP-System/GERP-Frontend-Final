@@ -1,0 +1,40 @@
+.Feedback{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.Feedback h1{
+	font-family: 'Montserrat',sans-serif;
+	font-weight: 700;
+}
+.Feedback h2{
+	font-size:1.5rem;
+	margin:5px 0;
+	font-family: 'PT Sans Narrow', sans-serif;
+	color:#4169E1;
+}
+.Feedback h3{
+	font-size:1.2rem;
+	margin:5px 0;
+	font-family: 'PT Sans Narrow', sans-serif;
+	color:gray;
+}
+.Feedback ul{
+	padding:0;
+	list-style: none;
+	width:900px;
+}
+.Feedback li{
+	border:1px black solid;
+	margin:20px 0;
+	padding:0 10px;
+}
+.Feedback li p{
+	margin:5px 0;
+	font-family: 'Montserrat', sans-serif;
+}
+.Stars{
+	margin:0 !important;
+	padding:0 !important;
+	font-size:1.5rem;
+}
