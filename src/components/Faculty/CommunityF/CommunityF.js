@@ -5,6 +5,7 @@ import { faBell, faHome, faUser, faBook, faBuilding, faSearch, faComment, faCale
 import {Container} from 'reactstrap';
 import Create from "./Modal"
 import Create1 from "./Modal1"
+import {BrowserRouter as Router,Route,Link,Switch, Redirect,withRouter} from 'react-router-dom';
 
 class CommunityF extends Component {
     constructor(props) {
@@ -69,8 +70,8 @@ class CommunityF extends Component {
                                 className="something"></textarea></div>
                         <div>
                             <button id="Tags">Tag</button>
-                            <img src="https://cdn2.iconfinder.com/data/icons/rounded-white-basic-ui-set-3/139/Photo_Add-RoundedWhite-512.png" style={{marginLeft:'10%',marginTop:'-4%',height:'4%',width:'4%'}}></img>
-                            <div style={{width:'23%',marginLeft:'9%',marginTop:'-33px',position:'absolute'}}>
+                            <img src="https://cdn2.iconfinder.com/data/icons/rounded-white-basic-ui-set-3/139/Photo_Add-RoundedWhite-512.png" style={{marginLeft:'10%',marginTop:'-7%',height:'4%',width:'4%'}}></img>
+                            <div style={{width:'23%',marginLeft:'9%',marginTop:'-3.5%',position:'absolute'}}>
                             <input style={{border:'0px'}} type="file"/>
                             </div>
                         </div>
@@ -301,10 +302,10 @@ class CommunityF extends Component {
                             <img src="https://pbs.twimg.com/profile_images/669103856106668033/UF3cgUk4.jpg" style={{borderRadius:'60%',width:'99%',height:'100%'}} ></img>
                          </div>
 
-                         <a href="#">
+                         {/* <a href="#"> */}
                          {/* <img src="https://image.flaticon.com/icons/png/512/61/61456.png" style={{height:'6%',width:'6%',marginLeft:'89%',marginTop:'-8%'}}></img>  */}
-                         <Create1 />
-                         </a>
+                         {/* <Create1 />
+                         </a> */}
 
                          <p style={{margin:'8% 8%',fontWeight:'bold'}}>Mr. Sumit Goel</p>
                          <p style={{margin:'-9% 8%'}}>IIT Delhi, Delhi</p>
@@ -315,8 +316,8 @@ class CommunityF extends Component {
                         </p>
                         <br></br>
                         <br></br>
-                    <span style={{float:'right',fontSize:'10px',paddingRight:'5%',paddingBottom:'12%'}}><a href="#" style={{float:'right',textDecoration:'none'}}></a>
-                    <Create />
+                    <span style={{float:'right',fontSize:'10px',paddingRight:'5%'}}><Link to="/profile" style={{float:'right',textDecoration:'none'}}>View Details</Link>
+                    
                     </span>
                          
                           
