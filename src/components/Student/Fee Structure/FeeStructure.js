@@ -53,7 +53,7 @@ export default class FeeStructure extends Component {
             <div style={{ marginLeft: "20%", marginRight: "20%", height: "100%", paddingLeft: '20px', paddingRight: '20px'}}>
                 <h1 className="Heading" style={{ textAlign: "center", fontFamily: 'Montserrat', fontWeight: '700'}}>Fee Structure</h1>
                 <hr style={{ width: '80%' }}></hr>
-                <form onSubmit={this.handlesubmit} style={{ marginTop: '0px' }}>
+                {/* <form onSubmit={this.handlesubmit} style={{ marginTop: '0px' }}>
                         <Row>
                             <Col sm={5}>
                                 <label style={{ fontFamily: 'Pt sans narrow ', fontWeight: '700' }}>Name:</label>
@@ -166,7 +166,67 @@ export default class FeeStructure extends Component {
                         <button id="Pay" style={{ color: "white", backgroundColor: '#138808' }} type="submit" className="btn">Pay</button>
                            
                         </div>
-                    </form>
+                    </form> */}
+
+                    <br></br>
+
+                <div id="year1">
+                    <div className="SearchPeople">&lt;Year&gt; </div>
+                    <div className="SearchPeople">&lt;College_Name&gt;</div>
+                    <div className="SearchPeople">&lt;Amount&gt;</div>
+                    <div className="SearchPeople">&lt;Status&gt;
+                    <p>Paid</p>
+                    </div>
+                    {/* <div className="SearchPeople"><button id="connectdecline" style={{backgroundColor:'green',marginTop:'6%'}}>
+                        Pay Now</button></div> */}
+                    <div className="SearchPeople"> <button style={{ color: "white", backgroundColor: '#25a0f7' }} type="submit" className="btn">View Receipt</button></div>
+                </div>
+
+                <br></br>
+
+                <div id="year1">
+                    <div className="SearchPeople">&lt;Year&gt; </div>
+                    <div className="SearchPeople">&lt;College_Name&gt;</div>
+                    <div className="SearchPeople">&lt;Amount&gt;</div>
+                    <div className="SearchPeople">&lt;Status&gt;
+                    <p>Paid</p>
+                    </div>
+                    {/* <div className="SearchPeople"><button id="connectdecline" style={{backgroundColor:'green',marginTop:'6%'}}>
+                        Pay Now</button></div> */}
+                    <div className="SearchPeople"> <button style={{ color: "white", backgroundColor: '#25a0f7' }} type="submit" className="btn">View Receipt</button></div>
+                </div>
+
+                <br></br>
+
+                <div id="year1">
+                    <div className="SearchPeople">&lt;Year&gt; </div>
+                    <div className="SearchPeople">&lt;College_Name&gt;</div>
+                    <div className="SearchPeople">&lt;Amount&gt;</div>
+                    {/* <div className="SearchPeople">&lt;Status&gt;
+                    <p>Due</p>
+                    </div> */}
+                    <div className="SearchPeople"><button id="connectdecline" style={{backgroundColor:'green',marginTop:'6%'}}>
+                        Pay Now</button></div>
+                    <div className="SearchPeople"> <button style={{ color: "white", backgroundColor: '#25a0f7' }} type="submit" className="btn">View Receipt</button></div>
+                </div>
+
+                <br></br>
+
+                <div id="year1">
+                    <div className="SearchPeople">&lt;Year&gt; </div>
+                    <div className="SearchPeople">&lt;College_Name&gt;</div>
+                    <div className="SearchPeople">&lt;Amount&gt;</div>
+                    {/* <div className="SearchPeople">&lt;Status&gt;
+                    <p>Due</p>
+                    </div> */}
+                    <div className="SearchPeople"><button id="connectdecline" style={{backgroundColor:'green',marginTop:'6%'}}>
+                        Pay Now</button></div>
+                    <div className="SearchPeople"> <button style={{ color: "white", backgroundColor: '#25a0f7' }} type="submit" className="btn">View Receipt</button></div>
+                </div>
+
+                <br></br>
+
+              
                 
             </div>
         )
