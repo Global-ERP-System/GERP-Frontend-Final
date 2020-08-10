@@ -1,0 +1,43 @@
+.Layout{
+	display: flex;
+}
+.Layout main {
+	width:100%;
+	margin:50px 0 100px 200px;
+	//border-left:2px solid black;
+}
+button,
+a,
+input{
+	outline:none;
+}
+.Sidebar{
+	border-right:2px solid black;
+	height:100vh;
+	display: flex;
+	align-items: center;
+	width:200px;
+	position:fixed;
+}
+.Sidebar ul{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	//border:1px green solid;
+	padding:0 1rem;
+	margin:auto;
+}
+.Sidebar li{
+	//border:1px red solid;
+	margin:1rem 0;
+}
+.Sidebar a{
+	font-size:1.2rem;
+	color:black;
+	font-weight:400;
+	outline: none;
+	transition:all 0.5s;
+}
+.Active{
+	font-weight: 700 !important;
+}

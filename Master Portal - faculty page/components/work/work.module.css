@@ -1,0 +1,84 @@
+.Work{
+	//border:1px red solid;
+	margin:0 2rem;
+	position:relative;
+}
+.Add{
+	background-color: green;
+	color:white;
+	font-size:1rem;
+	border-radius: 0.3rem;
+	padding:0.4rem 0.5rem;
+	border:none;
+	position:absolute;
+	right:50px;
+}
+.Work section h3{
+	text-align: center;
+	color:red;
+	text-decoration:underline;
+}
+.Work ul{
+	display:flex;
+	flex-wrap: wrap;
+}
+.Work li{
+	//flex-basis:100%;
+	display:flex;
+	align-items:center;
+	margin:0.8rem 2rem;
+	//border:1px red solid;
+}
+.Work li div{
+	margin:10px;
+	padding:0.4rem;
+	min-width:100px;
+	border:2px gray solid;
+	border-radius: 0.3rem;
+	font-size:1rem;
+}
+.Modal{
+	transition:all 0.5s;
+	position:fixed;
+	top:150px;
+	left:calc(50% - var(--width)/2);
+	display:flex;
+	flex-flow:column;
+	width:300px;
+	--width:300px;
+	border:2px solid black;
+	align-items:center;
+	z-index:99;
+	background-color: white;
+}
+.Modal input{
+	padding:0.5rem 0.7rem;
+	width:50%;
+	transition:all 0.5s;
+	border-radius:0.3rem;
+	border:1px black solid;
+}
+.Modal input:focus{
+	width:80%;
+}
+.Modal button{
+	padding:0.3rem 0.8rem;
+	background-color: red;
+	color:white;
+	border:1px red solid;
+}
+.Modal :first-child{
+	align-self: flex-end;
+}
+.Modal > *{
+	margin-bottom: 1.5rem
+}
+.Backdrop{
+	width:100%;
+	height:100%;
+	position: fixed;
+	left:0;
+	top:0;
+	z-index:98;
+	background-color:rgba(0,0,0,0.5);
+}

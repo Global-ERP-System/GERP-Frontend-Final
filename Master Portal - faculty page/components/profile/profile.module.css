@@ -1,0 +1,61 @@
+.Heading{
+	text-align:center;
+	margin:0 auto 50px auto;
+	font-size:1.8rem;
+	//border:1px red solid;
+	letter-spacing:2px;
+}
+
+.Profile h2{
+	margin-bottom:20px;
+}
+.Profile{
+	//border:1px green solid;
+	display: flex;
+	flex-flow:column;
+}
+.Profile input{
+	align-self:flex-end;
+	border:2px gray solid;
+	border-radius:0.3rem;
+	font-size:0.9rem;
+	width:250px;
+	padding:0.5rem;
+	margin-right:5rem;
+}
+.Result{
+	display: flex;
+	margin-top:20px;
+}
+.Result > *{
+	//border:1px red solid;
+}
+.Info{
+	flex-grow: 2;
+	margin-left:80px;
+}
+.Info button{
+	background-color: red;
+	color:white;
+	border:2px black solid;
+	font-size:1rem;
+	padding:0.3rem; 
+	border-radius: 0.3rem
+}
+.Info p{
+	font-weight: 700;
+	margin:1.5rem 0;
+}
+.Image{
+	flex-grow: 1;
+	display: flex;
+	align-items: flex-start;
+}
+.Image > *{
+	margin:1rem;
+}
+.Image img{
+	//border: 1px solid red;
+	width:100px;
+	border-radius:0.3rem;
+}
