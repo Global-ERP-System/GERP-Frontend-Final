@@ -1,0 +1,53 @@
+#year1
+{
+    background-color: whitesmoke;
+    height: 5em;
+    margin-top:5px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    font-family: sans-serif;
+}
+
+.large_input_box input
+{
+    background-color: #f7f7f7;
+    border: 2px solid black;
+}
+.Button_Container
+{
+    border: 2px solid darkblue;
+}
+.Dropdown_button
+{
+    border: 2px solid black;
+    width: 10%;
+}
+.Small_input_box 
+{
+    /* border: 3px solid black; */
+    width: 41%;
+    margin: 10px auto;
+}
+.Small_input_box label
+{
+    width: 30%;
+    font-weight: 500;
+    margin: 10px 12px 0px -8px;
+}
+.Small_input_box input
+{
+    border: 2px solid black;
+    width: 67%;
+}
+.Display_Button
+{
+    display: flex;
+    margin: 30px auto;
+    text-align:center;
+}
+#Pay {
+   
+    background-color: #138808;
+    margin: 0px 0px 0px 250px;
+}

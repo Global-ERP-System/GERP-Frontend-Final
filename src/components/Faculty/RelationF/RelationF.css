@@ -1,0 +1,51 @@
+.RelationFbody {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.relationFbox {
+    text-align: center;
+    background-color: whitesmoke;
+    display: block;
+    padding-bottom: 20px;
+}
+    .relationFbox label {
+        font-family: 'Pt sans narrow',sans-serif;
+        font-weight: 700;
+    }
+
+input[type=text], select {
+    padding: 12px 20px;
+    margin: 8px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#Your_relation1 {
+    background-color: whitesmoke;
+    height: 4em;
+    margin-top: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    font-family: sans-serif;
+}
+
+.SearchPeople {
+    width: 30%;
+    height: 40px;
+    margin: 10px 10px;
+    font-family: 'Pt sans narrow',sans-serif;
+    font-weight: 400;
+}
+
+#connectdecline {
+    width: 80%;
+    height: 100%;
+    background-color: #138808;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}

@@ -1,0 +1,44 @@
+.Study div {
+	display: flex;
+	justify-content: center;
+	padding:0.5rem;
+}
+.Study div button{
+	background-color:red;
+	color:white;
+	border:2px black solid;
+}
+.Study div li{
+	flex-basis:33.33%;
+	text-align: center;
+	font-family:'Montserrat',sans-serif;
+}
+.Study ul{
+	display:flex;
+	flex-direction: column;
+	background-color:#d9d9d9;
+	align-items: center;
+	padding:0;
+}
+.Study ul li{
+	font-family:'Montserrat',sans-serif;
+	display:flex;
+	//border:1px red solid;
+	justify-content: space-between;
+	align-items: center;
+	margin:0 30px;
+}
+.Study ul li button{
+	background: none;
+	border:none;
+	padding:0;
+	color:black;
+	outline:none;
+}
+.Study ul li a{
+	margin-right:50px;
+}
+.Study p{
+	margin:0;
+	padding:0;
+}
