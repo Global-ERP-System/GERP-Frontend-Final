@@ -2,9 +2,7 @@ import React, { Component } from "react";
 import { Card, CardTitle, CardText, CardBody, Button } from "reactstrap";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
-import Col from "react-bootstrap/Col";
-import { BrowserRouter as Link } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 import logo from "./login_img.png";
 class Login extends Component {
   constructor(props) {
@@ -142,14 +140,15 @@ class Login extends Component {
                       Not yet created an account?
                     </div>
                     <div style={{ textAlign: "center" }}>
-                      <Button color="danger" size="sm">
-                        <Link
-                          to="signup"
-                          style={{ color: "white", textDecoration: "none" }}
-                        >
+                      <Link
+                        to="/signup"
+                        style={{ color: "white", textDecoration: "none" }}
+                      >
+                        {" "}
+                        <Button type="button" color="danger" size="sm">
                           Sign Up
-                        </Link>
-                      </Button>
+                        </Button>
+                      </Link>
                     </div>
                   </CardText>
                   <br></br>
