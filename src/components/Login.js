@@ -67,8 +67,8 @@ class Login extends Component {
                     </div>
 
                     <div className="form-group">
-                      <div class="form-row">
-                        <div class="col">
+                      <div className="form-row">
+                        <div className="col">
                           <label>Passsword :</label>
                           <input
                             type="password"
@@ -116,7 +116,10 @@ class Login extends Component {
                         Login{" "}
                       </Button>
                     </div>
-                    <hr class="line" style={{ border: "1px dashed grey" }}></hr>
+                    <hr
+                      className="line"
+                      style={{ border: "1px dashed grey" }}
+                    ></hr>
                     <div style={{ textAlign: "center" }}>
                       <Link className="nav-link" to="#">
                         Sign in with Google
