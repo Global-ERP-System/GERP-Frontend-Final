@@ -1,0 +1,27 @@
+.button1{
+    margin-left:20px;
+}
+
+.modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding-top: 0px;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 400;
+}
+
+.container{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 20px;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 400;
+}
+
+.form1{
+    margin-top: 0px;
+}
+
+.btn{
+    width: 120px;
+}

@@ -1,0 +1,73 @@
+h1{
+  font-family: sans-serif;
+  font-size: 40px;
+}
+
+.bodyrelation {
+    margin-left: 10%;
+    margin-right:10%;
+}
+
+.Relationbox {
+    text-align:center;
+    background-color: whitesmoke;
+    display: block;
+    
+}
+.bodyrelation label {
+    font-family: 'Pt sans narrow',sans-serif;
+    font-weight: 700;
+}
+
+input[type=text], select {
+    padding: 12px 20px;
+    margin: 8px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+ 
+  background-color: #ff5200;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 350px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #c44104;
+}
+
+#Your_relation1 {
+    background-color: whitesmoke;
+    height: 4em;
+    margin-top:5px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    font-family: sans-serif;
+}
+
+
+.SearchPeople {
+    width: 30%;
+    height: 40px;
+    margin: 10px 10px;
+    font-family: 'Pt sans narrow',sans-serif;
+    font-weight:400;
+}
+
+#connectdecline {
+    width: 80%;
+    height: 100%;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}

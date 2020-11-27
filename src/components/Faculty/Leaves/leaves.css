@@ -1,0 +1,80 @@
+.leavebody{
+    margin-left:10%;
+    margin-right:10%;
+    margin-top:10%;
+
+}
+
+
+
+#table1 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    border-collapse: collapse;
+}
+  
+  #table1 td, #table1 th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #table1 th {
+    text-align: center;
+    background-color: rgb(230, 115, 7);
+    color: white;
+}
+
+/* -----------Year Dropdown----------- */
+
+.yeardropdown {
+    margin-top:15px;    
+    float: right;
+    margin-left:70px;
+}
+
+.DropdownMenuitem{
+    width:10px;
+}
+/* -----------Heading----------- */
+#heading {
+    margin-top: 50px;
+    text-decoration: underline;
+    font-family: 'Pt sans narrow',sans-serif;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    background-color: rgb(230, 115, 7);
+}
+
+/* -----------Table2----------- */
+
+
+#table2 {
+    font-family: 'Montserrat' sans-serif;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+  
+  #table2 td, #table2 th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #table2 tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #table2 tr:hover {background-color: #ddd;}
+  
+  #table2 th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: rgb(230, 115, 7);
+    color: white;
+  }
+
+/* -----------Button----------- */
+
+#buttonforleave{
+    float:right;
+    width:auto;
+}

@@ -1,0 +1,12 @@
+
+.bodyintern {
+    margin-left: 22%;
+    margin-right: 22%;
+}
+.internrow{
+    padding-top:10px;
+}
+    .internrow label {
+        font-family: "Pt sans narrow",sans-serif;
+        font-weight:400;
+    }

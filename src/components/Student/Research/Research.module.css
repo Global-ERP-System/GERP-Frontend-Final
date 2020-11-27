@@ -1,0 +1,59 @@
+.Research div{
+	background-image:url(../../../assets/researchBackground.jpg);
+	background-size: cover;
+	width:80%;
+	margin:0 auto;
+	height:500px;
+	border-radius:1rem;
+	padding:1rem;
+	margin-top:100px;
+}
+.Research div h1{
+	width:70%;
+	margin:0 auto;
+	font-size:1.5rem;
+	color:white;
+	font-family:'Montserrat', sans-serif;
+	font-weight:700;
+	margin-top:20px;
+}
+.Research div h2{
+	width:70%;
+	margin:0 auto;
+	text-align:right;
+	color:white;
+	font-family:'Montserrat', sans-serif;
+	font-size:1.2rem;
+}
+.Research form{
+	text-align:center;
+	border-radius: 0.5rem;
+	padding:30px 0;
+	width:50%;
+	margin:0 auto;
+	margin-top:50px;
+}
+.Research p{
+	font-weight:700;
+	font-size:1.65rem;
+	color:white;
+	letter-spacing: 0.1rem;
+}
+.Research input{
+	margin-top:15px;
+	border:2px white solid;
+	font-weight: 700;
+	padding:0.3rem;
+}
+.Research button{
+	margin-top:35px;
+	background-color:white;
+	border:none;
+	color:orange;
+	font-weight: 900;
+	font-size:1.5rem;
+	padding:0.3rem;
+	width:150px;
+	border-radius: 0.3rem;
+	letter-spacing: 0.1rem;
+}

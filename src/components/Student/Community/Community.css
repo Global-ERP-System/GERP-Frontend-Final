@@ -1,0 +1,236 @@
+/* ------------------Main Box -------------------- */
+#main
+{
+    display: flex;
+    margin-top:8em;
+    margin-bottom:4em;
+}
+
+/*-------------------left side box---------------*/
+
+#SideNavBar{
+    margin-right:1%;
+    margin-left: 1%;
+    margin-top: -4%;
+    margin-bottom:0px ;
+    height: 44%;
+    position: fixed;
+}
+
+#notify
+{
+    margin-top: 3%;
+    margin-left: 30%;
+}
+
+#notify-points
+{
+    list-style-type: none;
+    margin-top: 5%;
+    position: absolute;
+    width: 85%;
+    margin-left: 6%;
+}
+
+/* ------------------Center Box -------------------- */
+#Contentbox
+{
+    /* margin: -70px 30px 50px 200px; */
+    background: whitesmoke;
+}
+
+.notif{
+    
+    height:20em;
+    font-family: sans-serif;
+}
+
+.ads{
+    padding:6%;
+    margin-top:10%;
+    height:20em;
+    font-family: sans-serif;
+}
+
+.Community
+{
+    background: rgb(236, 117, 5);
+    color:whitesmoke;
+    display: inline-block;
+    width: -webkit-fill-available;
+    font-family: sans-serif;
+    font-size: 38px;
+    text-align: center;
+    margin-left: 0px;
+    
+}
+
+.buttons{
+    text-align: center;
+}
+
+.commentheading{
+    font-family: sans-serif;
+    margin: 10px;
+}
+
+
+.something
+{
+    margin: 10px 10px;
+    display: flex;
+    width: -webkit-fill-available;
+}
+#Tags
+{
+    background-color: #3d779c; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    margin-left: 1em;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 13px;
+    border-radius: 12px;
+}
+#Visibility1
+{
+    /* border: 2px solid red; */
+    float: left;
+    font-size: 15px;
+    margin: 5px 5px 5px 10px;
+    padding: 0px;
+}
+#Visibility2
+{
+    /* border: 2px solid blue; */
+    float: left;
+    font-size: 15px;
+    margin: 5px 5px 5px 5px;
+}
+#Post
+{
+    background-color: #3d779c; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    margin-right:1em;
+    margin-bottom:1em;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 13px;
+    border-radius: 12px;
+    float:right;
+    margin-top: -7%;
+}
+
+.recentheading{
+    font-family: sans-serif;
+}
+
+#newRecent{
+    background:whitesmoke;
+    text-align: center;
+    margin: 5% 0%;
+    height: 960%;
+}
+
+#Recent{
+    margin-top: 5em;
+    text-align: center;  
+
+   background: whitesmoke;
+   margin-bottom: 5%;
+}
+
+#designation
+{
+    height:50px;
+    width:230px;
+    margin-left: 15%;
+    margin-top: -110%;
+}
+
+#post-content
+{
+    height:480px;
+    width:874px;
+    background-color: white;
+    margin-left: 2%;
+}
+
+#main-content-matter
+{
+    float:left;
+    margin-left: 2%;
+}
+
+/* -----------------------Right Side Box ------------- */
+.profile{
+    
+    height:20em;
+    font-family: sans-serif;
+}
+
+.profile_pic
+{
+    height: 10%;
+}
+
+.schedule{
+    padding:6%;
+    margin-top:10%;
+    height:20em;
+    font-family: sans-serif;
+}
+
+/* -----------------------Right Side Box ------------- 
+#RightSidebox
+{
+    display: block;
+    background-color: whitesmoke;
+    width: 30%;
+    height:25em;
+    font-family: sans-serif;
+    margin:2%;
+    margin-top: 0px;
+    margin-bottom:0px ;
+}
+
+#Notificationbox
+{
+    display: block;
+    background-color: whitesmoke;
+    width: 100%;
+    height:40%;
+    font-family: sans-serif;
+}
+
+#Profilebox
+{
+    display: block;
+    background-color: whitesmoke;
+    width: 100%;
+    height:100%;
+    font-family: sans-serif;
+}
+
+.profilecontent{
+    float: left;
+}
+.btn1{
+    border: 1px solid black;
+    background-color: #ff5200;
+    margin: 15px 15px;
+    width: 130px;
+    height: 40px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size:20px;
+    margin-top: -10px ;
+    
+}*/

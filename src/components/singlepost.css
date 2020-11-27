@@ -1,0 +1,51 @@
+#main-box
+{
+    /* border: 1px solid red; */
+    height: 560px;
+    width: 45%;
+    margin-left: 10%;
+    margin-top: 3%;
+    background-color: whitesmoke;
+    position: fixed;
+}
+
+#comment-section
+{
+    height:760px;
+    width:33%;
+    border:1px solid purple;
+    float: right;
+    margin-right: 9%;
+}
+
+#circles
+{
+    height:60px;
+    width:60px;
+    border-radius: 120%;
+    margin-left: 2%;
+}
+
+#user-pic
+{
+    height:60px;
+    width:60px;
+    border-radius: 120%;
+}
+
+#name
+{
+    width:240%;
+    margin-left: 126%;
+    margin-top: -50px;
+    font-weight: bold;
+}
+
+#timeofpost
+{
+    width:240%;
+    margin-left: 126%;
+    color:green;
+    font-size: 80%;
+    margin-top: -13px;
+}
