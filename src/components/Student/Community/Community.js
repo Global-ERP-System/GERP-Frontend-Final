@@ -106,19 +106,22 @@ class Community extends Component {
   render() {
     return (
       <div className="community-page">
-        <div className="mobile-hide" style={{ width: "29%", height: "100vh" }}>
+        <div
+          className="mobile-hide"
+          style={{ height: "100vh", width: "400px" }}
+        >
           <NotificationNav
-            className="side-notification-bar"
+            className="side-notification-bar ml-2"
             style={{
-              width: "18%",
+              width: "18vw",
               backgroundColor: "rgb(245,245,245)",
             }}
             fluid
           />
           <AdNav
-            className="side-notification-bar"
+            className="side-notification-bar ml-2"
             style={{
-              width: "18%",
+              width: "18vw",
               height: "38%",
               bottom: "2px",
               backgroundColor: "rgb(245,245,245)",
@@ -126,18 +129,18 @@ class Community extends Component {
             fluid
           />
         </div>
-        <Container className="community-form" fluid>
-          <div className="responsive-side-nav m-3 ">
+        <div>
+          <div className="responsive-side-nav mb-1  ">
             <div style={{ display: "flex" }}>
               <NotificationNav
-                className="m-2"
+                className="mt-1 mr-1 mb-1"
                 style={{
                   backgroundColor: "rgb(245,245,245)",
                   flexBasis: "100%",
                 }}
               />
               <ProfileNav
-                className="m-2"
+                className="mt-1 mb-1 ml-1 "
                 style={{
                   backgroundColor: "rgb(245,245,245)",
                   flexBasis: "100%",
@@ -146,14 +149,14 @@ class Community extends Component {
             </div>
             <div style={{ display: "flex" }}>
               <AdNav
-                className="m-2"
+                className="mt-1 mr-1 "
                 style={{
                   backgroundColor: "rgb(245,245,245)",
                   flexBasis: "100%",
                 }}
               />
               <MyScheduleNav
-                className="m-2"
+                className="mt-1 ml-1"
                 style={{
                   backgroundColor: "rgb(245,245,245)",
                   flexBasis: "100%",
@@ -162,169 +165,177 @@ class Community extends Component {
             </div>
           </div>
 
-          <h2 className="community-heading">Community Forum</h2>
-          <div className="write-post">
-            <form onSubmit={this.handleSubmit}>
-              <div>
-                <h5>Write a Post</h5>
-                <textarea
-                  value={this.state.Comment}
-                  style={{ width: "100%" }}
-                  rows={6}
-                  onChange={this.handlePostChange}
-                  placeholder="Write Something..."
-                ></textarea>
-              </div>
-              <div>
+          <Container className="community-form" fluid>
+            <h2 className="community-heading">Community Forum</h2>
+            <div className="write-post">
+              <form onSubmit={this.handleSubmit}>
                 <div>
-                  <Button type="submit" className="m-2" variant="info">
-                    Tag
-                  </Button>
-                  <div
-                    style={{
-                      display: "flex",
-                      flexWrap: "wrap",
-                      alignItems: "center",
-                    }}
-                  >
-                    <img
-                      className="m-2"
-                      alt="img"
-                      src="https://cdn2.iconfinder.com/data/icons/rounded-white-basic-ui-set-3/139/Photo_Add-RoundedWhite-512.png"
-                      style={{ width: "45px" }}
-                    />
-                    <input
-                      className="m-2"
-                      style={{ border: "0px", width: "210px" }}
-                      type="file"
-                    />
-                  </div>
+                  <h5>Write a Post</h5>
+                  <textarea
+                    value={this.state.Comment}
+                    style={{ width: "100%" }}
+                    rows={6}
+                    onChange={this.handlePostChange}
+                    placeholder="Write Something..."
+                  ></textarea>
                 </div>
-              </div>
-              <div
-                className="m-2"
-                style={{ display: "flex", justifyContent: "space-between" }}
-              >
-                <div style={{ flexGrow: "1" }}>
-                  <label className="mr-2">Visibility:</label>
-                  <select
-                    value={this.state.visibility}
-                    onChange={this.handleVisibilityChange}
-                  >
-                    <option value="Public">Public </option>
-                    <option value="ClassMate">Classmates</option>
-                    <option value="SubOrdinates">Subordinates</option>
-                  </select>
-                </div>
-                <Button variant="info" type="submit">
-                  Post
-                </Button>
-              </div>
-            </form>
-          </div>
-          <div className="recent-posts mt-3">
-            <h4 className="pt-3">Recent posts</h4>
-
-            {postsArr.map((post, index) => {
-              return (
-                <div key={index} className="m-4 mb-5">
-                  <div className="profile-information mb-1">
-                    <img
-                      alt="profile"
-                      src={post.profilePhoto}
-                      className="mr-3"
+                <div>
+                  <div>
+                    <Button type="submit" className="m-2" variant="info">
+                      Tag
+                    </Button>
+                    <div
                       style={{
-                        height: "50px",
-                        width: "50px",
-                        borderRadius: "100px",
+                        display: "flex",
+                        flexWrap: "wrap",
+                        alignItems: "center",
                       }}
-                    />
-                    <div>
-                      <b>{post.name}</b>
-                      <p>
-                        {post.designation}
-                        <br />
-                        <span>{post.hour}</span>
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="post-content p-3">
-                    <p>
-                      {post.postContent.mainContent}
-                      <br />
-                      {post.postContent.sideContent}{" "}
-                      <a href={post.postContent.contentLink}>
-                        {post.postContent.contentLink}
-                      </a>
-                    </p>
-                    <br />
-                    <p className="post-tags m-3">{post.tags}</p>
-                    <div>
+                    >
                       <img
+                        className="m-2"
                         alt="img"
-                        src={post.postContent.contentImage}
-                        style={{ width: "100%", height: "auto" }}
+                        src="https://cdn2.iconfinder.com/data/icons/rounded-white-basic-ui-set-3/139/Photo_Add-RoundedWhite-512.png"
+                        style={{ width: "45px" }}
+                      />
+                      <input
+                        className="m-2"
+                        style={{ border: "0px", width: "210px" }}
+                        type="file"
                       />
                     </div>
-                    <br />
-                    <hr className="mb-1 mt-1" style={{ width: "95%" }}></hr>
-                    <div className="post-icons">
-                      <div className="icon-block">
-                        <FontAwesomeIcon className="fa-lg" icon={faThumbsUp} />
-                        <a href="#1" style={{ textDecoration: "none" }}>
-                          Acknowledge
-                        </a>
-                      </div>
-                      <div className="icon-block">
-                        <FontAwesomeIcon
-                          className="fa-lg"
-                          icon={faCommentDots}
-                        />
-                        <a href="#1" style={{ textDecoration: "none" }}>
-                          Express
-                        </a>
-                      </div>
-                      <div className="icon-block">
-                        <FontAwesomeIcon
-                          className="fa-lg"
-                          icon={faShareSquare}
-                        />
-                        <a href="#1" style={{ textDecoration: "none" }}>
-                          Share
-                        </a>
-                      </div>
-                      <div className="icon-block">
-                        <FontAwesomeIcon
-                          className="fa-lg"
-                          icon={faPaperPlane}
-                        />
-                        <a href="#1" style={{ textDecoration: "none" }}>
-                          Send
-                        </a>
+                  </div>
+                </div>
+                <div
+                  className="m-2"
+                  style={{ display: "flex", justifyContent: "space-between" }}
+                >
+                  <div style={{ flexGrow: "1" }}>
+                    <label className="mr-2">Visibility:</label>
+                    <select
+                      value={this.state.visibility}
+                      onChange={this.handleVisibilityChange}
+                    >
+                      <option value="Public">Public </option>
+                      <option value="ClassMate">Classmates</option>
+                      <option value="SubOrdinates">Subordinates</option>
+                    </select>
+                  </div>
+                  <Button variant="info" type="submit">
+                    Post
+                  </Button>
+                </div>
+              </form>
+            </div>
+            <div className="recent-posts mt-3">
+              <h4 className="pt-3">Recent posts</h4>
+
+              {postsArr.map((post, index) => {
+                return (
+                  <div key={index} className="m-4 mb-5">
+                    <div className="profile-information mb-1">
+                      <img
+                        alt="profile"
+                        src={post.profilePhoto}
+                        className="mr-3"
+                        style={{
+                          height: "50px",
+                          width: "50px",
+                          borderRadius: "100px",
+                        }}
+                      />
+                      <div>
+                        <b>{post.name}</b>
+                        <p>
+                          {post.designation}
+                          <br />
+                          <span>{post.hour}</span>
+                        </p>
                       </div>
                     </div>
 
-                    <hr className="mt-1 mb-1" style={{ width: "95%" }}></hr>
+                    <div className="post-content p-3">
+                      <p>
+                        {post.postContent.mainContent}
+                        <br />
+                        {post.postContent.sideContent}{" "}
+                        <a href={post.postContent.contentLink}>
+                          {post.postContent.contentLink}
+                        </a>
+                      </p>
+                      <br />
+                      <p className="post-tags m-3">{post.tags}</p>
+                      <div>
+                        <img
+                          alt="img"
+                          src={post.postContent.contentImage}
+                          style={{ width: "100%", height: "auto" }}
+                        />
+                      </div>
+                      <br />
+                      <hr className="mb-1 mt-1" style={{ width: "95%" }}></hr>
+                      <div className="post-icons">
+                        <div className="icon-block">
+                          <FontAwesomeIcon
+                            className="fa-lg"
+                            icon={faThumbsUp}
+                          />
+                          <a href="#1" style={{ textDecoration: "none" }}>
+                            Acknowledge
+                          </a>
+                        </div>
+                        <div className="icon-block">
+                          <FontAwesomeIcon
+                            className="fa-lg"
+                            icon={faCommentDots}
+                          />
+                          <a href="#1" style={{ textDecoration: "none" }}>
+                            Express
+                          </a>
+                        </div>
+                        <div className="icon-block">
+                          <FontAwesomeIcon
+                            className="fa-lg"
+                            icon={faShareSquare}
+                          />
+                          <a href="#1" style={{ textDecoration: "none" }}>
+                            Share
+                          </a>
+                        </div>
+                        <div className="icon-block">
+                          <FontAwesomeIcon
+                            className="fa-lg"
+                            icon={faPaperPlane}
+                          />
+                          <a href="#1" style={{ textDecoration: "none" }}>
+                            Send
+                          </a>
+                        </div>
+                      </div>
+
+                      <hr className="mt-1 mb-1" style={{ width: "95%" }}></hr>
+                    </div>
                   </div>
-                </div>
-              );
-            })}
-          </div>
-        </Container>
-        <div className="mobile-hide" style={{ width: "30%", height: "100vh" }}>
+                );
+              })}
+            </div>
+          </Container>
+        </div>
+        <div
+          className="mobile-hide"
+          style={{ width: "420px", height: "100vh" }}
+        >
           <ProfileNav
             className="side-notification-bar mr-2"
             style={{
-              width: "18%",
+              width: "18vw",
               right: "0px",
               backgroundColor: "rgb(245,245,245)",
             }}
           />
           <MyScheduleNav
-            className="side-notification-bar mr-2 p-2"
+            className="side-notification-bar mr-2 "
             style={{
-              width: "18%",
+              width: "18vw",
               height: "38%",
               bottom: "2px",
               right: "0px",

@@ -37,7 +37,10 @@ class Header extends Component {
           clickFunc={this.props.clickFunc}
         />
         {this.state.sideDrawerOpen && (
-          <SideDrawer show={this.state.sideDrawerOpen} />
+          <SideDrawer
+            show={this.state.sideDrawerOpen}
+            hide={this.backdropClickHandler}
+          />
         )}
         {backdrop}
         <main style={{ marginTop: "64px" }}>
