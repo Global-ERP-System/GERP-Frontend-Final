@@ -322,7 +322,7 @@ class Community extends Component {
         </div>
         <div
           className="mobile-hide"
-          style={{ width: "420px", height: "100vh" }}
+          style={{ width: "430px", height: "100vh" }}
         >
           <ProfileNav
             className="side-notification-bar mr-2"

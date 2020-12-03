@@ -37,4 +37,5 @@
 
 .side-drawer-nav a:hover {
   color: #ff5200;
+  text-decoration: underline;
 }
