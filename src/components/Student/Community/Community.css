@@ -18,9 +18,11 @@
 }
 
 /* ------------------Center Box -------------------- */
+.community-page-content {
+  margin: 0 10px;
+}
 .community-form {
   background: white;
-  margin: 0 10px;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -100,7 +102,7 @@
   .mobile-hide {
     display: none;
   }
-  .community-form {
+  .community-page-content {
     margin: 0;
   }
 }

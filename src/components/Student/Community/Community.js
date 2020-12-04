@@ -108,7 +108,7 @@ class Community extends Component {
       <div className="community-page">
         <div
           className="mobile-hide"
-          style={{ height: "100vh", width: "400px" }}
+          style={{ height: "100vh", width: "410px" }}
         >
           <NotificationNav
             className="side-notification-bar ml-2"
@@ -129,7 +129,7 @@ class Community extends Component {
             fluid
           />
         </div>
-        <div>
+        <div className="community-page-content">
           <div className="responsive-side-nav mb-1  ">
             <div style={{ display: "flex" }}>
               <NotificationNav
