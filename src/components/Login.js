@@ -104,8 +104,9 @@ class Login extends Component {
                       </span>
                     </span>
 
-                    <span style={{ textAlign: "center" }}>
-                      <Button
+                    <span className="form-row" style={{ textAlign: "center",marginTop: "2%" }}>
+                    <span className='col'>
+                    <Button
                         color="danger"
                         size="sm"
                         onClick={() => this.handleClick()}
@@ -113,6 +114,8 @@ class Login extends Component {
                         {" "}
                         Login{" "}
                       </Button>
+                    </span>
+                      
                     </span>
                     <hr
                       className="line"
@@ -137,11 +140,12 @@ class Login extends Component {
                         OR
                       </span>
                     </span>
-                    <span style={{ textAlign: "center" }}>
+                    <span className='form-row' style={{ marginLeft: "160px" }}>
                       Not yet created an account?
                     </span>
-                    <span style={{ textAlign: "center" }}>
-                      <Link
+                    <span className='form-row' style={{ textAlign: "center", marginTop: "4%" }}>
+                    <span className='col'>
+                    <Link
                         to="/signup"
                         style={{ color: "white", textDecoration: "none" }}
                       >
@@ -150,6 +154,7 @@ class Login extends Component {
                           Sign Up
                         </Button>
                       </Link>
+                    </span>
                     </span>
                   </CardText>
                   <br></br>
