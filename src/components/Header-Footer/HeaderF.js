@@ -39,9 +39,6 @@ class Header extends Component{
                 <Toolbar drawerClickHandler={this.drawerToggleClickHandler} clickFunc={this.props.clickFuncStaff } />
                 <SideDrawer show={this.state.sideDrawerOpen} />
                 {backdrop}
-                <main style={{marginTop:'64px'}}>
-                    <p></p>
-                </main>
             </div>
         )
 

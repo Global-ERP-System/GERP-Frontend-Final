@@ -1,130 +1,106 @@
 /* ------------------Main Box -------------------- */
-#main
-{
-    display: flex;
-    margin-top:8em;
-    margin-bottom:4em;
+.community-page {
+  margin-top: 80px;
+  display: flex;
+  width: 100vw;
 }
-/* ------------------Left Side Nav Bar -------------------- */
-#SideNavBar
-{
-    width: 15%;
-    background-color: whitesmoke;
+
+/*-------------------left side box---------------*/
+
+.side-notification-bar {
+  float: left;
+  position: fixed;
 }
+
+.notify-points {
+  list-style-type: none;
+  background-color: white;
+}
+
 /* ------------------Center Box -------------------- */
-#Contentbox
-{
-    width: 60%;
-    margin: 0px 0px 0px 0px;
+.community-form {
+  background: white;
+  margin: 0 10px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
-.Community
-{
-    background: #ff5200;
-    color:whitesmoke;
-    display: inline-block;
-    width: -webkit-fill-available;
-    font-family: sans-serif;
-    font-size: 38px;
-    text-align: center;
-    margin: 0px;
+.write-post {
+  padding: 15px;
+  background-color: rgb(245, 245, 245);
 }
 
-.buttons{
-    text-align: center;
+.community-heading {
+  background: rgb(255, 82, 0);
+  color: whitesmoke;
+  font-family: sans-serif;
+  text-align: center;
+  margin: 0px;
+}
+.recent-posts {
+  background: rgb(245, 245, 245);
+  text-align: center;
 }
 
-.commentheading{
-    font-family: sans-serif;
+.profile-information {
+  display: flex;
+  text-align: left;
+}
+.post-content {
+  background-color: white;
 }
 
-
-.something
-{
-    margin: 10px 10px;
-    display: flex;
-    width: -webkit-fill-available;
+.post-tags {
+  color: #3498db;
+  font-weight: bold;
+  text-align: left;
 }
-#Tags
-{
-    background-color: #3d779c; /* Green */
-    border: none;
-    color: white;
-    padding: 10px 25px;
-    margin-left: 1em;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    font-size: 13px;
-    border-radius: 12px;
+.post-icons {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
-#Visibility1
-{
-    /* border: 2px solid red; */
-    float: left;
-    font-size: 15px;
-    margin: 5px 5px 5px 10px;
-}
-#Visibility2
-{
-    /* border: 2px solid blue; */
-    float: left;
-    font-size: 15px;
-    margin: 5px 5px 5px 5px;
-}
-#Post
-{
-    background-color: #3d779c; /* Green */
-    border: none;
-    color: white;
-    padding: 10px 25px;
-    margin-right:1em;
-    margin-bottom:1em;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    font-size: 13px;
-    border-radius: 12px;
-    float:right;
-}
-
-.recentheading{
-    font-family: sans-serif;
-}
-
-#Recent{
-    margin-top: 3em;
-    height:20em;
+.icon-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 9px 0px;
 }
 
 /* -----------------------Right Side Box ------------- */
-#RightSidebox
-{
-    display: block;
-    background-color: whitesmoke;
-    width: 30%;
-    height:25em;
-    font-family: sans-serif;
+.profile {
+  height: 20em;
+  font-family: sans-serif;
+}
+.profile-block {
+  background-image: url('https://almashines.s3.dualstack.ap-southeast-1.amazonaws.com/assets/images/cover/487.jpg?v=1575095450');
+  background-size: contain;
 }
 
-#Notificationbox
-{
-    display: block;
-    background-color: whitesmoke;
-    width: 100%;
-    height:40%;
-    font-family: sans-serif;
+.profile-circle {
+  height: 110px;
+  width: 110px;
+  position: relative;
+  top: 30px;
 }
 
-#Profilebox
-{
-    display: block;
-    background-color: whitesmoke;
-    width: 100%;
-    height:100%;
-    font-family: sans-serif;
+.responsive-side-nav {
+  display: flex;
+  flex-direction: column;
+  display: none;
+  width: 100vw;
+  align-self: center;
 }
 
-.profilecontent{
-    float: left;
+@media only screen and (max-width: 1000px) {
+  .responsive-side-nav {
+    display: block;
+  }
+  .mobile-hide {
+    display: none;
+  }
+  .community-form {
+    margin: 0;
+  }
 }
