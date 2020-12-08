@@ -123,7 +123,7 @@ class MainComponent extends Component {
               <Route path="/timetablef" component={TimeTableF} />
               <Route path="/studyf" component={StudymaterialF} />
               <Route path="/researchf" component={ResearchF} />
-              <Redirect to="/login" />
+              <Redirect to="/communityF" />
             </Switch>
           </Router>
         </div>

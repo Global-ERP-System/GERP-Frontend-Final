@@ -1,54 +1,43 @@
-.body{
-    margin-right: 22%;
-    margin-left: 22%;  
-    font-family: 'Montserrat',sans-serif;
-    font-weight: 400;
+.assignmentf-page {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
 }
 
-.card{
-margin-top: 150px;    
-font-family: 'Montserrat',sans-serif;
-font-weight: 400;
+.assignmentf-card {
+  margin: 100px 5% 0 5%;
+  font-family: "Montserrat", sans-serif;
+  flex-grow: 1;
 }
 
-h2{
-    font-family: 'Montserrat Bold',sans-serif;
-    font-weight: 700;
+.header th {
+  text-align: center;
 }
 
-h4{
-    font-family: 'Montserrat Bold',sans-serif;
-    font-weight: 400;
+.button1 {
+  background-color: blue !important;
+  font-size: 18px !important;
+  width: 150px;
+  position: absolute;
+  right: 20px;
 }
 
-.header th{
-    text-align: center;
+table tr td {
+  border: 100px;
+  padding: 10px 10px;
+  white-space: nowrap;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
 }
 
-.button1{
-    background-color: blue !important;
-    font-size:18px !important;
-    width: 150px;
-    position: absolute;
-    right: 20px;
+table th {
+  text-align: center;
 }
 
-
-table tr td{
-    border: 100px;
-    white-space: nowrap;
-    text-align: center;
-    font-family: 'Montserrat',sans-serif;
-    font-weight: 400;
-}
-
-table th{
-    text-align: center;
-}
-
-
-.table1{
-    width: 130%;
-    margin-top: 30px;
-    margin-bottom: 20px;
+.table1 {
+  width: 130%;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }

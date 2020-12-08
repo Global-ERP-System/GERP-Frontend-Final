@@ -1,59 +1,75 @@
-.Research div{
-	background-image:url(../../../assets/researchBackground.jpg);
-	background-size: cover;
-	width:80%;
-	margin:0 auto;
-	height:500px;
-	border-radius:1rem;
-	padding:1rem;
-	margin-bottom: 50px;
+.Research {
+  margin-top: 80px;
 }
-.Research div h1{
-	width:70%;
-	margin:0 auto;
-	font-size:1.5rem;
-	color:white;
-	font-family:'Montserrat', sans-serif;
-	font-weight:700;
-	margin-top:20px;
+
+.Research div {
+  background-image: url(../../../assets/researchBackground.jpg);
+  background-size: cover;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 1rem;
+  padding: 1rem;
 }
-.Research div h2{
-	width:70%;
-	margin:0 auto;
-	text-align:right;
-	color:white;
-	font-family:'Montserrat', sans-serif;
-	font-size:1.2rem;
+.Research div h1 {
+  width: 70%;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  margin-top: 20px;
 }
-.Research form{
-	text-align:center;
-	border-radius: 0.5rem;
-	padding:30px 0;
-	width:50%;
-	margin:0 auto;
-	margin-top:50px;
+.Research div h2 {
+  width: 70%;
+  margin: 0 auto;
+  text-align: right;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
 }
-.Research p{
-	font-weight:700;
-	font-size:1.65rem;
-	color:white;
-	letter-spacing: 0.1rem;
+.Research form {
+  text-align: center;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 0;
+  overflow: hidden;
+  margin-top: 50px;
 }
-.Research input{
-	margin-top:15px;
-	border:2px white solid;
-	font-weight: 700;
-	padding:0.3rem;
+.Research p {
+  font-weight: 700;
+  font-size: 1.65rem;
+  color: white;
+  letter-spacing: 0.1rem;
 }
-.Research button{
-	margin-top:35px;
-	background-color:white;
-	border:none;
-	color:orange;
-	font-weight: 900;
-	font-size:1.5rem;
-	padding:0.3rem;
-	width:150px;
-	border-radius: 0.3rem;
-	letter-spacing: 0.1rem;
+.Research [type="file"] {
+  margin-top: 15px;
+  overflow: auto;
+  max-width: 250px;
+
+  border: 2px white solid;
+  font-weight: 700;
+  padding: 0.3rem;
+}
+.Research button {
+  margin-top: 35px;
+  background-color: white;
+  border: none;
+  color: orange;
+  font-weight: 900;
+  font-size: 1.5rem;
+  padding: 0.3rem;
+  width: 150px;
+  border-radius: 0.3rem;
+  letter-spacing: 0.1rem;
+}
+
+@media screen and (max-width: 360px) {
+  .Research [type="file"] {
+    align-self: flex-start;
+  }
 }

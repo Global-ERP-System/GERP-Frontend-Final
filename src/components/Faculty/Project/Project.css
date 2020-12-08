@@ -1,78 +1,43 @@
-.ProjectF{
-  margin-left: 22%;
-  margin-right: 22%;
+.ProjectF {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.ProjectF h1{
-  font-family: 'Montserrat Bold',sans-serif;
-  font-weight: 700;
+.student-projects-table {
+  flex-grow: 1;
+  margin: 5px 5%;
+}
+
+.student-projects-table h1 {
+  font-family: "Montserrat Bold", sans-serif;
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
 }
-#container
-{
-  display: flex;
-  flex-direction: row;
-  background-color: whitesmoke;
-  margin: 5em 0em 0em 15em;
-  width:80%;
-  font-family: sans-serif;
-}
-#Relationbox{
-  width:100%;
-}
-.ProjectF input[type=text], select {
-  width: 26%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
 
-.ProjectF input[type=submit] {
-  width: 10%;
-  background-color: #ff5200;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-.ProjectF input[type=submit]:hover {
-  background-color: #c44104;
-}
-
-
-
-#Your_relation
-{
+.student-project {
   background-color: whitesmoke;
   width: 100%;
-  text-align: center;
+  margin-top: 10px;
+  justify-content: space-evenly;
   display: flex;
-  flex-direction: row;
+  align-items: center;
+
+  overflow-x: auto;
   font-family: sans-serif;
 }
-.projectdetail
-{
-  width: 30%;
+.projectdetail {
+  align-items: center;
+  display: flex;
+  justify-content: center;
   height: 40px;
   margin: 10px 10px;
-  font-family: 'Montserrat Regular',sans-serif;
-  font-weight: 400;
+  font-family: "Montserrat Regular", sans-serif;
 }
-
-#connectdecline{
-  width: 80%;
-  height: 100%;
-  background-color: #ff5200;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
+@media screen and (max-width: 500px) {
+  .projectdetail h5 {
+    font-size: 4vw;
+  }
 }

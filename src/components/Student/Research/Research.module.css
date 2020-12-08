@@ -13,7 +13,7 @@
   margin: 0 auto;
   font-size: 1.5rem;
   color: white;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   margin-top: 20px;
 }
@@ -22,7 +22,7 @@
   margin: 10px auto;
   text-align: right;
   color: white;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.2rem;
 }
 .Research form {
@@ -69,8 +69,5 @@
   .Research form {
     margin-top: 0px;
     padding-top: 0px;
-  }
-  html {
-    width: 440px;
   }
 }
