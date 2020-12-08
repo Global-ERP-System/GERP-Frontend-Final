@@ -165,7 +165,7 @@ class Community extends Component {
             </div>
           </div>
 
-          <Container className="community-form" fluid>
+          <div className="community-form" fluid>
             <h2 className="community-heading">Community Forum</h2>
             <div className="write-post">
               <form onSubmit={this.handleSubmit}>
@@ -318,7 +318,7 @@ class Community extends Component {
                 );
               })}
             </div>
-          </Container>
+          </div>
         </div>
         <div
           className="mobile-hide"
