@@ -39,7 +39,7 @@ class Header extends Component {
         {this.state.sideDrawerOpen && (
           <SideDrawer
             show={this.state.sideDrawerOpen}
-            hide={this.state.backdropClickHandler}
+            hide={this.backdropClickHandler}
           />
         )}
         {backdrop}

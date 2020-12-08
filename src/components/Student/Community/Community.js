@@ -5,7 +5,6 @@ import AdNav from "./AdNav";
 import ProfileNav from "./ProfileNav";
 import MyScheduleNav from "./MyScheduleNav";
 
-import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -199,7 +198,11 @@ class Community extends Component {
                       />
                       <input
                         className="m-2"
-                        style={{ border: "0px", width: "210px" }}
+                        style={{
+                          border: "0px",
+                          width: "210px",
+                          overflow: "auto",
+                        }}
                         type="file"
                       />
                     </div>

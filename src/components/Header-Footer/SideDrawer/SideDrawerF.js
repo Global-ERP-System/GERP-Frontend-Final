@@ -3,7 +3,7 @@ import "./SideDrawer.css";
 import { Link } from "react-router-dom";
 const sideDrawerFaculty = (props) => {
   return (
-    <nav className="side-drawer-nav">
+    <nav className="side-drawer-nav ">
       <p onClick={props.hide}>
         <Link to="/communityf">Home</Link>
       </p>
