@@ -18,6 +18,9 @@
 }
 
 /* ------------------Center Box -------------------- */
+.community-page-content {
+  margin: 0px;
+}
 
 .community-form {
   background: white;
