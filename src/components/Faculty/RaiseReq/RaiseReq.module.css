@@ -1,19 +1,18 @@
-.RaiseReq{
-	width:500px;
-	margin:0 auto;
-	text-align: center;
+.RaiseReq {
+  margin: 100px 5% 0 5%;
+  text-align: center;
 }
-.RaiseReq h2{
-	font-family: 'Montserrat',sans-serif;
-	font-weight: 700;
+.RaiseReq h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
 }
-.RaiseReq section button{
-	background-color: #4169E1;
-	font-family: 'Montserrat',sans-serif;
-	padding:0.5rem;
-	color:white;
-	font-weight: 700;
-	border:2px black solid;
-	margin:15px 0;
-	width:70%;
+.RaiseReq section button {
+  background-color: #4169e1;
+  font-family: "Montserrat", sans-serif;
+  padding: 0.5rem;
+  color: white;
+  font-weight: 700;
+  border: 2px black solid;
+  margin: 15px 0;
+  width: 70%;
 }
