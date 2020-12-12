@@ -1,5 +1,5 @@
-import React, { Component,useState} from 'react';
-import {Table,Button,Card,CardHeader,CardBody,CardTitle,Dropdown,DropdownToggle,DropdownMenu,DropdownItem,FormGroup, Label, Input,CustomInput,Col,Row,ButtonToggle} from 'reactstrap';
+import React, { Component } from 'react';
+import {Table,Button,Card,CardHeader,CardBody,CardTitle,FormGroup, Label, Input,CustomInput,Col} from 'reactstrap';
 import "./ExamMarksF.css";
 
 class Marks extends Component {
@@ -23,7 +23,7 @@ class Marks extends Component {
             <Card>
             <CardHeader className = "cardheader1">
             <CardTitle> <h2 className = "h2"> <b> Student Exam Marks </b></h2> </CardTitle></CardHeader>
-            <CardBody>
+            <CardBody style={{overflow:'auto'}}>
             <CardTitle>
             <div class = "row" >
                <div class="col">

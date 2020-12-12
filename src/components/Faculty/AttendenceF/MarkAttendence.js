@@ -2,9 +2,6 @@ import React, { useState } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter,FormGroup,Col,Label,Input,Table } from 'reactstrap';
 import "./Modal.css"
 const Mark = (props) => {
-  const {
-    className
-  } = props;
 
   const [modal, setModal] = useState(false);
 

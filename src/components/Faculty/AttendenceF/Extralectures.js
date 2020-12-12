@@ -1,10 +1,7 @@
 import React, { useState } from 'react';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter,Form,FormGroup,Row,Col,Label,CustomInput,Input,Card,Table } from 'reactstrap';
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter,FormGroup,Col,Label,Input,Table } from 'reactstrap';
 import "./Modal.css"
 const Extra = (props) => {
-  const {
-    className
-  } = props;
 
   const [modal, setModal] = useState(false);
 

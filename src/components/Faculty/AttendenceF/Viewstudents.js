@@ -1,10 +1,7 @@
 import React, { useState } from 'react';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter,Form,FormGroup,Row,Col,Label,CustomInput,Input,Card,Table } from 'reactstrap';
+import { Button, Modal, ModalHeader, ModalBody,Table } from 'reactstrap';
 import "./Modal.css"
 const View = (props) => {
-  const {
-    className
-  } = props;
 
   const [modal, setModal] = useState(false);
 
