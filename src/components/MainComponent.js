@@ -103,7 +103,7 @@ class MainComponent extends Component {
       );
     } else if (this.state.facultyLoggedIn) {
       return (
-        <div>
+        <div style={{overflow: "auto"}}>
           <Router>
             <HeaderFaculty clickFuncStaff={this.onButtonClickStaff} />
             <Switch>

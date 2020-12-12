@@ -4,13 +4,13 @@ import classes from "./studyMaterialFaculty.module.css";
 //import SimpleReactFileUpload from './chooseFile';
 
 const StudyMaterialFaculty = (props) => {
-  const [controls, setControls] = useState({
+  const [controls/*, setControls*/] = useState({
     Subject: { value: "" },
     Concept: { value: "" },
     Class: { value: "" },
     Section: { value: "" },
   });
-  const inputChangedHandler = (event, identifier) => {
+  /*const inputChangedHandler = (event, identifier) => {
     const updatedControl = {
       ...controls[identifier],
       value: event.target.value,
@@ -19,7 +19,7 @@ const StudyMaterialFaculty = (props) => {
       ...controls,
       [identifier]: updatedControl,
     });
-  };
+  };*/
   const formArray = [];
   for (let key in controls) {
     formArray.push({
