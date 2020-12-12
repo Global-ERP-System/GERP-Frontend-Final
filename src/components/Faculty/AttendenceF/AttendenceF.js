@@ -1,5 +1,5 @@
-import React, { Component,useState} from 'react';
-import {Table,Button,Card,CardHeader,CardBody,CardTitle,Dropdown,DropdownToggle,DropdownMenu,DropdownItem,Pagination, PaginationItem, PaginationLink} from 'reactstrap';
+import React, { Component } from 'react';
+import {Table,Card,CardHeader,CardBody,CardTitle } from 'reactstrap';
 import "./AttendenceF.css";
 import Create from "./Modal"
 import Mark from "./MarkAttendence"
@@ -24,21 +24,22 @@ class Attendence extends Component {
         return (
          <div>
            <div className = "body">
-            <Card>
+            <Card style={{marginTop: '70px'}}>
             <CardHeader className = "cardheader1">
-            <CardTitle> < h2 className = "h2" > <b> Student Attendence </b></h2 > </CardTitle></CardHeader>
+            <CardTitle> <h2 className = "h2"> <b> Student Attendence </b></h2></CardTitle></CardHeader>
             <CardBody>
             <CardTitle>
-            <div class = "row">
-            <div class = "col">
+            <div className = "row">
+            <div className = "col">
             <h5> List of Classes </h5>
             </div> 
-             <div class="col">
+             <div className="col">
               <Create/>
           
                </div>
             </div>  
            </CardTitle>
+           <div style={{overflow: 'auto'}}>
             <Table className="table1">
             <thead className="thead">
             <tr>
@@ -88,6 +89,8 @@ class Attendence extends Component {
             
             </tbody> 
             </Table> 
+           </div>
+            
             </CardBody>
             </Card> 
             </div>

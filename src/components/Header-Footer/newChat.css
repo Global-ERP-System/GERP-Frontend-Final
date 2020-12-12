@@ -1,42 +1,38 @@
 /****** Chat Popup Layout ******/
-body{
-    background: #e5e5e5;  
-    font-family: sans-serif;
-  }
-  
-  .msg_box{
-    position: fixed;
-    bottom: -5px;
-    width: 250px;
-    background: whitesmoke;
-    border-radius: 5px 5px 0px 0px;
-  }
-  
-  .msg_head{  
-    background:#ff5200;
-    color: whitesmoke;
-    padding: 8px;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 5px 5px 0px 0px;
-  }
-  
-  .msg_body{
-    background: bisque;
-    height: 200px;
-    font-size: 12px;
-    padding: 15px;
-    overflow: auto;
-    overflow-x: hidden;
-  }
-  
-  .close{
-    float: right;
-    cursor: pointer;
-  }
-  
-  .minimize{
-    float: right;
-    cursor: pointer;
-    padding-right: 5px;
-  }
+
+.msg_box {
+  position: fixed;
+  bottom: -5px;
+  width: 250px;
+  background: whitesmoke;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.msg_head {
+  background: #ff5200;
+  color: whitesmoke;
+  padding: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.msg_body {
+  background: bisque;
+  height: 200px;
+  font-size: 12px;
+  padding: 15px;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.close {
+  float: right;
+  cursor: pointer;
+}
+
+.minimize {
+  float: right;
+  cursor: pointer;
+  padding-right: 5px;
+}

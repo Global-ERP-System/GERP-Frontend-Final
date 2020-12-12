@@ -14,13 +14,13 @@ const Extra = (props) => {
 
   return (
   <div>
-    <Button color="success" onClick={toggle} >Extra Lectures</Button>
+    <Button style={{width:'auto'}} color="success" onClick={toggle} >Extra Lectures</Button>
     <Modal isOpen={modal} toggle={toggle} contentClassName="attendence-modal">
       <ModalHeader toggle={toggle} close={closeBtn}>Attendence
           
                  </ModalHeader>
       <ModalBody>
-      <div className="container">
+      <div className="container" style={{overflow: 'auto'}}>
           <Col md={6}>
                   <FormGroup>
                       <Label for="class">Choose Date</Label>

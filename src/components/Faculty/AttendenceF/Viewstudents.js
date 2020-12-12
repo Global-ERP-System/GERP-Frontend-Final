@@ -14,13 +14,13 @@ const View = (props) => {
 
   return (
   <div>
-    <Button color="warning" onClick={toggle} >View Students</Button>
+    <Button style={{width:'auto'}} color="warning" onClick={toggle} >View Students</Button>
     <Modal isOpen={modal} toggle={toggle} contentClassName="attendence-modal">
       <ModalHeader toggle={toggle} close={closeBtn}>View Attendence
           
                  </ModalHeader>
       <ModalBody>
-      <div className="container">
+      <div className="container" style={{overflow: 'auto'}}>
            
             <Table hover>
       <thead>

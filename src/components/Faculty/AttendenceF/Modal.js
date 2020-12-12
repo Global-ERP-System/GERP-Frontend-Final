@@ -13,8 +13,8 @@ const Create = (props) => {
   const closeBtn = <button className="close" onClick={toggle}>&times;</button>;
 
   return (
-  <div>
-    <Button color="info" onClick={toggle} >Update Attendence</Button>
+  <div style={{padding: '0 50px'}}>
+    <Button style={{width: '80%'}} color='info' onClick={toggle} >Update Attendence</Button>
     <Modal isOpen={modal} toggle={toggle} contentClassName="attendence-modal">
       <ModalHeader toggle={toggle} close={closeBtn}>Attendence</ModalHeader>
       <ModalBody>
