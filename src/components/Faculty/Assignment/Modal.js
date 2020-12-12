@@ -13,7 +13,7 @@ const Create = (props) => {
   const closeBtn = <button className="close" onClick={toggle}>&times;</button>;
 
   return (
-  <div>
+  <div className='div-primary'>
     <Button color="primary" onClick={toggle} className="button1">Create New</Button>
     <Modal isOpen={modal} toggle={toggle} contentClassName="assignment-modal">
       <ModalHeader style={{backgroundColor:'#f5f5f5'}} toggle={toggle} close={closeBtn}>Assignment</ModalHeader>
@@ -104,7 +104,7 @@ const Create = (props) => {
         <Button type= "submit" color="primary" onClick={toggle}>Assign</Button>{' '}
         </Col>
         <Col>
-        <Button style={{marginLeft:'80px'}} color="secondary" onClick={toggle}>Cancel</Button>
+        <Button color="secondary" onClick={toggle}>Cancel</Button>
         </Col>
       </ModalFooter>
     </Modal>

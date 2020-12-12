@@ -1,5 +1,5 @@
 .assignmentf-page {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   display: flex;
   justify-content: center;
@@ -7,7 +7,7 @@
 
 .assignmentf-card {
   margin: 100px 5% 0 5%;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   flex-grow: 1;
 }
 
@@ -28,7 +28,7 @@ table tr td {
   padding: 10px 10px;
   white-space: nowrap;
   text-align: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
 }
 
@@ -40,4 +40,13 @@ table th {
   width: 130%;
   margin-top: 30px;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .button1 {
+    position: relative;
+  }
+  h2 {
+    text-align: center;
+  }
 }
