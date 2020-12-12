@@ -5,7 +5,7 @@ import "./assignment.css";
 class Assignment extends Component {
     render() {
         return (
-            <div style={{marginLeft:'22%',marginRight:'22%'}}>
+            <div className='assignment' >
                 <form id="form_assg" style={{marginLeft:'10%',marginRight:'10%', marginBottom:'5%'}}>
                         <center><h2  style={{fontFamily:'Montserrat ', fontWeight:'700'}} className="text-center">ASSIGNMENTS</h2></center>
                                   <Row>

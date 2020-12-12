@@ -1,31 +1,35 @@
-
-.Assignment{
-    margin-left: 22%;
-    margin-right: 22%;
-    background-color:white;
-    padding:25px;
-    border:solid 1px #b1b2b2;
+.assignment {
+  margin-left: 22%;
+  margin-right: 22%;
+  background-color: white;
 }
 
-h2{
-    padding-bottom: 4px;
+h2 {
+  padding-bottom: 4px;
 }
 
 #form_assg {
-    margin-top: 75px;
+  margin-top: 75px;
 }
 
-input{
-    border: 2px solid black;
+input {
+  border: 2px solid black;
 }
 
-form label{
-    padding-top: 7px;
-    font-family: 'Pt sans narrow';
-    font-weight: 700;
+form label {
+  padding-top: 7px;
+  font-family: 'Pt sans narrow';
+  font-weight: 700;
 }
 
-#choosefile{
-    background-color: #d63232;
-    color: blanchedalmond;
+#choosefile {
+  background-color: #d63232;
+  color: blanchedalmond;
+  height: 45px;
+}
+
+@media screen and (max-width: 800px) {
+  .assignment {
+    margin: 0 0;
+  }
 }
