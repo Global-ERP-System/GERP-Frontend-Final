@@ -1,10 +1,6 @@
 import React, { Component } from "react";
-import {Card,CardTitle,CardText,CardBody,Button,CardHeader,CardFooter} from 'reactstrap';
-import MainComponent from "./MainComponent";
 
-import {BrowserRouter as Router,Route,Link,Switch,Redirect} from 'react-router-dom'
-import Community from './Student/Community/Community';
-import Signup from './signup';
+import {BrowserRouter as Link} from 'react-router-dom'
 import './Allposts.css'
 
 class Allposts extends Component {

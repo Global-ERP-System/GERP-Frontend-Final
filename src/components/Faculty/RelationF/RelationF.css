@@ -9,14 +9,13 @@
   padding-bottom: 20px;
 }
 .relationFbox label {
-  font-family: "Pt sans narrow", sans-serif;
+  font-family: 'Pt sans narrow', sans-serif;
   font-weight: 700;
 }
 
-input[type="text"],
+input[type='text'],
 select {
   padding: 12px 20px;
-  margin: 8px 20px;
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -36,7 +35,7 @@ select {
   width: 30%;
   height: 40px;
   margin: 10px 10px;
-  font-family: "Pt sans narrow", sans-serif;
+  font-family: 'Pt sans narrow', sans-serif;
   font-weight: 400;
 }
 
@@ -48,4 +47,15 @@ select {
   border: none;
   border-radius: 10px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  input[type='text'],
+  select {
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
 }

@@ -43,10 +43,8 @@ export default class Project extends Component {
         let addProject = () => this.setState({ addProject: false })
 
         return (
-            <div className="project" style={{marginLeft:'22%',marginRight:'22%'}}>
-        {/* <div style={{marginLeft:'33%',marginRight:'20%', marginBottom:'4%', width:'180%'}}>
-                <h1 className="Heading" style={{width:'22%',textAlign:'center'}}> PROJECTS </h1> */}
-                <h1 className="Heading" style={{textAlign:'center',fontFamily:'Montserrat ',fontWeight:'700'}}> PROJECTS </h1>
+            <div className="project">
+                <h1 style={{textAlign:'center',fontFamily:'Montserrat ',fontWeight:'700'}}> PROJECTS </h1>
                 <div className="Project_container" style={{ textAlign: 'center' }}>
                     <form onSubmit={this.handlesubmit} style={{ marginTop:'0px' }}>
                             <label style={{margin:'0px',width:'100%',fontFamily:'Pt sans narrow ', fontWeight:'700'}}>Title*</label><br></br>

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import {Card,CardTitle,CardText,CardBody,CardHeader,CardFooter,Form,FormGroup,CustomInput,Label,Row,Col,Input,Button} from 'reactstrap';
+import {Form,Row,Col} from 'reactstrap';
 import './previous.css'
-import { faBorderAll } from "@fortawesome/free-solid-svg-icons";
 
 class Previous extends Component {
     render() {
