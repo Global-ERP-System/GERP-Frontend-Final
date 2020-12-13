@@ -12,7 +12,7 @@ class Attendance extends Component{
             </div>
 
             <div >
-                    <select className="form-control" style={{ width: "30%", border: '1px solid black',fontFamily: 'PT sans narrow ', fontWeight: '700'  }}  type="text" placeholder="Select Semester">
+                    <select type="text" placeholder="Select Semester">
                     <option>Select Semester</option>
                     <option>Semester 1</option>
                     <option>Semester 2</option>
