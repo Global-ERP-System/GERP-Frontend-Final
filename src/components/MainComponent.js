@@ -51,7 +51,7 @@ class MainComponent extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isLoggedIn: true,
+      isLoggedIn: false,
       facultyLoggedIn: false,
     };
     this.onButtonClick = this.onButtonClick.bind(this);
@@ -73,7 +73,7 @@ class MainComponent extends Component {
   render() {
     if (this.state.isLoggedIn) {
       return (
-        <div style={{overflow: "auto"}}>
+        <div style={{ overflow: "auto" }}>
           <Router>
             <Header clickFunc={this.onButtonClick} />
 
@@ -103,7 +103,7 @@ class MainComponent extends Component {
       );
     } else if (this.state.facultyLoggedIn) {
       return (
-        <div style={{overflow: "auto"}}>
+        <div style={{ overflow: "auto" }}>
           <Router>
             <HeaderFaculty clickFuncStaff={this.onButtonClickStaff} />
             <Switch>

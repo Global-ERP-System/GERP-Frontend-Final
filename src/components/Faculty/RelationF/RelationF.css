@@ -9,11 +9,24 @@
   padding-bottom: 20px;
 }
 .relationFbox label {
-  font-family: 'Pt sans narrow', sans-serif;
+  font-family: "Pt sans narrow", sans-serif;
   font-weight: 700;
+  width: 100px;
+  margin: 0 15px 0 15px;
 }
 
-input[type='text'],
+.relationInputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10px 10px;
+}
+.relationInputs input {
+  flex-grow: 1;
+}
+
+input[type="text"],
 select {
   padding: 12px 20px;
   display: inline-block;
@@ -32,7 +45,7 @@ select {
 }
 
 @media screen and (max-width: 800px) {
-  input[type='text'],
+  input[type="text"],
   select {
     padding: 12px 20px;
     display: inline-block;

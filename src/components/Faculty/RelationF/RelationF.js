@@ -8,7 +8,7 @@ const Relation = (props) => {
   for (let i = 0; i < 3; i++) {
     list.push(
       <div id="Your_relation1">
-        <Table hover striped>
+        <Table hover striped style={{ backgroundColor: "whitesmoke" }}>
           <tr>
             <td className="SearchPeople">First_Name+Last_Name</td>
             <td className="SearchPeople">College_Name</td>
@@ -32,43 +32,32 @@ const Relation = (props) => {
       <div className="relationFbox">
         <Row>
           <Col sm={6}>
-            <label>First Name: </label>
-            <input
-              type="text"
-              id="Firstname"
-              placeholder=""
-              style={{ width: "255px" }}
-            />
+            <div className="relationInputs">
+              <label>First Name: </label>
+              <input type="text" id="Firstname" placeholder="" />
+            </div>
           </Col>
 
           <Col sm={6}>
-            <label>Last Name: </label>
-            <input
-              type="text"
-              id="Lastname"
-              placeholder=""
-              style={{ width: "255px" }}
-            />
+            <div className="relationInputs">
+              <label>Last Name: </label>
+              <input type="text" id="Lastname" placeholder="" />
+            </div>
           </Col>
         </Row>
         <Row>
           <Col sm={6}>
-            <label>College: </label>
-            <input
-              type="text"
-              id="College"
-              placeholder=""
-              style={{ width: "255px" }}
-            />
+            <div className="relationInputs">
+              <label>College: </label>
+              <input type="text" id="College" placeholder="" />
+            </div>
           </Col>
           <Col sm={6}>
-            <label>Department: </label>
-            <input
-              type="text"
-              id="Department"
-              placeholder=""
-              style={{ width: "255px" }}
-            />
+            <div className="relationInputs">
+              {" "}
+              <label>Department: </label>
+              <input type="text" id="Department" placeholder="" />
+            </div>
           </Col>
         </Row>
         <button

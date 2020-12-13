@@ -10,18 +10,20 @@ class InternshipF extends Component {
         <Form className="internf">
           <h1>Internship Details</h1>
           <br />
-          <FormGroup>
-            <Receive />
-          </FormGroup>
-          <FormGroup>
-            <Button>Computer Science- 8B</Button>
-          </FormGroup>
-          <FormGroup>
-            <Button>Computer Science- 6A</Button>
-          </FormGroup>
-          <FormGroup>
-            <Button>Computer Science- 6B</Button>
-          </FormGroup>
+          <div>
+            <FormGroup style={{ textAlign: "center" }}>
+              <Receive />
+            </FormGroup>
+            <FormGroup style={{ textAlign: "center" }}>
+              <Button>Computer Science- 8B</Button>
+            </FormGroup>
+            <FormGroup style={{ textAlign: "center" }}>
+              <Button>Computer Science- 6A</Button>
+            </FormGroup>
+            <FormGroup style={{ textAlign: "center" }}>
+              <Button>Computer Science- 6B</Button>
+            </FormGroup>
+          </div>
         </Form>
       </div>
     );
