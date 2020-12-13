@@ -11,9 +11,9 @@ export default class ExaminatioUpcoming extends Component {
                             <h2 style={{textAlign:"center"}}>Upcoming Exam</h2>
                         </div>
                         <div className="valueFeild_Upcomingexam">
-                            <h3></h3>
-                            <h3></h3>
-                            <h3></h3>
+                            <h3> </h3>
+                            <h3> </h3>
+                            <h3> </h3>
                         </div>
                         <div className="Values_Upcomingexam">
                             <h3>&nbsp;</h3>
