@@ -43,7 +43,6 @@
   display: flex;
   width: 30%;
   flex-direction: row;
-  margin: 20px 100px;
 }
 #Save {
   width: 25%;
