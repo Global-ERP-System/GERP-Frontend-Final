@@ -99,11 +99,17 @@
 @media only screen and (max-width: 1000px) {
   .responsive-side-nav {
     display: block;
+    font-size: small;
   }
   .mobile-hide {
     display: none;
   }
   .community-page-content {
     margin: 0;
+  }
+  .write-post {
+    margin: 15px 5px 5px 5px;
+    padding: 0px;
+    background-color: rgb(245, 245, 245);
   }
 }

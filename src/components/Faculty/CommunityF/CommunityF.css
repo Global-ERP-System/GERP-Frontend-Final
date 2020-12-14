@@ -1,7 +1,7 @@
 /* ------------------Main Box -------------------- */
 .community-page {
-  margin-top: 80px;
   display: flex;
+  margin-top: 80px;
   width: 100vw;
 }
 
@@ -18,9 +18,12 @@
 }
 
 /* ------------------Center Box -------------------- */
+.community-page-content {
+  margin: 0px;
+}
+
 .community-form {
   background: white;
-  margin: 0 10px;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -74,7 +77,7 @@
   font-family: sans-serif;
 }
 .profile-block {
-  background-image: url('https://almashines.s3.dualstack.ap-southeast-1.amazonaws.com/assets/images/cover/487.jpg?v=1575095450');
+  background-image: url("https://almashines.s3.dualstack.ap-southeast-1.amazonaws.com/assets/images/cover/487.jpg?v=1575095450");
   background-size: contain;
 }
 
@@ -96,11 +99,17 @@
 @media only screen and (max-width: 1000px) {
   .responsive-side-nav {
     display: block;
+    font-size: small;
   }
   .mobile-hide {
     display: none;
   }
-  .community-form {
+  .community-page-content {
     margin: 0;
+  }
+  .write-post {
+    margin: 15px 5px 5px 5px;
+    padding: 0px;
+    background-color: rgb(245, 245, 245);
   }
 }

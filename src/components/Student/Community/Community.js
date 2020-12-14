@@ -129,7 +129,10 @@ class Community extends Component {
           />
         </div>
         <div className="community-page-content">
-          <div className="responsive-side-nav mb-1  ">
+          <div
+            className="responsive-side-nav mb-1  "
+            style={{ marginRight: "0" }}
+          >
             <div style={{ display: "flex" }}>
               <NotificationNav
                 className="mt-1 mr-1 mb-1"
@@ -217,6 +220,7 @@ class Community extends Component {
                     <select
                       value={this.state.visibility}
                       onChange={this.handleVisibilityChange}
+                      style={{ width: "150px", overflow: "auto" }}
                     >
                       <option value="Public">Public </option>
                       <option value="ClassMate">Classmates</option>

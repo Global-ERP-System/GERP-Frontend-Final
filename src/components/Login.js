@@ -104,9 +104,8 @@ class Login extends Component {
                       </span>
                     </span>
 
-                    <span className="form-row" style={{ textAlign: "center",marginTop: "2%" }}>
-                    <span className='col'>
-                    <Button
+                    <div style={{ textAlign: "center", marginTop: "2%" }}>
+                      <Button
                         color="danger"
                         size="sm"
                         onClick={() => this.handleClick()}
@@ -114,9 +113,7 @@ class Login extends Component {
                         {" "}
                         Login{" "}
                       </Button>
-                    </span>
-                      
-                    </span>
+                    </div>
                     <hr
                       className="line"
                       style={{ border: "1px dashed grey" }}
@@ -126,36 +123,34 @@ class Login extends Component {
                         Sign in with Google
                       </Link>
                     </span>
-                    <span
-                      className="circle"
-                      style={{
-                        height: "30px",
-                        width: "30px",
-                        borderRadius: "60%",
-                        backgroundColor: "#bbb",
-                        marginLeft: "47%",
-                      }}
-                    >
-                      <span style={{ fontSize: "12px", paddingLeft: "6px" }}>
+                    <div style={{ textAlign: "center", marginBottom: "10px" }}>
+                      <span
+                        style={{
+                          fontSize: "12px",
+                          padding: "5px",
+                          borderRadius: "60%",
+                          backgroundColor: "#bbb",
+                        }}
+                      >
                         OR
                       </span>
-                    </span>
-                    <span className='form-row' style={{ marginLeft: "160px" }}>
-                      Not yet created an account?
-                    </span>
-                    <span className='form-row' style={{ textAlign: "center", marginTop: "4%" }}>
-                    <span className='col'>
-                    <Link
-                        to="/signup"
-                        style={{ color: "white", textDecoration: "none" }}
-                      >
-                        {" "}
-                        <Button type="button" color="danger" size="sm">
-                          Sign Up
-                        </Button>
-                      </Link>
-                    </span>
-                    </span>
+                    </div>
+                    <div style={{ textAlign: "center" }}>
+                      <span style={{}}>Not yet created an account?</span>
+                    </div>
+                    <div style={{ textAlign: "center", marginTop: "4%" }}>
+                      <span>
+                        <Link
+                          to="/signup"
+                          style={{ color: "white", textDecoration: "none" }}
+                        >
+                          {" "}
+                          <Button type="button" color="danger" size="sm">
+                            Sign Up
+                          </Button>
+                        </Link>
+                      </span>
+                    </div>
                   </CardText>
                   <br></br>
                   <span style={{ float: "right", fontSize: "12px" }}>

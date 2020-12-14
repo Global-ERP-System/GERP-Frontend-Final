@@ -5,7 +5,6 @@ import AdNav from "./AdNav";
 import ProfileNav from "./ProfileNav";
 import MyScheduleNav from "./MyScheduleNav";
 
-import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -108,7 +107,7 @@ class Community extends Component {
       <div className="community-page">
         <div
           className="mobile-hide"
-          style={{ height: "100vh", width: "400px" }}
+          style={{ height: "100vh", width: "410px" }}
         >
           <NotificationNav
             className="side-notification-bar ml-2"
@@ -129,8 +128,11 @@ class Community extends Component {
             fluid
           />
         </div>
-        <div>
-          <div className="responsive-side-nav mb-1  ">
+        <div className="community-page-content">
+          <div
+            className="responsive-side-nav mb-1  "
+            style={{ marginRight: "0" }}
+          >
             <div style={{ display: "flex" }}>
               <NotificationNav
                 className="mt-1 mr-1 mb-1"
@@ -165,7 +167,7 @@ class Community extends Component {
             </div>
           </div>
 
-          <Container className="community-form" fluid>
+          <div className="community-form" fluid>
             <h2 className="community-heading">Faculty Community Forum</h2>
             <div className="write-post">
               <form onSubmit={this.handleSubmit}>
@@ -199,7 +201,11 @@ class Community extends Component {
                       />
                       <input
                         className="m-2"
-                        style={{ border: "0px", width: "210px" }}
+                        style={{
+                          border: "0px",
+                          width: "210px",
+                          overflow: "auto",
+                        }}
                         type="file"
                       />
                     </div>
@@ -214,6 +220,7 @@ class Community extends Component {
                     <select
                       value={this.state.visibility}
                       onChange={this.handleVisibilityChange}
+                      style={{ width: "150px", overflow: "auto" }}
                     >
                       <option value="Public">Public </option>
                       <option value="ClassMate">Classmates</option>
@@ -318,7 +325,7 @@ class Community extends Component {
                 );
               })}
             </div>
-          </Container>
+          </div>
         </div>
         <div
           className="mobile-hide"
