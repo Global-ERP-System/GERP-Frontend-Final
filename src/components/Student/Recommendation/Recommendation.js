@@ -28,15 +28,15 @@ export default class Project extends Component {
     render() {
 
         return (
-            <div className="bodyr">
+            <div className="container-md px-3" style={{textAlign: 'center'}}>
                 <br></br>
-                <h1 style={{textAlign:"center"}} className="Heading">Recommendation Badges </h1><br></br>
-                <form onSubmit={this.handlesubmit} style={{ marginTop:'0px' }}>
+                <h1 className="Heading">Recommendation Badges </h1><br></br>
+                <form className='px-3' onSubmit={this.handlesubmit}>
                     <label style={{ fontFamily: 'Pt sans narrow', fontWeight: '700' }}>Username:</label>
-                            <input className="form-control" value={this.state.username} onChange={this.handleusername} required /><br></br>
+                    <input style={{width: '50vh', margin: 'auto'}} className="form-control" value={this.state.username} onChange={this.handleusername} required /><br></br>
                     <label style={{ fontFamily: 'Pt sans narrow', fontWeight: '700' }}>Message:</label>
-                            <input className="form-control" value={this.state.message} onChange={this.handlemessage} /><br></br>
-                        </form>
+                    <input style={{width: '50vh', margin: 'auto'}} className="form-control" value={this.state.message} onChange={this.handlemessage} /><br></br>
+                </form>
 
                    
                 <h4 style={{ fontFamily: 'Pt sans narrow', fontWeight: '700' }}>How strongly do you recommend</h4>
@@ -52,10 +52,10 @@ export default class Project extends Component {
                                 <input type="radio" id="star1" name="rate" value="1" />
                                 <label for="star1" title="text">1 star</label>
                             </div>
-                            <br/><br/><br/>
+                            <br/><br/>
                         <div style={{textAlign:"center"}}>
                     <button className="btn" style={{ color: "white", backgroundColor: '#138808' }}>Submit</button>
-                        </div><br/><br/><br/>
+                        </div><br/><br/>
                
             </div>
         )
