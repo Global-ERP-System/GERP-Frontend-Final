@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import './FeeStructure.css'
 import { DropdownButton, ButtonGroup, Dropdown, Row, Col } from 'react-bootstrap';
-import {MDBFormInline} from 'mdbreact';
 
 export default class FeeStructure extends Component {
     constructor(props) {

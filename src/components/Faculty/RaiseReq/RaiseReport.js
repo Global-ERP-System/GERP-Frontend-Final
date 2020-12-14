@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import RaiseModal from "./RaiseModal";
 
 const RaiseReport = (props) => {
-  const [controls, setControls] = useState("");
+  const [/*controls,*/ setControls] = useState("");
   const inputChangeHandler = (event) => {
     setControls(event.target.value);
   };

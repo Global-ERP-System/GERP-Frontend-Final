@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {BrowserRouter as Router,Route,Link,Switch,Redirect} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import './newChat.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faComment, faPaperPlane, faTimes, faWindowMaximize } from "@fortawesome/free-solid-svg-icons";

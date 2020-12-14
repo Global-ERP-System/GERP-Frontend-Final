@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/no-distracting-elements */
 import React, { Component } from "react";
 import Container from "react-bootstrap/Container";
 export default class NotificationNav extends Component {
@@ -13,7 +14,6 @@ export default class NotificationNav extends Component {
             Notifications
           </h5>
         </div>
-
         <Container
           style={{ listStyleType: "none", backgroundColor: "white" }}
           className=" mb-3"

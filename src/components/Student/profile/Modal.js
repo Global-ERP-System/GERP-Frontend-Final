@@ -1,22 +1,19 @@
 import React, { useState } from 'react';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter,Form,FormGroup,Row,Col,Label,CustomInput,Input,Card } from 'reactstrap';
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Col } from 'reactstrap';
 // import "./Modal.css"
 const Create = (props) => {
-  const {
-    className
-  } = props;
 
   const [modal, setModal] = useState(false);
 
   const toggle = () => setModal(!modal);
 
-  const closeBtn = <a className="close" onClick={toggle}>&times;</a>;
+  const closeBtn = <a href className="close" onClick={toggle}>&times;</a>;
 
   return (
   <div>
     {/* <Button color="primary" onClick={toggle} className="button1" style={{width:'130px',height:'36px'}}>Edit Details</Button> */}
-    <a href="#" className="a_link" onClick={toggle}>
-    <img src="https://image.flaticon.com/icons/png/512/61/61456.png" style={{height:'9%',width:'9%'}}></img>
+    <a href className="a_link" onClick={toggle}>
+    <img alt='' src="https://image.flaticon.com/icons/png/512/61/61456.png" style={{height:'9%',width:'9%'}}></img>
     </a>
     <Modal isOpen={modal} toggle={toggle} contentClassName="profile-modal"   style={{width:'600px'}}>
       <ModalHeader style={{backgroundColor:'#f5f5f5'}} toggle={toggle} close={closeBtn}>Profile</ModalHeader>

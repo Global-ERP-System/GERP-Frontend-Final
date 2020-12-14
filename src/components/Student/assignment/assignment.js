@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {Card,CardTitle,CardText,CardBody,CardHeader,CardFooter,Col, Row} from 'reactstrap';
+import { Row } from 'reactstrap';
 import "./assignment.css";
 
 class Assignment extends Component {

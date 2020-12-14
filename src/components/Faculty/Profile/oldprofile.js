@@ -1,5 +1,5 @@
 import React, { Component } from "react";  
-import { Container, Row, Col, Button,NavLink} from 'reactstrap';
+import { Col, NavLink} from 'reactstrap';
 import avatar from './avatar.png';
 import Popup from 'reactjs-popup';
 
@@ -97,7 +97,7 @@ handleChange({ target }) {
                         
                         {close => (
                         <div>
-                            <a className="close" onClick={close}>
+                            <a href className="close" onClick={close}>
                         &times;
                         </a>
                         </div>
@@ -126,7 +126,7 @@ handleChange({ target }) {
                         
                         {close => (
                         <div>
-                            <a className="close" onClick={close}>
+                            <a href className="close" onClick={close}>
                         &times;
                         </a>
                         </div>

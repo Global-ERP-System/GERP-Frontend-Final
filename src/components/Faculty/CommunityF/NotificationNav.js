@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/no-distracting-elements */
 import React, { Component } from "react";
 import Container from "react-bootstrap/Container";
 export default class NotificationNav extends Component {

@@ -15,7 +15,7 @@ const Study=props=>{
 		files=props.files.map(file=>{
 			return <li>
 				<p>{file}</p>
-				<div><a href='#'>view pdf</a><button><FaDownload /></button></div>
+				<div><a href='#pdf'>view pdf</a><button><FaDownload /></button></div>
 			</li>
 		})
 	}

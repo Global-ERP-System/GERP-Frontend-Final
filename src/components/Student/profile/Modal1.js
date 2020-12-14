@@ -1,10 +1,7 @@
 import React, { useState } from 'react';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter,Form,FormGroup,Row,Col,Label,CustomInput,Input,Card } from 'reactstrap';
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Col, } from 'reactstrap';
 // import "./Modal.css"
 const Create1 = (props) => {
-  const {
-    className
-  } = props;
 
   const [modal, setModal] = useState(false);
 
@@ -14,8 +11,8 @@ const Create1 = (props) => {
 
   return (
   <div>
-    <a href="#" className="a_link" onClick={toggle}>
-    <img src="https://image.flaticon.com/icons/png/512/61/61456.png" style={{height:'9%',width:'9%'}}></img>
+    <a href className="a_link" onClick={toggle}>
+    <img alt='' src="https://image.flaticon.com/icons/png/512/61/61456.png" style={{height:'9%',width:'9%'}}></img>
     </a>
     {/* <Button color="primary" onClick={toggle} className="button1" style={{width:'130px',height:'36px'}}>Edit Details</Button> */}
     <Modal isOpen={modal} toggle={toggle} contentClassName="profile-modal"   style={{width:'600px'}}>

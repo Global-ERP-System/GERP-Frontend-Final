@@ -1,9 +1,7 @@
 import React, { Component } from "react";  
-import { Container, Row, Col, Button,NavLink} from 'reactstrap';
-import avatar from './avatar.png';
-import Popup from 'reactjs-popup';
+import { Row, Col } from 'reactstrap';
 import './profile.css'
-import { MDBFormInline } from "mdbreact";
+
 // import editprofile from './editprofile'
 import Create from "./Modal"
 import Create1 from "./Modal1"
@@ -63,20 +61,20 @@ handleChange({ target }) {
                     <div>
                    
                         <div id="sidebar_image">
-                            <img src="https://scriptshadow.net/wp-content/uploads/2019/08/Screen-Shot-2019-08-13-at-8.09.58-PM.png" style={{ width: '200px', height: '200px', borderRadius: '200%' }}></img>
+                            <img alt='' src="https://scriptshadow.net/wp-content/uploads/2019/08/Screen-Shot-2019-08-13-at-8.09.58-PM.png" style={{ width: '200px', height: '200px', borderRadius: '200%' }}></img>
                         </div>
                         <div id="sidebar_element" style={{ marginTop: '40px' }}>
                             <span  >Angelina Reddy</span>
                         </div>
                         <div id="sidebar_element">
-                            <a href="#" onClick={()=>this.scrollFunc(this.instance1.offsetTop)}>My Profile</a>
+                            <a href="#profile" onClick={()=>this.scrollFunc(this.instance1.offsetTop)}>My Profile</a>
                         </div>
 
                             <div id="sidebar_element">
-                            <a href="#" onClick={()=>this.scrollFunc(this.instance2.offsetTop)}>Educational Qualifications</a>
+                            <a href="#qualifications" onClick={()=>this.scrollFunc(this.instance2.offsetTop)}>Educational Qualifications</a>
                         </div>
                             <div id="sidebar_element">
-                            <a href="#" onClick={()=>this.scrollFunc(this.instance3.offsetTop)}>Experience</a>
+                            <a href="#experience" onClick={()=>this.scrollFunc(this.instance3.offsetTop)}>Experience</a>
                         </div>
                     </div>
 
@@ -93,7 +91,7 @@ handleChange({ target }) {
                                         My Profile
                                         </Col>
                                     <Col sm={2}>
-                                    <a href="#">
+                                    <a href="#profile">
                                         <Create />
                                     </a>
                                     </Col>
@@ -164,7 +162,7 @@ handleChange({ target }) {
                         <Col sm={3} className="image">
                             <div >
                                 <center>
-                                    <img src="https://scriptshadow.net/wp-content/uploads/2019/08/Screen-Shot-2019-08-13-at-8.09.58-PM.png" style={{ width: '230px', height: '230px', alignSelf:"center" }}></img>
+                                    <img alt='' src="https://scriptshadow.net/wp-content/uploads/2019/08/Screen-Shot-2019-08-13-at-8.09.58-PM.png" style={{ width: '230px', height: '230px', alignSelf:"center" }}></img>
                                 </center>
                                 </div>
 

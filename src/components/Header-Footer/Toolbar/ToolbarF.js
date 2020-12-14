@@ -1,10 +1,9 @@
-import React ,{Component}from 'react';
+import React from 'react';
 import DrawerToggleButton from  '../SideDrawer/DrawerToggleButton';
 import './ToolbarF.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBell, faHome, faUser, faBook, faBuilding, faSearch, faComment } from "@fortawesome/free-solid-svg-icons";
-import {BrowserRouter as Router,Route,Link,Switch,Redirect} from 'react-router-dom'
-import CustomChatbot from '../../chat';
+import { faBell, faHome, faUser, faBook, faBuilding } from "@fortawesome/free-solid-svg-icons";
+import { Link } from 'react-router-dom'
 
 import MessageBox from '../newChat';
 
@@ -110,7 +109,7 @@ const toolbar = props => (
                         <div className="dropdown-content" style={{marginLeft:'-480%',width:'250px',height:'400px'}}>
                             <p>
                                 <div id="circle-notify">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg" style={{height:'60px',width:'60px',borderRadius:'120px',margin: '5% -2%'}}></img>  
+                                <img alt='' src="https://upload.wikimedia.org/wikipedia/commons/1/18/Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg" style={{height:'60px',width:'60px',borderRadius:'120px',margin: '5% -2%'}}></img>  
                                 <p style={{width:'155px',height:'70px',marginLeft:'120%',marginTop:'-100%'}}>
                                     <Link className="links" to='/singlepost'>Ajeet posted an update</Link>
                                 </p>
@@ -118,7 +117,7 @@ const toolbar = props => (
                             </p>
                             <p>
                                 <div id="circle-notify">
-                                <img src="https://img1.nickiswift.com/img/gallery/the-untold-truth-of-mark-zuckerbergs-wife-priscilla-chan/intro-1583268905.jpg" style={{height:'60px',width:'60px',borderRadius:'120px',margin: '5% -2%'}}></img>  
+                                <img alt='' src="https://img1.nickiswift.com/img/gallery/the-untold-truth-of-mark-zuckerbergs-wife-priscilla-chan/intro-1583268905.jpg" style={{height:'60px',width:'60px',borderRadius:'120px',margin: '5% -2%'}}></img>  
                                 <p style={{width:'155px',height:'70px',marginLeft:'120%',marginTop:'-100%'}}>
                                     <Link className="links" to='/singlepost'>Renu changed her profile</Link>
                                 </p>
@@ -126,7 +125,7 @@ const toolbar = props => (
                             </p>
                             <p>
                                 <div id="circle-notify">
-                                <img src="https://www.manifoldkerala.com/wp-content/uploads/2018/06/buk4.jpg" style={{height:'60px',width:'60px',borderRadius:'120px',margin: '5% -2%'}}></img>  
+                                <img alt='' src="https://www.manifoldkerala.com/wp-content/uploads/2018/06/buk4.jpg" style={{height:'60px',width:'60px',borderRadius:'120px',margin: '5% -2%'}}></img>  
                                 <p style={{width:'155px',height:'70px',marginLeft:'120%',marginTop:'-100%'}}>
                                     <Link className="links" to='/singlepost'>New Study Material added</Link>
                                 </p>
@@ -134,7 +133,7 @@ const toolbar = props => (
                             </p>
                             <p>
                                 <div id="circle-notify">
-                                <img src="https://pbs.twimg.com/profile_images/864282616597405701/M-FEJMZ0.jpg" style={{height:'60px',width:'60px',borderRadius:'120px',margin: '5% -2%'}}></img>  
+                                <img alt='' src="https://pbs.twimg.com/profile_images/864282616597405701/M-FEJMZ0.jpg" style={{height:'60px',width:'60px',borderRadius:'120px',margin: '5% -2%'}}></img>  
                                 <p style={{width:'155px',height:'70px',marginLeft:'120%',marginTop:'-100%'}}>
                                     <Link className="links" to='/singlepost'>Sudipto published his Research Paper</Link>
                                 </p>

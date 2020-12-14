@@ -51,7 +51,7 @@ class MainComponent extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isLoggedIn: true,
+      isLoggedIn: false,
       facultyLoggedIn: false,
     };
     this.onButtonClick = this.onButtonClick.bind(this);

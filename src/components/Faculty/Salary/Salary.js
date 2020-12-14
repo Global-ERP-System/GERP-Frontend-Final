@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Table } from "reactstrap";
-import Container from "react-bootstrap/Container";
 import "./Salary.css";
 
 class Salary extends Component {
