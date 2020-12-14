@@ -1,46 +1,41 @@
-h1 {
-  font-family: sans-serif;
-  font-size: 40px;
+.RelationFbody {
+  margin: 100px 5% 0 5%;
 }
 
-.bodyrelation {
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
-.Relationbox {
+.relationFbox {
   text-align: center;
   background-color: whitesmoke;
   display: block;
+  padding-bottom: 20px;
 }
-.bodyrelation label {
+.relationFbox label {
   font-family: 'Pt sans narrow', sans-serif;
   font-weight: 700;
+  width: 100px;
+  margin: 0 15px 0 15px;
+}
+
+.relationInputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10px 10px;
+}
+.relationInputs input {
+  flex-grow: 1;
 }
 
 input[type='text'],
 select {
   padding: 12px 20px;
   display: inline-block;
+  width: 500px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
 }
-
-input[type='submit'] {
-  background-color: #ff5200;
-  color: white;
-  padding: 14px 20px;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-input[type='submit']:hover {
-  background-color: #c44104;
-}
-
-#Your_relation1 {
+.Your_relation1 {
   background-color: whitesmoke;
   height: 4em;
   margin-top: 5px;
