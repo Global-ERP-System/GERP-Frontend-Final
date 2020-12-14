@@ -1,55 +1,49 @@
-.Body{
-    margin-top:-10px;
-    width:100%;
-    margin-right:10%;
-    margin-left:10%;
-
+.Body {
+  margin-top: -10px;
+  width: 100%;
 }
 
 #title {
-    text-align: initial;
-    font-family: 'Montserrat',sans-serif;
-    font-weight: 700;
+  text-align: initial;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
 }
-
 
 .sidebar {
-    background-color: #AEB6BF;
-    text-align: center;
-    position: fixed;
+  background-color: #aeb6bf;
+  text-align: center;
 }
 #sidebar_element {
-    margin-top: 25px;
-    text-decoration: none;
+  margin-top: 25px;
+  text-decoration: none;
 }
-#sidebar_element a{
-    margin-top: 25px;
-    text-decoration: none;
-}
-
-#sidebar_image{
-    margin-top:20px;
+#sidebar_element a {
+  margin-top: 25px;
+  text-decoration: none;
 }
 
-.right_Sec{
+#sidebar_image {
+  margin-top: 20px;
+}
 
+.right_Sec {
 }
 .my_profile1 {
-    padding-right: 20px;
-    padding-left: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 .myprofileelement {
-    margin-top:25px;
-    padding-left:20px;
-    padding-right:20px;
+  margin-top: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
-.image{
-    align-self:center;
-    width:230px;
-    height:230px;
-    padding:20px;
+.image {
+  align-self: center;
+  width: 230px;
+  height: 230px;
+  padding: 20px;
 }
 .right_Sec h2 {
-    padding-top:20px;
-    background-color: whitesmoke;
+  padding-top: 20px;
+  background-color: whitesmoke;
 }
