@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {Form,FormGroup,CustomInput,Label,Row,Col,Input,Button} from 'reactstrap';
+import {Form,FormGroup,CustomInput,Label,Row,Col,Input} from 'reactstrap';
 import './intern.css'
 
 class Intern extends Component {

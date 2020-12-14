@@ -1,12 +1,18 @@
-
 .bodyintern {
-    margin-left: 22%;
-    margin-right: 22%;
+  margin-left: 22%;
+  margin-right: 22%;
 }
-.internrow{
-    padding-top:10px;
+.internrow {
+  padding-top: 10px;
 }
-    .internrow label {
-        font-family: "Pt sans narrow",sans-serif;
-        font-weight:400;
-    }
+.internrow label {
+  font-family: 'Pt sans narrow', sans-serif;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 800px) {
+  .bodyintern {
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+}
