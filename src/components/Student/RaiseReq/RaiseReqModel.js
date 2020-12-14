@@ -40,8 +40,8 @@ export default class RaiseReqModel extends Component {
         </Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                        <div className="container">
-                            <form onSubmit={this.handlesubmit}>
+                        <div className="container-md" style={{textAlign: 'center'}}>
+                            <form onSubmit={this.handlesubmit} style={{padding: '30px'}}>
                                 <label className="mx-3 my-3">From Date</label>
                                 <input type="date" value={this.state.fromdate} onChange={this.handlefromdate} /><br></br>
                                 <label className="mx-3 my-3">To Date</label>
@@ -49,7 +49,7 @@ export default class RaiseReqModel extends Component {
                                 <label className="mx-3 my-3">Reason of Leave</label>
                                 <input type="text" value={this.state.leave}
                                     onChange={this.handleleave} /><br></br>
-                                <input className="btn btn-success mx-3" type="submit" value="Submit" style={{width:'50%'}} />
+                                <input className="btn btn-success my-3" type="submit" value="Submit" style={{width:'50%'}} />
                             </form>
                         </div>
                     </Modal.Body>

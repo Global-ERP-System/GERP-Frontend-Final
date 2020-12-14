@@ -23,13 +23,13 @@ export default class RaiseReq extends Component {
         let addOtherDocument=() => this.setState({addOtherDocument : false})
 
         return (
-            <div style={{marginLeft:'40%', marginBottom:'10%', marginTop:'10%', width:'80%'}}>
+            <div className='container-md' style={{textAlign: 'center'}}>
                 <h1>Raise a Request </h1>
-                <button className="btn btn-primary my-3 mx-2 w-25 p-3"  onClick={() =>
+                <button  className="btn btn-primary my-3 mx-2 p-3 w-50"  onClick={() =>
                 this.setState({addLeaveApplication:true})}>Leave Application</button><br></br>
-                <button className="btn btn-primary my-3 mx-2 w-25 p-3"onClick={() =>
+                <button  className="btn btn-primary my-3 mx-2 p-3 w-50"onClick={() =>
                 this.setState({addCertificate:true})}>Certificate</button><br></br>
-                <button className="btn btn-primary my-3 mx-2 w-25 p-3" onClick={() =>
+                <button  className="btn btn-primary my-3 mx-2 p-3 w-50" onClick={() =>
                 this.setState({addOtherDocument:true})}>Other Document</button><br></br>
                 <RaiseReqModel 
                 show={this.state.addLeaveApplication}
