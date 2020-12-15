@@ -109,27 +109,39 @@ class Community extends Component {
           className="mobile-hide"
           style={{ height: "100vh", width: "410px" }}
         >
-          <NotificationNav
-            className="side-notification-bar ml-2"
-            style={{
-              width: "18vw",
-              backgroundColor: "rgb(245,245,245)",
-            }}
-            fluid
-          />
-          <AdNav
-            className="side-notification-bar ml-2"
-            style={{
-              width: "18vw",
-              height: "38%",
-              bottom: "2px",
-              backgroundColor: "rgb(245,245,245)",
-            }}
-            fluid
-          />
+          <div className="side-notification-bar" style={{ left: "0" }}>
+            <div
+              style={{
+                overflow: "auto",
+                display: "flex",
+                flexDirection: "column",
+                height: "100vh",
+              }}
+            >
+              <NotificationNav
+                className=" ml-1 mb-2"
+                style={{
+                  width: "18vw",
+                  backgroundColor: "rgb(245,245,245)",
+                }}
+                fluid
+              />
+              <AdNav
+                className=" ml-1 mt-2 "
+                style={{
+                  width: "18vw",
+                  marginBottom: "120px",
+                  minHeight: "200px",
+                  bottom: "2px",
+                  backgroundColor: "rgb(245,245,245)",
+                }}
+                fluid
+              />
+            </div>
+          </div>
         </div>
         <div className="community-page-content">
-          <div
+          {/* <div
             className="responsive-side-nav mb-1  "
             style={{ marginRight: "0" }}
           >
@@ -165,7 +177,7 @@ class Community extends Component {
                 }}
               />
             </div>
-          </div>
+          </div>*/}
 
           <div className="community-form" fluid>
             <h2 className="community-heading">Community Forum</h2>
@@ -331,24 +343,39 @@ class Community extends Component {
           className="mobile-hide"
           style={{ width: "430px", height: "100vh" }}
         >
-          <ProfileNav
-            className="side-notification-bar mr-2"
-            style={{
-              width: "18vw",
-              right: "0px",
-              backgroundColor: "rgb(245,245,245)",
-            }}
-          />
-          <MyScheduleNav
-            className="side-notification-bar mr-2 "
-            style={{
-              width: "18vw",
-              height: "38%",
-              bottom: "2px",
-              right: "0px",
-              backgroundColor: "rgb(245,245,245)",
-            }}
-          />
+          <div
+            className="side-notification-bar"
+            style={{ right: "0", alignItems: "flex-end" }}
+          >
+            <div
+              style={{
+                overflow: "auto",
+                display: "flex",
+                flexDirection: "column",
+                height: "100vh",
+              }}
+            >
+              <ProfileNav
+                className="  mb-2"
+                style={{
+                  width: "18vw",
+                  right: "0px",
+                  backgroundColor: "rgb(245,245,245)",
+                }}
+              />
+              <MyScheduleNav
+                className="  mt-2 "
+                style={{
+                  width: "18vw",
+                  marginBottom: "120px",
+                  minHeight: "200px",
+                  bottom: "2px",
+                  right: "0px",
+                  backgroundColor: "rgb(245,245,245)",
+                }}
+              />
+            </div>
+          </div>
         </div>
       </div>
     );

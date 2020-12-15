@@ -3,12 +3,16 @@
   display: flex;
   margin-top: 80px;
   width: 100vw;
+  justify-content: space-between;
 }
 
 /*-------------------left side box---------------*/
 
 .side-notification-bar {
-  float: left;
+  overflow: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
   position: fixed;
 }
 
