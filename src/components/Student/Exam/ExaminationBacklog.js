@@ -43,8 +43,8 @@ export default class Examination extends Component {
                         </div>
 
                     </div>
-                <ExaminationGrading></ExaminationGrading>
-                <ExaminatioUpcoming></ExaminatioUpcoming>
+                    <ExaminationGrading></ExaminationGrading>
+                    <ExaminatioUpcoming></ExaminatioUpcoming>
                 </div>
             </div>
         )
