@@ -102,7 +102,7 @@ class Intern extends Component {
 
                 <FormGroup style={{display:'inline-block',alignSelf:'center'}}>
                            
-                     <button style={{ color: "white", backgroundColor: 'blue', paddingLeft:"0px",paddingRight:"0px" }} className="btn">Upload Docs</button> &nbsp;&nbsp;&nbsp; 
+                     <button style={{ color: "white", backgroundColor: 'blue', padding:"7px" }} className="btn">Upload Docs</button> &nbsp;&nbsp;&nbsp; 
         
 
                     <button style={{ color: "white", backgroundColor: '#138808' }} type="submit" className="btn">Submit</button>

@@ -32,12 +32,12 @@ export default class Certificate extends Component {
         </Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                        <div className="container">
-                            <form onSubmit={this.handlesubmit}>
+                        <div className="container-md">
+                            <form onSubmit={this.handlesubmit} style={{textAlign: 'center'}}>
                                 <label className="mx-3 my-3">Name of Document</label>
-                                <input type="text" value={this.state.documentName}
+                                <input style={{width: 'auto'}} type="text" value={this.state.documentName}
                                     onChange={this.handlename} /><br></br>
-                                <input className="btn btn-success mx-3" type="submit" value="Submit" style={{width:'50%'}} />
+                                <input className="btn btn-success mx-3" type="submit" value="Submit" style={{width:'50%', marginTop: '20px'}} />
                             </form>
                         </div>
                     </Modal.Body>

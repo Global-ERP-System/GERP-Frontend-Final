@@ -3,7 +3,6 @@
 // then add this path in app.js to use bootstrap
 
 import React, { Component } from 'react'
-import Addproject from './Addproject'
 import { Button } from 'react-bootstrap';
 import './Project.css'
 
@@ -57,23 +56,14 @@ export default class Project extends Component {
                         <div className="form-group" style={{ display: 'inline' }}>
                             <input style={{ width: '100%' }} type="url" value={this.state.link} onChange={this.handlelink} required />
                             <div style={{ textAlign: "center", paddingTop: '3px', paddingBottom: '5px', fontFamily: 'Pt sans narrow ', fontWeight: '700' }}>or</div>
-                            <input style={{ width: '100%', fontFamily: 'Montserrat ', fontWeight: '400' }} id="chooseFile" type="file" value={this.state.chooseFile}
+                            <input style={{ width: '100%', fontFamily: 'Montserrat ', fontWeight: '400', padding: '2px' }} id="chooseFile" type="file" value={this.state.chooseFile}
                                 onChange={this.handlechooseFile} required />
                         </div>
                         <Button style={{ margin: 'auto', marginTop: '40px', display: 'block', paddingTop: '10px', background: '#138808' }} onClick={() => this.setState({ addProject: true })}>Add Project</Button>
                     </form>
                 </div>
-                <Addproject
-                    show={this.state.addProject}
-                    onHide={addProject} />
             </div>
         )
     }
 }
 
-// submit ke place pr save aayega
-// Save Button Chota krna hai -- DONE
-// Close button hatana hai--DONE
-// +Add Project button chota krna hai--DONE
-// label ke niche ka margin hatana hai
-//className="btn btn-primary my-3 mx-2 w-25 p-3"--NOT NEEDED
