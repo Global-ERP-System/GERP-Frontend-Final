@@ -1,13 +1,19 @@
+.Research {
+  min-height: 100vh;
+  position: relative;
+  top: -8px;
+}
+
 .Research div {
   background-image: url(../../../assets/researchBackground.jpg);
   background-size: cover;
-  width: 80%;
   margin: 0 auto;
-  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
   padding: 1rem;
-  margin-top: 100px;
 }
-
 .Research div h1 {
   width: 70%;
   margin: 0 auto;
@@ -19,7 +25,7 @@
 }
 .Research div h2 {
   width: 70%;
-  margin: 10px auto;
+  margin: 0 auto;
   text-align: right;
   color: white;
   font-family: "Montserrat", sans-serif;
@@ -28,9 +34,11 @@
 .Research form {
   text-align: center;
   border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   padding: 30px 0;
-  width: 50%;
-  margin: 0 auto;
+  overflow: hidden;
   margin-top: 50px;
 }
 .Research p {
@@ -39,8 +47,11 @@
   color: white;
   letter-spacing: 0.1rem;
 }
-.Research input {
+.Research [type="file"] {
   margin-top: 15px;
+  overflow: auto;
+  max-width: 250px;
+
   border: 2px white solid;
   font-weight: 700;
   padding: 0.3rem;
@@ -58,16 +69,8 @@
   letter-spacing: 0.1rem;
 }
 
-@media screen and (max-width: 800px) {
-  .Research form input {
-    margin-top: 0px;
-    width: 240px;
-  }
-  .Research div {
-    width: 90%;
-  }
-  .Research form {
-    margin-top: 0px;
-    padding-top: 0px;
+@media screen and (max-width: 360px) {
+  .Research [type="file"] {
+    align-self: flex-start;
   }
 }
