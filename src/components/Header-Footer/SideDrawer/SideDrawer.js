@@ -17,6 +17,12 @@ const sideDrawer = (props) => {
       <p onClick={props.hide}>
         <Link to="/intern">Internships</Link>
       </p>
+      <p onClick={props.hide} className='home-post'>
+        <Link to="/profile">My Profile</Link>
+      </p>
+      <p onClick={props.hide} className='home-post'>
+        <Link to="/Allposts">Notifications</Link>
+      </p>
     </nav>
   );
 };
