@@ -12,11 +12,11 @@ const Create = (props) => {
   return (
   <div>
     <Button color="primary" onClick={toggle} className="button1" style={{width:'130px',height:'36px'}}>Edit Details</Button>
-    <Modal isOpen={modal} toggle={toggle} contentClassName="profile-modal"   style={{width:'600px'}}>
+    <Modal isOpen={modal} toggle={toggle} contentClassName="profile-modal">
       <ModalHeader style={{backgroundColor:'#f5f5f5'}} toggle={toggle} close={closeBtn}>Profile</ModalHeader>
       <ModalBody>
       
-            <div style={{height:'360px',width:'228px',float:'left'}}>
+            <div style={{width:'100%',float:'left'}}>
 
                 {/* <label style={{fontWeight:'bold',fontSize:'14px'}}>Registration No.</label>
                 <br></br>
@@ -42,7 +42,7 @@ const Create = (props) => {
 
             </div>
 
-            <div style={{height:'360px',width:'228px',float:'left',marginLeft:'10px'}}>
+            <div style={{width:'100%',float:'left'}}>
 
             {/* <label style={{fontWeight:'bold',fontSize:'14px'}}>Roll No.</label>
                 <br></br>

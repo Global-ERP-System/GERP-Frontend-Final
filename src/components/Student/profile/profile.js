@@ -56,15 +56,15 @@ class Profile extends Component {
 
 
         return (
-            <Row className='Body'>
+            <Row className='Body' style={{margin: '0 0'}}>
                 <Col sm={3} className="sidebar">
-                    <div>
+                    <div style={{marginBottom: '15px'}}>
 
                         <div id="sidebar_image">
                             <img alt='' src="https://scriptshadow.net/wp-content/uploads/2019/08/Screen-Shot-2019-08-13-at-8.09.58-PM.png" style={{ width: '200px', height: '200px', borderRadius: '200%' }}></img>
                         </div>
                         <div id="sidebar_element" style={{ marginTop: '40px' }}>
-                            <span  >Angelina Reddy</span>
+                            <span id='name-2'>Angelina Reddy</span>
                         </div>
                         <div id="sidebar_element">
                             <a href="#profile" onClick={() => this.scrollFunc(this.instance1.offsetTop)}>My Profile</a>
@@ -82,7 +82,7 @@ class Profile extends Component {
                 </Col>
 
 
-                <Col sm={9} className="right_Sec" >
+                <Col  sm={9} className="right_Sec" style={{padding: '0px 0px'}}>
                     <div className="my_Profile" ref={(e) => { this.instance1 = e }}>
                         <center>
                             <h2>
@@ -299,13 +299,6 @@ class Profile extends Component {
 
 
                                 </div>
-                            </Col>
-                            <Col sm={3} className="image">
-                                <div >
-                                    <center>
-                                    </center>
-                                </div>
-
                             </Col>
                         </Row>
                     </div>

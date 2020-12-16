@@ -52,7 +52,7 @@ class MainComponent extends Component {
     super(props);
     this.state = {
       isLoggedIn: false,
-      facultyLoggedIn: false,
+      facultyLoggedIn: true,
     };
     this.onButtonClick = this.onButtonClick.bind(this);
     this.onButtonClickStaff = this.onButtonClickStaff.bind(this);

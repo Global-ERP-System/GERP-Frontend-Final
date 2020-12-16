@@ -15,11 +15,11 @@ const Create1 = (props) => {
     <img alt='' src="https://image.flaticon.com/icons/png/512/61/61456.png" style={{height:'9%',width:'9%'}}></img>
     </a>
     {/* <Button color="primary" onClick={toggle} className="button1" style={{width:'130px',height:'36px'}}>Edit Details</Button> */}
-    <Modal isOpen={modal} toggle={toggle} contentClassName="profile-modal"   style={{width:'600px'}}>
+    <Modal isOpen={modal} toggle={toggle} contentClassName="profile-modal">
       <ModalHeader style={{backgroundColor:'#f5f5f5'}} toggle={toggle} close={closeBtn}>Qualification</ModalHeader>
       <ModalBody>
       
-            <div style={{height:'200px',width:'228px',float:'left'}}>
+            <div style={{height:'200px',width:'100%',float:'left'}}>
 
                 <label style={{fontWeight:'bold',fontSize:'14px'}}>Senior Secondary School</label>
                 <br></br>
@@ -33,7 +33,7 @@ const Create1 = (props) => {
 
             </div>
 
-            <div style={{height:'200px',width:'228px',float:'left',marginLeft:'10px'}}>
+            <div style={{height:'200px',width:'100%',float:'left'}}>
 
             <label style={{fontWeight:'bold',fontSize:'14px'}}>Any other/Ug</label>
                 <br></br>

@@ -81,7 +81,7 @@
   font-family: sans-serif;
 }
 .profile-block {
-  background-image: url("https://almashines.s3.dualstack.ap-southeast-1.amazonaws.com/assets/images/cover/487.jpg?v=1575095450");
+  background-image: url('https://almashines.s3.dualstack.ap-southeast-1.amazonaws.com/assets/images/cover/487.jpg?v=1575095450');
   background-size: contain;
 }
 
@@ -100,7 +100,7 @@
   align-self: center;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 800px) {
   .responsive-side-nav {
     display: block;
     font-size: small;
