@@ -1,6 +1,6 @@
 import React from "react";
 import DrawerToggleButton from "../SideDrawer/DrawerToggleButton";
-import "./Toolbar.css";
+import "./ToolbarF.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBell,
@@ -33,28 +33,30 @@ const toolbar = (props) => (
           <FontAwesomeIcon icon={faBook} style={{ marginRight: "0.25em" }} />{" "}
           Academics
         </span>
-        <div className="dropdown-content" style={{ cursor: "pointer" }}>
-          <div id="triangle-up"></div>
-          <p style={{ marginTop: "13px" }}>
-            <Link className="links" to="/attendance">
-              Attendance
-            </Link>
-          </p>
-          <p>
-            <Link className="links" to="/timetable">
-              Time Table
-            </Link>
-          </p>
-          <p>
-            <Link className="links" to="/exam">
-              About Exam
-            </Link>
-          </p>
-          <p>
-            <Link className="links" to="/fee">
-              Fee Details
-            </Link>
-          </p>
+        <div className="dropdown-content">
+          <div>
+            <div id="triangle-up"></div>
+            <p style={{ marginTop: "13px" }}>
+              <Link className="links" to="/attendance">
+                Attendance
+              </Link>
+            </p>
+            <p>
+              <Link className="links" to="/timetable">
+                Time Table
+              </Link>
+            </p>
+            <p>
+              <Link className="links" to="/exam">
+                About Exam
+              </Link>
+            </p>
+            <p>
+              <Link className="links" to="/fee">
+                Fee Details
+              </Link>
+            </p>
+          </div>
         </div>
       </div>
       <div className="dropdown">
@@ -66,32 +68,34 @@ const toolbar = (props) => (
           Campus
         </span>
         <div className="dropdown-content">
-          <div id="triangle-up" style={{ marginTop: "-27px" }}></div>
-          <p style={{ marginTop: "13px" }}>
-            <Link className="links" to="/assignment">
-              Assignment
-            </Link>
-          </p>
-          <p>
-            <Link className="links" to="/project">
-              Projects
-            </Link>
-          </p>
-          <p>
-            <Link className="links" to="/study">
-              Study Material
-            </Link>
-          </p>
-          <p>
-            <Link className="links" to="/research">
-              Research Paper
-            </Link>
-          </p>
+          <div>
+            <div id="triangle-up"></div>
+            <p style={{ marginTop: "13px" }}>
+              <Link className="links" to="/assignment">
+                Assignment
+              </Link>
+            </p>
+            <p>
+              <Link className="links" to="/project">
+                Projects
+              </Link>
+            </p>
+            <p>
+              <Link className="links" to="/study">
+                Study Material
+              </Link>
+            </p>
+            <p>
+              <Link className="links" to="/research">
+                Research Paper
+              </Link>
+            </p>
+          </div>
         </div>
       </div>
       <div className="dropdown">
-        <Link to="/profile">
-          <FontAwesomeIcon icon={faUser} style={{ marginRight: "0.25em" }} />{" "}
+        <Link to="/profile" style={{ color: "white" }}>
+          <FontAwesomeIcon icon={faUser} style={{ marginRight: "0.25em" }} />
           Profile
         </Link>
       </div>
