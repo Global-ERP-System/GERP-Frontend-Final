@@ -36,9 +36,11 @@ export default class Examination extends Component {
                             <h3>Backlogs </h3>
                         </div>
                         <div className="Values_Backlog">
-                            <h3>2 </h3>
+                            <h3>1 </h3>
                             <h3>DBMS </h3>
-                            <h3>No </h3>
+                            <div className="alignment">
+                                <h3>No </h3>
+                            </div>
 
                         </div>
 

@@ -21,7 +21,7 @@ export default class Examination extends Component {
                 <div className="Main_Grading">
                     <div className="Mainbox_Grading">
                         <div className="Header_Grading">
-                            <h2 style={{textAlign:"center"}}>Grading</h2>
+                            <h2 style={{ textAlign: "center" }}>Grading</h2>
                         </div>
                         <div className="valueFeild_Grading">
                             <select value={this.state.visibility} onChange={this.handleVisibilityChange} id="Visibility2">
@@ -34,7 +34,9 @@ export default class Examination extends Component {
                         <div className="Values_Grading">
                             <h3>1</h3>
                             <h3>DBMS</h3>
-                            <h3>no</h3>
+                            <div className="alignment">
+                                <h3>No</h3>
+                            </div>
 
                         </div>
 

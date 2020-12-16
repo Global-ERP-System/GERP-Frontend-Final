@@ -1,6 +1,6 @@
 .Main_Backlog {
   width: 100%;
-  margin: 0px 0px;
+  margin: 0px ;
 }
 .Mainbox_Backlog,
 .Mainbox_Grading,
@@ -9,7 +9,8 @@
   font-weight: 700;
   border: 2px solid black;
   background-color: beige;
-  width: 60%;
+  width: 80%;
+  height: 300px;
   margin: 20px auto;
 }
 .Header_Backlog h2,
@@ -30,6 +31,7 @@
   flex-direction: row;
   /* border: 2px solid lightblue; */
   background-color: lightblue;
+  margin: 5px 0px 50px 0px;
 }
 #Visibility2 {
   margin: 0px 5px 0px 25px;
@@ -37,7 +39,7 @@
 .valueFeild_Backlog h3,
 .valueFeild_Grading h3,
 .valueFeild_Upcomingexam h3 {
-  margin: 0px 0px 0px 210px;
+  margin: 0px 130px 0px 210px;
 }
 .Values_Backlog,
 .Values_Grading,
@@ -46,13 +48,15 @@
   font-family: 'Montserrat';
   font-weight: 400;
   flex-direction: row;
-  border: 2px solid lightblue;
   background-color: beige;
 }
 .Values_Backlog h3,
 .Values_Grading h3,
 .Values_Upcomingexam h3 {
-  margin: 0px 161px 0px 100px;
+  margin: 0px 450px 0px 50px;
+}
+.alignment h3{
+  margin: 0px 0px 0px -80px;
 }
 @media screen and (max-width: 1000px) {
   .Mainbox_Backlog,
