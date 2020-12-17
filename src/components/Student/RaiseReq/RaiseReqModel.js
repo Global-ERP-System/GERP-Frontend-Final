@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Modal, Button } from 'react-bootstrap';
+import MainModal from '../../Alert-Modal/submit-modal';
 
 export default class RaiseReqModel extends Component {
     constructor(props) {
@@ -49,7 +50,7 @@ export default class RaiseReqModel extends Component {
                                 <label className="mx-3 my-3">Reason of Leave</label>
                                 <input style={{width: 'auto'}} type="text" value={this.state.leave}
                                     onChange={this.handleleave} /><br></br>
-                                <input className="btn btn-success my-3" type="submit" value="Submit" style={{width:'50%'}} />
+                                <MainModal />
                             </form>
                         </div>
                     </Modal.Body>

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import RaiseModal from "./RaiseModal";
+import MainModal from '../../Alert-Modal/submit-modal';
 
 const RaiseLeave = (props) => {
   const [controls, setControls] = useState({
@@ -55,7 +56,7 @@ const RaiseLeave = (props) => {
             onChange={(event) => inputChangeHandler(event, "Reason of Leave")}
           />
         </div>
-        <button>Submit</button>
+        <MainModal />
       </form>
     </RaiseModal>
   );

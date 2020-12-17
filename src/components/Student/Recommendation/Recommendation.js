@@ -4,6 +4,7 @@
 
 import React, { Component } from 'react'
 import './Recommendation.css'
+import MainModal from '../../Alert-Modal/submit-modal'
 
 export default class Project extends Component {
     constructor(props) {
@@ -54,7 +55,7 @@ export default class Project extends Component {
                             </div>
                             <br/><br/>
                         <div style={{textAlign:"center"}}>
-                    <button className="btn" style={{ color: "white", backgroundColor: '#138808' }}>Submit</button>
+                    <MainModal />
                         </div><br/><br/>
                
             </div>

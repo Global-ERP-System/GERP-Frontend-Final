@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import {Form,FormGroup,CustomInput,Label,Row,Col,Input} from 'reactstrap';
 import './intern.css'
+import MainModal from '../../Alert-Modal/submit-modal';
 
 class Intern extends Component {
     render() {
@@ -102,10 +103,10 @@ class Intern extends Component {
 
                 <FormGroup style={{display:'inline-block',alignSelf:'center'}}>
                            
-                     <button style={{ color: "white", backgroundColor: 'blue', padding:"7px" }} className="btn">Upload Docs</button> &nbsp;&nbsp;&nbsp; 
+                     <button style={{ color: "white", backgroundColor: 'blue', padding:"7px" }} className="btn">Upload Docs</button>
         
 
-                    <button style={{ color: "white", backgroundColor: '#138808' }} type="submit" className="btn">Submit</button>
+                    <MainModal />
                     
                 </FormGroup>
                 </div>

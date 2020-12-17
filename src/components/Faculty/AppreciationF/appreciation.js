@@ -2,6 +2,7 @@ import React from "react";
 import "./appreciation.css";
 import { Card, CardBody, CardTitle } from "reactstrap";
 import BadgeClass from "./badge.js";
+import MainModal from '../../Alert-Modal/submit-modal'
 
 class Appreciation extends React.Component {
   render() {
@@ -39,7 +40,7 @@ class Appreciation extends React.Component {
               <br />
 
               <div className="SubmitButton">
-                <button className="btn btn-primary">Submit</button>
+                <MainModal />
               </div>
             </form>
           </CardBody>

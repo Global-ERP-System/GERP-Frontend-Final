@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Modal, Button } from 'react-bootstrap';
+import MainModal from '../../Alert-Modal/submit-modal';
 
 export default class Certificate extends Component {
     constructor(props) {
@@ -37,7 +38,7 @@ export default class Certificate extends Component {
                                 <label className="mx-3 my-3">Name of Certificate</label>
                                 <input style={{width: 'auto'}} type="text" value={this.state.certificateName}
                                     onChange={this.handlename} /><br></br>
-                                <input className="btn btn-success mx-3" type="submit" value="Submit" style={{width:'50%', marginTop: '20px'}}/>
+                                <MainModal/>
                             </form>
                         </div>
                     </Modal.Body>

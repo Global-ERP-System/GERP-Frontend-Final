@@ -2,6 +2,8 @@ import React from "react";
 import { Row, Col, ButtonToggle } from "reactstrap";
 import Table from "react-bootstrap/Table";
 import "./Relation.css";
+import MainModal from '../../Alert-Modal/submit-modal';
+import MainModal2 from '../../Alert-Modal/block-modal';
 
 const Relation = (props) => {
   let list = [];
@@ -15,8 +17,7 @@ const Relation = (props) => {
             <td className="SearchPeople">Batch</td>
             <td className="SearchPeople">Discipline</td>
             <td className="SearchPeople">
-              {" "}
-              <ButtonToggle color="danger">Block</ButtonToggle>{" "}
+              <MainModal2 />
             </td>
             <td>
               {" "}
@@ -78,14 +79,7 @@ const Relation = (props) => {
         </div>
       </Col>
         </Row>
-        <button
-          style={{ color: "white", backgroundColor: "#138808" }}
-          type="submit"
-          value="Search"
-          className="btn"
-        >
-          Submit
-        </button>
+        <MainModal />
         <br />
       </div>
       <br />

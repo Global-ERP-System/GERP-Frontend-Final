@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import RaiseModal from "./RaiseModal";
+import MainModal from '../../Alert-Modal/submit-modal';
 
 const RaiseReport = (props) => {
   const [/*controls,*/ setControls] = useState("");
@@ -22,7 +23,7 @@ const RaiseReport = (props) => {
           <label>Name of Report</label>
           <input type="text" onChange={inputChangeHandler} />
         </div>
-        <button>Submit</button>
+        <MainModal />
       </form>
     </RaiseModal>
   );

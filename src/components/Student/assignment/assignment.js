@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Row } from 'reactstrap';
 import "./assignment.css";
+import '../../Alert-Modal/submit-modal'
+import MainModal from "../../Alert-Modal/submit-modal";
 
 class Assignment extends Component {
     render() {
@@ -48,9 +50,8 @@ class Assignment extends Component {
                                                     <Row>
                         <input style={{ border: '2px solid black', fontFamily:'Montserrat ', fontWeight:'400'}} type="link" className="form-control" placeholder="Add Link"/>
                                                 </Row>
-                                                <br/>
                                 <div style={{textAlign:"center"}}>
-                                    <button type="submit" className="btn" style={{background:'#138808', color:'white'}}>Submit</button>
+                                    <MainModal />
                                 </div>
                 </form>
                 </div>

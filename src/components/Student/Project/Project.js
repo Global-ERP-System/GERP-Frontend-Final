@@ -3,8 +3,8 @@
 // then add this path in app.js to use bootstrap
 
 import React, { Component } from 'react'
-import { Button } from 'react-bootstrap';
 import './Project.css'
+import MainModal from '../../Alert-Modal/submit-modal';
 
 export default class Project extends Component {
     constructor(props) {
@@ -39,7 +39,6 @@ export default class Project extends Component {
 
     render() {
 
-        let addProject = () => this.setState({ addProject: false })
 
         return (
             <div className="project">
@@ -59,7 +58,7 @@ export default class Project extends Component {
                             <input style={{ width: '100%', fontFamily: 'Montserrat ', fontWeight: '400', padding: '2px' }} id="chooseFile" type="file" value={this.state.chooseFile}
                                 onChange={this.handlechooseFile} required />
                         </div>
-                        <Button style={{ margin: 'auto', marginTop: '40px', display: 'block', paddingTop: '10px', background: '#138808' }} onClick={() => this.setState({ addProject: true })}>Add Project</Button>
+                        <MainModal />
                     </form>
                 </div>
             </div>
