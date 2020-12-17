@@ -21,7 +21,7 @@ export default class Examination extends Component {
             <div className='container-fluid'>
                 <h1 style={{ fontFamily: 'Montserrat', fontWeight: '700', textAlign: "center" }}>Examination</h1>
                 <div className='table-container'>
-                    <Table striped bordered hover>
+                    <Table striped bordered hover className='table-main'>
                         <thead>
                         <tr>
                         <th colSpan='3'>Backlogs</th>
@@ -61,7 +61,7 @@ export default class Examination extends Component {
                         </tr>
                         </tbody>
                     </Table>
-                    <Table striped bordered hover>
+                    <Table striped bordered hover className='table-main'>
                         <thead>
                         <tr>
                         <th colSpan='3'>Grading</th>
@@ -101,7 +101,7 @@ export default class Examination extends Component {
                         </tr>
                         </tbody>
                     </Table>
-                    <Table striped bordered hover>
+                    <Table striped bordered hover className='table-main'>
                         <thead>
                         <tr>
                         <th colSpan='3'>Upcoming Exam</th>

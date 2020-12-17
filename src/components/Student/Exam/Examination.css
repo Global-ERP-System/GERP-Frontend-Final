@@ -9,7 +9,7 @@ table {
   margin-top: 20px;
 }
 
-th {
+.table-main th {
   background-color: #ff5200;
   color: white;
   font-size: 20px;

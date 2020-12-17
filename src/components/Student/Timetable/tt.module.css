@@ -12,21 +12,22 @@
 .TT h2 {
   text-align: center;
   background-color: rgb(255, 105, 36);
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   margin-bottom: 10px;
   padding: 0.3rem;
+  color: white;
 }
 .TT th {
   border: 1px black solid;
   width: 150px;
   text-align: center;
   color: rgb(255, 82, 0);
-  font-family: "PT Sans Narrow", sans-serif;
+  font-family: 'PT Sans Narrow', sans-serif;
 }
 .TT td {
   text-align: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 @media screen and (max-width: 800px) {

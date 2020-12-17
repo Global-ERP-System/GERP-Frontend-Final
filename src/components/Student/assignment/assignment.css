@@ -1,7 +1,6 @@
-.assignment {
-  margin-left: 22%;
-  margin-right: 22%;
-  background-color: white;
+.parent-container {
+  display: flex;
+  flex-direction: row;
 }
 
 h2 {
@@ -9,7 +8,7 @@ h2 {
 }
 
 #form_assg {
-  margin-top: 75px;
+  margin-top: 30px;
 }
 
 input {
@@ -29,7 +28,7 @@ form label {
 }
 
 @media screen and (max-width: 800px) {
-  .assignment {
-    margin: 0 0;
+  .parent-container {
+    flex-direction: column;
   }
 }
