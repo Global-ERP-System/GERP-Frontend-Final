@@ -1,5 +1,4 @@
 import React from "react";
-import DrawerToggleButton from "../SideDrawer/DrawerToggleButton";
 import "./ToolbarF.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -35,10 +34,10 @@ import MessageBox from "../newChat";
 const toolbar = (props) => (
   <header className="toolbar">
     <nav className="toolbar_navigation">
-      <div className="toolbar__toggle-button">
+      {/* <div className="toolbar__toggle-button">
         <DrawerToggleButton click={props.drawerClickHandler} />
       </div>
-      <div className="toolbar_logo"></div>
+      <div className="toolbar_logo"></div>*/}
       <div className="dropdown">
         <span>
           <Link style={{ color: "white" }} to="/communityF">
@@ -75,6 +74,26 @@ const toolbar = (props) => (
                 Salary Details
               </Link>
             </p>
+            <p>
+              <Link className="links" to="/raisereqf">
+                Raise a Request
+              </Link>
+            </p>
+            <p>
+              <Link className="links" to="/leavesf">
+                Leaves
+              </Link>
+            </p>
+            <p>
+              <Link className="links" to="/feedbackf">
+                View Feedback
+              </Link>
+            </p>
+            <p>
+              <Link className="links" to="appreciationf">
+                Appreciation Badges
+              </Link>
+            </p>
           </div>
         </div>
       </div>
@@ -107,6 +126,16 @@ const toolbar = (props) => (
             <p>
               <Link className="links" to="/researchf">
                 Research Paper
+              </Link>
+            </p>
+            <p>
+              <Link className="links" to="/relationf">
+                My Relations
+              </Link>
+            </p>
+            <p>
+              <Link className="links" to="/internshipf">
+                Student Internships
               </Link>
             </p>
           </div>
@@ -174,125 +203,127 @@ const toolbar = (props) => (
             <li>
               <FontAwesomeIcon icon={faBell} />
             </li>
-            <div
-              className="dropdown-content"
-              style={{ marginLeft: "-480%", width: "250px", height: "400px" }}
-            >
-              <p>
-                <div id="circle-notify">
-                  <img
-                    alt=""
-                    src="https://upload.wikimedia.org/wikipedia/commons/1/18/Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg"
-                    style={{
-                      height: "60px",
-                      width: "60px",
-                      borderRadius: "120px",
-                      margin: "5% -2%",
-                    }}
-                  ></img>
-                  <p
-                    style={{
-                      width: "155px",
-                      height: "70px",
-                      marginLeft: "120%",
-                      marginTop: "-100%",
-                    }}
-                  >
-                    <Link className="links" to="/singlepost">
-                      Ajeet posted an update
-                    </Link>
-                  </p>
-                </div>
-              </p>
-              <p>
-                <div id="circle-notify">
-                  <img
-                    alt=""
-                    src="https://img1.nickiswift.com/img/gallery/the-untold-truth-of-mark-zuckerbergs-wife-priscilla-chan/intro-1583268905.jpg"
-                    style={{
-                      height: "60px",
-                      width: "60px",
-                      borderRadius: "120px",
-                      margin: "5% -2%",
-                    }}
-                  ></img>
-                  <p
-                    style={{
-                      width: "155px",
-                      height: "70px",
-                      marginLeft: "120%",
-                      marginTop: "-100%",
-                    }}
-                  >
-                    <Link className="links" to="/singlepost">
-                      Renu changed her profile
-                    </Link>
-                  </p>
-                </div>
-              </p>
-              <p>
-                <div id="circle-notify">
-                  <img
-                    alt=""
-                    src="https://www.manifoldkerala.com/wp-content/uploads/2018/06/buk4.jpg"
-                    style={{
-                      height: "60px",
-                      width: "60px",
-                      borderRadius: "120px",
-                      margin: "5% -2%",
-                    }}
-                  ></img>
-                  <p
-                    style={{
-                      width: "155px",
-                      height: "70px",
-                      marginLeft: "120%",
-                      marginTop: "-100%",
-                    }}
-                  >
-                    <Link className="links" to="/singlepost">
-                      New Study Material added
-                    </Link>
-                  </p>
-                </div>
-              </p>
-              <p>
-                <div id="circle-notify">
-                  <img
-                    alt=""
-                    src="https://pbs.twimg.com/profile_images/864282616597405701/M-FEJMZ0.jpg"
-                    style={{
-                      height: "60px",
-                      width: "60px",
-                      borderRadius: "120px",
-                      margin: "5% -2%",
-                    }}
-                  ></img>
-                  <p
-                    style={{
-                      width: "155px",
-                      height: "70px",
-                      marginLeft: "120%",
-                      marginTop: "-100%",
-                    }}
-                  >
-                    <Link className="links" to="/singlepost">
-                      Sudipto published his Research Paper
-                    </Link>
-                  </p>
-                </div>
-              </p>
+            <div>
+              <div
+                className="dropdown-content"
+                style={{ marginLeft: "-480%", width: "250px", height: "400px" }}
+              >
+                <p>
+                  <div id="circle-notify">
+                    <img
+                      alt=""
+                      src="https://upload.wikimedia.org/wikipedia/commons/1/18/Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg"
+                      style={{
+                        height: "60px",
+                        width: "60px",
+                        borderRadius: "120px",
+                        margin: "5% -2%",
+                      }}
+                    ></img>
+                    <p
+                      style={{
+                        width: "155px",
+                        height: "70px",
+                        marginLeft: "120%",
+                        marginTop: "-100%",
+                      }}
+                    >
+                      <Link className="links" to="/singlepost">
+                        Ajeet posted an update
+                      </Link>
+                    </p>
+                  </div>
+                </p>
+                <p>
+                  <div id="circle-notify">
+                    <img
+                      alt=""
+                      src="https://img1.nickiswift.com/img/gallery/the-untold-truth-of-mark-zuckerbergs-wife-priscilla-chan/intro-1583268905.jpg"
+                      style={{
+                        height: "60px",
+                        width: "60px",
+                        borderRadius: "120px",
+                        margin: "5% -2%",
+                      }}
+                    ></img>
+                    <p
+                      style={{
+                        width: "155px",
+                        height: "70px",
+                        marginLeft: "120%",
+                        marginTop: "-100%",
+                      }}
+                    >
+                      <Link className="links" to="/singlepost">
+                        Renu changed her profile
+                      </Link>
+                    </p>
+                  </div>
+                </p>
+                <p>
+                  <div id="circle-notify">
+                    <img
+                      alt=""
+                      src="https://www.manifoldkerala.com/wp-content/uploads/2018/06/buk4.jpg"
+                      style={{
+                        height: "60px",
+                        width: "60px",
+                        borderRadius: "120px",
+                        margin: "5% -2%",
+                      }}
+                    ></img>
+                    <p
+                      style={{
+                        width: "155px",
+                        height: "70px",
+                        marginLeft: "120%",
+                        marginTop: "-100%",
+                      }}
+                    >
+                      <Link className="links" to="/singlepost">
+                        New Study Material added
+                      </Link>
+                    </p>
+                  </div>
+                </p>
+                <p>
+                  <div id="circle-notify">
+                    <img
+                      alt=""
+                      src="https://pbs.twimg.com/profile_images/864282616597405701/M-FEJMZ0.jpg"
+                      style={{
+                        height: "60px",
+                        width: "60px",
+                        borderRadius: "120px",
+                        margin: "5% -2%",
+                      }}
+                    ></img>
+                    <p
+                      style={{
+                        width: "155px",
+                        height: "70px",
+                        marginLeft: "120%",
+                        marginTop: "-100%",
+                      }}
+                    >
+                      <Link className="links" to="/singlepost">
+                        Sudipto published his Research Paper
+                      </Link>
+                    </p>
+                  </div>
+                </p>
 
-              <hr style={{ width: "100%", marginTop: "25%" }}></hr>
+                <hr style={{ width: "100%", marginTop: "25%" }}></hr>
 
-              <p style={{ marginTop: "-6%", marginLeft: "40%" }}>
-                <Link
-                  to="/Allposts"
-                  style={{ color: "blue", textDecoration: "none" }}
-                >
-                  See All
-                </Link>
-              </p>
+                <p style={{ marginTop: "-6%", marginLeft: "40%" }}>
+                  <Link
+                    to="/Allposts"
+                    style={{ color: "blue", textDecoration: "none" }}
+                  >
+                    See All
+                  </Link>
+                </p>
+              </div>
             </div>
           </div>
           <li>

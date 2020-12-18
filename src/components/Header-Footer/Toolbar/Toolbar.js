@@ -16,10 +16,10 @@ import MessageBox from "../newChat";
 const toolbar = (props) => (
   <header className="toolbar">
     <nav className="toolbar_navigation">
-      <div className="toolbar__toggle-button">
+      {/*} <div className="toolbar__toggle-button">
         <DrawerToggleButton click={props.drawerClickHandler} />
-      </div>
-      <div className="toolbar_logo"></div>
+      </div>*/}
+      {/* <div className="toolbar_logo"></div>*/}
       <div className="dropdown">
         <span style={{ cursor: "pointer", display: "flex" }}>
           <Link style={{ color: "white" }} to="/community">
@@ -54,6 +54,21 @@ const toolbar = (props) => (
             <p>
               <Link className="links" to="/fee">
                 Fee Details
+              </Link>
+            </p>
+            <p>
+              <Link className="links" to="/raisereq">
+                Raise a Request
+              </Link>
+            </p>
+            <p>
+              <Link className="links" to="/recommendation">
+                Recommendation Badges
+              </Link>
+            </p>
+            <p>
+              <Link className="links" to="/intern">
+                Internships
               </Link>
             </p>
           </div>

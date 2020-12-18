@@ -36,13 +36,13 @@ class Header extends Component {
           drawerClickHandler={this.drawerToggleClickHandler}
           clickFunc={this.props.clickFunc}
         />
-        {this.state.sideDrawerOpen && (
+        {/*{this.state.sideDrawerOpen && (
           <SideDrawer
             show={this.state.sideDrawerOpen}
             hide={this.backdropClickHandler}
           />
         )}
-        {backdrop}
+        {backdrop}*/}
         <main style={{ marginTop: "64px" }}>
           <p></p>
         </main>
